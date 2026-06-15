@@ -23,7 +23,7 @@ A peer-to-peer tutoring marketplace where students can:
 - Video tutoring: Zoom or Google Meet integration
 ### Why This is Suitable
 This project solves a common student problem and targets users who are easy to access for interviews and testing. It can be developed as a web prototype within one semester using a manageable set of MVP features, while also offering strong potential for future growth and commercialization.
----
+
 ## Idea 2: 
 ### Problem Area
 Tourists visiting Thailand often have difficulty finding authentic local experiences and community-based activities. At the same time, local guides and small tourism businesses struggle to promote their services and reach potential customers, relying mainly on social media or word-of-mouth.
@@ -49,6 +49,16 @@ A marketplace platform where local experience providers can:
 - Booking and review system
 ### Why This is Suitable
 This project addresses a real tourism problem while supporting local communities and small businesses. The target users are accessible for interviews and validation, and the platform can be developed as a web prototype within one semester using core marketplace features such as user registration, listings, booking, reviews, and search functions.
----
-## Idea 3
-Repeat the same structure.
+
+## Idea 3: 
+### Problem Area
+
+### Target Users
+- 
+### Current Alternative
+- 
+### Proposed IT Solution
+
+### Possible Technology
+- 
+### Why This is Suitable
