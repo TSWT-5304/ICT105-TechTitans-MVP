@@ -10,10 +10,10 @@ TechTitans
 ## Team Members and Roles
 | Name | Role | Responsibility |
 |---|---|---|
-| Thae Su Win Thu | Product Lead | Define problem, target users, and value proposition |
-| Thin Thiri Naing | Technical Lead | Manage repository and prototype feasibility |
-| Yan Naing Kyaw | UX/UI Lead + Documentation Lead | Design interface and maintain documentation |
-| Shinn Thant Maung | UX/UI Lead + Documentation Lead | Design interface and maintain 
+| Thin Thiri Naing | Product Lead | Define problem, target users, value proposition, and project direction |
+| Shinn Thant Maung | Technical Lead | Manage repository, prototype development, and technical feasibility |
+| Thae Su Win Thu | UX/UI Lead | Design wireframes, user flow, and interface screens |
+| Yan Naing Kyaw | Validation Lead + Documentation Lead | Conduct surveys/interviews and maintain project documentation | 
 ## Initial Problem Area
 ### Idea-1
 Rangsit university students experience difficulties in challenging courses but cannot easily find tutors who match their subject, schedule, and budget. As a result, they rely on friends or social media, which is often inefficient and unreliable.
@@ -57,8 +57,13 @@ Possible technologies:
 ## Weekly Progress Log
 | Lab | Main Activity | Output | Status |
 |---|---|---|---|
-| Lab 1 | Lab setup and idea log | Repository, team profile, initial idea log | In progress |
+| Lab 1 | Lab setup and idea log | Repository, team profile, initial idea log | Completed |
 ## Current Status
-Write 3-5 sentences about what the team completed in Lab 1.
+1. Formed the project team and assigned roles and responsibilities.
+2. Created the GitHub repository and required folder structure.
+3. Prepared the README file, team profile, and initial IT venture idea log.
 ## Next Step
-Write what the team will do in Lab 2.
+1. Conduct opportunity scanning and identify real user problems.
+2. Evaluate the three proposed IT venture ideas.
+3. Select one venture idea for further validation and development.
+4. Begin collecting evidence through surveys, interviews, or market research.
