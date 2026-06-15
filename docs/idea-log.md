@@ -24,7 +24,7 @@ A peer-to-peer tutoring marketplace where students can:
 ### Why This is Suitable
 This project solves a common student problem and targets users who are easy to access for interviews and testing. It can be developed as a web prototype within one semester using a manageable set of MVP features, while also offering strong potential for future growth and commercialization.
 
-## Idea 2: 
+## Idea 2: LocalLink - Local Experience Marketplace
 ### Problem Area
 Tourists visiting Thailand often have difficulty finding authentic local experiences and community-based activities. At the same time, local guides and small tourism businesses struggle to promote their services and reach potential customers, relying mainly on social media or word-of-mouth.
 ### Target Users
