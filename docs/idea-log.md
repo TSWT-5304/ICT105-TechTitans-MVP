@@ -50,15 +50,26 @@ A marketplace platform where local experience providers can:
 ### Why This is Suitable
 This project addresses a real tourism problem while supporting local communities and small businesses. The target users are accessible for interviews and validation, and the platform can be developed as a web prototype within one semester using core marketplace features such as user registration, listings, booking, reviews, and search functions.
 
-## Idea 3: 
+## Idea 3: MindSpace – Student Mental Wellness & Peer Support Platform
 ### Problem Area
-
+Rangsit university students often face stress, anxiety, and burnout from academic pressure but lack accessible, stigma-free ways to seek emotional support. University counseling services have limited hours and long wait times, leaving many students without timely help.
 ### Target Users
-- 
+- Rangsit university students experiencing academic stress or emotional difficulties.
+- Student volunteers or trained peer listeners who want to support their peers.
 ### Current Alternative
-- 
+- Visiting the university counseling center (limited availability, perceived stigma).
+- Venting to friends informally, which can be inconsistent or burdensome.
+- Using general apps like Wysa or Headspace, which are not localized or campus-specific.
 ### Proposed IT Solution
-
+A web platform where students can:
+- Complete anonymous mood check-ins and track emotional trends over time
+- Access guided self-help resources (breathing exercises, stress tips, curated articles)
+- Join moderated peer support group chats by topic (e.g., exam stress, homesickness)
+- Request a 1-on-1 anonymous chat session with a trained peer listener
+- Get referred to the university counseling center if a serious concern is flagged
 ### Possible Technology
-- 
+- HTML, CSS, JavaScript, React.js, Node.js or Python (FastAPI), PostgreSQL or Supabase.
+- Authentication: University email verification (anonymous display names)
+- Real-time chat: Socket.io or Firebase Realtime Database
 ### Why This is Suitable
+Mental health is a growing concern among Thai university students and is underserved by existing campus infrastructure. The anonymous-first design lowers the barrier to participation, making it easier to recruit testers. It is buildable as a web prototype within one semester with a focused MVP (mood tracker + peer chat), and it addresses a real, emotionally significant gap with clear potential for university partnership and expansion.
