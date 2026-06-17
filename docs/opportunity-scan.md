@@ -23,3 +23,5 @@
 | Deadline Reminder Dashboard | Dashboard MVP | HTML/CSS/JavaScript, Google Sheets | Assignment title, course, due date | Low | Yes |
 | CareerConnect | Web Prototype | HTML/CSS, Google Forms, Google Sheets | Company, position, application link | Medium | Yes |
 | CampusSwap | Simple Web MVP | HTML/CSS/JavaScript | Item name, category, price | Medium | Yes |
+## NUF Scoring
+https://docs.google.com/spreadsheets/d/1fyp2AzM6Skd3PzWwbtKtwwQOMJKI6c5FQz8kiND5d6g/edit?usp=sharing
