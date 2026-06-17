@@ -18,7 +18,7 @@ The prototype can be developed using:
 - HTML/CSS/JavaScript for the user interface.
 - Google Forms for tutor registration and request submission.
 - Google Sheets for simple backend data simulation.
-These technologies are easy to learn, suitable for beginners, and support rapid prototype development within the semester.
+#### These technologies are easy to learn, suitable for beginners, and support rapid prototype development within the semester.
 
 ## Possible MVP Type
 Simple Web App Prototype
@@ -28,7 +28,7 @@ The MVP will include:
 - Tutor registration form
 - Tutoring request form
 - Basic tutor profile display
-The MVP focuses on validating the core idea rather than implementing a complete production system.
+#### The MVP focuses on validating the core idea rather than implementing a complete production system.
 
 ## Initial Validation Plan for Lab 03
 ### Target Respondents
