@@ -1,22 +1,23 @@
 # Customer Discovery Questions
 
 ## Project Title
+PeerTutor – Student-to-Student Tutoring Marketplace
 
 ## Target Respondent
+University students who have needed academic help, searched for tutors, or received tutoring services.
 
 ## Consent and Context
 1. May we ask you a few questions for our ICT105 course project?
 2. Your participation is voluntary. We will not collect unnecessary personal data. Is it okay if we take notes?
 
 ## Recent Experience
-3. Tell us about the last time you experienced this problem.
-4. What were you trying to do at that time?
-5. What happened from start to finish?
+3. Tell us about the last time you needed help with a difficult subject or assignment.
+4. What were you trying to achieve at that time?
+5. What happened from start to finish when you looked for help or a tutor?
 
 ## Current Workaround
-6. How do you usually solve or manage this problem now?
-7. What tools, apps, people, or methods do you currently use?
-8. What is difficult, slow, confusing, risky, or frustrating about the current method?
+6. How do you usually find academic help or tutoring support?What tools, apps, people, or methods do you currently use? (e.g., friends, seniors, Facebook groups, Line groups, private tutors)What tools, apps, people, or methods do you currently use?
+7. What is difficult, slow, confusing, risky, or frustrating about the current method?
 
 ## Pain Severity and Consequence
 9. How often does this problem happen?
