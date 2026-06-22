@@ -51,8 +51,16 @@ Common tutor frustrations included:
 Many students stated that failure to find a tutor could lead to lower grades, missed deadlines, incomplete projects, or poor understanding of course material.
 
 ## Weak Evidence or Unclear Findings
+- The sample size for tutors (7 responses) is relatively small.
+- There is limited information about students' willingness to pay for tutoring.
+- The preferred tutoring format (online, offline, or hybrid) was not explored.
+- The payment and booking process requirements remain unclear.
 
 ## What We Must Revise
+- Focus on the most common problems: tutor discovery, trust, ratings, availability, and scheduling.
+- Add features that allow tutors to display qualifications, subjects taught, ratings, and reviews.
+- Include a search and filtering system for subjects, availability, ratings, and price.
+- Conduct additional interviews to validate payment preferences and tutoring formats.
 
 ## Decision for Next Lab
 - Continue with same problem direction
