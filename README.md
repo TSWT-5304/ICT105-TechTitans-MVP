@@ -49,4 +49,44 @@ Possible technologies:
 3. Selected the most suitable opportunity for our semester project and mapped it to a feasible technology implementation path.
 ## Next Step
 In Lab 03, our team will conduct customer problem discovery by interviewing university students who have searched for tutors or provided tutoring services. We will collect information about their current methods, challenges, and expectations to validate whether PeerTutor solves a real problem and identify the most important features for the MVP.
-
+# README Update After Lab 03
+## Customer Problem Discovery Summary
+In Lab 03, our team conducted customer discovery interviews and surveys with university students who have searched for academic help and students who have experience providing tutoring services. The goal was to validate whether the problem identified in Lab 02 is real, significant, and worth solving.
+#### The collected evidence confirmed that students often struggle to find suitable tutors through existing channels, while student tutors face difficulties promoting their services and connecting with potential learners.
+## Target Respondents
+We collected responses from the following target users:
+- 15 university students who have searched for academic help or tutoring.
+- 7 student tutors who have experience helping classmates or junior students.
+#### These respondents represent both sides of the tutoring process and provide insights into the challenges faced by learners and tutors.
+## Main Evidence Found
+### Current Workarounds
+#### Students currently find tutors through:
+- Facebook groups
+- Line groups
+- Friends and classmates
+- Senior students
+- Private tutors
+#### Tutors currently promote their services through:
+- Word of mouth
+- Friends and classmates
+- Facebook groups
+- Line groups
+### Repeated Pain Points
+- Tutor information is scattered across multiple channels.
+- Students find it difficult to evaluate tutor quality and trustworthiness.
+- Scheduling tutoring sessions can be inconvenient.
+- Communication is often slow and inefficient.
+- Tutors struggle to reach potential students.
+- Students and tutors both value ratings and reviews.
+## Updated Problem Statement
+University students often struggle to find suitable tutors because tutor information is scattered across multiple channels such as Facebook groups, Line groups, friends, and senior recommendations. These methods provide limited information about tutor qualifications, availability, experience, and reliability. At the same time, student tutors face difficulties promoting their services and reaching students who need academic support.
+## Decision for Next Step
+Based on the evidence collected, our team will continue developing the PeerTutor concept.
+The customer discovery results support the need for a centralized student-to-student tutoring platform. For the next stage, we will focus on designing and validating an MVP that includes:
+- Tutor listing page
+- Tutor profile page
+- Tutor registration form
+- Tutoring request form
+- Subject-based tutor search
+- Basic ratings and reviews
+#### The MVP will help test whether a university-specific tutoring marketplace can improve tutor discovery, communication, and trust between students and tutors.
