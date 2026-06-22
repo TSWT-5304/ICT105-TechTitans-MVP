@@ -1,13 +1,8 @@
-# Assumption-Evidence Table
-
-| No. | Team Assumption | Evidence Collected | Evidence Type | Strength | Decision |
-|---:|---|---|---|---|---|
-| 1 | | | Interview / Survey / Observation | Weak / Moderate / Strong | Keep / Revise / Reject |
-| 2 | | | Interview / Survey / Observation | Weak / Moderate / Strong | Keep / Revise / Reject |
-| 3 | | | Interview / Survey / Observation | Weak / Moderate / Strong | Keep / Revise / Reject |
-
-## Evidence Strength Guide
-- Weak: team opinion or friend feedback only
-- Moderate: repeated interview pattern from target users
-- Strong: users show behavior, complete a task, sign up, or provide specific evidence
-
+| No. | Team Assumption                                                                 | Evidence Collected                                                                                                                                                                                       | Evidence Type             | Strength | Decision | Notes                                                   |
+| --- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | -------- | -------- | ------------------------------------------------------- |
+| 1   | Students struggle to find suitable tutors when they need academic help.         | Many students reported difficulties finding tutors through friends, seniors, Facebook groups, and Line groups. Common issues included slow responses, limited availability, and lack of recommendations. | Interview / Sample Survey | Strong   | Keep     | Mentioned by most student respondents.                  |
+| 2   | Current tutor-search methods are fragmented and inefficient.                    | Students use multiple channels (Facebook, Line, friends, seniors), requiring significant effort to compare tutors and obtain reliable information.                                                       | Interview Pattern         | Strong   | Keep     | Indicates a need for a centralized platform.            |
+| 3   | Students want more information before choosing a tutor.                         | Students frequently requested ratings, reviews, availability, subject expertise, experience, and pricing information.                                                                                    | Interview / Sample Survey | Strong   | Keep     | Key requirement for tutor profiles and search filters.  |
+| 4   | Student tutors have difficulty promoting their tutoring services.               | Tutors mainly rely on friends, classmates, Facebook groups, and word-of-mouth referrals to find students. Several tutors reported difficulty reaching more students.                                     | Interview / Sample Survey | Strong   | Keep     | Supported by multiple tutor responses.                  |
+| 5   | Ratings and reviews can help students trust tutors.                             | Students mentioned trust issues and requested ratings/reviews, while tutors wanted a way to showcase credibility and past performance.                                                                   | Interview Pattern         | Strong   | Keep     | Should be included in the MVP.                          |
+| 6   | Scheduling and communication are major challenges for both students and tutors. | Students reported scheduling conflicts and slow replies. Tutors reported difficulties managing sessions and communicating with students.                                                                 | Interview / Sample Survey | Strong   | Keep     | Strong opportunity for booking and scheduling features. |
