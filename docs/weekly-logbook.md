@@ -72,7 +72,7 @@ We refined our problem understanding by focusing on two user groups: students se
 1. Limited access to real respondents within the available time.
 2. Some responses were similar and required grouping into common patterns and pain points.
 ### Evidence of Work
-- GitHub repository link: [Insert Repository Link]
+- GitHub repository link: https://github.com/TSWT-5304/ICT105-TechTitans-MVP
 - Customer questions file: customer-discovery-questions.md
 - Raw responses file: customer-responses.xlsx / Google Sheet
 - Assumption-evidence table: assumption-evidence-table.md
