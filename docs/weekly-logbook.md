@@ -74,7 +74,7 @@ We refined our problem understanding by focusing on two user groups: students se
 ### Evidence of Work
 - GitHub repository link: https://github.com/TSWT-5304/ICT105-TechTitans-MVP
 - Customer questions file: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/docs/customer-questions.md
-- customer-discovery-summary.md: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/docs/customer-questions.md
+- customer-discovery-summary.md: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/docs/customer-discovery-summary.md
 - Raw responses file: customer-responses.xlsx / Google Sheet: https://docs.google.com/spreadsheets/d/1Aj9hIfz75R5US--Wydsh3HcHS70mrQ-UySwWJt9_G8g/edit?usp=sharing
 - Assumption-evidence table: assumption-evidence-table.md: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/docs/assumption-evidence-table.md
 - Commit link: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/
