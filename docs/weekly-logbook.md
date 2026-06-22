@@ -53,3 +53,30 @@ We decided not to select MindSpace – Student Mental Wellness Platform as our s
 ### Plan for Lab 03
 In Lab 03, our team will conduct customer problem discovery by interviewing university students who have searched for tutors or provided tutoring services. We will collect information about their current methods, challenges, and expectations to validate whether PeerTutor solves a real problem and identify the most important features for the MVP. 
 
+## Lab 03: Customer Problem Discovery
+### What We Completed
+1. Created customer discovery questions for students seeking tutors and student tutors.
+2. Collected and analyzed survey responses from target respondents.
+3. Created assumption-evidence tables, coding guides, pattern summaries, and problem notes.
+### What We Learned About the Problem
+1. Students currently use Facebook groups, Line groups, friends, seniors, and private tutors to find academic help.
+2. Students often struggle to evaluate tutor quality due to limited information and lack of reviews.
+3. Student tutors have difficulty promoting their services and reaching potential learners.
+### What Evidence We Collected
+- Number of respondents/interviews: 22 (15 students and 7 student tutors)
+- Evidence file: Customer discovery responses and survey data
+- Key repeated pattern: Tutor information is scattered across multiple channels, creating trust and communication challenges.
+### What We Changed Based on Evidence
+We refined our problem understanding by focusing on two user groups: students seeking academic help and student tutors. We also identified that ratings, reviews, availability, and tutor profiles are important features that should be included in the MVP.
+### Problems or Difficulties
+1. Limited access to real respondents within the available time.
+2. Some responses were similar and required grouping into common patterns and pain points.
+### Evidence of Work
+- GitHub repository link: [Insert Repository Link]
+- Customer questions file: customer-discovery-questions.md
+- Raw responses file: customer-responses.xlsx / Google Sheet
+- Assumption-evidence table: assumption-evidence-table.md
+- Commit link: [Insert Commit Link]
+### Plan for Lab 04
+In Lab 04, the team will define customer segments and create user personas for both students seeking tutors and student tutors. We will also develop user stories that describe how each user interacts with the PeerTutor platform. These activities will help us better understand user needs and prepare for MVP design and prototyping.
+
