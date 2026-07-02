@@ -81,3 +81,31 @@ We refined our problem understanding by focusing on two user groups: students se
 ### Plan for Lab 04
 In Lab 04, the team will define customer segments and create user personas for both students seeking tutors and student tutors. We will also develop user stories that describe how each user interacts with the PeerTutor platform. These activities will help us better understand user needs and prepare for MVP design and prototyping.
 
+# Lab 04 - Weekly Logbook
+## Group Information
+- Course: ICT105 Fundamental Technology Entrepreneurship
+- Lab: Lab 04 - User Persona, Requirements, and User Stories
+- Group Name:
+- Repository Link:
+- Date:
+## 1. Work Completed Today
+| Member Name | Contribution | GitHub Evidence (Commit/Issue/PR Link) |
+|---|---|---|
+| | | |
+## 2. Main Decisions
+- Primary target user:
+- Main persona:
+- Most important problem:
+- Must-have requirements:
+- Features included in MVP:
+- Features postponed:
+## 3. Requirement Changes / Clarifications
+Record any decision that may affect the final prototype.
+## 4. Problems Encountered
+- Technical problem:
+- Team coordination problem:
+- Evidence/requirement problem:
+## 5. Next Actions Before Lab 05
+| Task | Owner | Deadline | GitHub Issue |
+|---|---|---|---|
+| | | | |
