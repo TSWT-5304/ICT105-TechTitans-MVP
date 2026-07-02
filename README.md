@@ -91,3 +91,29 @@ The customer discovery results support the need for a centralized student-to-stu
 - Subject-based tutor search
 - Basic ratings and reviews
 #### The MVP will help test whether a university-specific tutoring marketplace can improve tutor discovery, communication, and trust between students and tutors.
+
+# README Update Template - Lab 04
+Add this section to your group README.md.
+## Lab 04: User Persona, Requirements, and User Stories
+### Primary Target User
+Briefly describe the main user of your system/app/platform.
+### Persona Summary
+- Persona name:
+- User type:
+- Main goal:
+- Main pain point:
+- Current workaround:
+### Key Requirements
+| Req ID | Requirement | Priority | Related Evidence |
+|---|---|---|---|
+| FR-01 | | Must | |
+| NFR-01 | | Must | |
+### MVP Feature Scope
+| Feature | Priority | Included in Final Prototype? |
+|---|---|---|
+| | | |
+### Diagram Links
+- User flow diagram:
+- Use case diagram:
+### GitHub Contribution Evidence
+All members contributed to this repository through commits, issues, or pull requests.
