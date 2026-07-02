@@ -2,7 +2,7 @@
 
 ## Minimum Final Prototype Functionalities
 
-These requirements define the minimum prototype functionalities that each ICT105 student group must address in the final prototype. The requirements are designed to be platform-independent and can align with different project topics, such as booking systems, reporting systems, inventory systems, learning platforms, dashboards, marketplace concepts, reminder systems, service request systems, or other IT-based solutions.
+These requirements define the minimum prototype functionalities for the **PeerTutor – Student-to-Student Tutoring Marketplace**. The prototype aims to help university students easily find peer tutors while allowing student tutors to promote their tutoring services through a centralized platform.
 
 | Req ID | Minimum Prototype Functionality | What Students Must Show in Final Prototype |
 | --- | --- | --- |
@@ -14,14 +14,14 @@ These requirements define the minimum prototype functionalities that each ICT105
 | **FR-06** | **Search, filter, or category function** | Students must be able to search tutors by name or subject and apply filters such as major, price and rating. |
 | **FR-07** | **Detail view for each record** | Students can view tutor profiles and tutoring request details. Tutors can view student requests and booking details. Admins can view all user profiles, tutor applications, user activities, and request statuses. |
 | **FR-08** | **Status or progress tracking** | Both student requests and Tutoring request forms must display a status: Pending, Confirmed, Completed, or Cancelled. Students can view their own request history and current status. Tutors can view their tutoring request forms status and student requests. |
-| **FR-09** | **Admin or manager function** | The prototype must include at least one admin/manager-side function. Example: update status, approve request, edit record, delete invalid record, assign task, or manage submitted data. |
-| **FR-10** | **Basic validation and error prevention** | The system must prevent incomplete or incorrect input. Example: required fields, valid email format, date selection, duplicate warning, confirmation message, or simple error message. |
-| **FR-11** | **Confirmation or feedback message** | After a user submits or updates data, the prototype must show feedback. Example: “Submission successful,” “Request received,” “Status updated,” or “Please complete required fields.” |
-| **FR-12** | **Dashboard, summary, or simple analytics view** | The prototype must include at least one summary screen. Example: total reports, pending requests, number of users, most common category, monthly submissions, inventory summary, or task status overview. |
-| **FR-13** | **Basic user interface consistency** | Screens must use consistent layout, navigation, labels, buttons, and visual structure. The prototype should look like one complete system, not disconnected pages. |
-| **FR-14** | **Mobile-friendly or responsive design consideration** | The prototype must show that the interface can reasonably work on a laptop or mobile screen, depending on the selected platform. |
-| **FR-15** | **Basic privacy and responsible data handling** | Students must avoid unnecessary sensitive data. If user data is collected, the prototype must show basic privacy awareness, such as limited fields, masked sample data, or clear data-use explanation. |
-| **FR-16** | **Final prototype traceability** | Every major prototype screen or feature must connect back to the Lab 04 requirements, user stories, and MVP feature list. Students must be able to explain why each feature exists. |
+| **FR-09** | **Admin or manager function** | Admin panel must allow: update request status, approve or reject tutor registrations,manage user accounts, delete invalid submissions and oversee platform data. |
+| **FR-10** | **Basic validation and error prevention** | The system validates required fields, email format, password requirements and mandatory tutor application information. Duplicate tutor registration warning must be shown. Confirmation prompts and error messages are displayed for incomplete or invalid submissions. |
+| **FR-11** | **Confirmation or feedback message** | After form submission, users must see a clear message: "Request submitted successfully" or "Tutor profile submitted for review." |
+| **FR-12** | **Dashboard, summary, or simple analytics view** | Student Dashboard displays tutoring requests and request status. Tutor Dashboard displays tutoring requests, schedules, and profile information. Admin dashboard must show: summary statistics and charts showing platform usage, tutor applications, user distribution, and survey results. |
+| **FR-13** | **Basic user interface consistency** | All pages use a consistent layout, navigation bar, color scheme, typography, icons, buttons, and dashboard design to provide a unified user experience across the platform. |
+| **FR-14** | **Mobile-friendly or responsive design consideration** | Prototype must be usable on both laptop and mobile screen. Key forms (request, registration) must work on a phone-sized viewport. |
+| **FR-15** | **Basic privacy and responsible data handling** | Collect only necessary fields. Use sample/masked data in the demo. No sensitive personal data beyond name, email, subject, and availability. Sensitive information such as passwords is protected, and personal information is displayed only when appropriate. |
+| **FR-16** | **Final prototype traceability** | Every major screen and feature—including the homepage, authentication, tutor application, tutor profile, tutor search, tutoring request, dashboards, reviews, and admin management—can be traced back to the project's user stories, functional requirements, and MVP feature list. |
 
 ---
 
