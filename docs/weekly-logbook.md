@@ -133,7 +133,7 @@ In Lab 04, the team will define customer segments and create user personas for b
   - Tutor Video Introduction Upload
   - AI Tutor Personalized Study Plan
 ## 3. Requirement Changes / Clarifications
-Record any decision that may affect the final prototype.
+Based on the customer discovery evidence collected in Lab 03, the team refined the system requirements to focus on the most common user problems. The MVP emphasizes tutor discovery, tutor registration, profile visibility, tutoring requests, request tracking, reviews, and admin approval. Advanced features such as online payment, AI recommendations, and real-time chat were postponed because they increase development complexity and were not strongly supported by the collected evidence.
 ## 4. Problems Encountered
 - Technical problem:
 - Team coordination problem:
