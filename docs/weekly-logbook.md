@@ -85,7 +85,7 @@ In Lab 04, the team will define customer segments and create user personas for b
 ## Group Information
 - Course: ICT105 Fundamental Technology Entrepreneurship
 - Lab: Lab 04 - User Persona, Requirements, and User Stories
-- Group Name:
+- Group Name: TechTitans
 - Repository Link:
 - Date:
 ## 1. Work Completed Today
