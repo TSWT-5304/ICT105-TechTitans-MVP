@@ -17,3 +17,19 @@ University student seeking academic tutoring support
 - View tutor profiles, including subjects taught, experience, ratings, and availability before making a decision.
 - Submit a tutoring request through one simple platform instead of contacting tutors individually through Line or Messenger.
 - Receive academic support quickly to improve her understanding, complete assignments on time, and achieve better grades.
+
+## 5. Pain Points from Lab 03 Evidence
+| Pain Point | Evidence ID / Respondent | Explanation |
+|---|---|---|
+| Tutor information is scattered across too many channels. | R001-R015 (all 15 students) | Students reported using Facebook groups, Line groups, friends, seniors, and private tutors - no single trusted channels. |
+| Cannot evaluate tutor quality before contacting. | R002, R005, R011, R015 | Students reported trust issues, unclear quality, and no tutor profiles to review before reaching out. |
+| Scheduling tutoring sessions is inconvenient. | R004, R012 | Scheduling conflicts and limited availability were reported as major frustrations. |
+| Academic performance at risk | R001, R004, R007, R009, R010, R012, R013, R014 | Consequences included lower grades, failed assessments, missed deadlines, and incomplete work. |
+
+## 6. Current Alternatives / Workarounds
+| Current Alternative | Weakness / Limitation | Evidence |
+|---|---|---|
+| Facebook Groups | Hard to trust tutors and compare quality | R002, R011, R015 |
+| Line groups | Informal; slow replies; scheduling done manually via chat | R001, R004, R012 |
+| Senior Students | Limited availability and slow responses | R001, R005, R007, R010 |
+| Friends and classmates | Limited to social circle; friends not always available or subject-matched | R003, R006, R009, R014 |
