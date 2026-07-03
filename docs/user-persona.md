@@ -33,3 +33,19 @@ University student seeking academic tutoring support
 | Line groups | Informal; slow replies; scheduling done manually via chat | R001, R004, R012 |
 | Senior Students | Limited availability and slow responses | R001, R005, R007, R010 |
 | Friends and classmates | Limited to social circle; friends not always available or subject-matched | R003, R006, R009, R014 |
+
+## 7. Design Implications
+# What should the system support?
+- A centralized tutor listing page with subject, availability, rating, and experience (addresses SEARCH_SCATTERED — 22 related responses).
+- Tutor profiles with ratings and reviews (addresses TRUST_ISSUE and REVIEW_NEED — 9 related responses).
+- A structured tutor booking request form (addresses SCHEDULING_PROBLEM — 7 related responses).
+- A tutor registration page so peer tutors can be discovered (addresses LIMITED_VISIBILITY — 7 related responses).
+- Subject-based search and filter (addresses SUBJECT_EXPERTISE and AVAILABILITY_IMPORTANT).
+
+# What should the team avoid?
+- Complicated registration that discourages tutors from signing up
+- Collecting unnecessary personal data beyond name, subject, contact, and availability.
+- Designing only for one-side - both students and tutors are primary users.
+
+# Which user need is most important for the MVP?
+The most important MVP need is helping students quickly find trustworthy tutors through one centralized platform.
