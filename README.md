@@ -92,17 +92,16 @@ The customer discovery results support the need for a centralized student-to-stu
 - Basic ratings and reviews
 #### The MVP will help test whether a university-specific tutoring marketplace can improve tutor discovery, communication, and trust between students and tutors.
 
-# README Update Template - Lab 04
-Add this section to your group README.md.
+# README Update - Lab 04
 # Lab 04: User Persona, Requirements, and User Stories
 ## Primary Target User
 The primary target users are **Rangsit University students** who need academic assistance and **student tutors** who want to offer tutoring services. Students often struggle to find trustworthy tutors through scattered channels such as Facebook groups, Line groups, friends, and senior students, while tutors need a better way to promote their services and connect with learners.
-### Persona Summary
-- Persona name:
-- User type:
-- Main goal:
-- Main pain point:
-- Current workaround:
+## Persona Summary
+- **Persona name:** Mina, Second-Year ICT Student
+- **User type:** University student seeking academic tutoring support
+- **Main goal:** Find a qualified peer tutor quickly, compare tutor profiles, and submit tutoring requests through one centralized platform.
+- **Main pain point:** Tutor information is scattered across multiple channels, making it difficult to compare tutor qualifications, availability, and trustworthiness.
+- **Current workaround:** Facebook groups, Line groups, friends, and senior students.
 ### Key Requirements
 | Req ID | Requirement | Priority | Related Evidence |
 |---|---|---|---|
