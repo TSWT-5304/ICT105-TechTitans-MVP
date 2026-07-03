@@ -121,10 +121,27 @@ The primary target users are **Rangsit University students** who need academic a
 | FR-14 | Responsive design for desktop and mobile devices. | Should | Most respondents currently use mobile applications. |
 | FR-15 | Basic privacy and responsible data handling. | Must | Protect user information and collect only necessary data. |
 | FR-16 | Traceability between requirements, user stories, MVP features, and prototype. | Must | Required for project documentation and evaluation. |
-### MVP Feature Scope
+## MVP Feature Scope
 | Feature | Priority | Included in Final Prototype? |
 |---|---|---|
-| | | |
+| Homepage / Landing Page | Must | Yes |
+| Tutor Search & Filter | Must | Yes |
+| Tutor Profile Page | Must | Yes |
+| Tutoring Request Form | Must | Yes |
+| Confirmation Page | Must | Yes |
+| Request Status Tracking | Must | Yes |
+| Tutor Registration & Application | Must | Yes |
+| Tutor Application Status | Must | Yes |
+| Tutor Profile Management | Must | Yes |
+| Admin Dashboard & Tutor Approval | Must | Yes |
+| Student Review & Rating | Should | Yes |
+| Dashboard Analytics (Pie Chart & Line Graph) | Should | Yes |
+| Tutor Video Introduction | Could | No |
+| Real-time In-app Chat | Won't | No |
+| Online Payment | Won't | No |
+| AI Tutor Study Planner | Won't | No |
+| Video Tutoring Sessions | Won't | No |
+
 ### Diagram Links
 - User flow diagram:
 - Use case diagram:
