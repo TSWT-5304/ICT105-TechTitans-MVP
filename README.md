@@ -102,11 +102,17 @@ The primary target users are **Rangsit University students** who need academic a
 - **Main goal:** Find a qualified peer tutor quickly, compare tutor profiles, and submit tutoring requests through one centralized platform.
 - **Main pain point:** Tutor information is scattered across multiple channels, making it difficult to compare tutor qualifications, availability, and trustworthiness.
 - **Current workaround:** Facebook groups, Line groups, friends, and senior students.
-### Key Requirements
+## Key Requirements
 | Req ID | Requirement | Priority | Related Evidence |
 |---|---|---|---|
-| FR-01 | | Must | |
-| NFR-01 | | Must | |
+| FR-01 | Homepage introducing PeerTutor and providing clear entry points to find tutors or register. | Must | Students need one centralized platform instead of scattered channels. |
+| FR-02 | Student tutoring workflow from tutor search to review submission. | Must | Students reported difficulty finding and contacting tutors. |
+| FR-03 | Tutor Registration Form and Tutoring Request Form. | Must | Students need structured requests; tutors need a way to register. |
+| FR-04 | Store tutor applications and tutoring requests. | Must | Current communication through chat groups is unorganized. |
+| FR-05 | Display tutor listings, requests, and records for students, tutors, and admins. | Must | Users need better visibility of tutoring information. |
+| FR-06 | Search and filter tutors by subject, name, rating, and price. | Must | Students requested faster tutor discovery. |
+| FR-07 | Detailed tutor profiles showing experience, ratings, subjects, and availability. | Must | Students want more information before choosing tutors. |
+
 ### MVP Feature Scope
 | Feature | Priority | Included in Final Prototype? |
 |---|---|---|
