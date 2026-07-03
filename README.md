@@ -112,7 +112,15 @@ The primary target users are **Rangsit University students** who need academic a
 | FR-05 | Display tutor listings, requests, and records for students, tutors, and admins. | Must | Users need better visibility of tutoring information. |
 | FR-06 | Search and filter tutors by subject, name, rating, and price. | Must | Students requested faster tutor discovery. |
 | FR-07 | Detailed tutor profiles showing experience, ratings, subjects, and availability. | Must | Students want more information before choosing tutors. |
-
+| FR-08 | Request and tutor application status tracking. | Must | Students and tutors want to monitor request progress. |
+| FR-09 | Admin approval and management of tutor applications and users. | Must | Tutors require approval before appearing publicly. |
+| FR-10 | Input validation and error prevention. | Must | Prevent incomplete or invalid submissions. |
+| FR-11 | Confirmation messages after successful submissions. | Must | Users need feedback that actions were completed. |
+| FR-12 | Student, Tutor, and Admin dashboards with summaries and analytics. | Should | Supports platform monitoring and request management. |
+| FR-13 | Consistent interface across all pages. | Must | Improves usability and navigation. |
+| FR-14 | Responsive design for desktop and mobile devices. | Should | Most respondents currently use mobile applications. |
+| FR-15 | Basic privacy and responsible data handling. | Must | Protect user information and collect only necessary data. |
+| FR-16 | Traceability between requirements, user stories, MVP features, and prototype. | Must | Required for project documentation and evaluation. |
 ### MVP Feature Scope
 | Feature | Priority | Included in Final Prototype? |
 |---|---|---|
