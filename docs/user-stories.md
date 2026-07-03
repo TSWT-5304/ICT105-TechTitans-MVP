@@ -27,10 +27,10 @@ A good acceptance criterion should be:
 ## Rejected / Future User Stories
 | Story ID | Reason for Postponing | Future Condition |
 |---|---|---|
-| US-01 | Real-time in-app chat requires additional backend services, real-time messaging technology, and notification management, making it too complex for the first MVP. | Implement after the core tutoring request and approval workflow has been validated. |
-| US-02 | Online payment requires payment gateway integration, transaction security, and financial management, which are outside the scope of the course prototype. | Add when the platform supports paid tutoring sessions in a production version. |
-| US-03 | Tutor video introduction uploads require media storage, video streaming, and increased server resources. | Include after basic tutor profiles have been successfully adopted by users. |
-| US-04 | AI Tutor with personalized study plans requires AI models, recommendation algorithms, and significantly more development time than available for the MVP. | Develop after collecting sufficient student learning data and validating demand for personalized recommendations. |
-| US-05 | Video tutoring sessions require video conferencing infrastructure and stable real-time communication, which exceeds the scope of the semester project. | Add in a future version after the tutoring marketplace has been successfully validated and adopted. | 
+| US-14 | Real-time in-app chat requires additional backend services, real-time messaging technology, and notification management, making it too complex for the first MVP. | Implement after the core tutoring request and approval workflow has been validated. |
+| US-15 | Online payment requires payment gateway integration, transaction security, and financial management, which are outside the scope of the course prototype. | Add when the platform supports paid tutoring sessions in a production version. |
+| US-16 | Tutor video introduction uploads require media storage, video streaming, and increased server resources. | Include after basic tutor profiles have been successfully adopted by users. |
+| US-17 | AI Tutor with personalized study plans requires AI models, recommendation algorithms, and significantly more development time than available for the MVP. | Develop after collecting sufficient student learning data and validating demand for personalized recommendations. |
+| US-18 | Video tutoring sessions require video conferencing infrastructure and stable real-time communication, which exceeds the scope of the semester project. | Add in a future version after the tutoring marketplace has been successfully validated and adopted. | 
 
 
