@@ -94,9 +94,9 @@ The customer discovery results support the need for a centralized student-to-stu
 
 # README Update Template - Lab 04
 Add this section to your group README.md.
-## Lab 04: User Persona, Requirements, and User Stories
-### Primary Target User
-Briefly describe the main user of your system/app/platform.
+# Lab 04: User Persona, Requirements, and User Stories
+## Primary Target User
+The primary target users are **Rangsit University students** who need academic assistance and **student tutors** who want to offer tutoring services. Students often struggle to find trustworthy tutors through scattered channels such as Facebook groups, Line groups, friends, and senior students, while tutors need a better way to promote their services and connect with learners.
 ### Persona Summary
 - Persona name:
 - User type:
