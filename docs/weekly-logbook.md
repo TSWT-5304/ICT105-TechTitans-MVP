@@ -97,12 +97,41 @@ In Lab 04, the team will define customer segments and create user personas for b
 | Shinn Thant Maung | Prioritized MVP features using the MoSCoW method. | Commit Link |
 | Yan Naing Kyaw | Updated README.md and project documentation. | Commit Link |
 ## 2. Main Decisions
-- Primary target user:
-- Main persona:
-- Most important problem:
-- Must-have requirements:
-- Features included in MVP:
-- Features postponed:
+- **Primary target user:** University students who need academic tutoring support and student tutors who want to provide tutoring services.
+- **Main persona:** Mina, Second-Year ICT Student.
+- **Most important problem:** Students struggle to find trustworthy peer tutors because tutor information is scattered across Facebook groups, Line groups, friends, and  senior students.
+- **Must-have requirements:**
+  - Homepage
+  - Tutor Search
+  - Tutor Profile
+  - Tutor Registration
+  - Tutoring Request Form
+  - Request Status Tracking
+  - Admin Approval System
+  - Admin Dashboard
+  - Tutor Dashboard
+  - Student Dashboard
+- **Features included in MVP:**
+  - Homepage
+  - Tutor Search & Filter
+  - Tutor Listing
+  - Tutor Profile
+  - Tutor Registration
+  - Tutoring Request Form
+  - Confirmation Page
+  - Pending / Approved / Rejected Status
+  - Student Dashboard
+  - Tutor Dashboard
+  - Admin Dashboard
+  - Tutor Approval
+  - Reviews and Ratings
+  - Dashboard Summary (Pie Chart & Line Graph)
+- **Features postponed:**
+  - Real-time In-app Chat
+  - Online Payment
+  - Video Tutoring Sessions
+  - Tutor Video Introduction Upload
+  - AI Tutor Personalized Study Plan
 ## 3. Requirement Changes / Clarifications
 Record any decision that may affect the final prototype.
 ## 4. Problems Encountered
