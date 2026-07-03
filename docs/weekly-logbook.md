@@ -91,7 +91,11 @@ In Lab 04, the team will define customer segments and create user personas for b
 ## 1. Work Completed Today
 | Member Name | Contribution | GitHub Evidence (Commit/Issue/PR Link) |
 |---|---|---|
-| | | |
+| Thae Su Win Thu | Created the user persona based on Lab 03 survey evidence. | Commit Link |
+| Shinn Thant Maung | Wrote the functional and non-functional system requirements. | Commit Link |
+| Thin Thiri Naing| Developed user stories and acceptance criteria. | Commit Link |
+| Shinn Thant Maung | Prioritized MVP features using the MoSCoW method. | Commit Link |
+| Yan Naing Kyaw | Updated README.md and project documentation. | Commit Link |
 ## 2. Main Decisions
 - Primary target user:
 - Main persona:
