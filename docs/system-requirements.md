@@ -9,7 +9,7 @@ These requirements define the minimum prototype functionalities for the **PeerTu
 | **FR-01** | **Clear problem-specific homepage or landing screen** | Homepage must show the **PeerTutor** name, the target user (Rangsit University students), the problem (scattered tutor discovery), and two primary actions: "Find a Tutor" and "Get Started Now". |
 | **FR-02** | **Primary user pathway** | Prototype must show the complete student journey: open homepage → search tutor by name or subject → browse tutor list → view tutor profile → submit request form → receive confirmation → check status → tutoring session completed → leaves a review and rating. |
 | **FR-03** | **User input or data submission feature** | Two forms required: (1) **Tutoring Request Form** — student submits subject, preferred date/time, and a note; (2) **Tutor Registration Form** — containing their educational background, teaching experience, skills, and supporting information. |
-| **FR-04** | **Data storage or record management** | All tutoring requests and tutor registrations must be stored and retrievable. Acceptable: Firebase, Airtable, Google Sheets, or database. |
+| **FR-04** | **Data storage or record management** | All tutoring requests and tutor registrations must be stored and retrievable. Acceptable: Google Forms + Google Sheets, JSON, or Local Storage |
 | **FR-05** | **View records / information list** | (1) Student View: Tutor Listing Page — all approved tutors visible and their request status; (2) Tutor View: incoming student requests, student reviews and ratings; (3) Admin view: tutor applications, user accounts, and platform records. |
 | **FR-06** | **Search, filter, or category function** | Students must be able to search tutors by name or subject and apply filters such as major, price and rating. |
 | **FR-07** | **Detail view for each record** | Students can view tutor profiles and tutoring request details. Tutors can view student requests and booking details. Admins can view all user profiles, tutor applications, user activities, and request statuses. |
@@ -27,16 +27,17 @@ These requirements define the minimum prototype functionalities for the **PeerTu
 
 ## Minimum Technical Requirement
 
-The final prototype must not be only a static idea or presentation. It must be an interactive prototype where users can click, submit, view, search/filter, update, or simulate the main workflow.
+The final prototype must not be only a static idea or presentation. It must be an interactive web application where students can search for tutors, view tutor profiles, register as tutors, submit tutoring requests, and simulate the complete tutoring process.
 
 Acceptable platforms may include:
 
 | Platform Type | Acceptable Prototype Form |
 | --- | --- |
-| Web app | HTML/CSS/JavaScript, PHP/MySQL, React, Laravel, or similar |
-| Mobile app prototype | Figma clickable prototype, Flutter, React Native, MIT App Inventor, or similar |
-| Dashboard system | Power BI, Tableau, Google Looker Studio, Excel dashboard, or web dashboard |
-| Low-code/no-code system | Google Forms + Sheets, Airtable, Notion, Glide, AppSheet, Bubble, or similar |
-| Data-driven prototype | Spreadsheet/database-backed prototype with forms, views, filters, and dashboard |
-| UI/UX prototype | Figma prototype, but it must include realistic user flow, data screens, status screens, and interaction logic |
+| Web app | HTML, CSS, JavaScript |
+| UI/UX Prototype | Figma clickable prototype with tutor search, tutor profiles, tutor registration, tutoring request, and user flow |
+| Backend Simulation | Google Forms + Google Sheets, JSON, or Local Storage |
+| Database | Google Sheets, JSON file, or Local Storage |
+| Version Control | GitHub Repository |
+| Development Environment | Visual Studio Code |
+| Responsive Design | Desktop and mobile web browsers | 
 
