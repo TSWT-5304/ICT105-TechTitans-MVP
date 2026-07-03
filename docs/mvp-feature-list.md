@@ -1,28 +1,48 @@
 # Lab 04 - MVP Feature List
 
 ## MVP Decision Rule
-The MVP includes only the essential features required for students to find tutors and submit tutoring requests while allowing tutors to manage requests. Features that are not essential to demonstrating the core functionality are postponed for future development.
+The MVP includes only the essential features required to validate whether a university-specific tutoring marketplace can help students find qualified peer tutors more easily while allowing student tutors to promote their tutoring services.
 
 ## MoSCoW Prioritization
 
 | Feature ID | Feature Name | Problem Solved | Related User Story | Priority (Must/Should/Could/Won't) | Technical Complexity (1-5) | User Value (1-5) | Evidence Strength (1-5) | Include in Final Prototype? |
 |---|---|---|---|---|---:|---:|---:|---|
-| F01 | User Registration & Login | Allows users to access the platform securely |  | Must | 2 | 5 | 5 | Yes |
-| F02 | Search Tutors | Helps students find tutors quickly | | Must | 3 | 5 | 5 | Yes |
-| F02 | | | | | | | | |
-| F02 | | | | | | | | |
-| F02 | | | | | | | | |
-| F02 | | | | | | | | |
+| F01 | Homepage / Landing Page |  Students do not know where to find tutors | US-01 | Must | 1 | 5 | 5 | Yes |
+| F02 | Tutor Search & Filter | Students spend time searching through multiple platforms | US-02| Must | 3 | 5 | 5 | Yes |
+| F03 | Tutor Profile Page | Students cannot evaluate tutor qualifications and experience | US-03 | Must | 2 | 5 | 5 | Yes |
+| F04 | Tutoring Request Form | Students need a structured way to request tutoring | US-04 | Must | 2 | 5 | 5 | Yes |
+| F05 | | | | | | | | |
+| F06 | | | | | | | | |
+| F05 | | | | | | | | |
+| F06 | | | | | | | | |
+| F05 | | | | | | | | |
+| F06 | | | | | | | | |
 
 ## Must-Have Features
-- Feature 1:
-- Feature 2:
+- Feature 1: Homepage / Landing Page
+- Feature 2: Tutor Search & Filter
+- Feature 3: Tutor Profile Page
+- Feature 4: Tutoring Request Form
+- Feature 5: Confirmation Page
+- Feature 6: Request Status Tracking
+- Feature 7: Tutor Registration & Application
+- Feature 8: Tutor Application Status
+- Feature 9: Tutor Profile Management
+- Feature 10: Admin Dashboard & Tutor Approval
 
 ## Should-Have Features
-- Feature 1:
+- Feature 1: Student Review & Rating
+- Feature 2: Dashboard Analytics (Pie Chart & Line Graph)
 
 ## Could-Have / Future Features
-- Feature 1:
+- Feature 1: Tutor Video Introduction
 
 ## Not in MVP
-Explain which attractive features are intentionally excluded because they are too complex, weakly supported by evidence, or unnecessary for the first prototype.
+The following features are intentionally excluded from the MVP because they require advanced technologies, additional development time, or infrastructure beyond the scope of this semester project:
+
+- Real-time in-app chat
+- Online payment integration
+- AI tutor with personalized study plans
+- Built-in video tutoring sessions
+
+These features may be considered in future versions after validating the core tutoring marketplace concept.
