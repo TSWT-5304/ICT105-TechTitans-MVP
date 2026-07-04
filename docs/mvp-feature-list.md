@@ -15,7 +15,7 @@ The MVP includes only the essential features required to validate whether a univ
 | F06 | Request Status Tracking | Students want to monitor tutoring request progress | US-05 | Must | 2 | 5 | 5 | Yes |
 | F07 | Tutor Registration & Application | Tutors need a way to apply to become tutors | IS-07 | Must | 3 | 5 | 5 | Yes |
 | F08 | Tutor Application Status | Tutors need to know whether their application is pending, approved, or rejected | US-08 | Must | 2 | 4 | 5 | Yes |
-| F09 | Tutor Profile Management | Approved tutors need to publish their tutoring profile | 3 | 5 | 5 | Yes |
+| F09 | Tutor Profile Management | Approved tutors need to publish their tutoring profile | US-09 | Must | 3 | 5 | 5 | Yes |
 | F10 | Admin Dashboard & Tutor Approval | Admin needs to manage tutor applications, requests, and platform data | US-10 | Must | 4 | 5 | 5 | Yes |
 | F11 | Student Review & Rating | Students want trustworthy tutor information | US-05 | Should | 2 | 5 | 5 | Yes |
 | F12 | Dashboard Analytics (Pie Chart & Line Graph) | Admin needs platform summaries and statistics | US-10 | Should | 3 | 4 | 4 | Yes |
