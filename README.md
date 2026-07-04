@@ -121,6 +121,8 @@ The primary target users are **Rangsit University students** who need academic a
 | FR-14 | Responsive design for desktop and mobile devices. | Should | Most respondents currently use mobile applications. |
 | FR-15 | Basic privacy and responsible data handling. | Must | Protect user information and collect only necessary data. |
 | FR-16 | Traceability between requirements, user stories, MVP features, and prototype. | Must | Required for project documentation and evaluation. |
+| NFR-01 |The platform must load key pages (tutor listing, tutor profile) within 3 seconds under normal conditions. | Must |Students need tutors urgently before exams — slow loading would push them back to Facebook and Line. |
+
 ## MVP Feature Scope
 | Feature | Priority | Included in Final Prototype? |
 |---|---|---|
