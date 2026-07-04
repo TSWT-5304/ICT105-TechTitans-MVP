@@ -135,9 +135,12 @@ In Lab 04, the team will define customer segments and create user personas for b
 ## 3. Requirement Changes / Clarifications
 Based on the customer discovery evidence collected in Lab 03, the team refined the system requirements to focus on the most common user problems. The MVP emphasizes tutor discovery, tutor registration, profile visibility, tutoring requests, request tracking, reviews, and admin approval. Advanced features such as online payment, AI recommendations, and real-time chat were postponed because they increase development complexity and were not strongly supported by the collected evidence.
 ## 4. Problems Encountered
-- Technical problem:
-- Team coordination problem:
-- Evidence/requirement problem:
+- **Technical problem:**
+  - Designing the complete workflow for students, tutors, and administrators while keeping the prototype simple enough for the semester.
+- **Team coordination problem:**
+  - Ensuring that all user stories, system requirements, MVP features, and documentation remained consistent and traceable across the project.
+- **Evidence/requirement problem:**
+  - Some desired features (e.g., online payment and AI tutor recommendations) were interesting but were not sufficiently supported by the survey responses, so they were excluded from the MVP.
 ## 5. Next Actions Before Lab 05
 | Task | Owner | Deadline | GitHub Issue |
 |---|---|---|---|
