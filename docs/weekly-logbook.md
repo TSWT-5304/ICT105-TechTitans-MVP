@@ -86,8 +86,8 @@ In Lab 04, the team will define customer segments and create user personas for b
 - Course: ICT105 Fundamental Technology Entrepreneurship
 - Lab: Lab 04 - User Persona, Requirements, and User Stories
 - Group Name: TechTitans
-- Repository Link:
-- Date:
+- Repository Link: https://github.com/TSWT-5304/ICT105-TechTitans-MVP.git
+- Date: 5th July 2026
 ## 1. Work Completed Today
 | Member Name | Contribution | GitHub Evidence (Commit/Issue/PR Link) |
 |---|---|---|
