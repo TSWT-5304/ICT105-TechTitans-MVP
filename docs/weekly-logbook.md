@@ -91,11 +91,10 @@ In Lab 04, the team will define customer segments and create user personas for b
 ## 1. Work Completed Today
 | Member Name | Contribution | GitHub Evidence (Commit/Issue/PR Link) |
 |---|---|---|
-| Thae Su Win Thu | Created the user persona based on Lab 03 survey evidence. | Commit Link |
-| Shinn Thant Maung | Wrote the functional and non-functional system requirements. | Commit Link |
-| Thin Thiri Naing| Developed user stories and acceptance criteria. | Commit Link |
-| Shinn Thant Maung | Prioritized MVP features using the MoSCoW method. | Commit Link |
-| Yan Naing Kyaw | Updated README.md and project documentation. | Commit Link |
+| Thae Su Win Thu | Created the user persona based on Lab 03 survey evidence. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TSWT-5304 |
+| Shinn Thant Maung | Wrote system requirements and prioritized MVP features using the MoSCoW method. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=dain004 |
+| Thin Thiri Naing| Developed user stories and acceptance criteria. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TTRN-68 |
+| Yan Naing Kyaw | Updated README.md and project documentation. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star |
 ## 2. Main Decisions
 - **Primary target user:** University students who need academic tutoring support and student tutors who want to provide tutoring services.
 - **Main persona:** Mina, Second-Year ICT Student.
