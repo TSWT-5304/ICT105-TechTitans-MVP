@@ -44,6 +44,7 @@ Possible technologies:
 | Lab 1 | Lab setup and idea log | Repository, team profile, initial idea log | Completed |
 | Lab 2 | Opportunity scanning and idea evaluation | Problem analysis, NUF scoring matrix, selected IT venture idea, updated README and weekly progress log | Completed |
 | Lab 3 | Customer Problem Discovery | Case-Based Practice + Team Application for MVP/System, updated README and weekly progress log | Completed |
+| Lab 4 | Product definition and MVP planning | User persona, system requirements , user stories with acceptance criteria, MVP feature list (MoSCoW prioritization), use case diagram, user flow diagram, updated README and weekly progress log | Completed |
 ## Current Status
 1. Reviewed the three project ideas from Lab 1 and discussed their strengths and weaknesses.
 2. Identified six IT opportunities and evaluated them using the NUF (New, Useful, Feasible) scoring method.
