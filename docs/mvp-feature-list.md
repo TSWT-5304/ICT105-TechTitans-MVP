@@ -15,15 +15,15 @@ The MVP includes only the essential features required to validate whether a univ
 | F06 | Request Status Tracking | Students want to monitor tutoring request progress | US-05 | Must | 2 | 5 | 5 | Yes |
 | F07 | Tutor Registration & Application | Tutors need a way to apply to become tutors | IS-07 | Must | 3 | 5 | 5 | Yes |
 | F08 | Tutor Application Status | Tutors need to know whether their application is pending, approved, or rejected | US-08 | Must | 2 | 4 | 5 | Yes |
-| F09 | Tutor Profile Management | Approved tutors need to publish their tutoring profile | US-09 | Must | 3 | 5 | 5 | Yes |
-| F10 | | | | | | | | |
-| F11 | | | | | | | | |
-| F12 | | | | | | | | |
-| F13 | | | | | | | | |
-| F14 | | | | | | | | |
-| F15 | | | | | | | | |
-| F16 | | | | | | | | |
-| F17 | | | | | | | | |
+| F09 | Tutor Profile Management | Approved tutors need to publish their tutoring profile | 3 | 5 | 5 | Yes |
+| F10 | Admin Dashboard & Tutor Approval | Admin needs to manage tutor applications, requests, and platform data | US-10 | Must | 4 | 5 | 5 | Yes |
+| F11 | Student Review & Rating | Students want trustworthy tutor information | US-05 | Should | 2 | 5 | 5 | Yes |
+| F12 | Dashboard Analytics (Pie Chart & Line Graph) | Admin needs platform summaries and statistics | US-10 | Should | 3 | 4 | 4 | Yes |
+| F13 | Real-time In-app Chat | Faster communication between students and tutors | FUS-01 | Won't | 5 | 5 | 2 | No |
+| F14 | Online Payment | Convenient payment processing | FUS-02 | Won't | 5 | 4 | 2 | No |
+| F15 | Tutor Video Introduction | Richer tutor profiles | FUS-03 | Could | 4 | 3 | 2 | No |
+| F16 | AI Tutor Study Planner | Personalized learning recommendations | FUS-04 | Won't | 5 | 4 | 1 | No |
+| F17 | Video Tutoring Session | Conduct tutoring sessions inside the platform | FUS-05 | Won't | 5 | 4 | 2 | No |
 
 ## Must-Have Features
 - Feature 1: Homepage / Landing Page
