@@ -122,7 +122,8 @@ The primary target users are **Rangsit University students** who need academic a
 | FR-15 | Basic privacy and responsible data handling. | Must | Protect user information and collect only necessary data. |
 | FR-16 | Traceability between requirements, user stories, MVP features, and prototype. | Must | Required for project documentation and evaluation. |
 | NFR-01 |The platform must load key pages (tutor listing, tutor profile) within 3 seconds under normal conditions. | Must |Students need tutors urgently before exams — slow loading would push them back to Facebook and Line. |
-
+| NFR-02 |A first-time student must be able to find a tutor and submit a request within 3 minutes without any instructions. | Must | PeerTutor must be faster and simpler or students will not switch. |
+| NFR-03 |The platform must be fully usable on a mobile screen without broken layouts or hidden buttons. | Must | Students used mobile-first tools (Line, Facebook, Messenger) to find tutors — PeerTutor must match that same accessibility. |
 ## MVP Feature Scope
 | Feature | Priority | Included in Final Prototype? |
 |---|---|---|
