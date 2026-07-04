@@ -143,4 +143,4 @@ Based on the customer discovery evidence collected in Lab 03, the team refined t
 ## 5. Next Actions Before Lab 05
 | Task | Owner | Deadline | GitHub Issue |
 |---|---|---|---|
-| | | | |
+| No outstanding items — all Lab 04 issues (#1–#6) closed and verified in repo | All members | N/A | Closed: #1 - #6 |
