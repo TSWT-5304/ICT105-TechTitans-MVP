@@ -1,3 +1,5 @@
+ <img width="646" height="1058" alt="User-Flow drawio" src="https://github.com/user-attachments/assets/3380f89e-c74e-4ad3-aa20-b508b54ec997" />
+
 flowchart TD
 
     A[Homepage / Landing Screen] --> B{What does the user want to do?}
@@ -23,6 +25,4 @@ flowchart TD
     R --> S[Manage User]
     S --> T[Monitor Tutor Application]
     T --> U[View SummaryDashboard]
-
-    <img width="646" height="1058" alt="User-Flow drawio" src="https://github.com/user-attachments/assets/3380f89e-c74e-4ad3-aa20-b508b54ec997" />
-
+    
