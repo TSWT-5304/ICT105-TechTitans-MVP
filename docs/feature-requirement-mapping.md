@@ -19,4 +19,4 @@ Use this file to prove that your wireframe and final prototype are not random sc
 
 
 ## Group Case Mapping
-Replace the example above with your own group case. Do not remove requirement traceability.
+All planned wireframes and prototype modules are directly mapped to the functional requirements (FR-01 to FR-16) and user stories created in Lab 04. This traceability ensures that every screen in the PeerTutor prototype addresses validated user needs discovered during customer research and supports the MVP defined for the project. 
