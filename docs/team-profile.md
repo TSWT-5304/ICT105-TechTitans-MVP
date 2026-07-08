@@ -4,17 +4,17 @@ TechTitans
 ## Team Members and Roles
 | Name | Role | Responsibility |
 |---|---|---|
-| Thin Thiri Naing | Product Lead | Define problem, target users, value proposition, make use case diagram and project direction. |
+| Thin Thiri Naing | Product Lead | Define problem, target users, value proposition, flowchart and project direction. |
 | Shinn Thant Maung | Validation Lead | Manage repository, user flow and conduct surveys/interviews. |
-| Thae Su Win Thu | UX/UI Lead + Technical Lead | Design wireframes, flowchart, interface screens, prototype development, and technical feasibility. |
+| Thae Su Win Thu | UX/UI Lead + Technical Lead | Design wireframes, use case diagram, interface screens, prototype development, and technical feasibility. |
 | Yan Naing Kyaw | Documentation Lead + Technical Support |  Maintain README, logbook, reports, prepare final submission documents and support technically. |
 
 ## Team Skills Inventory
 | Member | Technical Skills | Design Skills | Business/Communication Skills |
 |---|---|---|---|
 | Thin Thiri Naing | Basic Programming | Canva | Project Planning |
-| Shinn Thant Maung | HTML, CSS, JavaScript | Basic UI Design | Team coordination |
-| Thae Su Win Thu | Figma, Google Forms | UI/UX Design | Research and Prototype |
+| Shinn Thant Maung | Google Form | Basic UI Design | Team coordination |
+| Thae Su Win Thu | HTML, CSS, JavaScript | UI/UX Design | Research and Prototype |
 | Yan Naing Kyaw | Google Forms, Excel | Documentation Layout | Research and Communication |
 
 ## Team Working Agreement
