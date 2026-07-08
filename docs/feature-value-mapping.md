@@ -15,8 +15,11 @@
 | F-11 | Admin Dashboard (Analytics) | FR-12 | US-13 | (Indirect) students benefit from a well-monitored, improving platform | Gives admin/university visibility into demand, adoption, and bottlenecks | admin-dashboard.html | Should |
 
 ## Reflection
-Which feature creates the strongest user value?
+**Which feature creates the strongest user value?**
+Tutor Search & Filter (F-02) and Tutor Profile (F-03) together create the strongest user value — they directly solve the evidence-backed pain point from Lab 04 (scattered, unverifiable tutor information) by letting students compare tutors in one place before committing.
 
-Which feature creates the strongest business or operational value?
+**Which feature creates the strongest business or operational value?**
+Admin User & Tutor Approval Management (F-10) creates the strongest operational value — tutor vetting is what makes the whole marketplace trustworthy; without it, the platform is no better than an unmoderated Facebook group.
 
-Which required feature is still weak or unclear?
+**Which required feature is still weak or unclear?**
+Review & Rating Page (F-06) is the weakest so far — it depends on tutoring sessions actually being marked "Completed," and since sessions happen off-platform (PeerTutor doesn't host the session itself), how completion is confirmed and reviews are gated needs to be defined more precisely before the prototype build.
