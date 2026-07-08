@@ -2,7 +2,7 @@
 ## Project Title
 PeerTutor – Student-to-Student Tutoring Marketplace
 ## 1. Selected Prototype Platform
-**Frontend-only: HTML/CSS/JavaScript + localStorage**
+**Frontend-only: HTML/CSS/JavaScript + localStorage/JSON **
 ## 2. Architecture Decision
 The team chose a frontend-only architecture using the browser's `localStorage` (with a preloaded JSON dataset for demo data) instead of a real backend/database. This fits the group's current skill level and the one-semester timeline: it avoids server setup, authentication infrastructure, and database administration, while still letting every required user flow (search, submit, track status, approve, review, dashboard) be fully clickable and interactive rather than a static mockup. Because PeerTutor's MVP requirements (FR-01–FR-16) don't require multi-device real-time sync — only that the *demo* clearly show the described behavior — localStorage/JSON is sufficient to prove the concept. If the project continues beyond this semester, this architecture is designed to be replaced by a real database (e.g. Firebase/Supabase) without changing the UI or user flows, since data access is isolated behind simple JS functions (see Section 3).
 ## 3. Main Components
