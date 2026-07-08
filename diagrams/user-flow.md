@@ -1,4 +1,5 @@
 flowchart TD
+
     A[Homepage / Landing Screen] --> B{What does the user want to do?}
     B -->|Find a tutor| C[Student Dashboard]
     C --> D[Search Tutor]
