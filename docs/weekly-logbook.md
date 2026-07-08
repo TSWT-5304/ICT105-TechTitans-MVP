@@ -164,10 +164,10 @@ Product Concept and UI/UX Wireframe
 
 | Member Name | Contribution | Evidence / Commit Link |
 |---|---|---|
-| Thin Thiri Naing | Created `docs/case-study-brief.md` and created `docs/product-concept.md` . Defined the project background, target users, problem statement, solution, value proposition, MVP scope, and out-of-scope features. |  |
-| Shinn Thant Maung | Created 'docs/feature-requirement-mapping.md’, designed `diagrams/user-flow.mmd`, and prepared `data/sample-records.csv` for prototype data. | |
-| Yan Naing Kyaw | Created `docs/screen-inventory-checklist.md`, updated `README.md` and completed the `Weekly Logbook ’ for Lab 05. | |
-| Thae Su Win Thu | Created `docs/wireframe-specification.md` and collaborated with Yann to develop the HTML/CSS wireframe prototype (`prototype/wireframe-html/`). | |
+| Thin Thiri Naing | Created `docs/case-study-brief.md` and created `docs/product-concept.md` . Defined the project background, target users, problem statement, solution, value proposition, MVP scope, and out-of-scope features. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TTRN-68 |
+| Shinn Thant Maung | Created 'docs/feature-requirement-mapping.md’, designed `diagrams/user-flow.mmd`, and prepared `data/sample-records.csv` for prototype data. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=dain004 |
+| Yan Naing Kyaw | Created `docs/screen-inventory-checklist.md`, updated `README.md` and completed the `Weekly Logbook ’ for Lab 05. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star |
+| Thae Su Win Thu | Created `docs/wireframe-specification.md` and collaborated with Yann to develop the HTML/CSS wireframe prototype (`prototype/wireframe-html/`). | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TSWT-5304 |
 
 ## Decisions Made
 
