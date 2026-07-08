@@ -45,7 +45,8 @@ Possible technologies:
 | Lab 2 | Opportunity scanning and idea evaluation | Problem analysis, NUF scoring matrix, selected IT venture idea, updated README and weekly progress log | Completed |
 | Lab 3 | Customer Problem Discovery | Case-Based Practice + Team Application for MVP/System, updated README and weekly progress log | Completed |
 | Lab 4 | Product definition and MVP planning | User persona, system requirements , user stories with acceptance criteria, MVP feature list (MoSCoW prioritization), use case diagram, user flow diagram, updated README and weekly progress log | Completed |
-| Lab 5 | Product Concept and UI/UX Wireframe | Defining the product concept, designing wireframes, and preparing the prototype for implementation. | Completed |
+| Lab 5 | Product Concept and UI/UX Wireframe | Defining the product concept, creating low-fidelity/high-fidelity wireframes, designing user interface structure, and preparing the prototype layout for implementation. Updated README and weekly progress log | Completed |
+| Lab 6 | Business Model Canvas and Technical Architecture | Developed Business Model Canvas, mapped MVP features to user and business value, selected and justified technical architecture, created system architecture diagram, data flow diagram, defined data structure and sample dataset, updated README and weekly progress log | Completed |
 
 ## Current Status
 1. Reviewed the three project ideas from Lab 1 and discussed their strengths and weaknesses.
@@ -176,7 +177,28 @@ All members contributed to this repository through commits, issues, or pull requ
 | Dashboard Analytics | FR-12 | /wireframes/dashboard-analytics.png |
 ### User Flow
 The PeerTutor user flow begins when a user opens the homepage and selects a role (Student, Tutor, or Admin). Students can search for tutors, view tutor profiles, submit tutoring requests, track request status, and leave reviews after completed tutoring sessions. Students who want to become tutors must first submit a tutor application, wait for admin approval, and then create their tutor profile if approved. Tutors manage incoming tutoring requests and view student reviews, while administrators manage users, approve tutor applications, and monitor platform activities through the dashboard.
-**Diagram:** `/diagrams/user-flow.png`
+#### Diagram: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/diagrams/user-flow.md
 ### Team Contribution
 All group members contributed to the same GitHub repository through commits, issue tracking, pull requests, wireframe design, documentation, and prototype development.
 - https://github.com/TSWT-5304/ICT105-TechTitans-MVP/graphs/contributors?from=4%2F4%2F2026
+
+# Lab 06 Update – Business Model Canvas and Technical Architecture
+## Lab 06 Summary
+In Lab 06, our group connected our product concept, requirements, user stories, and wireframes into business logic and technical structure. We developed the Business Model Canvas, mapped MVP features to user and business value, selected the technical architecture, created system diagrams, and defined the data structure for the final prototype.
+
+## Files Added or Updated
+- [Business Model Canvas](docs/business-model-canvas.md)
+- [Feature-Value Mapping](docs/feature-value-mapping.md)
+- [Technical Architecture](docs/technical-architecture.md)
+- [Data Structure](docs/data-structure.md)
+- [System Architecture Diagram](diagrams/system-architecture.png)
+- [Data Flow Diagram](diagrams/data-flow.png)
+- [Weekly Logbook](docs/weekly-logbook.md)
+
+## Technical Direction
+The PeerTutor MVP will use a frontend-based architecture developed with HTML, CSS, and JavaScript. The prototype will use localStorage to store temporary user and system data.
+This technical approach is selected because it is suitable for demonstrating the main functions of the platform within the semester timeline. The MVP does not include a backend server, database, payment gateway, or advanced authentication system because these features are outside the current prototype scope.
+
+## Final Prototype Connection
+The Lab 06 outputs provide the foundation for developing the final PeerTutor prototype. The Business Model Canvas defines the project value and target users, while Feature-Value Mapping ensures that each MVP feature solves user problems.
+The Technical Architecture, System Architecture Diagram, Data Flow Diagram, and Data Structure guide the implementation process by defining how users interact with the system and how data will be managed during prototype development.
