@@ -144,3 +144,58 @@ Based on the customer discovery evidence collected in Lab 03, the team refined t
 | Task | Owner | Deadline | GitHub Issue |
 |---|---|---|---|
 | No outstanding items — all Lab 04 issues (#1–#6) closed and verified in repo | All members | N/A | Closed: #1 - #6 |
+
+# Weekly Logbook - Lab 05
+## TechTitans
+## PeerTutor — Student-to-Student Tutoring Marketplace
+## Lab 05 Focus
+Product Concept and UI/UX Wireframe
+
+## What We Completed Today
+- [x] Reviewed Lab 04 requirements
+- [x] Defined product concept
+- [x] Mapped features to requirements
+- [x] Created required wireframe screens
+- [x] Created user flow diagram
+- [x] Built clickable prototype draft or screen navigation plan
+- [x] Updated GitHub repository
+
+## Member Contributions
+
+| Member Name | Contribution | Evidence / Commit Link |
+|---|---|---|
+| Thin Thiri Naing | Created `docs/case-study-brief.md` and created `docs/product-concept.md` . Defined the project background, target users, problem statement, solution, value proposition, MVP scope, and out-of-scope features. |  |
+| Shinn Thant Maung | Created 'docs/feature-requirement-mapping.md’, designed `diagrams/user-flow.mmd`, and prepared `data/sample-records.csv` for prototype data. | |
+| Yan Naing Kyaw | Created `docs/screen-inventory-checklist.md`, updated `README.md` and completed the `Weekly Logbook ’ for Lab 05. | |
+| Thae Su Win Thu | Created `docs/wireframe-specification.md` and collaborated with Yann to develop the HTML/CSS wireframe prototype (`prototype/wireframe-html/`). | |
+
+## Decisions Made
+
+| Decision | Reason | Related Requirement |
+|---|---|---|
+| Use a web-based platform for PeerTutor | Easy access for students on both desktop and mobile devices | FR-01, FR-14 |
+| Divide the system into Student, Tutor, and Admin roles | Each user has different responsibilities and workflows | FR-02, FR-09 |
+| Require tutor applications before creating tutor profiles | Ensure tutor quality and platform trustworthiness | FR-03, FR-08, FR-09 |
+| Include tutor search and filtering by subject, rating, and price | Improve tutor discovery based on Lab 03 findings | FR-05, FR-06 |
+| Include request status tracking | Allow users to monitor tutoring requests | FR-08 |
+| Include reviews and ratings after tutoring sessions | Increase trust and help students choose tutors | FR-07, FR-08 |
+| Include separate dashboards for Student, Tutor, and Admin | Provide role-specific information and management features | FR-12 |
+| Postpone real-time chat, online payment, AI study planner, video tutoring, and tutor introduction videos | These features increase development complexity and are outside the MVP scope | MVP (Won't/Could Features) |
+
+## Problems Found
+
+- Determining the most suitable user flow for students, tutors, and administrators.
+- Mapping every wireframe screen to the corresponding functional requirements and user stories.
+- Deciding which features should be included in the MVP and which should be postponed.
+- Maintaining a consistent UI design and navigation across all wireframes.
+
+## Next Steps Before Lab 06
+
+- Complete all UI/UX wireframes in Figma.
+- Review the wireframes with the team and refine the user experience.
+- Verify that every screen maps correctly to the system requirements and user stories.
+- Prepare the clickable prototype for usability testing.
+- Update the GitHub repository with finalized wireframes and documentation.
+- Begin preparing the Business Model Canvas for Lab 06.
+
+
