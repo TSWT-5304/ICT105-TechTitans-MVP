@@ -1,1 +1,5 @@
-
+Customer_Segment_Values,,,,
+segment_id,segment_name,need,value_excepted,possible_channel
+CS01,Student,Find qualified peer tutors quickly,Easy access to trusted tutors through one platform,PeerTutor Website
+CS02,Student Tutor,Promote tutoring services and receive tutoring requests,Greater visibility and easier connection with students,PeerTutor Website
+CS03,Platform Administrator,Review tutor applications and manage users,Safe and organized tutoring platform,PeerTutor Website / Admin Dashboard
