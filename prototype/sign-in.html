@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In – PeerTutor</title>
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link rel="stylesheet" href="../css/responsive-fixes.css" />
+</head>
+
+<body>
+
+    <a class="logo" href="../html/index.html">
+        <img src="../img/Logo.png" class="logo-icon">
+        <p><b style="color: #03045E; margin-left: -20px; font-size: 20px;">Peer</b><b
+                style="color: #0077B6; font-size: 20px;">Tutor</b></p>
+    </a>
+
+    <p class="signin-subtitle">Sign in to your account</p>
+
+    <div class="signin-card">
+
+        <div class="field">
+            <div class="field-header">
+                <label for="email">Email address</label>
+            </div>
+            <div class="input-wrap">
+                <input type="email" id="email" placeholder="you@university.edu" />
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="field-header">
+                <label for="password">Password</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="input-wrap">
+                <input type="password" id="password" value="••••••••" />
+                <button class="toggle-password" onclick="togglePassword()" aria-label="Toggle password visibility">
+                    <i class="ti ti-eye"></i>
+                </button>
+            </div>
+        </div>
+
+        <button class="btn-signin-submit" onclick="window.location.href='stu-dashboard.html'">Sign in</button>
+
+        <div class="divider"><span>OR</span></div>
+
+        <button class="btn-demo" onclick="fillDemo()">Fill demo credentials</button>
+
+        <p class="signin-footer">
+            Don't have an account? <a href="signup.html">Sign up free</a>
+        </p>
+
+    </div>
+
+    <script>
+        function togglePassword() {
+            const input = document.getElementById('password');
+            const icon = document.querySelector('.toggle-password .ti');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.className = 'ti ti-eye-off';
+            } else {
+                input.type = 'password';
+                icon.className = 'ti ti-eye';
+            }
+        }
+
+        function fillDemo() {
+            document.getElementById('email').value = 'demo@university.edu';
+            document.getElementById('password').value = 'demo1234';
+        }
+    </script>
+
+    <script src="../js/mobile-nav.js"></script>
+</body>
+
+</html>

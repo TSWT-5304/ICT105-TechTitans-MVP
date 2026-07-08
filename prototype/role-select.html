@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerTutor – Select Your Role</title>
+    <link rel="stylesheet" href="../css/role-select.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link rel="stylesheet" href="../css/responsive-fixes.css" />
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <a class="logo" href="../html/index.html">
+        <img src="../img/Logo.png" class="logo-icon">
+        <p><b style="color: #03045E; margin-left: -20px;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+    </a>
+
+    <p class="page-subtitle">Who are you? Select your role to get started.</p>
+
+    <!-- Role cards -->
+    <div class="roles-grid">
+
+        <div class="role-card" id="role-student" onclick="selectRole('student', 'Student')">
+            <div class="role-check"><i class="ti ti-check"></i></div>
+            <div class="role-icon"><i class="ti ti-school"></i></div>
+            <p class="role-name">Student</p>
+            <p class="role-desc">Find peer tutors and book sessions for your courses</p>
+        </div>
+
+        <div class="role-card" id="role-tutor" onclick="selectRole('tutor', 'Tutor')">
+            <div class="role-check"><i class="ti ti-check"></i></div>
+            <div class="role-icon"><i class="ti ti-chalkboard"></i></div>
+            <p class="role-name">Tutor</p>
+            <p class="role-desc">Share your knowledge and earn money helping others</p>
+        </div>
+
+        <div class="role-card" id="role-admin" onclick="selectRole('admin', 'Admin')">
+            <div class="role-check"><i class="ti ti-check"></i></div>
+            <div class="role-icon"><i class="ti ti-shield-check"></i></div>
+            <p class="role-name">Admin</p>
+            <p class="role-desc">Manage the platform, users, and session activity</p>
+        </div>
+
+    </div>
+
+    <!-- Auth buttons — appear after role selection -->
+    <div class="auth-section" id="auth-section">
+        <div class="auth-role-label">Continuing as a <span id="role-label-text">Student</span></div>
+
+        <button class="btn-signin-role" id="btn-signin" href="sign-in.html">
+            <i class="ti ti-login" style="margin-right:6px;"></i> Sign in
+        </button>
+
+        <div class="divider"><span>OR</span></div>
+
+        <button class="btn-signup-role" id="btn-signup">
+            <i class="ti ti-user-plus" style="margin-right:6px;"></i> Create an account
+        </button>
+
+        <a class="guest-link" href="index.html">Continue as guest →</a>
+    </div>
+
+    <script>
+        let selectedRole = null;
+
+        function selectRole(role, label) {
+            // Deselect all
+            document.querySelectorAll('.role-card').forEach(c => c.classList.remove('selected'));
+            // Select clicked
+            document.getElementById('role-' + role).classList.add('selected');
+            selectedRole = role;
+
+            // Update label
+            document.getElementById('role-label-text').textContent = label;
+
+            // Show auth buttons
+            const auth = document.getElementById('auth-section');
+            auth.classList.remove('visible');
+            void auth.offsetWidth; // restart animation
+            auth.classList.add('visible');
+
+            // Wire up buttons based on role
+            document.getElementById('btn-signin').onclick = () => {
+                // Pass role as URL param
+                window.location.href = 'signin.html?role=' + role;
+            };
+            document.getElementById('btn-signup').onclick = () => {
+                window.location.href = 'signup.html?role=' + role;
+            };
+        }
+    </script>
+</body>
+
+</html>

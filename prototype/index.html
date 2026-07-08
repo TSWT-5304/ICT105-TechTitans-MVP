@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>PeerTutor</title>
+</head>
+
+<body>
+    <div class="page">
+        <!--Nav Bar-->
+        <nav class="dash-nav">
+            <a class="logo" href="../html/index.html">
+                <img src="../img/Logo.png" class="logo-icon">
+                <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+            </a>
+            <div class="dash-nav-links">
+                <a href="../html/index.html" class="active">Home</a>
+                <a href="../html/about-us.html">About Us</a>
+                <a href="../html/browse-tutors.html">Browse a Tutor</a>
+                <a href="../html/contact-us.html">Contact Us</a>
+            </div>
+            <div class="nav-actions">
+                <a href="../html/role-select.html" class="btn-signin">Sign in</a>
+                <a href="../html/role-select.html" class="btn-signup">Sign up</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Learn from Top<br>Students at Your<br>University</h1>
+                <p>Connect with peer tutors who have aced the classes you're taking. Affordable, flexible, and
+                    effective.</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="window.location.href='browse-tutors.html'">Find a
+                        Tutor</button>
+                    <button class="btn-secondary"><a href="../html/role-select.html">Get Started Now</a></button>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <i class="ti ti-circle-check"></i>
+                        500+ Tutors
+                    </div>
+                    <div class="stat">
+                        <i class="ti ti-circle-check"></i>
+                        10,000+ Sessions
+                    </div>
+                    <div class="stat">
+                        <i class="ti ti-circle-check"></i>
+                        4.8★ Average
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <!-- Replace with your actual image: <img src="students.jpg" alt="Students" /> -->
+                <img src="../img/P1.png" alt="">
+            </div>
+        </section>
+
+        <!--How it works-->
+        <section class="how-it-works">
+            <div class="how-header">
+                <h2>How PeerTutor Works</h2>
+                <p>Get started in three simple steps</p>
+            </div>
+            <div class="steps-grid">
+
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="ti ti-search"></i>
+                    </div>
+                    <h3>1. Find Your Tutor</h3>
+                    <p>Browse hundreds of verified student tutors by subject, university, and availability</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="ti ti-calendar"></i>
+                    </div>
+                    <h3>2. Book a Session</h3>
+                    <p>Choose a time that works for you and book instantly. All sessions are online via video call</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="ti ti-trophy"></i>
+                    </div>
+                    <h3>3. Ace Your Class</h3>
+                    <p>Learn from students who've succeeded in your exact courses and improve your grades</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Top Tutors-->
+        <section class="top-tutors">
+            <div class="tutors-header">
+                <h2>Top-Rated Tutors</h2>
+                <p>Meet some of our highest-rated peer tutors</p>
+            </div>
+
+            <div class="tutors-grid">
+
+                <div class="tutor-card">
+                    <div class="tutor-info">
+                        <img src="../img/T4.jpg" style="width: 95px; height: 100px; border-radius: 50%;">
+                        <div>
+                            <h3>Sarah Chen</h3>
+                            <p class="tutor-meta">ICT • Senior</p>
+                            <p class="tutor-rating"><span class="star">★</span> 4.9 (50 reviews)</p>
+                        </div>
+                    </div>
+                    <p class="subjects-label">Subjects</p>
+                    <div class="tags">
+                        <span class="tag">Programming Fundamentals</span>
+                        <span class="tag">Web Development</span>
+                        <span class="tag">Database Systems</span>
+                    </div>
+                    <div class="tutor-footer">
+                        <p class="price"><strong>฿150</strong><span>/hr</span></p>
+                        <button class="btn-profile"><a href="../html/tutor-profile.html">View Profile</a></button>
+                    </div>
+                </div>
+
+                <div class="tutor-card">
+                    <div class="tutor-info">
+                        <img src="../img/T2.jpg" style="width: 100px; height: 100px; border-radius: 50%;">
+                        <div>
+                            <h3>Sarah Chen</h3>
+                            <p class="tutor-meta">CS • Senior</p>
+                            <p class="tutor-rating"><span class="star">★</span> 4.8 (54 reviews)</p>
+                        </div>
+                    </div>
+                    <p class="subjects-label">Subjects</p>
+                    <div class="tags">
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Object-Oriented Programming</span>
+                    </div>
+                    <div class="tutor-footer">
+                        <p class="price"><strong>฿120</strong><span>/hr</span></p>
+                        <button class="btn-profile"><a href="../html/tutor-profile.html">View Profile</a></button>
+                    </div>
+                </div>
+
+                <div class="tutor-card">
+                    <div class="tutor-info">
+                        <img src="../img/T3.jpg" style="width: 100px; height: 100px; border-radius: 50%;">
+                        <div>
+                            <h3>Sarah Chen</h3>IB • Senior</p>
+                            <p class="tutor-rating"><span class="star">★</span> 4.9 (61 reviews)</p>
+                        </div>
+                    </div>
+                    <p class="subjects-label">Subjects</p>
+                    <div class="tags">
+                        <span class="tag">International Trade</span>
+                        <span class="tag">Marketing</span>
+                        <span class="tag">Business Management</span>
+                    </div>
+                    <div class="tutor-footer">
+                        <p class="price"><strong>฿110</strong><span>/hr</span></p>
+                        <button class="btn-profile"><a href="../html/tutor-profile.html">View Profile</a></button>
+                    </div>
+                </div>
+
+                <div class="tutor-card">
+                    <div class="tutor-info">
+                        <img src="../img/T1.jpg" style="width: 95px; height: 100px; border-radius: 50%;">
+                        <div>
+                            <h3>Sarah Chen</h3>
+                            <p class="tutor-meta">Civil • Senior</p>
+                            <p class="tutor-rating"><span class="star">★</span> 4.7 (32 reviews)</p>
+                        </div>
+                    </div>
+                    <p class="subjects-label">Subjects</p>
+                    <div class="tags">
+                        <span class="tag">Structural Analysis</span>
+                        <span class="tag">Engineering Mathematics</span>
+                        <span class="tag">Construction Materials</span>
+                    </div>
+                    <div class="tutor-footer">
+                        <p class="price"><strong>฿250</strong><span>/hr</span></p>
+                        <button class="btn-profile"><a href="../html/tutor-profile.html">View Profile</a></button>
+                    </div>
+                </div>
+
+                <div class="tutor-card">
+                    <div class="tutor-info">
+                        <img src="../img/T5.jpg" style="width: 100px; height: 100px; border-radius: 50%;">
+                        <div>
+                            <h3>Sarah Chen</h3>
+                            <p class="tutor-meta">BMS • Senior</p>
+                            <p class="tutor-rating"><span class="star">★</span> 4.9 (87 reviews)</p>
+                        </div>
+                    </div>
+                    <p class="subjects-label">Subjects</p>
+                    <div class="tags">
+                        <span class="tag">Cell Biology</span>
+                        <span class="tag">Human Anatomy</span>
+                        <span class="tag">Genetics</span>
+                    </div>
+                    <div class="tutor-footer">
+                        <p class="price"><strong>฿200</strong><span>/hr</span></p>
+                        <button class="btn-profile"><a href="../html/tutor-profile.html">View Profile</a></button>
+                    </div>
+                </div>
+
+                <div class="tutor-card">
+                    <div class="tutor-info">
+                        <img src="../img/T6.jpg" style="width: 100px; height: 100px; border-radius: 50%;">
+                        <div>
+                            <h3>Sarah Chen</h3>
+                            <p class="tutor-meta">DIT • Senior</p>
+                            <p class="tutor-rating"><span class="star">★</span> 4.9 (58 reviews)</p>
+                        </div>
+                    </div>
+                    <p class="subjects-label">Subjects</p>
+                    <div class="tags">
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">Mobile App Design</span>
+                        <span class="tag">Digital Product Development</span>
+                    </div>
+                    <div class="tutor-footer">
+                        <p class="price"><strong>฿180</strong><span>/hr</span></p>
+                        <button class="btn-profile"><a href="../html/tutor-profile.html">View Profile</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <button class="btn-view-all">View All Tutors</button>
+            </div>
+        </section>
+
+        <!--Top Subjects-->
+        <section class="popular-subjects">
+            <div class="subjects-header">
+                <h2>Popular Majors</h2>
+                <p>Find tutors for any major</p>
+            </div>
+
+            <div class="subjects-grid">
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>ICT</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Computer Science</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>International Business</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Civil Engineering</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Biomedical Science</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Interior Design</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Biomedical Engineering</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Communication Art</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Digital Innovation Technology</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Tourism & Hospitality</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>International Relationship</span>
+                </div>
+                <div class="subject-card">
+                    <i class="ti ti-book-2"></i>
+                    <span>Product Design</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Why Choose PeerTutor?-->
+        <section class="why-choose">
+            <h2>Why Choose PeerTutor?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon"><i class="ti ti-currency-dollar"></i></div>
+                    <h3>Affordable Rates</h3>
+                    <p>Save 50-70% compared to professional tutoring services</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="ti ti-users"></i></div>
+                    <h3>Peer Connection</h3>
+                    <p>Learn from students who recently took your exact courses</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="ti ti-clock"></i></div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Book sessions that fit your schedule, even last minute</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="ti ti-shield"></i></div>
+                    <h3>Verified Students</h3>
+                    <p>All tutors are verified university students with proven track records</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Banner-->
+        <section class="cta-banner">
+            <h2>Ready to Improve Your Grades?</h2>
+            <p>Join thousands of students learning from their peers</p>
+            <div class="cta-banner-buttons">
+                <button class="btn-cta-primary"><a href="../html/browse-tutors.html">Find a Tutor Now</a></button>
+                <button class="btn-cta-secondary"><a href="#">Earn Money Tutoring</a></button>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a class="logo footer-logo" href="index.html">
+                        <img src="../img/Logo.png" class="logo-icon" alt="PeerTutor logo">
+                        <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+                    </a>
+                    <div class="footer-socials" aria-label="Social links">
+                        <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>CONTACT US</h4>
+                    <p>hello@peertutor.co</p>
+                    <p>Rangsit University, Pathum Thani<br>PeerTutor Learning Support</p>
+                    <p>+66 82 328 5847</p>
+                </div>
+
+                <div class="footer-subscribe">
+                    <h4>SUBSCRIBE</h4>
+                    <p>Enter your email to get notified about our new tutoring sessions.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Email" aria-label="Email">
+                        <button type="submit" aria-label="Subscribe"><i class="ti ti-mail"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 PeerTutor. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/base.js"></script>
+
+</body>
+
+</html>
