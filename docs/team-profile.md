@@ -2,12 +2,12 @@
 ## Team Name
 TechTitans
 ## Team Members and Roles
-| Student ID | Name | Role | Main Responsibility |
-|---|---|---|---|
-| 6806738 | Thin Thiri Naing | Product Lead | Define problem, target users, value proposition, and project direction. |
-| 6805942 | Shinn Thant Maung | Technical Lead | Manage repository, prototype development, and technical feasibility. |
-| 6806690 | Thae Su Win Thu | UX/UI Lead + Validation Lead | Design wireframes, user flow, interface screens and conduct surveys/interviews. |
-| 6804826 | Yan Naing Kyaw | Documentation Lead |  Maintain README, logbook, reports, and prepare final submission documents. |
+| Name | Role | Responsibility |
+|---|---|---|
+| Thin Thiri Naing | Product Lead | Define problem, target users, value proposition, make use case diagram and project direction. |
+| Shinn Thant Maung | Validation Lead | Manage repository, user flow and conduct surveys/interviews. |
+| Thae Su Win Thu | UX/UI Lead + Technical Lead | Design wireframes, flowchart, interface screens, prototype development, and technical feasibility. |
+| Yan Naing Kyaw | Documentation Lead + Technical Support |  Maintain README, logbook, reports, prepare final submission documents and support technically. |
 
 ## Team Skills Inventory
 | Member | Technical Skills | Design Skills | Business/Communication Skills |
