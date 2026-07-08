@@ -45,6 +45,8 @@ Possible technologies:
 | Lab 2 | Opportunity scanning and idea evaluation | Problem analysis, NUF scoring matrix, selected IT venture idea, updated README and weekly progress log | Completed |
 | Lab 3 | Customer Problem Discovery | Case-Based Practice + Team Application for MVP/System, updated README and weekly progress log | Completed |
 | Lab 4 | Product definition and MVP planning | User persona, system requirements , user stories with acceptance criteria, MVP feature list (MoSCoW prioritization), use case diagram, user flow diagram, updated README and weekly progress log | Completed |
+| Lab 5 | Product Concept and UI/UX Wireframe | Defining the product concept, designing wireframes, and preparing the prototype for implementation. | Completed |
+
 ## Current Status
 1. Reviewed the three project ideas from Lab 1 and discussed their strengths and weaknesses.
 2. Identified six IT opportunities and evaluated them using the NUF (New, Useful, Feasible) scoring method.
@@ -151,4 +153,30 @@ The primary target users are **Rangsit University students** who need academic a
 - Use case diagram: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/diagrams/use-case-diagram.md
 ### GitHub Contribution Evidence
 All members contributed to this repository through commits, issues, or pull requests.
+- https://github.com/TSWT-5304/ICT105-TechTitans-MVP/graphs/contributors?from=4%2F4%2F2026
+
+# README Update - Lab 05
+## Lab 05: Product Concept and UI/UX Wireframe
+### Product Concept
+**PeerTutor – Student-to-Student Tutoring Marketplace** is a web-based platform designed for Rangsit University students who need academic support and students who want to become peer tutors. The platform solves the problem of scattered tutor discovery by providing one centralized place where students can search for qualified tutors, view tutor profiles, submit tutoring requests, track request status, and leave reviews. It also allows student tutors to apply, create tutor profiles after approval, manage tutoring requests, and enables administrators to monitor the platform through an admin dashboard.
+### Requirement-Driven Screens
+| Screen | Related Requirement IDs | Wireframe File |
+|---|---|---|
+| Homepage / Landing Page | FR-01, FR-02 | /wireframes/homepage.png |
+| Tutor Search & Listing | FR-05, FR-06 | /wireframes/tutor-search.png |
+| Tutor Profile | FR-07 | /wireframes/tutor-profile.png |
+| Tutoring Request Form | FR-03, FR-10, FR-11 | /wireframes/request-form.png |
+| Student Dashboard & Request Status | FR-05, FR-08, FR-12 | /wireframes/student-dashboard.png |
+| Review & Rating | FR-07, FR-08 | /wireframes/review-rating.png |
+| Tutor Registration | FR-03, FR-10 | /wireframes/tutor-registration.png |
+| Tutor Dashboard | FR-05, FR-08, FR-12 | /wireframes/tutor-dashboard.png |
+| Tutor Profile Management | FR-05, FR-07 | /wireframes/tutor-profile-management.png |
+| Admin Dashboard | FR-09, FR-12 | /wireframes/admin-dashboard.png |
+| Admin Approval & User Management | FR-09 | /wireframes/admin-approval.png |
+| Dashboard Analytics | FR-12 | /wireframes/dashboard-analytics.png |
+### User Flow
+The PeerTutor user flow begins when a user opens the homepage and selects a role (Student, Tutor, or Admin). Students can search for tutors, view tutor profiles, submit tutoring requests, track request status, and leave reviews after completed tutoring sessions. Students who want to become tutors must first submit a tutor application, wait for admin approval, and then create their tutor profile if approved. Tutors manage incoming tutoring requests and view student reviews, while administrators manage users, approve tutor applications, and monitor platform activities through the dashboard.
+**Diagram:** `/diagrams/user-flow.png`
+### Team Contribution
+All group members contributed to the same GitHub repository through commits, issue tracking, pull requests, wireframe design, documentation, and prototype development.
 - https://github.com/TSWT-5304/ICT105-TechTitans-MVP/graphs/contributors?from=4%2F4%2F2026
