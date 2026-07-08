@@ -49,15 +49,50 @@ PeerTutor – Student-to-Student Tutoring Marketplace
 ## 3. Status Values
 Define the status values used in the prototype.
 
+### Tutoring Request Status
+
 | Status | Meaning | Who Can Update? |
 |---|---|---|
-| Pending | | |
-| In Progress | | |
-| Completed | | |
-| Closed | | |
+| Pending | Request has been submitted but not yet responded to by the tutor. | Student (creates it) |
+| In Progress | Tutor has accepted the request and a session is scheduled. | Tutor |
+| Completed | The tutoring session has taken place. | Tutor |
+| Closed | The request was withdrawn or declined before completion. | Student or Tutor |
+
+### Tutor Application Status
+ 
+| Status | Meaning | Who Can Update? |
+|---|---|---|
+| Pending | Application submitted, awaiting admin review. | System (on submission) |
+| Approved | Admin has approved the application; tutor profile becomes public. | Admin |
+| Rejected | Admin has rejected the application; profile stays private. | Admin |
+ 
+### Account Status
+ 
+| Status | Meaning | Who Can Update? |
+|---|---|---|
+| Active | Account is in good standing and can use the platform normally. | Admin |
+| Suspended | Account has been restricted due to a policy violation or a rejected tutor application. | Admin |
 
 ## 4. Sample Records
-Insert or link to your sample dataset in /data/.
+
+Sample data is stored in `/data/` and follows the structure below (based on `PeerTutor - Student-to-Student Tutoring Marketplace_records`):
+ 
+| record_id | full_name | student_id | user_role | subject | application_date | application_status | account_status | admin_action | priority |
+|---|---|---|---|---|---|---|---|---|---|
+| PT001 | Mina | 68012345 | Student | Information Technology | 2026-06-20 | Not Applicable | Active | User Registered | Medium |
+| PT002 | John | 65012346 | Tutor | Programming | 2026-07-01 | Pending | Active | Waiting for Review | High |
+| PT003 | Sarah | 65012347 | Tutor | Database Systems | 2026-07-01 | Approved | Active | Approved by Admin | High |
+| PT004 | Alex | 67012348 | Student | Computer Science | 2026-06-23 | Not Applicable | Active | User Registered | Medium |
+| PT005 | David | 65012349 | Tutor | Mathematics | 2026-07-02 | Rejected | Suspended | Application Rejected | Low |
+| PT006 | Emily | 68012350 | Student | Business Information Systems | 2026-06-25 | Not Applicable | Active | User Registered | Medium |
+| PT007 | Kevin | 65012351 | Tutor | Web Development | 2026-07-03 | Approved | Active | Approved by Admin | High |
+| PT008 | Jessica | 64012352 | Tutor | Computer Networks | 2026-07-04 | Pending | Active | Waiting for Review | High |
+ 
+Full file reference: `/data/TechTitans_Survey.xlsx` (raw survey evidence used to justify these fields and statuses).
 
 ## 5. Data Privacy Note
-Explain what sensitive data will not be collected and how sample data will be anonymized.
+
+PeerTutor collects only the minimum information needed to operate the prototype (per FR-15): full name, student ID, user role, subject, availability, and contact information for scheduling. No sensitive personal data — such as national ID numbers, financial details, home address, or health information — is collected or stored.
+ 
+All sample data used in the prototype (e.g., PT001–PT008) is fictional or anonymized; no real student names, ID numbers, or contact details are used in the demo dataset. Where authentication is simulated, passwords are never stored in plain text or displayed in the UI, and personal information is only shown to the user it belongs to or to an approved admin performing account/tutor management.
+
