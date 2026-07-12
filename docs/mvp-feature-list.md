@@ -7,49 +7,49 @@ The MVP includes only the essential features required to validate whether a univ
 
 | Feature ID | Feature Name | Problem Solved | Related User Story | Priority (Must/Should/Could/Won't) | Technical Complexity (1-5) | User Value (1-5) | Evidence Strength (1-5) | Include in Final Prototype? |
 |---|---|---|---|---|---:|---:|---:|---|
-| F01 | Homepage / Landing Page |  Students do not know where to find tutors | US-01 | Must | 1 | 5 | 5 | Yes |
-| F02 | Tutor Search & Filter | Students spend time searching through multiple platforms | US-02| Must | 3 | 5 | 5 | Yes |
-| F03 | Tutor Profile Page | Students cannot evaluate tutor qualifications and experience | US-03 | Must | 2 | 5 | 5 | Yes |
-| F04 | Tutoring Request Form | Students need a structured way to request tutoring | US-04 | Must | 2 | 5 | 5 | Yes |
-| F05 | Confirmation Page | Students need confirmation that their request was submitted | US-05 | Must | 1 | 4 | 4 | Yes |
-| F06 | Request Status Tracking | Students want to monitor tutoring request progress | US-05 | Must | 2 | 5 | 5 | Yes |
-| F07 | Tutor Registration & Application | Tutors need a way to apply to become tutors | IS-07 | Must | 3 | 5 | 5 | Yes |
-| F08 | Tutor Application Status | Tutors need to know whether their application is pending, approved, or rejected | US-08 | Must | 2 | 4 | 5 | Yes |
-| F09 | Tutor Profile Management | Approved tutors need to publish their tutoring profile | US-09 | Must | 3 | 5 | 5 | Yes |
-| F10 | Admin Dashboard & Tutor Approval | Admin needs to manage tutor applications, requests, and platform data | US-10 | Must | 4 | 5 | 5 | Yes |
-| F11 | Student Review & Rating | Students want trustworthy tutor information | US-05 | Should | 2 | 5 | 5 | Yes |
-| F12 | Dashboard Analytics (Pie Chart & Line Graph) | Admin needs platform summaries and statistics | US-10 | Should | 3 | 4 | 4 | Yes |
-| F13 | Real-time In-app Chat | Faster communication between students and tutors | FUS-01 | Won't | 5 | 5 | 2 | No |
-| F14 | Online Payment | Convenient payment processing | FUS-02 | Won't | 5 | 4 | 2 | No |
-| F15 | Tutor Video Introduction | Richer tutor profiles | FUS-03 | Could | 4 | 3 | 2 | No |
-| F16 | AI Tutor Study Planner | Personalized learning recommendations | FUS-04 | Won't | 5 | 4 | 1 | No |
-| F17 | Video Tutoring Session | Conduct tutoring sessions inside the platform | FUS-05 | Won't | 5 | 4 | 2 | No |
+| F01 | Homepage / Landing Page | Students do not know where to find tutors. | US-01 | Must | 1 | 5 | 5 | Yes |
+| F02 | Tutor Search & Filter | Students spend time searching across multiple platforms. | US-02 | Must | 3 | 5 | 5 | Yes |
+| F03 | Tutor Profile Page | Students cannot evaluate tutor qualifications before contacting them. | US-03 | Must | 2 | 5 | 5 | Yes |
+| F04 | Tutoring Request Form | Students need a structured way to request tutoring. | US-04 | Must | 2 | 5 | 5 | Yes |
+| F05 | Confirmation & Feedback Messages | Users need confirmation after submitting requests or payments. | US-04 | Must | 1 | 4 | 4 | Yes |
+| F06 | Request Status Tracking | Students and tutors need to monitor tutoring request progress. | US-05, US-11 | Must | 2 | 5 | 5 | Yes |
+| F07 | Online Payment | Students need a secure way to pay before tutoring sessions are confirmed. | US-06 | Must | 4 | 5 | 4 | Yes |
+| F08 | Payment History | Students and tutors need to view payment records and transaction history. | US-07, US-12 | Must | 2 | 4 | 4 | Yes |
+| F09 | Tutor Registration & Application | Student tutors need to apply to become tutors. | US-09 | Must | 3 | 5 | 5 | Yes |
+| F10 | Tutor Profile Management | Approved tutors need to publish and manage their tutor profiles. | US-10 | Must | 3 | 5 | 5 | Yes |
+| F11 | Admin Management | Admin needs to approve tutor applications, manage users, verify payments, and transfer tutor earnings. | US-13, US-14 | Must | 4 | 5 | 5 | Yes |
+| F12 | Student Review & Rating | Students need trustworthy tutor information before choosing a tutor. | US-08 | Should | 2 | 5 | 5 | Yes |
+| F13 | Dashboard Analytics | Admin needs summaries and statistics of platform activity. | US-16 | Should | 3 | 4 | 4 | Yes |
+| F14 | Tutor Video Introduction | Students want richer tutor profiles. | US-18 | Could | 4 | 3 | 2 | No |
+| F15 | Real-time In-app Chat | Faster communication between students and tutors. | US-17 | Won't | 5 | 5 | 2 | No |
+| F16 | AI Tutor Study Planner | Personalized learning recommendations. | US-19 | Won't | 5 | 4 | 1 | No |
+| F17 | Video Tutoring Session | Conduct tutoring sessions inside the platform. | US-20 | Won't | 5 | 4 | 2 | No |
 
 ## Must-Have Features
 - Feature 1: Homepage / Landing Page
 - Feature 2: Tutor Search & Filter
 - Feature 3: Tutor Profile Page
 - Feature 4: Tutoring Request Form
-- Feature 5: Confirmation Page
+- Feature 5: Confirmation & Feedback Messages
 - Feature 6: Request Status Tracking
-- Feature 7: Tutor Registration & Application
-- Feature 8: Tutor Application Status
-- Feature 9: Tutor Profile Management
-- Feature 10: Admin Dashboard & Tutor Approval
+- Feature 7: Online Payment
+- Feature 8: Payment History
+- Feature 9: Tutor Registration & Application
+- Feature 10: Tutor Profile Management
+- Feature 11: Admin Management
 
 ## Should-Have Features
 - Feature 1: Student Review & Rating
 - Feature 2: Dashboard Analytics (Pie Chart & Line Graph)
 
 ## Could-Have / Future Features
-- Feature 1: Tutor Video Introduction
+- Feature 1:Tutor Video Introduction (Could)
 
 ## Not in MVP
 The following features are intentionally excluded from the MVP because they require advanced technologies, additional development time, or infrastructure beyond the scope of this semester project:
 
-- Real-time in-app chat
-- Online payment integration
-- AI tutor with personalized study plans
-- Built-in video tutoring sessions
+- Feature 1: Real-time In-app Chat (Future)
+- Feature 2: AI Tutor with Personalized Study Plans (Future)
+- Feature 3: Video Tutoring Sessions (Future)
 
-These features may be considered in future versions after validating the core tutoring marketplace concept.
+#### These features may be considered in future versions after validating the core tutoring marketplace.
