@@ -81,6 +81,8 @@ We refined our problem understanding by focusing on two user groups: students se
 ### Plan for Lab 04
 In Lab 04, the team will define customer segments and create user personas for both students seeking tutors and student tutors. We will also develop user stories that describe how each user interacts with the PeerTutor platform. These activities will help us better understand user needs and prepare for MVP design and prototyping.
 
+---
+
 # Lab 04 - Weekly Logbook
 ## Group Information
 - Course: ICT105 Fundamental Technology Entrepreneurship
@@ -88,6 +90,9 @@ In Lab 04, the team will define customer segments and create user personas for b
 - Group Name: TechTitans
 - Repository Link: https://github.com/TSWT-5304/ICT105-TechTitans-MVP.git
 - Date: 5th July 2026
+
+---
+
 ## 1. Work Completed Today
 | Member Name | Contribution | GitHub Evidence (Commit/Issue/PR Link) |
 |---|---|---|
@@ -95,55 +100,105 @@ In Lab 04, the team will define customer segments and create user personas for b
 | Shinn Thant Maung | Wrote system requirements and prioritized MVP features using the MoSCoW method. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=dain004 |
 | Thin Thiri Naing| Developed user stories and acceptance criteria. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TTRN-68 |
 | Yan Naing Kyaw | Updated README.md and project documentation. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star |
+
+---
+
 ## 2. Main Decisions
-- **Primary target user:** University students who need academic tutoring support and student tutors who want to provide tutoring services.
-- **Main persona:** Mina, Second-Year ICT Student.
-- **Most important problem:** Students struggle to find trustworthy peer tutors because tutor information is scattered across Facebook groups, Line groups, friends, and  senior students.
-- **Must-have requirements:**
-  - Homepage
-  - Tutor Search
-  - Tutor Profile
-  - Tutor Registration
-  - Tutoring Request Form
-  - Request Status Tracking
-  - Admin Approval System
-  - Admin Dashboard
-  - Tutor Dashboard
-  - Student Dashboard
-- **Features included in MVP:**
-  - Homepage
-  - Tutor Search & Filter
-  - Tutor Listing
-  - Tutor Profile
-  - Tutor Registration
-  - Tutoring Request Form
-  - Confirmation Page
-  - Pending / Approved / Rejected Status
-  - Student Dashboard
-  - Tutor Dashboard
-  - Admin Dashboard
-  - Tutor Approval
-  - Reviews and Ratings
-  - Dashboard Summary (Pie Chart & Line Graph)
-- **Features postponed:**
-  - Real-time In-app Chat
-  - Online Payment
-  - Video Tutoring Sessions
-  - Tutor Video Introduction Upload
-  - AI Tutor Personalized Study Plan
+
+- **Primary Target Users**
+  - Rangsit University students who need academic tutoring support.
+  - Student tutors who want to provide tutoring services.
+  - Platform administrators who manage tutor applications, users, and platform activities.
+
+- **Main Persona**
+  - Mina, Second-Year ICT Student.
+
+- **Most Important Problem**
+  - Students struggle to find trustworthy peer tutors because tutor information is scattered across Facebook groups, LINE groups, friends, and senior students.
+
+### Must-Have Requirements
+
+- Homepage and role-based navigation
+- Tutor Search and Filtering
+- Tutor Profiles
+- Tutor Registration and Application
+- Tutoring Request Form
+- Request Status Tracking
+- Online Payment Interface
+- Payment History
+- Student Dashboard
+- Tutor Dashboard
+- Admin Dashboard
+- Tutor Approval
+- Payment Verification
+- Tutor Earnings Management
+- Input Validation and Confirmation Messages
+
+### Features Included in the MVP
+
+- Homepage / Landing Page
+- Tutor Search & Listing
+- Tutor Profile
+- Tutoring Request Form
+- Student Dashboard & Request Status
+- Online Payment
+- Student Payment History
+- Student Review & Rating
+- Tutor Registration & Application
+- Tutor Profile Management
+- Tutor Dashboard & Request Management
+- Admin Dashboard & User Management
+- Tutor Application Approval
+- Student Payment Verification
+- Tutor Earnings Management
+- Dashboard Analytics
+
+### Features Postponed
+
+- Real-time In-app Chat
+- Tutor Video Introduction
+- AI Tutor Study Planner
+- Video Tutoring Sessions
+
+---
+
 ## 3. Requirement Changes / Clarifications
-Based on the customer discovery evidence collected in Lab 03, the team refined the system requirements to focus on the most common user problems. The MVP emphasizes tutor discovery, tutor registration, profile visibility, tutoring requests, request tracking, reviews, and admin approval. Advanced features such as online payment, AI recommendations, and real-time chat were postponed because they increase development complexity and were not strongly supported by the collected evidence.
+
+Based on the customer discovery findings from Lab 03, the team refined the Functional Requirements and MVP scope to better address the most common user needs. The finalized requirements emphasize tutor discovery, tutor registration, tutor profile management, tutoring requests, request tracking, online payment workflow, payment verification, tutor earnings management, reviews and ratings, and administrator management.
+
+Advanced features such as Real-time In-app Chat, AI Tutor Study Planner, Tutor Video Introduction, and Video Tutoring Sessions were postponed because they require additional technologies and fall outside the scope of the Minimum Viable Product (MVP).
+
+---
+
 ## 4. Problems Encountered
-- **Technical problem:**
-  - Designing the complete workflow for students, tutors, and administrators while keeping the prototype simple enough for the semester.
-- **Team coordination problem:**
-  - Ensuring that all user stories, system requirements, MVP features, and documentation remained consistent and traceable across the project.
-- **Evidence/requirement problem:**
-  - Some desired features (e.g., online payment and AI tutor recommendations) were interesting but were not sufficiently supported by the survey responses, so they were excluded from the MVP.
+
+### Technical Problems
+
+- Designing complete Student, Tutor, and Administrator workflows while keeping the prototype simple enough for the project timeline.
+- Defining Functional Requirements that support all MVP features while remaining achievable for implementation.
+
+### Team Coordination Problems
+
+- Ensuring that User Stories, Functional Requirements, MVP Features, Flowchart, Use Case Diagram, and documentation remained consistent throughout the project.
+- Maintaining traceability between customer discovery findings and system requirements.
+
+### Requirement Challenges
+
+- Balancing user expectations with the limited scope of the MVP.
+- Determining which features should be implemented immediately and which should be postponed for future development.
+
+---
+
 ## 5. Next Actions Before Lab 05
+
 | Task | Owner | Deadline | GitHub Issue |
 |---|---|---|---|
-| No outstanding items — all Lab 04 issues (#1–#6) closed and verified in repo | All members | N/A | Closed: #1 - #6 |
+| Develop the Product Concept and UI/UX Wireframes based on the finalized Functional Requirements and MVP Features. | All Members | Before Lab 05 | New Lab 05 Issues |
+| Create Feature–Requirement Mapping and Screen Inventory Checklist. | All Members | Before Lab 05 | New Lab 05 Issues |
+| Design the User Flow and Prototype Navigation. | All Members | Before Lab 05 | New Lab 05 Issues |
+| Update the GitHub repository with Lab 05 deliverables. | All Members | Before Lab 05 | New Lab 05 Issues |
+
+---
 
 # Weekly Logbook - Lab 05
 ## TechTitans
@@ -160,6 +215,8 @@ Product Concept and UI/UX Wireframe
 - [x] Built clickable prototype draft or screen navigation plan
 - [x] Updated GitHub repository
 
+---
+
 ## Member Contributions
 
 | Member Name | Contribution | Evidence / Commit Link |
@@ -169,33 +226,110 @@ Product Concept and UI/UX Wireframe
 | Yan Naing Kyaw | Created `docs/screen-inventory-checklist.md`, updated `README.md` and completed the `Weekly Logbook ’ for Lab 05. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star |
 | Thae Su Win Thu | Created `docs/wireframe-specification.md` and collaborated with Yann to develop the HTML/CSS wireframe prototype (`prototype/wireframe-html/`). | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TSWT-5304 |
 
-## Decisions Made
+---
 
+## Decisions Made
 | Decision | Reason | Related Requirement |
 |---|---|---|
-| Use a web-based platform for PeerTutor | Easy access for students on both desktop and mobile devices | FR-01, FR-14 |
-| Divide the system into Student, Tutor, and Admin roles | Each user has different responsibilities and workflows | FR-02, FR-09 |
-| Require tutor applications before creating tutor profiles | Ensure tutor quality and platform trustworthiness | FR-03, FR-08, FR-09 |
-| Include tutor search and filtering by subject, rating, and price | Improve tutor discovery based on Lab 03 findings | FR-05, FR-06 |
-| Include request status tracking | Allow users to monitor tutoring requests | FR-08 |
-| Include reviews and ratings after tutoring sessions | Increase trust and help students choose tutors | FR-07, FR-08 |
-| Include separate dashboards for Student, Tutor, and Admin | Provide role-specific information and management features | FR-12 |
-| Postpone real-time chat, online payment, AI study planner, video tutoring, and tutor introduction videos | These features increase development complexity and are outside the MVP scope | MVP (Won't/Could Features) |
+| Develop PeerTutor as a responsive web-based platform. | Ensure accessibility on desktop, tablet, and mobile devices for university students. | FR-01, FR-16, FR-17 |
+| Separate the system into Student, Tutor, and Administrator roles. | Each user group has different responsibilities, permissions, and workflows. | FR-02 |
+| Require user authentication before accessing role-specific functions. | Improve platform security and protect user information. | FR-13 |
+| Require tutor application approval before creating public tutor profiles. | Ensure tutor quality and maintain trust within the platform. | FR-04, FR-11 |
+| Include tutor search and filtering by subject, major, price, and rating. | Help students quickly discover suitable tutors based on their learning needs. | FR-05, FR-06 |
+| Include tutoring request tracking and dashboard summaries. | Allow students and tutors to monitor tutoring progress and request status. | FR-10, FR-15 |
+| Include online payment, payment history, payment verification, and tutor earnings management. | Support the complete tutoring workflow from request approval to payment completion. | FR-07, FR-09, FR-12 |
+| Include reviews and ratings after completed tutoring sessions. | Improve platform transparency and help students evaluate tutor quality. | FR-08 |
+| Use separate dashboards for Student, Tutor, and Administrator. | Provide role-specific information and management functions. | FR-15 |
+| Postpone Tutor Video Introduction, Real-time In-app Chat, AI Tutor Study Planner, and Video Tutoring Sessions. | These features require additional technologies and exceed the scope of the Minimum Viable Product (MVP). | MVP Future Features |
+
+---
 
 ## Problems Found
+- Designing a user flow that supports all three user roles while remaining simple and intuitive.
+- Ensuring every wireframe screen maps correctly to the User Stories, MVP Features, and Functional Requirements established in Lab 04.
+- Organizing authentication, payment, and administrator workflows without making the interface overly complex.
+- Maintaining a consistent user interface, navigation structure, and responsive layout across all screens.
+- Balancing essential MVP functionality with additional supporting screens such as Login, Role Selection, and Contact Us.
 
-- Determining the most suitable user flow for students, tutors, and administrators.
-- Mapping every wireframe screen to the corresponding functional requirements and user stories.
-- Deciding which features should be included in the MVP and which should be postponed.
-- Maintaining a consistent UI design and navigation across all wireframes.
+---
 
 ## Next Steps Before Lab 06
+- Finalize all wireframes in Figma and export them as PNG files.
+- Complete the clickable prototype with interactive navigation between screens.
+- Conduct an internal team review to verify usability and workflow consistency.
+- Validate that every wireframe is fully traceable to the User Stories, MVP Features, and Functional Requirements.
+- Review the prototype for responsive design and accessibility.
+- Update the GitHub repository with the finalized Lab 05 documentation, wireframes, and prototype.
+- Begin preparing the Business Model Canvas, Technical Architecture, Data Structure, and Feature–Value Mapping for Lab 06.
 
-- Complete all UI/UX wireframes in Figma.
-- Review the wireframes with the team and refine the user experience.
-- Verify that every screen maps correctly to the system requirements and user stories.
-- Prepare the clickable prototype for usability testing.
-- Update the GitHub repository with finalized wireframes and documentation.
-- Begin preparing the Business Model Canvas for Lab 06.
+## Progress Summary
+**Lab 05 successfully transformed the requirements gathered in Lab 04 into a structured product concept, detailed UI/UX wireframes, and complete screen navigation for the PeerTutor platform. All planned screens and prototype modules are directly traceable to the project's User Stories, MVP Feature List, and Functional Requirements, providing a solid foundation for implementation and prototype development in the next phase.**
+
+---
+
+# Weekly Logbook - Lab 06
+## TechTitans
+## PeerTutor — Student-to-Student Tutoring Marketplace
+## Lab 06 Focus
+Business Model, Technical Architecture, Data Structure, and Feature–Value Mapping
+
+
+
+## Member Contributions
+| Member Name | Contribution | Evidence / Commit Link |
+|---|---|---|
+| Thin Thiri Naing | Created `docs/business-model-canvas.md` and created `docs/case-study-brief.md`. | [Commit Link](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TTRN-68) |
+| Shinn Thant Maung | Created 'docs/feature-value-mapping.md’ and `docs/data-structure.md`, and prepared `data/TechTitans_records_data-customer_segment_values.csv`. | [Commit Link](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=dain004) |
+| Yan Naing Kyaw | Created `docs/screen-inventory-checklist.md`, updated `README.md` and completed the `Weekly Logbook ’ for Lab 05. | [Commit Link](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star) |
+| Thae Su Win Thu | Created `docs/technical-architecture.md` and collaborated with Yann to develop the HTML/CSS wireframe prototype (`prototype/wireframe-html/`). | [Commit Link](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TSWT-5304) |
+
+## Decisions Made Today
+### 1. Business Model Decision
+The team decided to position **PeerTutor** as a centralized web-based tutoring marketplace for Rangsit University students. The platform connects students who need academic support with verified student tutors, while administrators oversee tutor approval, payment verification, and platform management. The Business Model Canvas was developed based on the customer needs and pain points identified during Lab 03 and the MVP defined in Lab 04.
+
+### 2. Technical Architecture Decision
+The team selected a **frontend web application architecture** using **HTML, CSS, and JavaScript**, developed in **Visual Studio Code**. **Google Sheets** will serve as the prototype data storage through Google Forms for selected data submissions. This architecture is simple, cost-effective, and suitable for demonstrating the complete Student, Tutor, and Administrator workflows within the project scope.
+
+### 3. Data Structure Decision
+The team designed a structured data model consisting of the following main entities:
+- Users
+- Tutor Applications
+- Tutor Profiles
+- Tutoring Requests
+- Payments
+- Tutor Earnings
+- Reviews & Ratings
+- Dashboard Statistics (Derived)
+
+Each entity includes unique identifiers, validation rules, status values, and sample records to support the MVP features and prototype workflows.
+
+### 4. Diagram Decision
+The team agreed to use standard software engineering diagrams to represent the overall system design. The system architecture illustrates the interaction between users, the web application, and Google Sheets, while the Data Flow Diagram (DFD) demonstrates how information flows between Students, Tutors, Administrators, and the data storage layer. These diagrams ensure consistency with the User Stories, Functional Requirements, and MVP features established in previous labs.
+
+## Problems or Risks Found
+- Integrating HTML, CSS, and JavaScript with Google Sheets while maintaining a simple and reliable workflow.
+- Simulating backend functionality such as user authentication, payment verification, and tutor earnings management without a dedicated server.
+- Keeping all project documents consistent across Labs 03–06 because new features and requirements were introduced.
+- Ensuring every feature remains traceable to the User Stories, Functional Requirements, and MVP Feature List.
+
+## Next Actions Before Lab 07
+- Finalize the Technical Architecture and Data Flow Diagrams.
+- Complete the interactive HTML/CSS/JavaScript prototype.
+- Connect selected forms to Google Sheets for prototype data storage.
+- Implement the Student, Tutor, and Administrator interfaces.
+- Test all prototype workflows using realistic sample data.
+- Verify that every MVP feature is implemented or appropriately simulated.
+- Review all documentation for consistency and completeness.
+- Update the GitHub repository with the finalized Lab 06 deliverables and begin implementation tasks for Lab 07.
+
+## Progress Summary
+Lab 06 established the business and technical foundation of the PeerTutor project. The team completed the Business Model Canvas, Technical Architecture, Data Structure, and Feature–Value Mapping while ensuring consistency with the customer discovery findings, User Stories, Functional Requirements, MVP Feature List, and UI/UX design completed in previous labs. These deliverables provide a clear implementation roadmap for developing the final prototype in Lab 07.
+
+---
+
+
+
+
+
 
 
