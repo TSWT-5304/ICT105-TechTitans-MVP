@@ -96,38 +96,52 @@ The customer discovery results support the need for a centralized student-to-stu
 - Basic ratings and reviews
 #### The MVP will help test whether a university-specific tutoring marketplace can improve tutor discovery, communication, and trust between students and tutors.
 
+---
+
 # README Update - Lab 04
 # Lab 04: User Persona, Requirements, and User Stories
 ## Primary Target User
-The primary target users are **Rangsit University students** who need academic assistance and **student tutors** who want to offer tutoring services. Students often struggle to find trustworthy tutors through scattered channels such as Facebook groups, Line groups, friends, and senior students, while tutors need a better way to promote their services and connect with learners.
+The primary target users are **Rangsit University students** who need academic assistance and **student tutors** who want to offer tutoring services. Students often struggle to find trustworthy tutors through scattered channels such as Facebook groups, LINE groups, friends, and senior students, while tutors need a better way to promote their services and connect with learners through one centralized platform.
+
+---
+
 ## Persona Summary
 - **Persona name:** Mina, Second-Year ICT Student
 - **User type:** University student seeking academic tutoring support
-- **Main goal:** Find a qualified peer tutor quickly, compare tutor profiles, and submit tutoring requests through one centralized platform.
-- **Main pain point:** Tutor information is scattered across multiple channels, making it difficult to compare tutor qualifications, availability, and trustworthiness.
-- **Current workaround:** Facebook groups, Line groups, friends, and senior students.
+- **Main goal:** Find qualified peer tutors quickly, compare tutor profiles, submit tutoring requests, complete payments, and receive academic support through one centralized platform.
+- **Main pain point:** Tutor information is scattered across multiple channels, making it difficult to compare tutor qualifications, availability, pricing, and trustworthiness.
+- **Current workaround:** Facebook groups, LINE groups, friends, and senior students.
+  
+---
+
 ## Key Requirements
 | Req ID | Requirement | Priority | Related Evidence |
 |---|---|---|---|
 | FR-01 | Homepage introducing PeerTutor and providing clear entry points to find tutors or register. | Must | Students need one centralized platform instead of scattered channels. |
-| FR-02 | Student tutoring workflow from tutor search to review submission. | Must | Students reported difficulty finding and contacting tutors. |
+| FR-02 | Complete student and tutor workflows from tutor search to tutoring completion. | Must | Students reported difficulty finding and contacting tutors. |
 | FR-03 | Tutor Registration Form and Tutoring Request Form. | Must | Students need structured requests; tutors need a way to register. |
-| FR-04 | Store tutor applications and tutoring requests. | Must | Current communication through chat groups is unorganized. |
-| FR-05 | Display tutor listings, requests, and records for students, tutors, and admins. | Must | Users need better visibility of tutoring information. |
-| FR-06 | Search and filter tutors by subject, name, rating, and price. | Must | Students requested faster tutor discovery. |
-| FR-07 | Detailed tutor profiles showing experience, ratings, subjects, and availability. | Must | Students want more information before choosing tutors. |
-| FR-08 | Request and tutor application status tracking. | Must | Students and tutors want to monitor request progress. |
-| FR-09 | Admin approval and management of tutor applications and users. | Must | Tutors require approval before appearing publicly. |
-| FR-10 | Input validation and error prevention. | Must | Prevent incomplete or invalid submissions. |
-| FR-11 | Confirmation messages after successful submissions. | Must | Users need feedback that actions were completed. |
-| FR-12 | Student, Tutor, and Admin dashboards with summaries and analytics. | Should | Supports platform monitoring and request management. |
-| FR-13 | Consistent interface across all pages. | Must | Improves usability and navigation. |
-| FR-14 | Responsive design for desktop and mobile devices. | Should | Most respondents currently use mobile applications. |
-| FR-15 | Basic privacy and responsible data handling. | Must | Protect user information and collect only necessary data. |
-| FR-16 | Traceability between requirements, user stories, MVP features, and prototype. | Must | Required for project documentation and evaluation. |
-| NFR-01 |The platform must load key pages (tutor listing, tutor profile) within 3 seconds under normal conditions. | Must |Students need tutors urgently before exams — slow loading would push them back to Facebook and Line. |
-| NFR-02 |A first-time student must be able to find a tutor and submit a request within 3 minutes without any instructions. | Must | PeerTutor must be faster and simpler or students will not switch. |
-| NFR-03 |The platform must be fully usable on a mobile screen without broken layouts or hidden buttons. | Must | Students used mobile-first tools (Line, Facebook, Messenger) to find tutors — PeerTutor must match that same accessibility. |
+| FR-04 | Store tutor applications, tutoring requests, payment records, and platform records. | Must | Current communication through chat groups is unorganized. |
+| FR-05 | Display tutor listings, dashboards, requests, and records for students, tutors, and administrators. | Must | Users need better visibility of tutoring information. |
+| FR-06 | Search and filter tutors by subject, name, major, rating, and hourly rate. | Must | Students requested faster tutor discovery. |
+| FR-07 | Online payment after tutoring request approval. | Must | Students need a structured and secure payment process before tutoring sessions. |
+| FR-08 | Display detailed tutor profiles, tutoring requests, and payment information. | Must | Students want more information before choosing tutors. |
+| FR-09 | Payment history for students and tutors. | Must | Users need to monitor payment transactions and tutoring payments. |
+| FR-10 | Request and payment status tracking throughout the tutoring process. | Must | Students and tutors want to monitor request progress. |
+| FR-11 | Administrator management including tutor approval, user management, payment verification, and tutor earnings. | Must | Administrators maintain platform quality and payment processes. |
+| FR-12 | Payment verification, platform commission, and tutor earnings management. | Must | Payment transactions must be verified before tutor payouts. |
+| FR-13 | Input validation, confirmation messages, and error prevention. | Must | Prevent incomplete or invalid submissions. |
+| FR-14 | Confirmation messages after successful requests, applications, and payments. | Must | Users need feedback that actions were completed successfully. |
+| FR-15 | Student, Tutor, and Admin dashboards with summaries and analytics. | Should | Supports platform monitoring and request management. |
+| FR-16 | Consistent interface across all pages. | Must | Improves usability and navigation. |
+| FR-17 | Responsive design for desktop and mobile devices. | Should | Most respondents currently use mobile applications. |
+| FR-18 | Basic privacy and responsible data handling. | Must | Protect user information and collect only necessary data. |
+| FR-19 | Traceability between requirements, user stories, MVP features, and prototype. | Must | Required for project documentation and evaluation. |
+| NFR-01 | The platform should load important pages efficiently under normal conditions. | Must | Students need quick access to tutors before exams. |
+| NFR-02 | A first-time student should be able to complete the tutor search and tutoring request process without instructions. | Must | PeerTutor should be simple and easy to use. |
+| NFR-03 | The platform should provide a responsive user experience on desktop and mobile devices. | Must | Students primarily use mobile devices for communication and learning. |
+
+---
+
 ## MVP Feature Scope
 | Feature | Priority | Included in Final Prototype? |
 |---|---|---|
@@ -135,20 +149,19 @@ The primary target users are **Rangsit University students** who need academic a
 | Tutor Search & Filter | Must | Yes |
 | Tutor Profile Page | Must | Yes |
 | Tutoring Request Form | Must | Yes |
-| Confirmation Page | Must | Yes |
+| Confirmation & Feedback Messages | Must | Yes |
 | Request Status Tracking | Must | Yes |
+| Online Payment | Must | Yes |
+| Payment History | Must | Yes |
 | Tutor Registration & Application | Must | Yes |
-| Tutor Application Status | Must | Yes |
 | Tutor Profile Management | Must | Yes |
-| Admin Dashboard & Tutor Approval | Must | Yes |
+| Admin Management (User Management, Tutor Approval, Payment Verification, Tutor Earnings) | Must | Yes |
 | Student Review & Rating | Should | Yes |
 | Dashboard Analytics (Pie Chart & Line Graph) | Should | Yes |
 | Tutor Video Introduction | Could | No |
 | Real-time In-app Chat | Won't | No |
-| Online Payment | Won't | No |
 | AI Tutor Study Planner | Won't | No |
 | Video Tutoring Sessions | Won't | No |
-
 ### Diagram Links
 - User flow diagram: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/diagrams/user-flow.md
 - Use case diagram: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/diagrams/use-case-diagram.md
@@ -156,49 +169,113 @@ The primary target users are **Rangsit University students** who need academic a
 All members contributed to this repository through commits, issues, or pull requests.
 - https://github.com/TSWT-5304/ICT105-TechTitans-MVP/graphs/contributors?from=4%2F4%2F2026
 
+---
+
 # README Update - Lab 05
-## Lab 05: Product Concept and UI/UX Wireframe
-### Product Concept
-**PeerTutor – Student-to-Student Tutoring Marketplace** is a web-based platform designed for Rangsit University students who need academic support and students who want to become peer tutors. The platform solves the problem of scattered tutor discovery by providing one centralized place where students can search for qualified tutors, view tutor profiles, submit tutoring requests, track request status, and leave reviews. It also allows student tutors to apply, create tutor profiles after approval, manage tutoring requests, and enables administrators to monitor the platform through an admin dashboard.
-### Requirement-Driven Screens
+# Lab 05: Product Concept and UI/UX Wireframe
+## Product Concept
+**PeerTutor – Student-to-Student Tutoring Marketplace** is a web-based platform designed specifically for Rangsit University students seeking academic support and student tutors who wish to offer tutoring services. The platform addresses the problem of scattered tutor discovery by providing a centralized marketplace where students can search for qualified tutors, compare tutor profiles, submit tutoring requests, make secure online payments, track tutoring request status, and leave reviews after completed tutoring sessions.
+
+Student tutors can register, submit tutor applications, create and manage tutor profiles after administrator approval, receive and manage tutoring requests, and monitor their payment status and earnings. Platform administrators are responsible for managing users, approving tutor applications, verifying student payments, managing tutor earnings, and monitoring overall platform activities through an administrative dashboard with summary analytics.
+
+The product concept is directly derived from the user needs, pain points, user stories, MVP feature list, and functional requirements identified during Lab 04.
+
+## Requirement-Driven Screens
+
 | Screen | Related Requirement IDs | Wireframe File |
 |---|---|---|
-| Homepage / Landing Page | FR-01, FR-02 | /wireframes/homepage.png |
-| Tutor Search & Listing | FR-05, FR-06 | /wireframes/tutor-search.png |
-| Tutor Profile | FR-07 | /wireframes/tutor-profile.png |
-| Tutoring Request Form | FR-03, FR-10, FR-11 | /wireframes/request-form.png |
-| Student Dashboard & Request Status | FR-05, FR-08, FR-12 | /wireframes/student-dashboard.png |
-| Review & Rating | FR-07, FR-08 | /wireframes/review-rating.png |
-| Tutor Registration | FR-03, FR-10 | /wireframes/tutor-registration.png |
-| Tutor Dashboard | FR-05, FR-08, FR-12 | /wireframes/tutor-dashboard.png |
-| Tutor Profile Management | FR-05, FR-07 | /wireframes/tutor-profile-management.png |
-| Admin Dashboard | FR-09, FR-12 | /wireframes/admin-dashboard.png |
-| Admin Approval & User Management | FR-09 | /wireframes/admin-approval.png |
-| Dashboard Analytics | FR-12 | /wireframes/dashboard-analytics.png |
-### User Flow
-The PeerTutor user flow begins when a user opens the homepage and selects a role (Student, Tutor, or Admin). Students can search for tutors, view tutor profiles, submit tutoring requests, track request status, and leave reviews after completed tutoring sessions. Students who want to become tutors must first submit a tutor application, wait for admin approval, and then create their tutor profile if approved. Tutors manage incoming tutoring requests and view student reviews, while administrators manage users, approve tutor applications, and monitor platform activities through the dashboard.
+| Homepage / Landing Page | FR-01, FR-02, FR-16, FR-17 | /wireframes/homepage.png |
+| Role Selection | FR-02 | /wireframes/role-selection.png |
+| Login Page | FR-13 | /wireframes/login.png |
+| Student Sign Up | FR-13 | /wireframes/student-signup.png |
+| Tutor Sign Up | FR-13 | /wireframes/tutor-signup.png |
+| Tutor Search & Listing | FR-05, FR-06, FR-08 | /wireframes/tutor-search.png |
+| Tutor Profile | FR-08 | /wireframes/tutor-profile.png |
+| Tutoring Request Form | FR-03, FR-04, FR-13, FR-14 | /wireframes/request-form.png |
+| Student Dashboard & Request Status | FR-05, FR-10, FR-15 | /wireframes/student-dashboard.png |
+| Online Payment | FR-07, FR-10, FR-14 | /wireframes/student-payment.png |
+| Student Payment History | FR-09, FR-15 | /wireframes/student-payment-history.png |
+| Student Review & Rating | FR-08, FR-14 | /wireframes/review-rating.png |
+| Tutor Registration & Application | FR-03, FR-04, FR-13, FR-14 | /wireframes/tutor-registration.png |
+| Tutor Profile Management | FR-05, FR-08 | /wireframes/tutor-profile-management.png |
+| Tutor Dashboard | FR-05, FR-09, FR-10, FR-12, FR-15 | /wireframes/tutor-dashboard.png |
+| Admin Login | FR-13 | /wireframes/admin-login.png |
+| Admin Dashboard & User Management | FR-05, FR-11, FR-15 | /wireframes/admin-dashboard.png |
+| Tutor Application Approval | FR-11, FR-14 | /wireframes/admin-tutor-approval.png |
+| Student Payment Verification | FR-11, FR-12, FR-14 | /wireframes/admin-payment-verification.png |
+| Tutor Earnings Management | FR-09, FR-11, FR-12 | /wireframes/admin-tutor-earnings.png |
+| Dashboard Analytics | FR-15 | /wireframes/dashboard-analytics.png |
+
+## User Flow
+The PeerTutor workflow begins when a user accesses the homepage and selects a role as a Student, Tutor, or Administrator.
+- **Student Workflow**: Students can register or log in to the platform, search and filter tutors by subject, major, rating, or price, view tutor profiles, submit tutoring requests, monitor request status, complete online payments after tutor approval, track payment history, attend tutoring sessions, and submit reviews and ratings after completing a session.
+- **Tutor Workflow**: Student tutors register for an account, submit a tutor application, and wait for administrator approval. Once approved, tutors create and manage their tutor profiles, receive tutoring requests, approve or reject requests, conduct tutoring sessions, monitor payment status and earnings, and view student reviews.
+- **Administrator Workflow**: Administrators log in to the Admin Dashboard to manage student and tutor accounts, review and approve tutor applications, verify student payments, manage tutor earnings and platform commissions, and monitor platform performance through summary dashboards and analytics.
 #### Diagram: https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/diagrams/user-flow.md
+
+## Lab 05 Deliverables
+- Product Concept
+- Feature–Requirement Mapping
+- Wireframe Specification
+- Screen Inventory Checklist
+- User Flow Documentation
+- UI/UX Wireframes
+- Updated Project README
+
+## Traceability
+All wireframes, screens, and prototype modules developed in Lab 05 are directly traceable to the User Persona, User Stories (US-01–US-16), MVP Feature List (F-01–F-16), and Functional Requirements (FR-01–FR-19) established in Lab 04. This traceability ensures that every screen and interaction supports validated user needs and contributes to the project's Minimum Viable Product (MVP).
+
 ### Team Contribution
 All group members contributed to the same GitHub repository through commits, issue tracking, pull requests, wireframe design, documentation, and prototype development.
 - https://github.com/TSWT-5304/ICT105-TechTitans-MVP/graphs/contributors?from=4%2F4%2F2026
 
-# Lab 06 Update – Business Model Canvas and Technical Architecture
+---
+
+# Lab 06 Update - Business Model Canvas and Technical Architecture
+
 ## Lab 06 Summary
-In Lab 06, our group connected our product concept, requirements, user stories, and wireframes into business logic and technical structure. We developed the Business Model Canvas, mapped MVP features to user and business value, selected the technical architecture, created system diagrams, and defined the data structure for the final prototype.
+
+In Lab 06, our group transformed the validated requirements, user stories, MVP features, and UI/UX design developed in previous labs into a complete business and technical foundation for the PeerTutor platform.
+
+The team developed the Business Model Canvas, Feature–Value Mapping, Technical Architecture, Data Structure, System Architecture Diagram, and Data Flow Diagram to demonstrate how the PeerTutor prototype will operate from both business and technical perspectives. These deliverables ensure that every MVP feature is supported by a clear business objective, technical implementation plan, and structured data model before prototype development begins.
+
+---
 
 ## Files Added or Updated
+
 - [Business Model Canvas](docs/business-model-canvas.md)
-- [Feature-Value Mapping](docs/feature-value-mapping.md)
+- [Feature–Value Mapping](docs/feature-value-mapping.md)
 - [Technical Architecture](docs/technical-architecture.md)
 - [Data Structure](docs/data-structure.md)
 - [System Architecture Diagram](diagrams/system-architecture.png)
 - [Data Flow Diagram](diagrams/data-flow.png)
 - [Weekly Logbook](docs/weekly-logbook.md)
 
+---
+
 ## Technical Direction
-The PeerTutor MVP will use a frontend-based architecture developed with HTML, CSS, and JavaScript. The prototype will use localStorage to store temporary user and system data.
-This technical approach is selected because it is suitable for demonstrating the main functions of the platform within the semester timeline. The MVP does not include a backend server, database, payment gateway, or advanced authentication system because these features are outside the current prototype scope.
+
+The PeerTutor prototype will be developed as a **frontend web application** using **HTML5, CSS3, and JavaScript**, with **Visual Studio Code** as the primary development environment.
+
+The prototype will use **Google Sheets** as the data storage solution to record tutor applications, tutoring requests, payment records, reviews, and other prototype data. Google Forms or Google Apps Script may be used to transfer submitted information into Google Sheets.
+
+This architecture was selected because it:
+
+- Matches the team's current technical skills.
+- Supports rapid prototype development.
+- Provides a simple and low-cost data storage solution.
+- Is suitable for demonstrating the complete Student, Tutor, and Administrator workflows.
+- Allows the team to validate the MVP before implementing a full backend system.
+
+---
 
 ## Final Prototype Connection
-The Lab 06 outputs provide the foundation for developing the final PeerTutor prototype. The Business Model Canvas defines the project value and target users, while Feature-Value Mapping ensures that each MVP feature solves user problems.
-The Technical Architecture, System Architecture Diagram, Data Flow Diagram, and Data Structure guide the implementation process by defining how users interact with the system and how data will be managed during prototype development.
+
+The deliverables completed in Lab 06 provide the implementation blueprint for the final PeerTutor prototype.
+
+The Business Model Canvas defines the project's customer segments, value proposition, key activities, and sustainability strategy. The Feature–Value Mapping ensures that every MVP feature contributes meaningful value to both users and platform operations. The Technical Architecture specifies how the prototype will be developed using HTML, CSS, JavaScript, and Google Sheets, while the Data Structure defines the entities, relationships, validation rules, and sample records required for implementation.
+
+The System Architecture Diagram and Data Flow Diagram illustrate how Students, Tutors, Administrators, and Google Sheets interact throughout the platform. Together, these documents establish a clear roadmap for implementing the final prototype in Lab 07 while maintaining full traceability to the User Persona, User Stories, Functional Requirements, MVP Feature List, and Product Concept developed in previous labs.
+
+---
+
