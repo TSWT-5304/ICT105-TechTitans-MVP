@@ -23,7 +23,7 @@
 - Use consistent navigation bars, colors, typography, icons, and buttons across every screen.
 - Ensure every screen supports a functional user task instead of being decorative.
 - Display realistic sample data such as tutor names, subjects, ratings, request statuses, and dashboard statistics.
-- Every wireframe must map directly to the functional requirements (FR-01 to FR-16), user stories, and MVP feature list.
+- Every wireframe must map directly to the functional requirements, user stories, and MVP feature list.
 - Wireframes may be created using Figma, Canva, PowerPoint, HTML/CSS, or another suitable design tool.
 - Maintain a responsive layout suitable for both desktop and mobile devices.
 
