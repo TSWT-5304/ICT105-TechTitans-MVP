@@ -1,34 +1,40 @@
 # Use Case Diagram
-<img width="589" height="823" alt="image" src="https://github.com/user-attachments/assets/731c048f-77e4-4694-8e63-61fdc78ab782" />
+<img width="602" height="797" alt="Use Case Diagram" src="https://github.com/user-attachments/assets/99fd86b5-66ea-4e15-848c-a9db3706b12e" />
 
 # Case Study Scenario
-PeerTutor, a student-to-student tutoring platform that helps students find qualified peer tutors. Students can search tutors, view tutor profiles, submit tutoring requests, and leave reviews after completed sessions. Tutors can apply to become tutors, create tutor profiles after approval, manage student requests, and view reviews. Administrators manage user accounts, review tutor applications, and monitor the platform through an admin dashboard.
+PeerTutor is a web-based tutoring marketplace that connects Rangsit University students with qualified student tutors. Students can search for tutors, submit tutoring requests, make payments, and leave reviews. Tutors can register, create tutor profiles, manage tutoring requests, and receive payments. Administrators manage tutor applications, verify payments, and oversee platform activities.
 
 # Use Case Diagram Description
-## Student
-- Sign up or log in to the system.
-- Search and find tutors.
-- View tutor profiles.
-- Submit a tutoring request.
-- View the request status.
-- Confirm the tutoring session.
-- Leave reviews and ratings after the session.
+## Actors
+- Student
+- Tutor
+- Administrator
 
-## Tutor
-- Sign up or log in to the system.
-- Register as a tutor by submitting a tutor application.
-- Wait for the admin's approval.
-- Create a tutor profile after approval.
-- Manage incoming student tutoring requests.
-- View reviews and ratings from students.
+## Student Use Case Flow
+- Sign Up / Login
+- Find & Search Tutor
+- View Tutor Profile
+- Submit Tutoring Request
+- View Request Status
+- Make Payment
+- Confirm Session
+- Leave Review & Rating
 
-## Admin
-- Manage user accounts.
-- Monitor tutor applications.
-- Approve or reject tutor registrations.
-- View the dashboard and summary statistics.
+## Tutor Use Case Flow
+- Sign Up / Login
+- Become a Tutor
+- Fill Tutor Registration Form
+- Create Tutor Profile
+- Manage Student Requests
+- Approve/Reject Requests
+- View Reviews
+- View Payment Status & Earnings
 
-## Overall Flow
-- Students search for and request tutors.
-- Tutors apply, get approved, and offer tutoring services.
-- Admins oversee the platform by managing users, reviewing tutor applications, and monitoring system activities.
+## Admin Use Case Flow
+- Login
+- Manage Users
+- Monitor Tutor Applications
+- Verify Student Payments
+- Transfer Tutor Earnings
+- View Summary Dashboard
+- Use Case Description
