@@ -1,7 +1,9 @@
 # Context Diagram
-<img width="541" height="507" alt="Context diagram" src="https://github.com/user-attachments/assets/b0820a34-9038-4c08-9f98-d1ba0e2bd459" />
+<img width="550" height="507" alt="TechTitans-Page-3 drawio (1)" src="https://github.com/user-attachments/assets/231dda8f-b880-4324-a1cf-c5e123943dfc" />
+
 
 # Data Flow Diagram Level-1
-<img width="1109" height="1039" alt="DFD Level-1" src="https://github.com/user-attachments/assets/70a13489-ec5d-41e8-b271-5f1f0ccb463a" />
+<img width="1291" height="1209" alt="TechTitans-Page-5 drawio" src="https://github.com/user-attachments/assets/74335ba2-1c60-4236-be93-5b1f117af560" />
+
 
 
