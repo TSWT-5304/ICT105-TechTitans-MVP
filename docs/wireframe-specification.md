@@ -4,7 +4,7 @@
 
 | Wireframe File | Purpose | Minimum Elements to Show | Related Requirements |
 |---|---|---|---|
-| /wireframes/homepage.png | Entry point of the system | PeerTutor logo, project title, navigation bar, problem statement, hero section, "Find a Tutor" and "Get Started" buttons | FR-01, FR-02 |
+| [/wireframes/homepage.png] | Entry point of the system | PeerTutor logo, project title, navigation bar, problem statement, hero section, "Find a Tutor" and "Get Started" buttons | FR-01, FR-02 |
 | /wireframes/tutor-search.png | Search and browse tutors | Search bar, filters (subject, major, price, rating), tutor cards, tutor availability/status | FR-05, FR-06 |
 | /wireframes/tutor-profile.png | Display tutor details | Tutor photo, biography, subjects, experience, availability, price, ratings, reviews, Request Tutor button | FR-08 |
 | /wireframes/request-form.png | Student tutoring request | Subject, preferred date/time, note/message, validation feedback, submit button, confirmation message | FR-03, FR-14 |
