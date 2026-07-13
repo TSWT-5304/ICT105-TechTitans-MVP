@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tutor Profile – PeerTutor</title>
+    <link rel="stylesheet" href="../css/tutor-profile.css">
+    <link rel="stylesheet" href="../css/stu-profile.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="profile-setup-page">
+
+        <!-- Nav -->
+        <nav class="dash-nav">
+            <a class="logo" href="../html/index.html">
+                <img src="../img/Logo.png" class="logo-icon">
+                <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+            </a>
+
+            <div class="dash-nav-links">
+                <a href="../html/stu-dashboard.html">My Dashboard</a>
+                <a href="../html/about-us.html">About Us</a>
+                <a href="../html/browse-tutors.html">Browse a Tutor</a>
+                <a href="../html/contact-us.html">Contact Us</a>
+            </div>
+
+            <div class="dash-nav-right-fixed">
+                <div class="user-menu-wrap" id="user-menu-wrap">
+                    <button class="user-nav-btn" onclick="toggleUserMenu()" id="user-nav-btn">
+                        <div class="una-avatar" id="una-avatar">AL</div>
+                        <span class="una-name">Alex</span>
+                        <i class="ti ti-chevron-down una-chevron" id="una-chevron"></i>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div class="user-dropdown" id="user-dropdown">
+                        <div class="udrop-header">
+                            <div class="udrop-avatar">AL</div>
+                            <div>
+                                <p class="udrop-name">Alex Thompson</p>
+                                <p class="udrop-email">alex@university.edu</p>
+                                <span class="udrop-role">Student</span>
+                            </div>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <div class="udrop-menu">
+                            <a class="udrop-item active" href="tutor-profile.html">
+                                <i class="ti ti-user-circle"></i> My Profile
+                            </a>
+                            <a class="udrop-item" href="stu-dashboard.html">
+                                <i class="ti ti-layout-dashboard"></i> Dashboard
+                            </a>
+                            <a class="udrop-item" href="stu-dashboard.html">
+                                <i class="ti ti-calendar"></i> My Sessions
+                            </a>
+                            <a class="udrop-item" href="payment.html">
+                                <i class="ti ti-credit-card"></i> Payment & Billing
+                            </a>
+                            <a class="udrop-item" href="#">
+                                <i class="ti ti-bell"></i> Notifications
+                                <span class="udrop-badge">3</span>
+                            </a>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <div class="udrop-menu">
+                            <a class="udrop-item" href="#" onclick="switchSection('privacy')">
+                                <i class="ti ti-shield-lock"></i> Privacy Settings
+                            </a>
+                            <a class="udrop-item" href="#" onclick="switchSection('help')">
+                                <i class="ti ti-help-circle"></i> Help & Support
+                            </a>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <button class="udrop-logout" onclick="showModal('logout')">
+                            <i class="ti ti-logout"></i> Sign Out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ── Page header ── -->
+        <div class="psetup-header">
+            <div class="psetup-header-left">
+                <div class="psetup-header-icon"><i class="ti ti-user-circle"></i></div>
+                <div>
+                    <h1>My Tutor Profile</h1>
+                    <p>This is how students will see you. Keep it complete and up to date to get more bookings.</p>
+                </div>
+            </div>
+            <div class="psetup-header-right">
+                <div class="profile-complete-ring">
+                    <svg viewBox="0 0 44 44" class="ring-svg">
+                        <circle cx="22" cy="22" r="18" class="ring-bg" />
+                        <circle cx="22" cy="22" r="18" class="ring-fill" id="ring-fill" stroke-dasharray="113"
+                            stroke-dashoffset="28" />
+                    </svg>
+                    <span class="ring-pct" id="ring-pct">75%</span>
+                </div>
+                <div>
+                    <p class="complete-label">Profile Complete</p>
+                    <p class="complete-hint">Add a bio to reach 100%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Layout: sidebar preview + edit panels ── -->
+        <div class="psetup-body">
+
+            <!-- LEFT: live preview card -->
+            <div class="psetup-preview-col">
+                <div class="preview-sticky">
+                    <p class="preview-label"><i class="ti ti-eye"></i> Live Preview</p>
+                    <p class="preview-hint">This is what students see on your public profile.</p>
+
+                    <div class="preview-card">
+                        <!-- Avatar -->
+                        <div class="preview-avatar-wrap">
+                            <div class="preview-avatar" id="preview-avatar">
+                                <i class="ti ti-user"></i>
+                            </div>
+                            <div class="preview-online-dot"></div>
+                        </div>
+
+                        <h2 class="preview-name" id="preview-name">Jacob</h2>
+                        <p class="preview-uni" id="preview-uni">RSU · ICT · Senior</p>
+
+                        <div class="preview-rating">
+                            <span class="preview-stars">★★★★★</span>
+                            <span>4.9</span>
+                            <span class="preview-reviews">(87 reviews)</span>
+                        </div>
+
+                        <p class="preview-bio" id="preview-bio">
+                            Math major passionate about helping students grasp complex concepts.
+                            I believe in making math intuitive and fun!
+                        </p>
+
+                        <div class="preview-tags" id="preview-tags">
+                            <span class="preview-tag">Web Development</span>
+                            <span class="preview-tag">Database Systems</span>
+                            <span class="preview-tag">Programming Fundamentals</span>
+                        </div>
+
+                        <div class="preview-stats">
+                            <div class="pstat">
+                                <p class="pstat-v">124</p>
+                                <p class="pstat-l">Sessions</p>
+                            </div>
+                            <div class="pstat">
+                                <p class="pstat-v" id="preview-rate">$35</p>
+                                <p class="pstat-l">/ hour</p>
+                            </div>
+                            <div class="pstat">
+                                <p class="pstat-v">~1hr</p>
+                                <p class="pstat-l">Response</p>
+                            </div>
+                        </div>
+
+                        <button class="preview-book-btn">
+                            <i class="ti ti-calendar"></i> Book a Session
+                        </button>
+                    </div>
+
+                    <!-- Visibility toggle -->
+                    <div class="visibility-toggle">
+                        <div class="vis-left">
+                            <i class="ti ti-world" style="color:#0077B6;font-size:18px;"></i>
+                            <div>
+                                <p class="vis-title">Profile Visibility</p>
+                                <p class="vis-sub" id="vis-sub">Visible to students</p>
+                            </div>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="vis-toggle" checked onchange="toggleVisibility()" />
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: edit sections -->
+            <div class="psetup-edit-col">
+
+                <!-- ── Section 1: Photo & Basic Info ── -->
+                <div class="edit-section" id="sec-basic">
+                    <div class="edit-section-header" onclick="toggleSection('basic')">
+                        <div class="esh-left">
+                            <div class="esh-icon" style="background:#dbeafe;color:#2563eb;"><i class="ti ti-user"></i>
+                            </div>
+                            <div>
+                                <h3>Photo & Basic Info</h3>
+                                <p>Your name, photo, and headline</p>
+                            </div>
+                        </div>
+                        <div class="esh-right">
+                            <span class="section-badge complete">Complete</span>
+                            <i class="ti ti-chevron-up esh-chevron" id="chevron-basic"></i>
+                        </div>
+                    </div>
+
+                    <div class="edit-section-body" id="body-basic">
+                        <!-- Photo upload -->
+                        <div class="photo-edit-row">
+                            <div class="photo-edit-preview" id="photo-edit-preview">
+                                <i class="ti ti-user"></i>
+                            </div>
+                            <div class="photo-edit-actions">
+                                <div class="btn-photo-upload">
+                                    <input type="file" accept="image/*" onchange="previewPhoto(this)" />
+                                    <i class="ti ti-camera"></i> Upload Photo
+                                </div>
+                                <p class="photo-hint">JPG or PNG, min 200×200px. Square photo recommended.</p>
+                            </div>
+                        </div>
+
+                        <div class="edit-row-2">
+                            <div class="edit-field">
+                                <label class="edit-label">First Name <span class="req">*</span></label>
+                                <input class="edit-input" type="text" value="Sarah"
+                                    oninput="updatePreview('preview-name', this.value + ' ' + document.getElementById('lname-input').value)" />
+                            </div>
+                            <div class="edit-field">
+                                <label class="edit-label">Last Name <span class="req">*</span></label>
+                                <input class="edit-input" type="text" id="lname-input" value="Chen"
+                                    oninput="updatePreview('preview-name', document.querySelector('[value=Sarah]')?.value + ' ' + this.value)" />
+                            </div>
+                        </div>
+
+                        <div class="edit-row-3">
+                            <div class="edit-field">
+                                <label class="edit-label">University <span class="req">*</span></label>
+                                <input class="edit-input" type="text" value="MIT" oninput="updateUni()"
+                                    id="uni-input" />
+                            </div>
+                            <div class="edit-field">
+                                <label class="edit-label">Major <span class="req">*</span></label>
+                                <input class="edit-input" type="text" value="Computer Science" oninput="updateUni()"
+                                    id="major-input" />
+                            </div>
+                            <div class="edit-field">
+                                <label class="edit-label">Year <span class="req">*</span></label>
+                                <select class="edit-input" id="year-input" onchange="updateUni()">
+                                    <option>Freshman</option>
+                                    <option>Sophomore</option>
+                                    <option>Junior</option>
+                                    <option selected>Senior</option>
+                                    <option>Graduate Student</option>
+                                    <option>PhD Candidate</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="edit-field">
+                            <label class="edit-label">Profile Headline</label>
+                            <input class="edit-input" type="text"
+                                placeholder="e.g. RSU Senior helping students ace Calculus & CS courses"
+                                maxlength="80" />
+                            <p class="edit-hint">Shows under your name in search results. Max 80 characters.</p>
+                        </div>
+
+                        <div class="edit-field">
+                            <label class="edit-label">Languages</label>
+                            <div class="lang-tags" id="lang-tags">
+                                <span class="lang-tag selected" onclick="toggleLang(this)">English</span>
+                                <span class="lang-tag" onclick="toggleLang(this)">Thai</span>
+                                <span class="lang-tag" onclick="toggleLang(this)">Mandarin</span>
+                                <span class="lang-tag" onclick="toggleLang(this)">Spanish</span>
+                                <span class="lang-tag" onclick="toggleLang(this)">French</span>
+                                <span class="lang-tag" onclick="toggleLang(this)">Japanese</span>
+                                <span class="lang-tag" onclick="toggleLang(this)">Korean</span>
+                                <span class="lang-tag" onclick="toggleLang(this)">German</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Section 2: Bio ── -->
+                <div class="edit-section" id="sec-bio">
+                    <div class="edit-section-header" onclick="toggleSection('bio')">
+                        <div class="esh-left">
+                            <div class="esh-icon" style="background:#ede9fe;color:#7c3aed;"><i
+                                    class="ti ti-align-left"></i></div>
+                            <div>
+                                <h3>About Me</h3>
+                                <p>Your teaching story and approach</p>
+                            </div>
+                        </div>
+                        <div class="esh-right">
+                            <span class="section-badge incomplete">Incomplete</span>
+                            <i class="ti ti-chevron-down esh-chevron" id="chevron-bio"></i>
+                        </div>
+                    </div>
+
+                    <div class="edit-section-body" id="body-bio" style="display:none;">
+                        <div class="edit-field">
+                            <label class="edit-label">Bio <span class="req">*</span></label>
+                            <textarea class="edit-input edit-textarea" id="bio-input" maxlength="500"
+                                oninput="updateBio(this)"
+                                placeholder="Introduce yourself. What's your background? Why do you love tutoring? What's your teaching style?">Math major passionate about helping students grasp complex concepts. I believe in making math intuitive and fun!</textarea>
+                            <div class="char-bar">
+                                <span id="bio-chars">91</span>/500 characters
+                                <div class="char-track">
+                                    <div class="char-fill" id="bio-fill" style="width:18%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edit-field">
+                            <label class="edit-label">Teaching Style</label>
+                            <div class="style-options">
+                                <label class="style-opt selected" onclick="selectStyle(this)">
+                                    <input type="radio" name="style" value="step-by-step" hidden />
+                                    <i class="ti ti-stairs"></i> Step-by-step
+                                </label>
+                                <label class="style-opt" onclick="selectStyle(this)">
+                                    <input type="radio" name="style" value="examples" hidden />
+                                    <i class="ti ti-bulb"></i> Example-based
+                                </label>
+                                <label class="style-opt" onclick="selectStyle(this)">
+                                    <input type="radio" name="style" value="socratic" hidden />
+                                    <i class="ti ti-messages"></i> Socratic method
+                                </label>
+                                <label class="style-opt" onclick="selectStyle(this)">
+                                    <input type="radio" name="style" value="practice" hidden />
+                                    <i class="ti ti-pencil"></i> Practice-heavy
+                                </label>
+                                <label class="style-opt" onclick="selectStyle(this)">
+                                    <input type="radio" name="style" value="visual" hidden />
+                                    <i class="ti ti-chart-dots"></i> Visual learner
+                                </label>
+                                <label class="style-opt" onclick="selectStyle(this)">
+                                    <input type="radio" name="style" value="flexible" hidden />
+                                    <i class="ti ti-adjustments"></i> Flexible / adaptive
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="edit-field">
+                            <label class="edit-label">Experience & Qualifications</label>
+                            <textarea class="edit-input edit-textarea" style="min-height:80px;"
+                                placeholder="e.g. TA for MIT 18.01, 2 years private tutoring, Dean's List 2024-2025..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Section 3: Subjects & Rate ── -->
+                <div class="edit-section" id="sec-subjects">
+                    <div class="edit-section-header" onclick="toggleSection('subjects')">
+                        <div class="esh-left">
+                            <div class="esh-icon" style="background:#dcfce7;color:#16a34a;"><i class="ti ti-book-2"></i>
+                            </div>
+                            <div>
+                                <h3>Subjects & Rate</h3>
+                                <p>What you teach and your hourly rate</p>
+                            </div>
+                        </div>
+                        <div class="esh-right">
+                            <span class="section-badge complete">Complete</span>
+                            <i class="ti ti-chevron-down esh-chevron" id="chevron-subjects"></i>
+                        </div>
+                    </div>
+
+                    <div class="edit-section-body" id="body-subjects" style="display:none;">
+                        <div class="edit-field">
+                            <label class="edit-label">Subjects You Teach <span class="req">*</span></label>
+                            <p class="edit-hint" style="margin-bottom:10px;">Select all that apply. These appear as tags
+                                on your profile.</p>
+                            <div class="subjects-picker" id="subjects-picker">
+                                <span class="spick selected" onclick="toggleSubject(this)">Calculus</span>
+                                <span class="spick selected" onclick="toggleSubject(this)">Linear Algebra</span>
+                                <span class="spick selected" onclick="toggleSubject(this)">Statistics</span>
+                                <span class="spick" onclick="toggleSubject(this)">Physics</span>
+                                <span class="spick" onclick="toggleSubject(this)">Chemistry</span>
+                                <span class="spick" onclick="toggleSubject(this)">Python</span>
+                                <span class="spick" onclick="toggleSubject(this)">Data Structures</span>
+                                <span class="spick" onclick="toggleSubject(this)">Algorithms</span>
+                                <span class="spick" onclick="toggleSubject(this)">Machine Learning</span>
+                                <span class="spick" onclick="toggleSubject(this)">Web Development</span>
+                                <span class="spick" onclick="toggleSubject(this)">Discrete Math</span>
+                                <span class="spick" onclick="toggleSubject(this)">Economics</span>
+                                <span class="spick" onclick="toggleSubject(this)">Biology</span>
+                                <span class="spick" onclick="toggleSubject(this)">MCAT Prep</span>
+                                <span class="spick" onclick="toggleSubject(this)">SAT / ACT</span>
+                                <span class="spick" onclick="toggleSubject(this)">English Writing</span>
+                            </div>
+                        </div>
+
+                        <div class="edit-field">
+                            <label class="edit-label">Other Subjects (not listed)</label>
+                            <input class="edit-input" type="text"
+                                placeholder="Separate with commas, e.g. Thermodynamics, Game Theory" />
+                        </div>
+
+                        <!-- Rate slider -->
+                        <div class="edit-field">
+                            <label class="edit-label">Hourly Rate <span class="req">*</span></label>
+                            <div class="rate-big" id="rate-display">$35 <span>/ hour</span></div>
+                            <input type="range" min="20" max="100" value="35" step="1" class="rate-slider"
+                                oninput="updateRate(this.value)" />
+                            <div class="rate-range-labels"><span>$20</span><span>$100</span></div>
+                            <p class="edit-hint">Platform average is $37/hr. Most students prefer $30–$50.</p>
+                        </div>
+
+                        <!-- Session lengths -->
+                        <div class="edit-field">
+                            <label class="edit-label">Session Lengths Offered</label>
+                            <div class="session-lengths">
+                                <label class="slen-opt selected" onclick="toggleSlen(this)">
+                                    <input type="checkbox" hidden checked /> 30 min · $17.50
+                                </label>
+                                <label class="slen-opt selected" onclick="toggleSlen(this)">
+                                    <input type="checkbox" hidden checked /> 60 min · $35
+                                </label>
+                                <label class="slen-opt" onclick="toggleSlen(this)">
+                                    <input type="checkbox" hidden /> 90 min · $52.50
+                                </label>
+                                <label class="slen-opt" onclick="toggleSlen(this)">
+                                    <input type="checkbox" hidden /> 120 min · $70
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Section 4: Availability ── -->
+                <div class="edit-section" id="sec-avail">
+                    <div class="edit-section-header" onclick="toggleSection('avail')">
+                        <div class="esh-left">
+                            <div class="esh-icon" style="background:#fef3c7;color:#d97706;"><i
+                                    class="ti ti-calendar-time"></i></div>
+                            <div>
+                                <h3>Availability</h3>
+                                <p>When students can book you</p>
+                            </div>
+                        </div>
+                        <div class="esh-right">
+                            <span class="section-badge complete">Complete</span>
+                            <i class="ti ti-chevron-down esh-chevron" id="chevron-avail"></i>
+                        </div>
+                    </div>
+
+                    <div class="edit-section-body" id="body-avail" style="display:none;">
+                        <p class="edit-hint" style="margin-bottom:14px;">
+                            Click slots to toggle availability. Students will only see available (blue) slots.
+                        </p>
+                        <div class="avail-table">
+                            <div class="avail-time-col">
+                                <div class="avail-header-cell"></div>
+                                <div class="avail-time-cell">Morning<br><span>8–12 AM</span></div>
+                                <div class="avail-time-cell">Afternoon<br><span>12–5 PM</span></div>
+                                <div class="avail-time-cell">Evening<br><span>5–10 PM</span></div>
+                            </div>
+                            <div class="avail-day-col" id="avail-grid">
+                                <!-- Generated by JS -->
+                            </div>
+                        </div>
+
+                        <div class="edit-field" style="margin-top:20px;">
+                            <label class="edit-label">Response Time Goal</label>
+                            <select class="edit-input" style="max-width:280px;">
+                                <option>Within 30 minutes</option>
+                                <option selected>Within 1 hour</option>
+                                <option>Within 2 hours</option>
+                                <option>Within 24 hours</option>
+                            </select>
+                        </div>
+
+                        <div class="edit-field">
+                            <label class="edit-label">Booking Lead Time</label>
+                            <select class="edit-input" style="max-width:280px;">
+                                <option>No minimum — instant booking</option>
+                                <option selected>At least 2 hours in advance</option>
+                                <option>At least 12 hours in advance</option>
+                                <option>At least 24 hours in advance</option>
+                            </select>
+                            <p class="edit-hint">Minimum time before a session can be booked.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Section 5: Social & Portfolio ── -->
+                <div class="edit-section" id="sec-social">
+                    <div class="edit-section-header" onclick="toggleSection('social')">
+                        <div class="esh-left">
+                            <div class="esh-icon" style="background:#fce7f3;color:#db2777;"><i class="ti ti-link"></i>
+                            </div>
+                            <div>
+                                <h3>Links & Portfolio</h3>
+                                <p>GitHub, LinkedIn, personal site</p>
+                            </div>
+                        </div>
+                        <div class="esh-right">
+                            <span class="section-badge optional">Optional</span>
+                            <i class="ti ti-chevron-down esh-chevron" id="chevron-social"></i>
+                        </div>
+                    </div>
+
+                    <div class="edit-section-body" id="body-social" style="display:none;">
+                        <div class="edit-field">
+                            <label class="edit-label"><i class="ti ti-brand-linkedin" style="color:#0077b5;"></i>
+                                LinkedIn</label>
+                            <input class="edit-input" type="url" placeholder="https://linkedin.com/in/yourname" />
+                        </div>
+                        <div class="edit-field">
+                            <label class="edit-label"><i class="ti ti-brand-github" style="color:#111;"></i>
+                                GitHub</label>
+                            <input class="edit-input" type="url" placeholder="https://github.com/yourname" />
+                        </div>
+                        <div class="edit-field">
+                            <label class="edit-label"><i class="ti ti-world" style="color:#0077B6;"></i> Personal
+                                Website</label>
+                            <input class="edit-input" type="url" placeholder="https://yoursite.com" />
+                        </div>
+
+                        <!-- Portfolio uploads -->
+                        <div class="edit-field">
+                            <label class="edit-label">Portfolio / Work Samples</label>
+                            <div class="portfolio-upload-area" id="portfolio-area">
+                                <input type="file" multiple accept=".pdf,.jpg,.png,.docx"
+                                    onchange="handlePortfolio(this)" />
+                                <i class="ti ti-cloud-upload portfolio-up-icon"></i>
+                                <p class="portfolio-up-title">Drag & drop or click to upload</p>
+                                <p class="portfolio-up-sub">PDF, images — up to 20MB each. Max 5 files.</p>
+                            </div>
+                            <div class="portfolio-files" id="portfolio-files"></div>
+                        </div>
+
+                        <div class="edit-field">
+                            <label class="edit-label">Certifications / Awards</label>
+                            <textarea class="edit-input edit-textarea" style="min-height:72px;"
+                                placeholder="e.g. Dean's List 2024-25, AWS Certified, MIT Excellence in Teaching Award..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Section 6: Settings ── -->
+                <div class="edit-section" id="sec-settings">
+                    <div class="edit-section-header" onclick="toggleSection('settings')">
+                        <div class="esh-left">
+                            <div class="esh-icon" style="background:#f3f4f6;color:#555;"><i class="ti ti-settings"></i>
+                            </div>
+                            <div>
+                                <h3>Notification Settings</h3>
+                                <p>How you want to be notified</p>
+                            </div>
+                        </div>
+                        <div class="esh-right">
+                            <span class="section-badge complete">Complete</span>
+                            <i class="ti ti-chevron-down esh-chevron" id="chevron-settings"></i>
+                        </div>
+                    </div>
+
+                    <div class="edit-section-body" id="body-settings" style="display:none;">
+                        <div class="notif-list">
+                            <div class="notif-row">
+                                <div>
+                                    <p class="notif-title">New session request</p>
+                                    <p class="notif-sub">Get notified when a student sends a booking request</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked />
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <div class="notif-row">
+                                <div>
+                                    <p class="notif-title">Session reminders</p>
+                                    <p class="notif-sub">Receive a reminder 1 hour before each session</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked />
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <div class="notif-row">
+                                <div>
+                                    <p class="notif-title">New review received</p>
+                                    <p class="notif-sub">Notify me when a student leaves a review</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked />
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <div class="notif-row">
+                                <div>
+                                    <p class="notif-title">Payment received</p>
+                                    <p class="notif-sub">Notify me when a session payment is confirmed</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked />
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <div class="notif-row">
+                                <div>
+                                    <p class="notif-title">Marketing updates</p>
+                                    <p class="notif-sub">Platform news, tips to get more bookings</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" />
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Save bar ── -->
+                <div class="save-bar">
+                    <div class="save-bar-left">
+                        <i class="ti ti-device-floppy" style="color:#0077B6;font-size:20px;"></i>
+                        <div>
+                            <p class="save-bar-title">Changes not saved</p>
+                            <p class="save-bar-sub">Last saved: Today at 2:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="save-bar-right">
+                        <button class="btn-preview-public" onclick="window.open('tutor-profile.html','_blank')">
+                            <i class="ti ti-eye"></i> Preview Public Page
+                        </button>
+                        <button class="btn-save-profile" onclick="saveProfile()">
+                            <i class="ti ti-check"></i> Save Changes
+                        </button>
+                    </div>
+                </div>
+
+            </div><!-- end edit col -->
+        </div><!-- end body -->
+
+    </div>
+
+    <script src="../js/base.js"></script>
+
+    <script>
+        (function () {
+            var wrap = document.getElementById('user-menu-wrap');
+            var dropdown = document.getElementById('user-dropdown');
+            var chevron = document.getElementById('una-chevron');
+
+            window.toggleUserMenu = function (e) {
+                if (e) e.stopPropagation();
+                dropdown.classList.toggle('show');
+                if (chevron) chevron.classList.toggle('rotate');
+            };
+
+            document.addEventListener('click', function (e) {
+                if (wrap && !wrap.contains(e.target)) {
+                    dropdown.classList.remove('show');
+                    if (chevron) chevron.classList.remove('rotate');
+                }
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    dropdown.classList.remove('show');
+                    if (chevron) chevron.classList.remove('rotate');
+                }
+            });
+        })();
+    </script>
+
+    <style>
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Standalone fix: guarantees the dropdown is visible when toggled open,
+           independent of whatever show/hide mechanism stu-profile.css expects */
+        #user-dropdown {
+            display: none;
+        }
+
+        #user-dropdown.show {
+            display: block !important;
+        }
+
+        .una-chevron.rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</body>
+
+</html>
