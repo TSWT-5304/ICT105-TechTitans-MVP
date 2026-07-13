@@ -1,77 +1,127 @@
-# Business Model Canvas 
+# Business Model Canvas
 ## Project Title
 **PeerTutor – Student-to-Student Tutoring Marketplace**
+
 ## 1. Customer Segments
-**Primary Customers**
-- Rangsit University students who need academic tutoring.
-- Rangsit University students who want to become peer tutors.
-**Secondary Customers**
-- University administrators (or a platform admin role) who oversee platform safety, account management, and tutor approval.
+### Primary Customers
+- Rangsit University students who need academic tutoring support.
+- Rangsit University students who want to become peer tutors and provide tutoring services.
+
+### Secondary Customers
+- Platform administrators responsible for approving tutor applications, managing user accounts, verifying payments, and monitoring platform activities.
+
+---
+
 ## 2. Value Proposition
-Tutor information on campus is scattered across Facebook groups, Line groups, friends, and seniors, with no way to compare quality or trustworthiness. PeerTutor gives students one centralized, searchable place to find, evaluate, and book verified peer tutors, and gives tutors one place to register, get approved, and manage requests — instead of being contacted ad hoc through chat apps.
+PeerTutor provides a centralized and trustworthy tutoring marketplace for Rangsit University students. Instead of searching through scattered Facebook groups, LINE groups, friends, or senior students, learners can search for tutors, compare tutor qualifications, submit tutoring requests, complete online payments, track tutoring progress, and leave reviews within one platform.
+
+Student tutors benefit from a structured system that allows them to register, apply as tutors, create professional tutor profiles after administrator approval, receive tutoring requests, manage tutoring schedules, and monitor earnings and payment status.
+
+The platform improves tutor discovery, increases trust through verified tutor profiles and reviews, and simplifies the entire tutoring process for students, tutors, and administrators.
+
+---
+
 ## 3. Channels
-Users can access PeerTutor through:
-- The PeerTutor website, accessible via desktop and mobile browsers.
-- QR codes shared during university events and orientation sessions.
-- Student clubs, faculty announcements, and class representatives who help introduce the platform to new students.
-- Word-of-mouth from early adopter tutors and students, forming a referral loop once reviews and ratings exist.
-- Line/Facebook group posts pointing back to the platform during the pilot phase, transitioning users away from scattered channels toward the centralized platform.
+PeerTutor reaches users through:
+- Responsive web application accessible from desktop and mobile devices.
+- University orientation sessions and student activities.
+- QR codes displayed on campus.
+- Faculty announcements and student clubs.
+- Student ambassadors and class representatives.
+- Facebook and LINE groups directing users to the PeerTutor platform.
+- Word-of-mouth recommendations supported by ratings and reviews.
+
+---
+
 ## 4. Customer Relationships
-PeerTutor maintains relationships through:
-- **Self-service:** students search, request, and review without needing staff involvement.
-- **Admin-mediated trust:** tutor applications are reviewed and approved before appearing publicly, building credibility.
-- **Status transparency:** students and tutors always see current request/application status rather than waiting on chat replies.
-- **Community trust signals:** ratings and reviews from past students build ongoing trust between tutors and future students.
+PeerTutor builds long-term relationships through:
+- **Self-service platform** where students independently search, request, pay, and review tutors.
+- **Verified tutor approval process** managed by administrators before tutors become publicly visible.
+- **Transparent status tracking** for tutor applications, tutoring requests, and payments.
+- **Community trust** through tutor ratings and student reviews.
+- **Responsive administrator support** for account management and payment verification.
+
+---
+
 ## 5. Revenue Streams / Sustainability Logic
-PeerTutor is an educational university project, so the MVP does not include direct payment. Its value is operational: it helps students find tutors faster, reduces missed deadlines and academic difficulties, and gives administrators insight into tutoring demand through the dashboard.
-Possible future revenue or sustainability options (post-MVP, not part of current scope) include:
-- University funding or institutional support.
-- A small commission on paid tutoring sessions, once the marketplace is validated.
-- Featured tutor listings (future feature).
-- Premium tutor verification (future feature).
-- Sponsored academic workshops.
-Even without direct revenue, the platform sustains itself through operational value: reduced administrative workload from centralized tutor management, and improved student academic performance and engagement.
+PeerTutor is developed primarily as an educational project. The prototype includes an online payment workflow to demonstrate the complete tutoring process, but it does not process real commercial transactions.
+
+Future sustainability opportunities include:
+- University funding and institutional support.
+- Small platform commissions from tutoring sessions.
+- Premium tutor verification services.
+- Featured tutor advertisements.
+- Sponsored academic workshops and learning events.
+- Partnerships with faculties and student organizations.
+
+The primary value of the MVP is improving access to academic support while reducing the time and effort required to find trustworthy peer tutors.
+
+---
+
 ## 6. Key Resources
 The project requires:
-- Student development team (the four TechTitans members).
-- HTML, CSS, and JavaScript for the prototype.
-- Google Forms and Google Sheets for data submission, storage, and management.
-- GitHub repository for version control and documentation.
-- Figma for UI/UX wireframing and design.
-- Survey and interview data collected during Lab 03 (22 respondents).
-- University testing participants for usability feedback.
-- Laptop and internet connection.
+- TechTitans development team.
+- HTML, CSS, JavaScript, and Bootstrap.
+- Figma for UI/UX design.
+- Google Forms and Google Sheets for prototype data collection and storage.
+- GitHub for version control and project management.
+- Visual Studio Code.
+- Survey and interview findings from Lab 03.
+- User Persona, User Stories, MVP Feature List, and Functional Requirements from Lab 04.
+- Wireframes and prototype documentation from Lab 05.
+- Student participants for usability testing.
+
+---
+
 ## 7. Key Activities
-The team must:
-- Develop the website interface (homepage, search, profiles, forms, dashboards).
-- Integrate Google Forms and Google Sheets for data collection and storage.
-- Build the tutor registration and approval workflow, including verifying tutor information.
-- Develop tutor search and filtering, matching students to tutors by subject, price, and rating.
-- Create the tutoring request system and track requests through their full status lifecycle (Pending, Confirmed, Completed, Cancelled).
-- Manage tutor profiles and keep them up to date after approval.
-- Develop student, tutor, and admin dashboards.
-- Implement review and rating collection after completed sessions.
-- Monitor platform activity through the admin dashboard.
-- Test usability, fix bugs, and maintain documentation and the GitHub repository.
+The development team will:
+- Design and develop the PeerTutor web interface.
+- Implement tutor search and filtering.
+- Develop tutor profile management.
+- Build tutoring requests and request status tracking.
+- Implement online payment simulation and payment history.
+- Develop tutor registration and administrator approval workflows.
+- Build student, tutor, and administrator dashboards.
+- Implement payment verification and tutor earnings management.
+- Collect student reviews and ratings.
+- Produce dashboard analytics.
+- Conduct usability testing and improve the prototype.
+- Maintain project documentation and GitHub repository.
+
+---
+
 ## 8. Key Partners
 Potential partners include:
-- **Rangsit University / Student Affairs Office:** provides legitimacy and helps promote the platform to students.
-- **Faculty members and course instructors:** could recommend qualified tutors for their subjects.
-- **Student council, class representatives, and student clubs:** serve as a distribution channel and help with tutor recruitment.
-- **Existing high-performing students:** willing to become the first tutors, bootstrapping the supply side.
-- **Google Workspace (Forms & Sheets):** supports the data collection and storage backbone of the prototype.
-- **GitHub:** supports version control and collaboration.
-These partners support platform adoption, testing, and long-term sustainability.
+- Rangsit University.
+- Student Affairs Office.
+- Faculties and academic departments.
+- Student clubs and organizations.
+- Student ambassadors and class representatives.
+- High-performing students who become early tutors.
+- Google Workspace (Forms & Sheets).
+- GitHub.
+- Figma.
+- Open-source web development tools.
+These partners support user adoption, testing, promotion, and long-term sustainability.
+
+---
+
 ## 9. Cost Structure
-Potential costs include:
-- Team development time (the primary cost for a student project).
-- Website hosting and a domain name, if deployed beyond a local prototype (future cost).
-- Internet access and development tools.
-- Testing and ongoing maintenance time.
-- Future hosting or server upgrades if the platform expands beyond the MVP.
-Most tools used for the prototype — Google Forms, Google Sheets, GitHub, and Figma — are free educational resources, keeping the current cost structure close to zero beyond team time.
-## Final Note
-This Business Model Canvas directly supports the PeerTutor MVP developed during Lab 04 and Lab 05. The customer segments match the personas identified during customer discovery, and the value proposition addresses the major problems found in Lab 03 — scattered tutor discovery, lack of trust, and limited tutor visibility. The key activities correspond directly to the MVP features: tutor search, tutor profiles, tutoring requests, dashboards, reviews, and admin approval. Google Forms and Google Sheets provide a simple, effective way to collect and manage data for the prototype, while HTML/CSS/JavaScript enable the interactive front end. Together, these elements show how the business model supports the final prototype and offers a practical, low-cost solution for improving peer-to-peer academic support within the university.
+Primary project costs include:
+- Team development time.
+- Internet connectivity.
+- Laptop and development hardware.
+- Prototype testing and maintenance.
+- Website hosting and domain (future deployment).
+- Cloud hosting or database services (future expansion).
 
+The current MVP minimizes development costs by using free educational tools such as GitHub, Figma, Google Forms, Google Sheets, Visual Studio Code, and Bootstrap.
 
+---
 
+## Business Model Summary
+The Business Model Canvas demonstrates how PeerTutor creates value for students, tutors, and administrators through a centralized tutoring marketplace. The model is directly aligned with the customer needs identified during Lab 03, the User Persona and User Stories developed in Lab 04, and the Product Concept and Wireframe Design completed in Lab 05.
+
+The proposed solution emphasizes trusted tutor discovery, efficient tutoring management, transparent payment workflows, and administrator oversight while remaining technically feasible for a university MVP. Future enhancements such as premium tutor services and university partnerships provide opportunities for long-term sustainability beyond the initial prototype.
+
+---
