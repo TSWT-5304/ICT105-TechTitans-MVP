@@ -1,33 +1,97 @@
 # Technical Architecture
 ## Project Title
 PeerTutor – Student-to-Student Tutoring Marketplace
+
 ## 1. Selected Prototype Platform
-**Frontend-only: HTML/CSS/JavaScript + localStorage/JSON**
+The selected prototype platform is:
+**Frontend Web Application with Google Sheets Data Storage**
+
+The PeerTutor prototype will use:
+- HTML5
+- CSS3
+- JavaScript
+- Visual Studio Code
+- Google Forms for data submission
+- Google Sheets for data storage
+- GitHub for version control and team collaboration
+
+The main website interface will be developed using HTML, CSS, and JavaScript. Google Sheets will store prototype records such as tutor applications, tutoring requests, payments, reviews, and tutor earnings.
+
 ## 2. Architecture Decision
-The team chose a frontend-only architecture using the browser's `localStorage` (with a preloaded JSON dataset for demo data) instead of a real backend/database. This fits the group's current skill level and the one-semester timeline: it avoids server setup, authentication infrastructure, and database administration, while still letting every required user flow (search, submit, track status, approve, review, dashboard) be fully clickable and interactive rather than a static mockup. Because PeerTutor's MVP requirements (FR-01–FR-16) don't require multi-device real-time sync — only that the *demo* clearly show the described behavior — localStorage/JSON is sufficient to prove the concept. If the project continues beyond this semester, this architecture is designed to be replaced by a real database (e.g. Firebase/Supabase) without changing the UI or user flows, since data access is isolated behind simple JS functions (see Section 3).
+The PeerTutor prototype will be developed as a frontend web application using HTML, CSS, and JavaScript. Google Sheets will be used as the prototype database because it is simple, accessible, low-cost, and suitable for the project scope. This architecture matches the team’s current technical skills and allows the group to demonstrate the complete Student, Tutor, and Administrator workflows without developing a complex backend server or traditional database.
+
+Google Forms will connect the website forms to Google Sheets. Submitted records can then be reviewed and managed through the spreadsheet or displayed in the prototype using sample or retrieved data. This approach supports the project requirements for data submission, record management, tutor applications, tutoring requests, payment records, reviews, and administrator functions while remaining achievable within the available development time.
+
 ## 3. Main Components
 | Component | Description | Tool / Technology | Related Requirement |
 |---|---|---|---|
-| User Interface | Homepage, tutor search/listing, tutor profile, request form, dashboards, admin pages | HTML5, CSS3, vanilla JavaScript | FR-01, FR-13, FR-14 |
-| Data Input Form | Tutoring request form, tutor registration/application form | HTML forms + JS validation | FR-03, FR-10, FR-11 |
-| Data Storage | Tutors, tutor applications, tutoring requests, reviews, users — stored as JSON objects in `localStorage`; seeded from a preloaded `data.json` file on first load | Browser `localStorage` + static JSON seed file | FR-04 (simulated) |
-| Record List | Tutor Listing page; Admin's user/tutor list; Tutor's incoming request list | JS reads from `localStorage`, renders via DOM/template functions | FR-05, FR-06 |
-| Detail View | Tutor Profile page; Tutoring Request detail; Tutor Application detail | JS reads a single record by ID from `localStorage` | FR-07 |
-| Admin Function | Approve/reject tutor applications, update request/user status, suspend accounts | JS functions writing status changes back to `localStorage` (simulated auth — no real login security) | FR-08, FR-09 |
-| Dashboard / Summary | Student/Tutor/Admin dashboards with counts and simple charts | JS aggregates `localStorage` data; Chart.js (or plain CSS bars) for pie/line visuals | FR-12 |
+| User Interface | Provides responsive web pages for Students, Tutors, Administrators, and guest users. | HTML5, CSS3, JavaScript | FR-01, FR-02, FR-16, FR-17 |
+| Navigation | Connects all pages and supports Student, Tutor, and Administrator workflows. | HTML, JavaScript | FR-02 |
+| Authentication Interface | Provides Login, Sign Up, Role Selection, and Admin Login screens. Authentication is simulated in the prototype. | HTML Forms, CSS, JavaScript | FR-02, FR-13 |
+| Tutoring Request Form | Collects subject, preferred date and time, and student notes. | HTML Form, JavaScript, Google Forms | FR-03, FR-04, FR-13, FR-14 |
+| Tutor Registration Form | Collects tutor education, teaching experience, skills, subjects, and supporting information. | HTML Form, JavaScript, Google Forms | FR-03, FR-04, FR-13, FR-14 |
+| Data Storage | Stores users, tutor applications, tutor profiles, tutoring requests, payments, reviews, and tutor earnings. | Google Sheets | FR-04, FR-18 |
+| Tutor Search and Listing | Displays tutor records and allows students to search and filter by name, subject, major, rating, and price. | HTML, CSS, JavaScript | FR-05, FR-06 |
+| Detail View | Displays tutor profiles, request details, payment information, and tutor application details. | HTML, CSS, JavaScript | FR-08 |
+| Request Status Tracking | Displays request statuses such as Pending, Approved, Rejected, Completed, and Cancelled. | JavaScript, Google Sheets data | FR-10 |
+| Online Payment Interface | Demonstrates payment submission after tutor approval. No real financial transaction is processed. | HTML, CSS, JavaScript | FR-07, FR-14 |
+| Payment Records | Stores simulated payment amount, method, date, reference, and status. | Google Sheets | FR-09, FR-10, FR-12 |
+| Tutor Dashboard | Displays incoming requests, schedules, reviews, earnings, and payment status. | HTML, CSS, JavaScript | FR-05, FR-09, FR-10, FR-12, FR-15 |
+| Admin Dashboard | Allows administrators to review users, tutor applications, payment records, and platform activities. | HTML, CSS, JavaScript, Google Sheets | FR-05, FR-11, FR-12, FR-15 |
+| Tutor Approval | Allows administrators to review and update tutor application statuses. | Google Sheets, JavaScript where required | FR-11, FR-14 |
+| Payment Verification | Allows administrators to review simulated payment records and update payment statuses. | Google Sheets, JavaScript  where required | FR-11, FR-12, FR-14 |
+| Tutor Earnings Management | Records platform commission, tutor payout amount, and transfer status. | Google Sheets | FR-09, FR-11, FR-12 |
+| Dashboard Analytics | Displays summary cards, pie charts, and line graphs using stored or sample platform data. | HTML, CSS, JavaScript | FR-15 |
+| Confirmation and Validation | Displays required-field warnings, validation errors, and successful submission messages. | JavaScript | FR-13, FR-14 |
+
 ## 4. What Will Be Fully Implemented?
-- Homepage and full student journey: search → filter → profile → request form → confirmation → status tracking.
-- Tutor registration/application form with client-side validation (FR-10).
-- Tutor dashboard showing application status and incoming requests.
-- Tutor profile creation/editing (visible only after "approval").
-- Admin approval workflow (approve/reject tutor applications) and status updates on requests.
-- Review & rating submission and display on tutor profiles.
-- Basic dashboard summaries (counts, simple charts) for student, tutor, and admin views.
-- Responsive layout for desktop and mobile-width browsers (FR-14).
+The following features will be fully implemented in the final PeerTutor prototype:
+- Responsive homepage and navigation.
+- Role Selection page (Student, Tutor, Administrator).
+- Login and Sign Up interfaces.
+- Tutor Search and Filtering.
+- Tutor Profile viewing.
+- Tutoring Request Form with input validation.
+- Student Dashboard and Request Status tracking.
+- Online Payment interface (prototype).
+- Student Payment History.
+- Student Review and Rating submission.
+- Tutor Registration and Application.
+- Tutor Profile Management.
+- Tutor Dashboard with request management.
+- Admin Dashboard and User Management.
+- Tutor Application Approval.
+- Student Payment Verification.
+- Tutor Earnings Management.
+- Dashboard Analytics with summary statistics.
+- Contact Us page.
+- Google Sheets integration for storing prototype records such as tutor applications, tutoring requests, payment records, reviews, and tutor earnings.
+
 ## 5. What Will Be Simulated?
-- **Authentication/accounts**: login is simulated (e.g. a simple role picker or a mock login form) rather than a real authenticated backend, since there is no server to verify credentials securely.
-- **Persistence across devices/users**: because data lives in `localStorage`, it is local to one browser — the demo will use one browser/session to show the full admin+student+tutor loop rather than true multi-user concurrent access.
-- **Notifications**: any "email/SMS notification" implied by status changes will be simulated as an on-screen confirmation message only (FR-11), not an actual email/SMS service.
-- **Data storage requirement (FR-04)**: genuinely persistent, multi-device storage is simulated via localStorage/JSON rather than a real database — this is the one MVP requirement not fully met by the chosen architecture, and is flagged as a known limitation below.
+The following features will be simulated because a full backend infrastructure is outside the project scope:
+- User authentication and authorization.
+- Password encryption and account recovery.
+- Real online payment gateway integration.
+- Automatic payment verification.
+- Automatic tutor earnings transfer.
+- Email or SMS notifications.
+- Real-time synchronization between multiple users.
+- Automatic dashboard updates based on live database changes.
+- Production-level security, access control, and cloud database services.
+
+Instead of implementing these backend services, the prototype will demonstrate the complete workflow using HTML, CSS, JavaScript, and Google Sheets with realistic sample data.
+
 ## 6. Final Prototype Risk
-The biggest technical risk is that **FR-04 (persistent, shared data storage)** is only simulated, not truly implemented — localStorage is per-browser, so data will not be visible across different team members' or evaluators' machines unless the same browser/profile is used for the demo, or the JSON seed file is reset before each demo run. To reduce this risk, the team will: (1) keep a versioned `data.json` seed file in the repo so the "before" state is always reproducible, (2) run the live demo from a single machine/browser during evaluation, and (3) document this limitation explicitly in the README so it isn't mistaken for a bug. If time allows after the core flows are stable, migrating `localStorage` calls to a lightweight backend (e.g. Firebase) is a low-effort upgrade path since the JS data-access functions are already isolated from the UI.
+The biggest technical risk is maintaining accurate and consistent data between the frontend interface and Google Sheets without a dedicated backend server. Since the prototype relies on Google Sheets for data storage, there may be limitations in real-time updates, user authentication, concurrent editing, and automated data synchronization.
+
+To reduce these risks, the team will:
+- Use Google Forms  to safely submit data to Google Sheets.
+- Organize data into separate worksheets (Users, Tutor Applications, Tutor Profiles, Tutoring Requests, Payments, Tutor Earnings, and Reviews).
+- Assign unique IDs to every record for easy tracking and consistency.
+- Use predefined status values (Pending, Approved, Rejected, Completed, Verified, etc.) throughout the system.
+- Validate user inputs before submission using JavaScript.
+- Use realistic sample data for prototype demonstrations.
+- Maintain backup copies of project files and Google Sheets.
+- Use GitHub for version control and team collaboration.
+
+These measures help ensure that the prototype remains stable, consistent, and suitable for demonstrating the complete PeerTutor workflow within the project scope.
