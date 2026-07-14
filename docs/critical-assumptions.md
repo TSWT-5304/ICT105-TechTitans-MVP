@@ -13,3 +13,12 @@
 | A-09 | Usability | Students understand the tutoring request status labels (Pending, Approved, Rejected, Completed, Cancelled). | FR-10 / US-05 | Medium | Wireframe design | Ask participants to explain each request status during usability testing. |
 | A-10 | Usability | Students trust tutor ratings and reviews when selecting tutors. | FR-08, FR-14 / US-03, US-08 | Medium | Customer Discovery | Ask participants whether ratings influence their tutor selection decisions. |
 | A-11 | Technical Feasibility | Dashboard summaries and analytics are understandable and useful for administrators. | FR-15 / US-16 | Low | Dashboard wireframes | Observe administrators completing monitoring tasks using the dashboard. |
+
+## Categories
+The assumptions above are grouped into the following categories:
+- **User Problem** – Assumptions about the real problems experienced by students and tutors.
+- **Value Proposition** – Assumptions about whether PeerTutor provides meaningful value compared to existing solutions.
+- **Usability** – Assumptions about how easily users can understand and complete the main workflows.
+- **Technical Feasibility** – Assumptions about whether the selected technologies (HTML, CSS, JavaScript, and Google Sheets) are sufficient for the MVP prototype.
+- **Business Logic** – Assumptions about tutor approval, payment workflows, and administrator responsibilities.
+- **Data Handling** – Assumptions regarding prototype data storage, privacy, and responsible information management.
