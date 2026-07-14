@@ -21,3 +21,14 @@
 | **A small number of metrics do not meet the target values** | Review participant feedback and improve the affected screens, navigation flow, labels, validation messages, or feature interactions before continuing development. |
 | **Several important metrics fail, especially tutor search, tutoring requests, or administrator workflows** | Re-evaluate the related User Stories, Functional Requirements, wireframes, and MVP priorities. Update the prototype and conduct another round of usability testing before implementation. |
 | **Users consistently report confusion or fail to complete critical tasks** | Simplify the workflow, improve interface consistency, revise page layouts, and update navigation before proceeding to the next development phase. |
+
+## Evaluation Criteria
+The MVP experiment will be considered successful if:
+- Students can search for tutors, view tutor profiles, submit tutoring requests, and complete the payment workflow without assistance.
+- Tutors can register, manage their profiles, and respond to tutoring requests successfully.
+- Administrators can approve tutor applications, verify payments, manage tutor earnings, and monitor dashboard analytics without confusion.
+- The average usability and satisfaction ratings are **4 out of 5 or higher**.
+- Most participants indicate that they would consider using PeerTutor instead of relying on Facebook groups, LINE groups, or personal recommendations to find peer tutors.
+
+Meeting these criteria will provide evidence that the PeerTutor MVP effectively addresses the problems identified during customer discovery and is suitable for further development and implementation.
+
