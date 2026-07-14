@@ -23,9 +23,11 @@ Imagine you are a **Rangsit University student** who needs academic tutoring for
 | T9 *(Tutor Role)* | Register as a tutor and submit a tutor application. | FR-02 (Tutor Workflow), FR-03, FR-04, FR-13, FR-14 | Tutor application is submitted successfully and a confirmation message is displayed. |
 | T10 *(Tutor Role)* | After administrator approval, create a tutor profile by entering subjects, education, teaching experience, availability, hourly rate, and profile information. | FR-02 (Tutor Workflow), FR-13, FR-14 | The tester successfully creates a complete tutor profile and receives confirmation. |
 | T11 *(Tutor Role)* | Open the Tutor Dashboard, review incoming tutoring requests, and approve or reject a request. | FR-02 (Tutor Workflow), FR-05, FR-08, FR-10, FR-15 | Tester successfully views request details and updates the tutoring request status. |
-| T12 *(Administrator Role)* | Review and approve a tutor application. | FR-11 | Tutor application status is updated correctly. |
-| T13 *(Administrator Role)* | Verify a student payment and review Tutor Earnings. | FR-12 | Payment status and tutor earnings are updated correctly. |
-| T14 *(Administrator Role)* | Open the Dashboard Analytics page and explain the displayed information. | FR-15 | Tester understands the platform statistics and dashboard summaries. |
+| T12 *(Tutor Role)* | View payment status, tutor earnings, payment history, and student reviews. | FR-02 (Tutor Workflow), FR-09, FR-12, FR-15 | Tester successfully understands payment information, tutor earnings, and reviews. | 
+| T13 *(Administrator Role)* | Review and approve a tutor application. | FR-11 | Tutor application status is updated correctly. |
+| T14 *(Administrator Role)* | Verify a student payment and review Tutor Earnings. | FR-12 | Payment status and tutor earnings are updated correctly. |
+| T15 *(Administrator Role)* | Manage user accounts and review platform records. | FR-02 (Administrator Workflow), FR-11 | Tester successfully performs user management tasks. |
+| T16 *(Administrator Role)* | Open the Dashboard Analytics page and explain the displayed information. | FR-15 | Tester understands the platform statistics and dashboard summaries. |
 
 # 4. Observation Notes
 During the usability test, the facilitator should record observations including:
