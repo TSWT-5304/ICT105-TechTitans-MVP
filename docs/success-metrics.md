@@ -3,11 +3,16 @@
 ## 1. Success Metrics
 | Metric ID | Metric | Target | How to Measure | Related Requirement |
 |---|---|---:|---|---|
-| M-01 | Task completion rate | 70% or higher | Completed tasks / total tasks | FR-02 |
-| M-02 | Form completion accuracy | 80% or higher | Valid submissions / total submissions | FR-03, FR-10 |
-| M-03 | Search success rate | 70% or higher | Users who find target record / total users | FR-06 |
-| M-04 | Usability rating | Average 4 out of 5 | Feedback form rating | FR-13 |
-| M-05 | Feature usefulness rating | Average 4 out of 5 | Feedback form rating | MVP features |
+| M-01 | Homepage understanding rate | 90% or higher | Percentage of testers who correctly explain the purpose of PeerTutor after viewing the homepage. | FR-01 |
+| M-02 | Tutor search task completion rate | 90% or higher | Percentage of students who successfully search and find a suitable tutor using the search and filter functions. | FR-05, FR-06 |
+| M-03 | Tutoring request completion rate | 85% or higher | Percentage of students who successfully complete the tutoring request form without assistance. | FR-03, FR-13, FR-14 |
+| M-04 | Payment workflow completion rate | 80% or higher | Percentage of students who successfully complete the simulated payment process. | FR-07 |
+| M-05 | Request status understanding | 90% or higher | Percentage of testers who correctly interpret the tutoring request status shown on the Student Dashboard. | FR-10 |
+| M-06 | Tutor registration completion rate | 85% or higher | Percentage of tutors who successfully complete the tutor registration and application process. | FR-03, FR-04 |
+| M-07 | Administrator task completion rate | 85% or higher | Percentage of administrators who successfully approve tutor applications and verify payments. | FR-11, FR-12 |
+| M-08 | Dashboard usability rating | Average 4.0/5 or higher | Average rating collected after testers use the Student, Tutor, and Admin dashboards. | FR-15 |
+| M-09 | Overall usability rating | Average 4.0/5 or higher | Average usability score from the post-test questionnaire. | FR-16, FR-17 |
+| M-10 | Overall prototype satisfaction | Average 4.0/5 or higher | Overall user satisfaction rating after completing all prototype tasks. | MVP Features |
 
 ## 2. Decision Rules
 | Result | Decision |
