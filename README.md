@@ -279,3 +279,48 @@ The System Architecture Diagram and Data Flow Diagram illustrate how Students, T
 
 ---
 
+# Lab 07: MVP Experiment Design
+## Experiment Objective
+The objective of Lab 07 is to validate whether the PeerTutor MVP successfully addresses the needs identified during customer discovery by evaluating the usability and effectiveness of the core Student, Tutor, and Administrator workflows. The experiment focuses on determining whether users can complete essential tasks—including tutor discovery, tutoring requests, tutor registration, payment simulation, and administrator management—without assistance before proceeding to the final implementation.
+
+## Critical Assumptions
+The experiment is designed to validate the following critical assumptions:
+1. **Students prefer a centralized tutoring platform** over scattered communication channels such as Facebook groups, LINE groups, and personal recommendations when searching for peer tutors.
+2. **Users can successfully complete the core PeerTutor workflows** (tutor search, tutoring request, tutor registration, payment simulation, and dashboard navigation) without external guidance.
+3. **The selected prototype architecture (HTML, CSS, JavaScript, and Google Sheets)** is sufficient to demonstrate the MVP and support usability testing before implementing a full backend system.
+
+## MVP Experiment Type
+### Selected Experiment Types
+- Clickable Prototype
+- Simple Web Prototype
+- Form-based Simulation
+- Dashboard Demonstration
+
+### Reason for Selection
+PeerTutor is implemented as an interactive frontend web application using HTML, CSS, and JavaScript with Google Sheets supporting prototype data storage. These experiment types allow the team to evaluate complete Student, Tutor, and Administrator workflows while collecting realistic usability feedback without requiring a production backend or live payment system.
+
+## Success Metrics
+The MVP experiment will be considered successful if the following targets are achieved:
+- At least **90%** participants correctly understand the purpose of PeerTutor from the homepage.
+- At least **90%** students successfully search and find suitable tutors.
+- At least **85%** of students successfully complete the tutoring request process.
+- At least **80%** participants successfully complete the simulated payment workflow.
+- At least **85%** tutors successfully complete tutor registration and application.
+- At least **85%** administrators successfully approve tutor applications and verify payments.
+- Average usability rating of **4.0/5 or higher**.
+- Average overall satisfaction rating of **4.0/5 or higher**.
+
+## Files Added in Lab 07
+- `/docs/mvp-experiment-plan.md`
+- `/docs/critical-assumptions.md`
+- `/docs/experiment-script.md`
+- `/docs/success-metrics.md`
+- `/docs/feedback-form.md`
+- `/docs/weekly-logbook.md`
+
+## Connection to Final Prototype
+Lab 07 provides the validation stage of the PeerTutor project before full implementation. The MVP experiment evaluates whether the User Stories, Functional Requirements, MVP Features, Product Concept, UI/UX Wireframes, Business Model, Technical Architecture, and Data Structure developed in previous labs effectively support the intended user workflows.
+
+The usability findings, participant feedback, task completion rates, and success metrics collected during the experiment will guide improvements to navigation, interface design, workflow efficiency, and feature implementation before the final prototype demonstration. This iterative evaluation ensures that the final PeerTutor prototype is aligned with user needs, technically feasible, and capable of delivering a practical solution for peer-to-peer academic tutoring at Rangsit University.
+
+
