@@ -1,0 +1,11 @@
+tester_code,tester_type,campus_role,experience_with_tutoring,reason_selected
+T01,Student,RIC Undergraduate,Has searched for tutors before,Primary target user for tutor search and request workflow
+T02,Student,RIC Undergraduate,Has used Facebook or LINE to find tutors,Can compare PeerTutor with current alternatives
+T03,Student,International Student,Needs academic tutoring support,Can evaluate first-time usability
+T04,Student,RIC Undergraduate,Has attended tutoring sessions before,Can evaluate request and payment workflow
+T05,Student,RIC Undergraduate,First-time tutoring platform user,Can test system learnability
+T06,Tutor,Senior Undergraduate,Has tutoring experience,Can evaluate tutor registration and profile management
+T07,Tutor,Senior Undergraduate,Provides peer tutoring,Can evaluate request approval workflow
+T08,Tutor,Postgraduate Student,Has teaching experience,Can evaluate tutor dashboard and earnings
+T09,Administrator,PeerTutor member,Manages student services,Can evaluate tutor approval and user management
+T10,Administrator,PeerTutor member,Reviews university records,Can evaluate payment verification and analytics
