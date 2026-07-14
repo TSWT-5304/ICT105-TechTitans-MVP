@@ -311,12 +311,12 @@ The MVP experiment will be considered successful if the following targets are ac
 - Average overall satisfaction rating of **4.0/5 or higher**.
 
 ## Files Added in Lab 07
-- `/docs/mvp-experiment-plan.md`
-- `/docs/critical-assumptions.md`
-- `/docs/experiment-script.md`
-- `/docs/success-metrics.md`
-- `/docs/feedback-form.md`
-- `/docs/weekly-logbook.md`
+- [`/docs/mvp-experiment-plan.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/15f504f5d0c24355c460cf840253f61af8ecc26c/docs/mvp-experiment-plan.md) 
+- [`/docs/critical-assumptions.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/15f504f5d0c24355c460cf840253f61af8ecc26c/docs/critical-assumptions.md)
+- [`/docs/experiment-script.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/15f504f5d0c24355c460cf840253f61af8ecc26c/docs/experiment-script.md)
+- [`/docs/success-metrics.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/15f504f5d0c24355c460cf840253f61af8ecc26c/docs/success-metrics.md)
+- [`/docs/feedback-form.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/15f504f5d0c24355c460cf840253f61af8ecc26c/docs/feedback-form.md)
+- [`/docs/weekly-logbook.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/15f504f5d0c24355c460cf840253f61af8ecc26c/docs/weekly-logbook.md)
 
 ## Connection to Final Prototype
 Lab 07 provides the validation stage of the PeerTutor project before full implementation. The MVP experiment evaluates whether the User Stories, Functional Requirements, MVP Features, Product Concept, UI/UX Wireframes, Business Model, Technical Architecture, and Data Structure developed in previous labs effectively support the intended user workflows.
