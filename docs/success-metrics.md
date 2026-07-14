@@ -17,6 +17,7 @@
 ## 2. Decision Rules
 | Result | Decision |
 |---|---|
-| Metrics meet target | Continue to implementation sprint. |
-| Some metrics fail | Revise wireframe, flow, labels, or feature priority before implementation. |
-| Most metrics fail | Revisit requirements, user stories, and problem evidence before building. |
+| **All or most success metrics meet or exceed the target values** | Proceed with the implementation of the final PeerTutor prototype. Continue refining the user interface and prepare for the final demonstration. |
+| **A small number of metrics do not meet the target values** | Review participant feedback and improve the affected screens, navigation flow, labels, validation messages, or feature interactions before continuing development. |
+| **Several important metrics fail, especially tutor search, tutoring requests, or administrator workflows** | Re-evaluate the related User Stories, Functional Requirements, wireframes, and MVP priorities. Update the prototype and conduct another round of usability testing before implementation. |
+| **Users consistently report confusion or fail to complete critical tasks** | Simplify the workflow, improve interface consistency, revise page layouts, and update navigation before proceeding to the next development phase. |
