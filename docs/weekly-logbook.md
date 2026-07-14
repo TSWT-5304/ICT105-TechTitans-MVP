@@ -327,6 +327,57 @@ Lab 06 established the business and technical foundation of the PeerTutor projec
 
 ---
 
+# Weekly Logbook - Lab 07
+## Group Information
+- **Group Name:** TechTitans
+- **Project Title:** PeerTutor – Student-to-Student Tutoring Marketplace
+- **Date:** 14th July 2026
+- **Repository Link:** https://github.com/TSWT-5304/ICT105-TechTitans-MVP
+
+## What We Completed Today
+- [x] Reviewed Customer Discovery findings from Lab 03.
+- [x] Reviewed User Persona, User Stories, Functional Requirements, and MVP Features from Lab 04.
+- [x] Reviewed Product Concept, Wireframes, and User Flow from Lab 05.
+- [x] Reviewed Business Model Canvas, Technical Architecture, Data Structure, and Feature–Value Mapping from Lab 06.
+- [x] Identified critical assumptions for MVP validation.
+- [x] Selected the MVP experiment type.
+- [x] Defined experiment objectives, test users, and experiment procedures.
+- [x] Developed the Experiment Script.
+- [x] Defined Success Metrics and Decision Rules.
+- [x] Designed the Feedback Form Template.
+- [x] Updated the GitHub repository and README documentation.
+
+## Member Contributions
+| Member Name | Contribution | Evidence / Commit / Issue Link |
+|---|---|---|
+| Thin Thiri Naing | Prepared the MVP Experiment Plan, and defined experiment objectives. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TTRN-6 |
+| Shinn Thant Maung | Developed the Success Metrics and  Decision Rules. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=dain004 |
+| Thae Su Win Thu | Designed the Experiment Script and Feedback Form Template, and reviewed usability testing procedures. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TSWT-5304 |
+| Yan Naing Kyaw | Updated the README, Weekly Logbook, GitHub documentation, and coordinated the final Lab 07 deliverables. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star |
+
+## Key Decisions
+| Decision | Reason | Evidence / Requirement Link |
+|---|---|---|
+| Use a Clickable Web Prototype with Form-based Simulation for MVP testing. | Allows realistic evaluation of Student, Tutor, and Administrator workflows before backend implementation. | Lab 07 MVP Experiment Plan |
+| Test three user roles (Student, Tutor, Administrator). | Ensures all major workflows are validated during usability testing. | User Stories (US-01–US-16), Functional Requirements (FR-01–FR-19) |
+| Use HTML, CSS, JavaScript, and Google Sheets for the prototype. | Matches the team's technical skills and supports rapid prototype development. | Lab 06 Technical Architecture |
+| Measure usability using task completion, success metrics, observation, and feedback forms. | Provides both quantitative and qualitative evidence for prototype evaluation. | Success Metrics & Feedback Form |
+| Validate the complete tutoring workflow, including tutor search, tutoring requests, payment simulation, tutor approval, and dashboard functions. | Ensures the MVP solves the core problems identified during customer discovery. | MVP Feature List (F-01–F-16) |
+
+## Problems and Next Action
+| Problem | Next Action | Responsible Member |
+|---|---|---|
+| Prototype workflows need validation with real users. | Conduct usability testing using the Experiment Script and Feedback Form. | All Members |
+| Navigation and page flow may require refinement after testing. | Collect participant feedback and revise the prototype accordingly. | All Members |
+| Ensure all documentation remains consistent across Labs 03–07. | Perform a final documentation review before submission. | Yan Naing Kyaw |
+| Verify that every MVP feature is traceable to the User Stories and Functional Requirements. | Cross-check Feature–Requirement Mapping and prototype screens before final submission. | All Members |
+
+## Progress Summary
+Lab 07 completed the planning phase for validating the PeerTutor MVP before final implementation. The team designed the MVP Experiment Plan, identified Critical Assumptions, prepared the Experiment Script, defined Success Metrics and Decision Rules, and created the Feedback Form Template. These deliverables will guide usability testing and ensure that the final PeerTutor prototype effectively addresses the needs identified during customer discovery while remaining aligned with the User Persona, User Stories, Functional Requirements, MVP Features, Business Model, Technical Architecture, and Data Structure developed throughout the project.
+
+<!--END--!>
+
+
 
 
 
