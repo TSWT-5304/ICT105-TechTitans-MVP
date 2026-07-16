@@ -47,6 +47,7 @@ Possible technologies:
 | Lab 4 | Product definition and MVP planning | User persona, system requirements , user stories with acceptance criteria, MVP feature list (MoSCoW prioritization), use case diagram, user flow diagram, updated README and weekly progress log | Completed |
 | Lab 5 | Product Concept and UI/UX Wireframe | Defining the product concept, creating low-fidelity/high-fidelity wireframes, designing user interface structure, and preparing the prototype layout for implementation. Updated README and weekly progress log | Completed |
 | Lab 6 | Business Model Canvas and Technical Architecture | Developed Business Model Canvas, mapped MVP features to user and business value, selected and justified technical architecture, created system architecture diagram, data flow diagram, defined data structure and sample dataset, updated README and weekly progress log | Completed |
+| Lab 7 | MVP Experiment Design | Identified critical assumptions, developed the MVP experiment plan, prepared usability testing scripts, defined success metrics, conducted MVP usability testing with target users, collected and analyzed experiment results and user feedback, identified improvements for the next iteration, updated README and weekly progress log | Completed |
 
 ## Current Status
 1. Reviewed the three project ideas from Lab 1 and discussed their strengths and weaknesses.
@@ -323,14 +324,6 @@ Lab 07 provides the validation stage of the PeerTutor project before full implem
 
 The usability findings, participant feedback, task completion rates, and success metrics collected during the experiment will guide improvements to navigation, interface design, workflow efficiency, and feature implementation before the final prototype demonstration. This iterative evaluation ensures that the final PeerTutor prototype is aligned with user needs, technically feasible, and capable of delivering a practical solution for peer-to-peer academic tutoring at Rangsit University.
 
-| Lab | Main Activity | Output | Status |
-|---|---|---|---|
-| Lab 1 | Lab setup and idea log | Repository, team profile, initial idea log | Completed |
-| Lab 2 | Opportunity scanning and idea evaluation | Problem analysis, NUF scoring matrix, selected IT venture idea, updated README and weekly progress log | Completed |
-| Lab 3 | Customer Problem Discovery | Case-Based Practice + Team Application for MVP/System, updated README and weekly progress log | Completed |
-| Lab 4 | Product definition and MVP planning | User persona, system requirements, user stories with acceptance criteria, MVP feature list (MoSCoW prioritization), use case diagram, user flow diagram, updated README and weekly progress log | Completed |
-| Lab 5 | Product Concept and UI/UX Wireframe | Defined the product concept, created low-fidelity/high-fidelity wireframes, designed the user interface structure, prepared the prototype layout for implementation, updated README and weekly progress log | Completed |
-| Lab 6 | Business Model Canvas and Technical Architecture | Developed the Business Model Canvas, mapped MVP features to user and business value, selected and justified the technical architecture, created the system architecture and data flow diagrams, defined the data structure and sample dataset, updated README and weekly progress log | Completed |
-| Lab 7 | MVP Experiment Design | Identified critical assumptions, developed the MVP experiment plan, prepared usability testing scripts, defined success metrics, conducted MVP usability testing with target users, collected and analyzed experiment results and user feedback, identified improvements for the next iteration, updated README and weekly progress log | Completed |
+
 
 
