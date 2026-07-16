@@ -48,6 +48,7 @@ Possible technologies:
 | Lab 5 | Product Concept and UI/UX Wireframe | Defining the product concept, creating low-fidelity/high-fidelity wireframes, designing user interface structure, and preparing the prototype layout for implementation. Updated README and weekly progress log | Completed |
 | Lab 6 | Business Model Canvas and Technical Architecture | Developed Business Model Canvas, mapped MVP features to user and business value, selected and justified technical architecture, created system architecture diagram, data flow diagram, defined data structure and sample dataset, updated README and weekly progress log | Completed |
 | Lab 7 | MVP Experiment Design | Identified critical assumptions, developed the MVP experiment plan, prepared usability testing scripts, defined success metrics, conducted MVP usability testing with target users, collected and analyzed experiment results and user feedback, identified improvements for the next iteration, updated README and weekly progress log | Completed |
+| Lab 8 | Customer Validation, Analytics, and MVP Decision | Conducted customer validation, analyzed usability testing results, prepared analytics insights, evaluated MVP performance, documented MVP decision, identified future improvements, updated README and weekly progress log | Completed |
 
 ## Current Status
 1. Reviewed the three project ideas from Lab 1 and discussed their strengths and weaknesses.
