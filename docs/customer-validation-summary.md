@@ -137,3 +137,16 @@ Administrators successfully approved tutor applications, verified payments, mana
 
 The prototype also demonstrated responsive layouts, consistent navigation, input validation, confirmation messages, and proper requirement traceability.
 
+# 9. Lessons Learned
+The validation demonstrated that the PeerTutor MVP effectively supports the main tutoring workflows required by students, tutors, and administrators.
+
+Participants particularly appreciated the centralized tutor discovery process because it reduces reliance on scattered Facebook and LINE groups.
+
+Most improvement suggestions focused on enhancing usability rather than changing the existing functionality.
+
+# 10. Conclusion
+The customer validation demonstrates that the PeerTutor MVP successfully addresses the original problem identified during customer discovery by providing a centralized platform for tutor discovery, tutoring management, payment simulation, and administrator oversight.
+
+Although several minor usability improvements were identified, participants completed nearly all assigned tasks successfully and expressed positive overall satisfaction with the prototype.
+
+Based on the collected evidence, the TechTitans team concludes that the current MVP is suitable for further development and recommends continuing the project with minor usability improvements before implementing a full production system.
