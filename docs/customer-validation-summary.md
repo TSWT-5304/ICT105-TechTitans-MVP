@@ -73,8 +73,6 @@ Overall, participants agreed that PeerTutor provides a practical solution for im
 ## 7. Affected Requirements
 | Requirement ID | Evidence Found | Required Prototype Improvement |
 |---|---|---|
-| Requirement ID | Evidence Found | Required Prototype Improvement |
-|---|---|---|
 | FR-02 | Users successfully completed the main Student, Tutor, and Administrator workflows. | Continue refining workflow navigation. |
 | FR-05 | Tutor search and listing worked well for most participants. | Add additional search filters and sorting options. |
 | FR-07 | Payment workflow was understandable but confirmation could be clearer. | Improve payment confirmation screen and status indicators. |
