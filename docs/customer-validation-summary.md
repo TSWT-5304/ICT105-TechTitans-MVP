@@ -88,13 +88,52 @@ During testing, the facilitator observed task completion, navigation behaviour, 
 
 The majority of participants successfully completed their assigned tasks without assistance. All critical workflows—including tutor discovery, tutoring requests, tutor registration, payment simulation, administrator approval, and dashboard navigation—were completed successfully.
 
-## 6. Key User Comments
-Summarize repeated comments and useful evidence.
+# 6. Key Findings
+## Successful Features
+Participants consistently reported that the following features were easy to understand and complete:
+- Homepage clearly explains the purpose of PeerTutor.
+- Role selection and login process are straightforward.
+- Tutor search and filtering improve tutor discovery.
+- Tutor profiles provide sufficient information before making a tutoring request.
+- Tutor registration workflow is simple and well organised.
+- The administrator approval process is easy to follow.
+- Dashboard summaries clearly display important information.
 
-## 7. Affected Requirements
-| Requirement ID | Evidence Found | Required Prototype Improvement |
-|---|---|---|
-| FR-XX | | |
+## Usability Issues
+Several minor issues were identified during testing.
+| Issue | Impact | Recommendation |
+|------|---------|---------------|
+| Payment status terminology was unclear for some users. | Low | Add tooltip explanations. |
+| The Tutor Earnings page required additional explanation. | Low | Include short descriptions for payout information. |
+| Some users overlooked confirmation messages after form submission. | Medium | Increase visibility using coloured notification banners. |
+| Dashboard navigation could be improved. | Low | Add clearer navigation labels and active menu indicators. |
 
-## 8. Conclusion
-State whether the current MVP direction is validated, partially validated, or needs revision.
+None of these issues prevented participants from completing the assigned tasks.
+
+# 7. Participant Feedback
+### Positive Comments
+- "Searching for tutors is much easier than using Facebook or LINE groups."
+- "Tutor profiles provide enough information before requesting tutoring."
+- "The interface is simple and easy to understand."
+- "Dashboard summaries help track tutoring activities."
+
+
+### Suggestions for Improvement
+Participants suggested the following improvements:
+- Add profile photos in more sections.
+- Improve notification visibility.
+- Provide clearer explanations for payment status.
+- Display tutor availability using a calendar view.
+- Add email notifications for request updates.
+
+# 8. Requirement Validation
+The validation confirmed that all Functional Requirements (FR-01 to FR-19) were successfully demonstrated during prototype testing.
+
+Students successfully searched tutors, submitted tutoring requests, completed payment simulations, and tracked request status.
+
+Student tutors successfully completed registration, managed tutor profiles, reviewed tutoring requests, and monitored earnings.
+
+Administrators successfully approved tutor applications, verified payments, managed users, and reviewed dashboard analytics.
+
+The prototype also demonstrated responsive layouts, consistent navigation, input validation, confirmation messages, and proper requirement traceability.
+
