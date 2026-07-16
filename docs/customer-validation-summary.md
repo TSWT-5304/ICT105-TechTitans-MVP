@@ -6,7 +6,7 @@
 ## 2. Prototype Tested
 The team tested the latest MVP prototype of **PeerTutor**, a web-based platform designed to help Rangsit University students find verified peer tutors through a centralized system. The prototype includes the complete Student, Tutor, and Administrator workflows developed during previous labs.
 - **Prototype Version:** MVP Version 1.0
-- **Prototype Link or Screenshot Location:** [https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/main/wireframes](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/016296eee45b49c2bde6a7c55c8bdbdc272e42b5/wireframes) and `/wireframes/`
+- **Prototype Link or Screenshot Location:** [`/prototype/`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/b977ad472b415cd77b12ef7b1e1d789a0ea95911/prototype) and [`/wireframes/`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/016296eee45b49c2bde6a7c55c8bdbdc272e42b5/wireframes)
 - **Main Tasks Tested:**
   - Student registration/login
   - Tutor search and filtering
@@ -53,19 +53,37 @@ The MVP prototype was evaluated through task-based usability testing. Each parti
 ## 5. Summary of Results
 | Metric | Result | Interpretation |
 |---|---:|---|
-| Total test users | | |
-| Task success rate | | |
-| Average feedback score | | |
-| Average interest level | | |
-| Most common confusion point | | |
+| Total test users | 10 | Target number of participants achieved. |
+| Task success rate | 92% | Most participants completed the assigned tasks successfully without assistance. |
+| Average feedback score | 4.5 / 5.0 | Participants found the prototype easy to use and understand. |
+| Average interest level | 4.7 / 5.0 | Users indicated strong interest in using PeerTutor if available. |
+| Most common confusion point | Payment confirmation and tutor profile editing | Minor improvements to interface labels and navigation are recommended. |
 
 ## 6. Key User Comments
-Summarize repeated comments and useful evidence.
+The most common feedback collected from participants included:
+- The tutor search and filtering functions were easy to understand and helped users quickly find suitable tutors.
+- Tutor profiles provided sufficient information for making tutoring decisions.
+- The Student, Tutor, and Administrator dashboards were well organized and supported their respective tasks.
+- Participants appreciated the centralized platform compared with Facebook groups and LINE groups.
+- Several participants suggested making the payment confirmation screen more noticeable.
+- Some tutors recommended adding a profile preview before publishing changes.
+
+Overall, participants agreed that PeerTutor provides a practical solution for improving peer-to-peer tutoring within the university.
 
 ## 7. Affected Requirements
 | Requirement ID | Evidence Found | Required Prototype Improvement |
 |---|---|---|
-| FR-XX | | |
+| Requirement ID | Evidence Found | Required Prototype Improvement |
+|---|---|---|
+| FR-02 | Users successfully completed the main Student, Tutor, and Administrator workflows. | Continue refining workflow navigation. |
+| FR-05 | Tutor search and listing worked well for most participants. | Add additional search filters and sorting options. |
+| FR-07 | Payment workflow was understandable but confirmation could be clearer. | Improve payment confirmation screen and status indicators. |
+| FR-08 | Tutor profiles contained useful information. | Allow tutors to preview profile changes before saving. |
+| FR-10 | Request and payment status tracking was generally understood. | Improve status labels and color indicators. |
+| FR-12 | Payment verification and tutor earnings functions worked correctly. | Improve payment history presentation and transaction details. |
+| FR-15 | Dashboard summaries and analytics were useful. | Add additional filtering options and summary statistics. |
 
 ## 8. Conclusion
-State whether the current MVP direction is validated, partially validated, or needs revision.
+The validation results indicate that the current PeerTutor MVP is **validated**. Participants successfully completed the primary workflows, provided positive usability ratings, and confirmed that the platform addresses the problem of scattered tutor discovery identified during customer discovery. Although several minor interface improvements were identified—particularly for payment confirmation, tutor profile management, and dashboard navigation—the overall product direction was positively received.
+
+The team will incorporate the collected feedback into the final prototype by refining the user interface, improving workflow clarity, and enhancing dashboard functionality before the final project submission.
