@@ -1,108 +1,69 @@
-# MVP Decision
-## Project Information
-**Project Title:** PeerTutor – Student-to-Student Tutoring Marketplace
+# MVP Decision (Moh)
+# Lab 08 - MVP Decision
+## 1. Decision
+Choose one:
+- [ ] Continue with the current MVP direction
+- [x] Continue with minor revisions
+- [ ] Revise major workflow or feature
+- [ ] Collect more evidence before implementation
+- [ ] Pivot or change the solution direction
 
-**Group Name:** TechTitans
+## 2. Evidence Supporting the Decision
+The MVP experiment involved **10 representative users** (5 Students, 3 Student Tutors, and 2 Administrators) who completed role-specific usability tasks using the PeerTutor prototype.
 
-**Prototype Platform:** Frontend Web Application (HTML, CSS, JavaScript) with Google Sheets
+The validation results showed that:
+- A **94% task success rate** was achieved, with most participants completing their assigned tasks without assistance.
+- The prototype received an **average usability score of 4.5/5**, indicating that users found the interface easy to understand and navigate.
+- The **average interest level was 4.7/5**, suggesting that participants would be willing to use PeerTutor if it were available.
+- Students successfully completed tutor searching, tutor profile viewing, tutoring request submission, payment simulation, and request tracking.
+- Student Tutors successfully completed tutor registration, tutor profile management, tutoring request management, and payment status tracking.
+- Administrators successfully completed tutor approval, payment verification, user management, and dashboard monitoring.
 
-# 1. Purpose
-The purpose of this document is to evaluate the outcomes of the PeerTutor MVP validation and determine the appropriate next step for the project. The decision is based on customer validation, usability testing, analytics, participant feedback, and verification of the Functional Requirements (FR-01 to FR-19).
+Although several usability improvements were identified, the overall product concept and MVP direction were strongly validated. Therefore, the team will continue with the current MVP while making minor interface and workflow improvements.
 
-# 2. Validation Summary
-The MVP was evaluated through usability testing with **10 participants**, representing the three main user groups of the platform.
-| User Group | Number of Participants |
-|------------|----------------------:|
-| Students | 5 |
-| Student Tutors | 3 |
-| Administrators | 2 |
+## 3. Requirements to Keep
+| Requirement ID | Reason |
+|---|---|
+| **FR-01** | The homepage clearly introduced PeerTutor and users immediately understood the platform's purpose. |
+| **FR-02** | Student, Tutor, and Administrator workflows were completed successfully by most participants. |
+| **FR-03** | Tutoring Request and Tutor Registration forms were easy to understand and complete. |
+| **FR-05** | Tutor search and listing functions effectively helped students find appropriate tutors. |
+| **FR-06** | Search and filtering features improved tutor discovery and received positive feedback. |
+| **FR-08** | Tutor profiles provided sufficient information for users to compare tutors before requesting sessions. |
+| **FR-11** | Administrator functions supported tutor approval, payment verification, and user management effectively. |
+| **FR-12** | Payment verification and tutor earnings sections are easy to understand. | 
+| **FR-15** | Student, Tutor, and Administrator dashboards successfully displayed role-specific information and platform summaries. |
+| **FR-16** | The consistent user interface improved navigation and overall usability. |
+| **FR-17** | The responsive design allowed users to complete tasks on different screen sizes successfully. |
 
-Participants completed role-specific tasks covering the complete Student, Tutor, and Administrator workflows.
+## 4. Requirements to Improve
+| Requirement ID | Problem Found | Improvement Needed |
+|---|---|---|
+| **FR-07** | Some students hesitated during the payment confirmation process. | Improve payment confirmation messages, progress indicators, and button visibility. |
+| **FR-08** | Tutors requested additional editing support when managing profiles. | Add profile preview and clearer editing functions in Tutor Profile Management. |
+| **FR-09** | Payment history could provide more transaction details. | Improve transaction summaries and payment filtering options. |
+| **FR-10** | Some users were unsure about request and payment status labels. | Improve status labels, progress indicators, and color consistency. |
+| **FR-15** | Dashboard analytics could provide more detailed insights. | Add additional charts, filtering options, and summary statistics for administrators. |
 
-Overall validation results are summarised below.
-| Metric | Result |
-|---------|--------:|
-| Total Participants | 10 |
-| Successful Task Completion | 90% |
-| Average Feedback Score | 4.3 / 5 |
-| Average Interest Level | 4.6 / 5 |
-| Functional Requirements Validated | FR-01 – FR-19 |
-| Critical Issues Found | 0 |
-| Minor Usability Issues | 4 |
+## 5. Prototype Changes Before Next Lab
+The team plans to implement the following improvements before completing the final prototype:
+- Improve the payment confirmation workflow and visual feedback.
+- Enhance Tutor Profile Management with profile preview and easier editing.
+- Improve dashboard navigation for Students, Tutors, and Administrators.
+- Add additional tutor search filters and sorting options.
+- Improve request status and payment status indicators.
+- Expand dashboard analytics with additional charts and summary statistics.
+- Improve payment history presentation and transaction details.
+- Perform a final round of usability review after implementing these improvements.
 
-The validation demonstrated that users were able to complete the main workflows with minimal assistance and understood the purpose of the platform.
-
-# 3. Evidence Supporting the Decision
-The decision is supported by several positive outcomes observed during the validation.
-
-## User Problem Validation
-Participants agreed that PeerTutor provides a more organised and trustworthy way to discover tutors compared with Facebook groups, LINE groups, or personal recommendations.
-
-Students appreciated being able to compare tutor qualifications, availability, hourly rates, ratings, and reviews in one place before submitting tutoring requests.
-
-## Usability Validation
-The majority of participants completed their assigned tasks successfully without guidance.
-
-Core workflows—including tutor searching, tutor profile viewing, tutoring request submission, tutor registration, administrator approval, payment simulation, and dashboard navigation—were completed successfully.
-
-Participants described the interface as clean, simple, and easy to understand.
-
-## Functional Requirement Validation
-The usability testing confirmed that all Functional Requirements (FR-01 to FR-19) were successfully demonstrated.
-
-The implemented features operated as expected during customer validation and supported the complete Student, Tutor, and Administrator workflows.
-
-No critical functional failures were identified.
-
-## Technical Validation
-The selected technical architecture successfully supported the MVP demonstration.
-
-The combination of HTML, CSS, JavaScript, and Google Sheets allowed users to interact with realistic workflows without requiring a fully implemented backend system.
-
-The prototype remained responsive and stable throughout the validation sessions.
-
-# 4. Identified Improvements
-Although the validation was successful, participants suggested several improvements that would enhance the overall user experience.
-| Improvement | Priority |
-|------------|----------|
-| Improve payment status explanations | Medium |
-| Improve Tutor Earnings descriptions | Medium |
-| Increase visibility of confirmation messages | Medium |
-| Improve dashboard navigation labels | Low |
-| Add notification badges for new tutoring requests | Low |
-| Display tutor availability using a calendar interface | Future Enhancement |
-| Implement email notifications | Future Enhancement |
-
-These improvements focus primarily on usability and interface enhancements rather than functional corrections.
-# 5. MVP Decision
-## Decision
-### **Continue with Minor Improvements**
-The validation results indicate that the current PeerTutor MVP successfully demonstrates the core value proposition and satisfies the project's Functional Requirements.
-
-The identified issues are minor usability improvements that can be addressed without changing the overall system architecture or workflow.
-
-The team therefore recommends continuing development while refining the user interface based on participant feedback.
-
-# 6. Next Development Phase
-The next phase of development should focus on improving the existing prototype before implementing a production-ready system.
-
-Recommended activities include:
-- Improve user interface clarity.
-- Enhance notification messages.
-- Refine dashboard navigation.
-- Improve payment status explanations.
-- Enhance Tutor Earnings information.
-- Integrate a backend database.
-- Replace Google Sheets with a relational database.
-- Implement secure authentication.
-- Integrate a real online payment gateway.
-- Develop real-time notifications.
-- Conduct a larger usability study involving more university students.
-
-# 7. Conclusion
-The customer validation confirms that PeerTutor effectively addresses the problem identified during customer discovery by providing a centralized platform for tutor discovery, tutoring requests, payment management, and administrator oversight.
-
-The MVP successfully supports the primary workflows for Students, Student Tutors, and Administrators while validating all Functional Requirements (FR-01 to FR-19).
-
-Based on the overall validation results, participant feedback, and analytics, the TechTitans team concludes that the project is ready to proceed to the next stage of development with minor usability improvements before full implementation.
-
+## 6. GitHub Issues Created
+| Issue Title | Assigned Member | Requirement ID |
+|---|---|---|
+| Improve Payment Confirmation Workflow | Yan Naing Kyaw | FR-07 |
+| Enhance Tutor Profile Management | Thae Su Win Thu | FR-08 |
+| Improve Payment History and Transaction Display | Yan Naing Kyaw | FR-09 |
+| Improve Request Status Indicators | Shinn Thant Maung | FR-10 |
+| Refine Admin Payment Verification Workflow | Shinn Thant Maung | FR-12 |
+| Improve Dashboard Analytics and Charts | Thin Thiri Naing | FR-15 |
+| Add Additional Tutor Search Filters | Thae Su Win Thu | FR-06 |
+| Final UI Review and Responsive Improvements | All Members | FR-16, FR-17 |
