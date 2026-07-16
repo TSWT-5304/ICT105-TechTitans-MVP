@@ -324,6 +324,65 @@ Lab 07 provides the validation stage of the PeerTutor project before full implem
 
 The usability findings, participant feedback, task completion rates, and success metrics collected during the experiment will guide improvements to navigation, interface design, workflow efficiency, and feature implementation before the final prototype demonstration. This iterative evaluation ensures that the final PeerTutor prototype is aligned with user needs, technically feasible, and capable of delivering a practical solution for peer-to-peer academic tutoring at Rangsit University.
 
+---
+
+# Weekly Logbook - Lab 08
+## Group Information
+- **Group Name:** TechTitans
+- **Project Title:** PeerTutor – Student-to-Student Tutoring Marketplace
+- **Repository Link:** https://github.com/TSWT-5304/ICT105-TechTitans-MVP
+- **Lab Date:** 16 July 2026
+
+## Work Completed Today
+- [x] Reviewed Lab 07 MVP experiment plan and usability testing results.
+- [x] Reviewed experiment data collected from 10 test users.
+- [x] Prepared customer validation dataset and updated validation records.
+- [x] Created and reviewed analytics metrics based on experiment results.
+- [x] Wrote the Customer Validation Summary.
+- [x] Wrote the Analytics Insights report.
+- [x] Evaluated MVP direction and documented the MVP Decision.
+- [x] Recorded qualitative Test User Notes.
+- [x] Updated the README documentation for Lab 08.
+- [x] Created GitHub issues for prototype improvements identified during validation.
+
+## Member Contributions
+| Member Name | Contribution | GitHub Evidence |
+|---|---|---|
+| **Thin Thiri Naing** | Updated MVP Decisions and reviewed prototype improvements. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TTRN-68 |
+| **Shinn Thant Maung** | Calculated validation metrics and reviewed experiment results. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=dain004 |
+| **Thae Su Win Thu** | Prepared analytics insights and verified requirement traceability. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TSWT-5304|
+| **Yan Naing Kyaw** | Updated README, Weekly Logbook, GitHub documentation, and created GitHub issues for future prototype improvements. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star |
+
+## Problems Found
+### Validation Problems
+- Some students required additional time to locate the payment confirmation button during the simulated payment process.
+- Tutors requested a profile preview before publishing profile updates.
+- Administrators suggested separating payment verification, tutor earnings, and commission management into clearer workflow sections.
+
+### Technical Problems
+- The prototype currently uses HTML, CSS, JavaScript, and Google Sheets, so user authentication, payment processing, and notifications are simulated rather than fully implemented.
+- Dashboard analytics provide basic summaries but could include more detailed filtering and reporting features.
+
+### Documentation Problems
+- Requirement traceability across Functional Requirements, User Stories, MVP Features, and prototype screens required careful verification to maintain consistency.
+- Validation findings needed to be reflected consistently across the Customer Validation Summary, Analytics Insights, MVP Decision, and README documentation.
+
+---
+
+## Next Actions
+
+- Improve the payment confirmation interface and transaction workflow.
+- Enhance Tutor Profile Management by adding profile preview and improving editing functions.
+- Improve request status indicators and payment status visualization.
+- Expand tutor search with additional filtering and sorting options.
+- Improve dashboard analytics by adding more charts and summary statistics.
+- Refine the Administrator Dashboard by separating payment verification, commission management, and tutor earnings.
+- Perform a final review of all project documentation (Labs 03–08) to ensure consistency before submission.
+- Complete the final PeerTutor prototype and prepare the project presentation and demonstration.
+  
+
+
+
 
 
 
