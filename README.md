@@ -399,19 +399,32 @@ The review identified several important risks:
 To reduce these risks, the team adopted privacy-by-design principles, data minimization, responsible data handling, role-based access control, third-party asset documentation, and security recommendations for future development. The team also decided to add **Privacy Notice** and **Terms of Use** pages to improve legal compliance and user transparency.
 
 ### Files Added
-docs/legal-ethical-checklist.md
-docs/privacy-and-data-protection.md
-docs/ip-and-third-party-assets.md
-docs/security-risk-check.md
-docs/risk-register.md
-docs/updated-requirements-note.md
-docs/data-handling-policy.md
-docs/user-consent-statement.md
-docs/weekly-logbook.md
+[`docs/legal-ethical-checklist.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/fe97c742e5acc46464dc177a039830a71dd9b1f8/docs/legal-ethical-checklist.md)
 
-data /data_inventory.csv
-data /ip_asset_register.csv
-data /risk_register.csv
+`docs/privacy-and-data-protection.md`
+
+[`docs/ip-and-third-party-assets.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/410bb337dac3e38f8a674e4f5423772341f56df7/docs/ip-and-third-party-assets.md)
+
+[`docs/security-risk-check.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/bb2026dec9cce899e299452629b865c7c29fb008/docs/security-risk-check.md)
+
+[`docs/risk-register.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/bb2026dec9cce899e299452629b865c7c29fb008/docs/risk-register.md)
+
+[`docs/updated-requirements-note.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/b1dbbb84a62faf1c2d06a1d17b64f75eebb88e8d/docs/updated-requirements-note.md)
+
+`docs/data-handling-policy.md`
+
+[`docs/user-consent-statement.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/b1dbbb84a62faf1c2d06a1d17b64f75eebb88e8d/docs/user-consent-statement.md)
+
+[`docs/weekly-logbook.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/b1dbbb84a62faf1c2d06a1d17b64f75eebb88e8d/docs/weekly-logbook.md)
+
+[`data /data_inventory.csv`]
+
+[`data /third_party_assests_register.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/7b853e72866586f24b4d95afcdb16369e4dd8b12/data/third-party-assets-register.csv)
+
+[`data /ip_asset_register.csv`]( https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/7b853e72866586f24b4d95afcdb16369e4dd8b12/data/ip-asset-register.csv)
+
+[`data /risk_register.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/87b1ec96dad98e80b783603c799ff6f929ad3255/data/risk-register.csv) 
+
 
 ### Requirement Update
 The project **did not require major functional changes** after Lab 09.
