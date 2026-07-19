@@ -19,7 +19,20 @@ The prototype may collect the following data:
 No highly sensitive personal or financial information is collected.
 
 ## Data Storage
-Where will data be stored or simulated? Examples: CSV, Google Sheet, localStorage, database, Airtable, Firebase, or sample dataset.
+The prototype uses **Google Sheets** as the primary storage solution for simulated MVP data during development and testing. 
+The stored information includes:
+- User records
+- Tutor profiles
+- Tutor applications
+- Tutoring requests
+- Simulated payment records
+- Payment history
+- Tutor earnings
+- Reviews and ratings
+- MVP experiment results
+- Customer validation and usability testing records
+
+The Google Sheet is used only for educational purposes and is accessible only to the project team. Future production implementations should replace Google Sheets with a secure database that supports authentication, authorization, encrypted storage, and backup.
 
 ## Data Access
 Who can view or update the data?
