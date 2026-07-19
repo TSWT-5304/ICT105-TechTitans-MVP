@@ -1,1 +1,11 @@
-
+Asset_Name,Type,Source_URL,License_or_Permission,Used_In,Credit_Required,Risk_Level,Action
+HTML5,Markup Language,https://html.spec.whatwg.org/,Open Standard,Frontend Structure,No,Low,Continue using
+CSS3,Stylesheet Language,https://www.w3.org/Style/CSS/,Open Standard,User Interface Styling,No,Low,Continue using
+JavaScript,Programming Language,https://developer.mozilla.org/en-US/docs/Web/JavaScript,Open Standard,Prototype Functionality,No,Low,Continue using
+Visual Studio Code,Source Code Editor,https://code.visualstudio.com/,Free (Microsoft License),Source Code Development,No,Low,Continue using
+Google Sheets,Cloud Spreadsheet,https://www.google.com/sheets/,Google Terms of Service,Prototype Data Storage,No,Low,Continue using for MVP only
+GitHub,Version Control Platform,https://github.com/,GitHub Terms of Service,Source Code Management and Collaboration,No,Low,Continue using
+Google Fonts (DM Sans),Web Font,https://fonts.google.com/specimen/DM+Sans,SIL Open Font License (OFL) 1.1,Prototype Typography,No,Low,Continue using
+Tabler Icons,Icon Library,https://tabler.io/icons,MIT License,User Interface Icons,Yes,Low,Provide attribution if required in the final project
+ChatGPT (OpenAI),AI Assistant,https://chatgpt.com/,OpenAI Terms of Use,"Documentation Drafting, Project Planning, and Prototype Refinement",Yes,Low,"Review and verify AI-generated content before submission"
+ICT105 Course Templates,Documentation Template,ICT105 Course Materials,Educational Use,Lab Reports and Project Documentation,No,Low,Follow course requirements
