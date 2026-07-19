@@ -329,46 +329,35 @@ The usability findings, participant feedback, task completion rates, and success
 
 ---
 
-# Weekly Logbook - Lab 08
-## Group Information
-- **Group Name:** TechTitans
-- **Project Title:** PeerTutor – Student-to-Student Tutoring Marketplace
-- **Repository Link:** https://github.com/TSWT-5304/ICT105-TechTitans-MVP
-- **Lab Date:** 16 July 2026
+# Lab 08: Customer Validation and Analytics Sheet
+## Validation Objective
+The objective of Lab 08 was to validate the PeerTutor MVP by evaluating whether students, student tutors, and administrators could successfully complete key tasks using the prototype. The team collected usability feedback, measured task completion rates, identified usability issues, and analyzed user satisfaction to determine whether the MVP solved the identified problem and was ready for further development.
 
-## Work Completed Today
-- [x] Reviewed Lab 07 MVP experiment plan and usability testing results.
-- [x] Reviewed experiment data collected from 10 test users.
-- [x] Prepared customer validation dataset and updated validation records.
-- [x] Created and reviewed analytics metrics based on experiment results.
-- [x] Wrote the Customer Validation Summary.
-- [x] Wrote the Analytics Insights report.
-- [x] Evaluated MVP direction and documented the MVP Decision.
-- [x] Recorded qualitative Test User Notes.
-- [x] Updated the README documentation for Lab 08.
-- [x] Created GitHub issues for prototype improvements identified during validation.
+## Prototype Version Tested
+- **Version:** PeerTutor MVP Version 1.0
+- **Link:** https://github.com/TSWT-5304/ICT105-TechTitans-MVP 
+- **Screenshots:** https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/screenshots/validation-test-screens.md
 
-## Member Contributions
-| Member Name | Contribution | GitHub Evidence |
-|---|---|---|
-| **Thin Thiri Naing** | Updated MVP Decisions and reviewed prototype improvements. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TTRN-68 |
-| **Shinn Thant Maung** | Calculated validation metrics and reviewed experiment results. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=dain004 |
-| **Thae Su Win Thu** | Prepared analytics insights and verified requirement traceability. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TSWT-5304|
-| **Yan Naing Kyaw** | Updated README, Weekly Logbook, GitHub documentation, and created GitHub issues for future prototype improvements. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star |
+## Analytics Summary
+| Metric | Result |
+|---|---:|
+| Total test users | **10** |
+| Task success rate | **94% (63/67 tasks completed)** |
+| Average feedback score | **4.5 / 5** |
+| Average interest level | **4.7 / 5** |
+| Main confusion point | Payment confirmation, Tutor Profile Management, and Dashboard navigation |
 
-## Problems Found
-### Validation Problems
-- Some students required additional time to locate the payment confirmation button during the simulated payment process.
-- Tutors requested a profile preview before publishing profile updates.
-- Administrators suggested separating payment verification, tutor earnings, and commission management into clearer workflow sections.
+## MVP Decision
+Based on the customer validation results, the team decided to **continue the current MVP with minor revisions**. Most participants completed the required tasks successfully and provided positive feedback regarding usability and overall interest. Improvements will focus on payment confirmation messages, tutor profile management, dashboard organization, and search/filter usability before the next prototype iteration.
 
-### Technical Problems
-- The prototype currently uses HTML, CSS, JavaScript, and Google Sheets, so user authentication, payment processing, and notifications are simulated rather than fully implemented.
-- Dashboard analytics provide basic summaries but could include more detailed filtering and reporting features.
-
-### Documentation Problems
-- Requirement traceability across Functional Requirements, User Stories, MVP Features, and prototype screens required careful verification to maintain consistency.
-- Validation findings needed to be reflected consistently across the Customer Validation Summary, Analytics Insights, MVP Decision, and README documentation.
+## Files Added in Lab-08
+- [`/data/validation-results.xlsx`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/data/validation-results.csv)
+- [`/data/validation-results.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/data/validation-results.csv)
+- [`/docs/customer-validation-summary.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/docs/customer-validation-summary.md)
+- [`/docs/analytics-insights.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/docs/analytics-insights.md)
+- [`/docs/mvp-decision.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/docs/mvp-decision.md)
+- [`/screenshots/validation-test-screens.png`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/screenshots/validation-test-screens.md)
+- [`/docs/weekly-logbook.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/main/docs/weekly-logbook.md)
 
 ---
 
@@ -385,8 +374,8 @@ The usability findings, participant feedback, task completion rates, and success
 
 ---
 
-## Lab 09 - Responsible IT Check
-### Responsible Design Summary
+# Lab 09 - Responsible IT Check
+## Responsible Design Summary
 During Lab 09, the team reviewed the PeerTutor MVP from the perspectives of privacy, ethics, intellectual property (IP), legal compliance, and basic security.
 
 The review identified several important risks:
@@ -398,7 +387,7 @@ The review identified several important risks:
 
 To reduce these risks, the team adopted privacy-by-design principles, data minimization, responsible data handling, role-based access control, third-party asset documentation, and security recommendations for future development. The team also decided to add **Privacy Notice** and **Terms of Use** pages to improve legal compliance and user transparency.
 
-### Files Added
+## Files Added
 [`docs/legal-ethical-checklist.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/fe97c742e5acc46464dc177a039830a71dd9b1f8/docs/legal-ethical-checklist.md)
 
 `docs/privacy-and-data-protection.md`
@@ -426,7 +415,7 @@ To reduce these risks, the team adopted privacy-by-design principles, data minim
 [`data /risk_register.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/87b1ec96dad98e80b783603c799ff6f929ad3255/data/risk-register.csv) 
 
 
-### Requirement Update
+## Requirement Update
 The project **did not require major functional changes** after Lab 09.
 
 
@@ -440,18 +429,11 @@ However, several Functional Requirements were **clarified and strengthened** to 
 
 Overall, the system architecture and MVP scope remain unchanged, with only documentation and responsible IT practices being improved.
 
-### Team Contributions
+## Team Contributions
 | Member | Contribution |
 |---|---|
 | **Thin Thiri Naing** | Led the legal and ethical review, updated the User Consent Statement, reviewed responsible system requirements, and documented the Updated Requirements Note. |
 | **Shinn Thant Maung** | Conducted the security review, prepared the Risk Register, and documented mitigation strategies for privacy, ethical, legal, and security risks. |
 | **Thae Su Win Thu** | Reviewed privacy and data protection practices, prepared the Data Handling Policy, Data Inventory, and IP & Third-Party Assets Register, and verified prototype compliance. |
 | **Yan Naing Kyaw** | Updated the project README, Weekly Logbook, CSV documentation, and reviewed consistency across Labs 03–09 before final submission. |
-
-  
-
-
-
-
-
 
