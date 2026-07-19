@@ -1,4 +1,4 @@
-# MVP Decision (Moh)
+# MVP Decision
 # Lab 08 - MVP Decision
 ## 1. Decision
 Choose one:
