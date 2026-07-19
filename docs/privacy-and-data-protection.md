@@ -21,7 +21,16 @@
 | Health Information | Not relevant to tutoring services | Yes | Yes | Remove | Excluded to protect user privacy. |
 
 ## Privacy Rule for Prototype
-Explain what data will be collected, why it is collected, who can see it, and how the prototype avoids unnecessary personal/sensitive information.
+The PeerTutor prototype collects only the minimum information required to support tutoring services, including user identification, tutor matching, scheduling, simulated payment verification, and feedback submission. The collected information is used only for educational purposes within the prototype and is not shared with third parties.
+
+Access to information is controlled according to user roles:
+- **Students** can view tutor profiles, submit tutoring requests, make simulated payments, and manage their own requests.
+- **Student Tutors** can view and manage only their own tutor profiles, tutoring requests, payment history, earnings, and reviews.
+- **Administrators** can approve tutor applications, verify simulated payments, manage user accounts, and monitor platform activity through the Admin Dashboard.
+
+The prototype follows the principle of **data minimization** by collecting only information necessary for the platform's core functions. Sensitive personal information, such as national identification numbers, financial account details, home addresses, and health information, is intentionally excluded from the MVP.
+
+Because this is an educational prototype, payment processing is simulated, and no real financial transactions or confidential banking information are stored.
 
 ## Data Minimization Decision
 List data fields removed or changed after privacy review.
