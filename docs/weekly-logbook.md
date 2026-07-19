@@ -428,6 +428,64 @@ Lab 07 completed the planning phase for validating the PeerTutor MVP before fina
 - Perform a final review of all project documentation (Labs 03–08) to ensure consistency before submission.
 - Complete the final PeerTutor prototype and prepare the project presentation and demonstration.
 
+---
+
+# Weekly Logbook - Lab 09
+## Group Name
+**TechTitans**
+
+## Date
+**19th July 2026**
+
+## Members Present
+- Thin Thiri Naing
+- Shinn Thant Maung
+- Thae Su Win Thu
+- Yan Naing Kyaw
+
+## Work Completed Today
+- **Data inventory:** Reviewed all data collected by the prototype and created a Data Inventory to classify personal data, visibility, and responsible handling.
+- **Privacy review:** Evaluated collected user information, applied data minimization principles, documented the Privacy and Data Protection policy, and prepared the User Consent Statement.
+- **Ethical review:** Completed the Legal and Ethical Checklist, ensuring transparency, fairness, role separation, and responsible use of prototype data.
+- **IP review:** Reviewed third-party assets, software tools, AI-assisted content, and licenses. Created the IP and Third-Party Assets Register.
+- **Security review:** Identified basic security risks related to authentication, authorization, data storage, and input validation. Documented mitigation actions in the Basic Security Risk Check.
+- **Risk register:** Updated project risks covering privacy, ethics, intellectual property, security, legal compliance, and data quality, together with mitigation plans and ownership.
+- **Requirements update note:** Reviewed Functional Requirements (FRs) affected by the Lab 09 findings and documented justified updates with supporting evidence and traceability.
+
+
+
+## Member Contributions
+| Member | Contribution | GitHub Evidence |
+|---|---|---|
+| **Thin Thiri Naing** | Led the legal and ethical review, updated the User Consent Statement, reviewed prototype transparency, and documented the Updated Requirements Note.  | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TTRN-68   |
+| **Shinn Thant Maung** | Conducted the security assessment, updated the Risk Register, and reviewed mitigation strategies for security and ethical risks. |https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=dain004|
+| **Thae Su Win Thu** | Reviewed privacy and data protection practices, prepared the Data Handling Policy, and completed the Data Inventory and IP Asset Register. | https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=TSWT-5304  |
+| **Yan Naing Kyaw** | Updated the project README, Weekly Logbook, CSV files, and reviewed documentation consistency across Labs 03–09 before submission. |https://github.com/TSWT-5304/ICT105-TechTitans-MVP/commits/main/?author=yannaingk68-star  |
+
+
+## Decisions Made
+- Continue the PeerTutor MVP without changing the overall solution direction.
+- Apply **privacy-by-design** and **data minimization** principles throughout the prototype.
+- Keep only the minimum personal information required for tutoring services.
+- Continue using **Google Sheets** as temporary prototype storage and recommend migrating to a secure database in future development.
+- Add a **Privacy Notice** and **Terms of Use** page to improve legal compliance and reduce privacy and ethical risks.
+- Maintain role-based access control for Student, Student Tutor, and Administrator functions.
+- Use only properly licensed or team-created assets and document all third-party resources.
+
+## Issues / Blockers
+- The prototype still uses simulated authentication and payment processing because no production backend has been implemented.
+- Google Sheets is suitable only for MVP demonstrations and lacks production-level security.
+- Additional usability and security testing with more participants would improve validation before full implementation.
+- Some documentation required cross-checking to ensure consistency between Labs 03–09.
+
+## Next Action Before Lab 10
+- Add **Privacy Notice** and **Terms of Use** pages to the prototype.
+- Improve form validation and role-based access controls.
+- Enhance dashboard security and payment status visibility.
+- Replace Google Sheets with a secure database in future implementation.
+- Review all project documents to ensure traceability between Functional Requirements, prototype screens, testing, validation, and risk management.
+- Finalize the PeerTutor prototype and prepare the complete project presentation and demonstration for submission
+
 
 
 
