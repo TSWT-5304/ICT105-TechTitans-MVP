@@ -68,7 +68,31 @@ Administrators may:
 Administrative access is restricted to authorized project administrators.
 
 ## Data Minimization
-Which fields are removed because they are unnecessary?
+To protect user privacy, the following information is intentionally **not collected** by the prototype:
+- Home address
+- National ID number
+- Passport number
+- Bank account information
+- Credit or debit card details
+- Passwords for financial services
+- Health or medical information
+- Biometric information
+- Personal information unrelated to tutoring services
+
+Only the minimum data required for tutor matching, request management, payment simulation, and usability testing is collected.
+
+Where possible, anonymous participant IDs or nicknames may be used instead of full names during customer validation and MVP testing.
 
 ## Responsible Data Rule
-The prototype must avoid unnecessary sensitive data and use sample/masked data when possible.
+The PeerTutor prototype follows the principles of **data minimization**, **privacy by design**, and **responsible data handling**.
+
+The project team will:
+- Collect only information necessary for prototype functionality and usability evaluation.
+- Avoid collecting unnecessary sensitive personal or financial information.
+- Use simulated or sample data whenever possible during demonstrations and testing.
+- Restrict access to project data based on user roles.
+- Use Google Sheets only for educational MVP development and not for production deployment.
+- Clearly inform participants how their information will be used before usability testing.
+- Review and update privacy, legal, ethical, intellectual property, and security practices before future implementation.
+
+The team is committed to handling all collected information responsibly and using it solely for improving the PeerTutor prototype and supporting the ICT105 course project.
