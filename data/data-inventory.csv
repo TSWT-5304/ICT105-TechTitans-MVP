@@ -1,0 +1,11 @@
+Data_Field,Example_Value,Purpose,Personal_Data,Sensitive_Data,Visibility,Keep_Remove_Replace,Responsible_Action
+Nickname,Alex,Identify users during tutoring without requiring a full legal name,Yes,No,Student/Tutor/Admin,Keep,Allow nickname or anonymous ID whenever possible
+University Email,alex@rsu.ac.th,Account verification and communication,Yes,No,Owner and Admin only,Keep if needed,Do not display publicly and use only for educational purposes
+Student ID,6851501001,Verify university membership for tutor registration,Yes,No,Admin only,Replace,Mask the ID after verification and avoid public display
+User Role,Student,Determine system permissions and dashboard access,No,No,System,Keep,Use for role-based access control only
+Tutor Subject,Programming Fundamentals,Help students search for suitable tutors,No,No,Public,Keep,Display only academic information
+Tutor Experience,2 years tutoring Python,Help students compare tutor qualifications,Yes,No,Public,Keep with caution,Display only information approved by the tutor
+Availability Schedule,Monday 13:00-16:00,Allow students to book tutoring sessions,No,No,Student and Tutor,Keep,Only visible to users involved in the booking
+Tutoring Request,Need help with Java OOP,Match students with tutors,Possibly,No,Student Tutor and Admin,Keep with caution,Limit visibility to related users only
+Payment Reference,PAY-10025,Verify simulated payment submission,Yes,No,Admin only,Keep,Store only reference numbers and never collect banking credentials
+Review and Rating,5 Stars - Very Helpful,Evaluate tutoring quality and improve the platform,Possibly,No,Public,Keep with caution,Remove unnecessary personal identifiers before display
