@@ -35,7 +35,37 @@ The stored information includes:
 The Google Sheet is used only for educational purposes and is accessible only to the project team. Future production implementations should replace Google Sheets with a secure database that supports authentication, authorization, encrypted storage, and backup.
 
 ## Data Access
-Who can view or update the data?
+Access to data is controlled according to user roles.
+
+### Students
+Students may:
+- View public tutor profiles
+- Submit tutoring requests
+- View their own requests
+- Make payments and view their own payment history
+- Submit reviews after completed tutoring sessions
+
+Students cannot view or modify other users' information.
+
+### Student Tutors
+Student Tutors may:
+- Manage their own tutor profile
+- View tutoring requests assigned to them
+- View their own payment history and earnings
+- View reviews related to their tutoring sessions
+
+Tutors cannot access administrator functions or other tutors' private information.
+
+### Administrators
+Administrators may:
+- Approve tutor applications
+- Verify simulated payments
+- Manage user accounts
+- Monitor tutoring requests
+- View platform analytics
+- Manage tutor earnings
+
+Administrative access is restricted to authorized project administrators.
 
 ## Data Minimization
 Which fields are removed because they are unnecessary?
