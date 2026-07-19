@@ -33,4 +33,13 @@ The prototype follows the principle of **data minimization** by collecting only 
 Because this is an educational prototype, payment processing is simulated, and no real financial transactions or confidential banking information are stored.
 
 ## Data Minimization Decision
-List data fields removed or changed after privacy review.
+After reviewing the prototype design, the team made the following privacy improvements:
+- Removed home address from user registration.
+- Removed national ID and passport number from all forms.
+- Removed bank account and credit card information because payment is simulated.
+- Removed health and other unrelated personal information.
+- Limited Student ID usage to account verification only.
+- Used university email instead of collecting multiple contact methods.
+- Restricted user information using role-based access control.
+- Display only the information necessary on tutor profiles, while keeping verification data accessible only to administrators.
+- Limited payment records to simulated transaction references and payment status rather than real financial information.
