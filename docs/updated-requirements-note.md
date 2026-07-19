@@ -22,7 +22,7 @@ The review did not require a major change to the PeerTutor MVP direction. Howeve
 ## Team Decision
 The team approved these updates as **clarifications and minor revisions** to the existing MVP requirements. The updates do not change the central PeerTutor solution or its main Student, Student Tutor, and Administrator workflows.
 
-The requirements should be updated in `system-requirements.md` only after the related GitHub issues are created and the team confirms the final wording.
+The requirements should be updated in [`system-requirements.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d52fc5bd4ed2e9d2adc48de3062e6ce602daf7e6/docs/system-requirements.md) only after the related GitHub issues are created and the team confirms the final wording.
 
 ## Rule
 Do not silently change system requirements. Every change must be justified, documented, approved by the team, and connected to supporting evidence and a GitHub issue or commit.
