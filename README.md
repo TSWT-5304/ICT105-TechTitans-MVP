@@ -49,6 +49,8 @@ Possible technologies:
 | Lab 6 | Business Model Canvas and Technical Architecture | Developed Business Model Canvas, mapped MVP features to user and business value, selected and justified technical architecture, created system architecture diagram, data flow diagram, defined data structure and sample dataset, updated README and weekly progress log | Completed |
 | Lab 7 | MVP Experiment Design | Identified critical assumptions, developed the MVP experiment plan, prepared usability testing scripts, defined success metrics, conducted MVP usability testing with target users, collected and analyzed experiment results and user feedback, identified improvements for the next iteration, updated README and weekly progress log | Completed |
 | Lab 8 | Customer Validation, Analytics, and MVP Decision | Conducted customer validation, analyzed usability testing results, prepared analytics insights, evaluated MVP performance, documented MVP decision, identified future improvements, updated README and weekly progress log | Completed |
+| Lab 9 | Legal, Ethical, IP, Privacy, and Security Check | Reviewed PeerTutor from a responsible IT development perspective. Conducted privacy, ethical, legal, IP, and security assessments; created Legal and Ethical Checklist, Data Inventory, Privacy and Data Protection Policy, User Consent Statement, IP and Third-Party Assets Register, Basic Security Risk Check, Risk Register, updated requirements note with traceability, updated README and weekly logbook | Completed | 
+
 
 ## Current Status
 1. Reviewed the three project ideas from Lab 1 and discussed their strengths and weaknesses.
@@ -380,6 +382,59 @@ The usability findings, participant feedback, task completion rates, and success
 - Refine the Administrator Dashboard by separating payment verification, commission management, and tutor earnings.
 - Perform a final review of all project documentation (Labs 03–08) to ensure consistency before submission.
 - Complete the final PeerTutor prototype and prepare the project presentation and demonstration.
+
+---
+
+## Lab 09 - Responsible IT Check
+### Responsible Design Summary
+During Lab 09, the team reviewed the PeerTutor MVP from the perspectives of privacy, ethics, intellectual property (IP), legal compliance, and basic security.
+
+The review identified several important risks:
+- Personal information may be collected or exposed unnecessarily during user registration and tutor applications.
+- Users may misunderstand simulated features, such as payment verification and authentication, as real services.
+- Third-party assets, icons, templates, and AI-assisted content require appropriate attribution and license compliance.
+- The prototype currently relies on HTML, CSS, JavaScript, and Google Sheets, which do not provide production-level authentication, authorization, or database security.
+- Simulated testing data may not fully represent real-world platform usage.
+
+To reduce these risks, the team adopted privacy-by-design principles, data minimization, responsible data handling, role-based access control, third-party asset documentation, and security recommendations for future development. The team also decided to add **Privacy Notice** and **Terms of Use** pages to improve legal compliance and user transparency.
+
+### Files Added
+docs/legal-ethical-checklist.md
+docs/privacy-and-data-protection.md
+docs/ip-and-third-party-assets.md
+docs/security-risk-check.md
+docs/risk-register.md
+docs/updated-requirements-note.md
+docs/data-handling-policy.md
+docs/user-consent-statement.md
+docs/weekly-logbook.md
+
+data /data_inventory.csv
+data /ip_asset_register.csv
+data /risk_register.csv
+
+### Requirement Update
+The project **did not require major functional changes** after Lab 09.
+
+
+However, several Functional Requirements were **clarified and strengthened** to improve responsible system design:
+- Added privacy-by-design and data minimization principles.
+- Clarified that payment verification and authentication are simulated for the MVP.
+- Improved role-based access control for Student, Student Tutor, and Administrator.
+- Added documentation requirements for Privacy Notice and Terms of Use.
+- Improved security recommendations for future implementation.
+- Updated documentation to maintain traceability between requirements, prototype, validation, and risk management.
+
+Overall, the system architecture and MVP scope remain unchanged, with only documentation and responsible IT practices being improved.
+
+### Team Contributions
+| Member | Contribution |
+|---|---|
+| **Thin Thiri Naing** | Led the legal and ethical review, updated the User Consent Statement, reviewed responsible system requirements, and documented the Updated Requirements Note. |
+| **Shinn Thant Maung** | Conducted the security review, prepared the Risk Register, and documented mitigation strategies for privacy, ethical, legal, and security risks. |
+| **Thae Su Win Thu** | Reviewed privacy and data protection practices, prepared the Data Handling Policy, Data Inventory, and IP & Third-Party Assets Register, and verified prototype compliance. |
+| **Yan Naing Kyaw** | Updated the project README, Weekly Logbook, CSV documentation, and reviewed consistency across Labs 03–09 before final submission. |
+
   
 
 
