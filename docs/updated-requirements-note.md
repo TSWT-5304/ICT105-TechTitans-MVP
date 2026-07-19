@@ -1,4 +1,4 @@
-# Updated Requirements Note (Moh)
+# Updated Requirements Note 
 ## Purpose
 This file records requirement changes identified during the Lab 09 legal, ethical, privacy, intellectual property, and security review.
 
