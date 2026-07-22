@@ -50,7 +50,7 @@ Possible technologies:
 | Lab 7 | MVP Experiment Design | Identified critical assumptions, developed the MVP experiment plan, prepared usability testing scripts, defined success metrics, conducted MVP usability testing with target users, collected and analyzed experiment results and user feedback, identified improvements for the next iteration, updated README and weekly progress log | Completed |
 | Lab 8 | Customer Validation, Analytics, and MVP Decision | Conducted customer validation, analyzed usability testing results, prepared analytics insights, evaluated MVP performance, documented MVP decision, identified future improvements, updated README and weekly progress log | Completed |
 | Lab 9 | Legal, Ethical, IP, Privacy, and Security Check | Reviewed PeerTutor from a responsible IT development perspective. Conducted privacy, ethical, legal, IP, and security assessments; created Legal and Ethical Checklist, Data Inventory, Privacy and Data Protection Policy, User Consent Statement, IP and Third-Party Assets Register, Basic Security Risk Check, Risk Register, updated requirements note with traceability, updated README and weekly logbook | Completed | 
-
+| Lab 10 | MVP Implementation Sprint 1 | Began developing the first working PeerTutor prototype by implementing core HTML prototype screens, shared CSS and JavaScript, basic navigation, user interactions, simulated data handling, feature implementation status, implementation plan, prototype link, screenshots, updated README, and weekly progress log | Completed | 
 
 ## Current Status
 1. Reviewed the three project ideas from Lab 1 and discussed their strengths and weaknesses.
@@ -437,3 +437,86 @@ Overall, the system architecture and MVP scope remain unchanged, with only docum
 | **Thae Su Win Thu** | Reviewed privacy and data protection practices, prepared the Data Handling Policy, Data Inventory, and IP & Third-Party Assets Register, and verified prototype compliance. |
 | **Yan Naing Kyaw** | Updated the project README, Weekly Logbook, CSV documentation, and reviewed consistency across Labs 03–09 before final submission. |
 
+# Lab 10 - MVP Implementation Sprint 1
+
+## Sprint Goal
+
+The goal of **Lab 10 – MVP Implementation Sprint 1** is to begin developing the first working version of the **PeerTutor – Student-to-Student Tutoring Marketplace** based on the approved Functional Requirements, User Stories, UI/UX wireframes, technical architecture, and Responsible IT review completed in previous labs.
+
+Sprint 1 focuses on implementing the core prototype screens, basic navigation, user interactions, and simulated workflows while maintaining traceability between the prototype and the project requirements.
+
+---
+
+## Implementation Approach
+
+- **Platform/Tools:** HTML5, CSS3, JavaScript, Visual Studio Code, GitHub
+- **Backend Status:** Simulated backend
+- **Data Storage/Simulation:** Sample data using JavaScript arrays (Google Sheets planned for future implementation)
+- **Prototype Folder:** `/prototype/`
+- **Repository:** https://github.com/TSWT-5304/ICT105-TechTitans-MVP
+
+---
+
+## Features Implemented in Sprint 1
+
+| Feature | Requirement ID | Status | Evidence |
+|---|---|---|---|
+| Homepage / Landing Page | FR-01 | In Progress | `prototype/index.html`, Homepage Screenshot |
+| User Pathways (Role Selection, Login, Sign Up) | FR-02 | In Progress | `role-selection.html`, `login.html`, `signup.html` |
+| Tutoring Request & Tutor Application Forms | FR-03 | In Progress | `request-form.html`, `tutor-application.html` |
+| Simulated Data Storage | FR-04 | Working Draft | JavaScript sample data |
+| Tutor Listing & Record Lists | FR-05 | In Progress | `tutor-search.html`, Dashboards |
+| Tutor Search & Filter | FR-06 | In Progress | `tutor-search.html` |
+| Online Payment Simulation | FR-07 | Working Draft | `payment.html` |
+| Detail Views | FR-08 | In Progress | `tutor-profile.html`, Payment Details |
+| Payment History | FR-09 | Working Draft | `payment-history.html` |
+| Status Tracking | FR-10 | In Progress | Student & Tutor Dashboards |
+| Admin Management | FR-11 | Working Draft | `admin-dashboard.html`, `tutor-approval.html`, `payment-verification.html` |
+| Payment Management | FR-12 | Working Draft | Payment Verification & Tutor Earnings |
+| Form Validation | FR-13 | In Progress | HTML & JavaScript validation |
+| Confirmation Messages | FR-14 | Working Draft | Success & confirmation dialogs |
+| Dashboard & Summary Views | FR-15 | In Progress | Student, Tutor & Admin Dashboards |
+| UI Consistency | FR-16 | In Progress | Shared `style.css` |
+| Responsive Design | FR-17 | Working Draft | Responsive CSS |
+| Privacy & Responsible Data Handling | FR-18 | Working Draft | Privacy Notice (planned), sample data |
+| Requirement Traceability | FR-19 | In Progress | Implementation Plan & Feature Status |
+
+---
+
+## Team Contribution
+
+All group members contributed to the same GitHub repository through prototype development, documentation, implementation planning, feature tracking, testing, screenshots, and issue management.
+
+| Member | Main Contribution |
+|---|---|
+| **Thin Thiri Naing** | Sprint planning, Homepage, Role Selection, Implementation Plan, requirement traceability |
+| **Shinn Thant Maung** | Login, Sign Up, Tutor Search, Prototype Link, Feature Implementation Status |
+| **Thae Su Win Thu** | Core prototype development, dashboards, payment workflow, shared CSS & JavaScript |
+| **Yan Naing Kyaw** | Payment History, Tutor Earnings, Contact Us, README, Weekly Logbook, screenshots |
+
+---
+
+## Prototype Files
+
+The complete PeerTutor prototype has been organized into a single compressed package for easier distribution and submission.
+
+- Prototype Location: [`prototype/PeerTutor.zip`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/84e00800088ed6f3ff2861a7758c035ab2594ae5/prototype/PeerTutor.zip)
+- Contents:
+  - HTML pages
+  - CSS stylesheets
+  - JavaScript files
+  - Images and assets
+- Platform: HTML, CSS, JavaScript
+- Notes:
+  - The prototype is fully navigable through the user interface.
+  - Backend services, authentication, payment processing, and database operations are simulated for the MVP.
+
+## Sprint 1 Summary
+
+Sprint 1 successfully established the core PeerTutor MVP by implementing the main website structure, responsive user interfaces, navigation system, tutor discovery workflow, tutoring request process, simulated payment flow, administrator management features, and separate dashboards for Students, Tutors, and Administrators.
+
+Additional onboarding pages, including the Tutor Pre-Dashboard and Tutor Application workflow, were introduced to improve the registration process and better reflect the real tutor approval lifecycle.
+
+The complete front-end prototype has been consolidated into a single `prototype/PeerTutor.zip` package containing all HTML, CSS, JavaScript, and supporting assets for easier deployment and evaluation.
+
+Authentication, persistent database storage, payment verification, approval workflows, notifications, and other backend services remain simulated as part of the MVP and are planned for future implementation.
