@@ -48,7 +48,57 @@ The generic Lab 10 example has been adjusted to use PeerTutor's actual FR-01 to 
 | **FR-19** | Keep prototype features and screens traceable to approved requirements, user stories, issues, files, and evidence. | Entire Prototype and Lab 10 Documentation | **Working Draft** | `docs/implementation-plan.md`; `docs/feature-implementation-status.md`; GitHub Issues #1-#13; Lab 05 Feature-Requirement Mapping | Add actual commit IDs, completed screenshot paths, and repository links. Link every responsible-design change from Lab 09 to an issue or commit before marking the requirement complete. |
 
 ## Summary
-- Features working today:
-- Features partially working:
-- Features not yet started:
-- Features requiring instructor feedback:
+
+### Features Working Today
+- Homepage and main landing-page content
+- Role-selection interface
+- Sign-in and sign-up interfaces
+- Tutor browsing and basic keyword search
+- Tutor profile and detail display
+- Tutoring session booking interface
+- Student Dashboard
+- Tutor Dashboard
+- Tutor application form
+- Tutor profile-management interface
+- Admin Dashboard
+- Simulated tutor approval and rejection
+- Simulated payment interface
+- Dashboard summary information
+- Mobile navigation
+- Selected form-validation and confirmation messages
+- About Us and Contact Us pages
+
+### Features Partially Working
+- Advanced tutor filtering by subject, major, rating, and price
+- Persistent data storage
+- Tutoring-request status updates
+- Payment-history presentation
+- Payment verification and tutor earnings management
+- Form validation across all pages
+- Role-based access control
+- Dashboard analytics
+- Responsive behavior across every screen size
+- Privacy consent and responsible-data explanations
+- Profile preview and separation of public/private tutor information
+- Consistent confirmation and next-step messages
+
+### Features Not Yet Fully Implemented
+- Real user authentication and authorization
+- Permanent database storage
+- Real-time data synchronization
+- Production-level security
+- Server-side validation
+- Real online payment processing
+- Secure document upload
+- Automated email or notification delivery
+- Activity logging
+- Multi-user concurrent access
+
+### Features Requiring Instructor Feedback
+- Whether static sample data is sufficient for Sprint 1 or `localStorage`/Google Sheets must be connected
+- Whether the simulated payment page should retain any card or bank interface fields
+- Whether payment history requires a separate HTML page in Sprint 1
+- Whether tutor approval, payment verification, and tutor earnings must be separate admin pages
+- Whether basic keyword search is sufficient or every planned filter must be functional
+- Whether Privacy Notice and Terms of Use require separate pages during Sprint 1
+- Whether the current dashboard summaries satisfy the minimum analytics requirement
