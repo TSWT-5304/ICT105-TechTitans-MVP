@@ -10,3 +10,6 @@
 # Figure-4: Role-Selection Page
 <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/b811b9db-ffdf-44da-9144-54586e0bc156" />
 
+# Figure-5: Tutor-Profile Page
+<img width="1895" height="912" alt="image" src="https://github.com/user-attachments/assets/92ee1c8a-8344-46e3-940a-a849cc0d24f3" />
+
