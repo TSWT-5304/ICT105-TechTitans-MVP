@@ -487,6 +487,67 @@ Lab 07 completed the planning phase for validating the PeerTutor MVP before fina
 - Finalize the PeerTutor prototype and prepare the complete project presentation and demonstration for submission
 
 
+# Weekly Logbook - Lab 10
+
+## Lab Topic
+**MVP Implementation Sprint 1**
+
+---
+
+## What We Built Today
+
+- Set up the Sprint 1 prototype structure and implemented the main HTML pages for the PeerTutor platform, including the Homepage, Role Selection, Login, Sign Up, Tutor Search, Tutor Profile, Tutoring Request, Dashboards, Payment, Reviews, Notifications, and Contact Us pages.
+- Developed a shared user interface using a common CSS stylesheet and JavaScript file to provide consistent navigation, layout, responsive design, basic interactions, and form validation across the prototype.
+- Prepared the implementation documentation, including the Implementation Plan, Feature Implementation Status, Prototype Link, README update, Weekly Logbook, and prototype screenshots to maintain traceability between the Functional Requirements, User Stories, and Sprint 1 implementation.
+
+---
+
+## Requirement IDs Addressed
+
+- **FR-01 – FR-03:** Homepage, primary user pathways, user input forms, and tutor application.
+- **FR-05 – FR-12:** Tutor search, dashboards, detail views, payment process, payment history, status tracking, administrator functions, and payment management.
+- **FR-13 – FR-19:** Form validation, confirmation messages, UI consistency, responsive design, responsible data handling, and prototype traceability.
+
+---
+
+## Contribution by Members
+
+| Member | Contribution | Evidence |
+|---|---|---|
+| **Thin Thiri Naing** | Led Sprint 1 implementation planning, developed the Homepage and Role Selection pages, maintained requirement traceability, and prepared the Implementation Plan. | `index.html`, `role-selection.html`, `docs/implementation-plan.md` |
+| **Shinn Thant Maung** | Implemented Login, Sign Up, Tutor Search pages, prepared the Prototype Link, and updated the Feature Implementation Status documentation. | `login.html`, `signup.html`, `tutor-search.html`, documentation updates |
+| **Thae Su Win Thu** | Implemented the core prototype pages, shared CSS and JavaScript, dashboards, tutor application, payment workflow, notifications, and responsive interface improvements. | prototype HTML files, `style.css`, `script.js` |
+| **Yan Naing Kyaw** | Implemented Payment History, Tutor Earnings, Contact Us pages, updated the Weekly Logbook and README, and prepared prototype screenshots for Sprint 1 evidence. | documentation files, screenshots |
+
+---
+
+## Screenshots Added
+
+- `/screenshots/homepage.png`
+- `/screenshots/input-form.png`
+- `/screenshots/record-list.png`
+- `/screenshots/detail-view.png`
+- `/screenshots/admin-view.png`
+
+---
+
+## Problems Faced
+
+- The prototype currently uses a simulated frontend without a production backend, so authentication, payment processing, and data storage are demonstrated using sample data.
+- Integrating all prototype pages while maintaining consistent navigation, responsive layouts, and shared styling required additional coordination among team members.
+- Some JavaScript interactions, search filtering, payment verification, and status updates are still under development and require further refinement during the next sprint.
+
+---
+
+## Plan for Next Lab
+
+- Complete the remaining Sprint 1 prototype features and improve JavaScript interactions across all pages.
+- Finalize search and filtering, status tracking, payment verification, tutor earnings management, and dashboard functionality.
+- Improve responsive design, prototype usability, and consistency across all screens.
+- Verify that every implemented feature is fully traceable to the Functional Requirements, User Stories, and MVP Feature List before continuing to the next implementation sprint.
+
+
+
 
 
 
