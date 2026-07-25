@@ -546,6 +546,77 @@ Lab 07 completed the planning phase for validating the PeerTutor MVP before fina
 - Improve responsive design, prototype usability, and consistency across all screens.
 - Verify that every implemented feature is fully traceable to the Functional Requirements, User Stories, and MVP Feature List before continuing to the next implementation sprint.
 
+---
+
+# Weekly Logbook - Lab 11
+
+## Lab Topic
+
+MVP Implementation Sprint 2 and Startup Metrics
+
+## Group Case
+
+PeerTutor - Student-to-Student Tutoring Marketplace
+
+## Work Completed Today
+
+- Reviewed Lab 10 prototype progress and compared implemented features with system-requirements.md.
+- Updated feature implementation status to maintain requirement traceability.
+- Created prototype datasets:
+  - PrototypeRecords.csv
+  - ActivityLog.csv
+- Imported datasets into Power BI and created startup/product metrics dashboard.
+- Added analytics evidence including tutoring request activity, status tracking, user activity, and requirement coverage.
+- Updated documentation files for Lab 11 submission.
+
+## Member Contributions
+
+| Member Name | Contribution | File/Feature Updated | GitHub Evidence |
+|---|---|---|---|
+| Thin Thiri Naing | Prepared startup metrics, created prototype datasets, analyzed dashboard insights, updated requirement tracking | startup-metrics.md, PrototypeRecords.csv, ActivityLog.csv, feature-implementation-status.md | Commit / Issue evidence |
+| Shinn Thant Maung | Supported validation testing, reviewed activity data and user-flow testing | prototype-testing-notes.md, testing evidence | Commit / Issue evidence |
+| Thae Su Win Thu | Improved frontend prototype, interface consistency, and prototype functions | prototype files, UI screens | Commit / Issue evidence |
+| Yan Naing Kyaw | Updated README, documentation structure, and weekly logbook | README.md, weekly-logbook.md | Commit / Issue evidence |
+
+## Requirements Addressed
+
+- FR-03: User input/submission
+- FR-04: Data storage and record management
+- FR-05: View records/information list
+- FR-06: Search and filter functionality
+- FR-08: Status tracking workflow
+- FR-12: Dashboard and analytics view
+
+## Metrics Added
+
+The following startup/product metrics were added:
+
+| Metric | Purpose |
+|---|---|
+| Total Tutoring Requests | Measures overall platform activity |
+| Pending Requests | Shows unfinished tutoring requests |
+| Completed Requests | Measures successful workflow completion |
+| User Activity Events | Shows interaction frequency |
+| Category Distribution | Shows common tutoring categories |
+| Average Processing Time | Measures operational efficiency |
+| Requirement Coverage Activity | Connects dashboard data with system requirements |
+
+## Problems Found
+
+- Prototype still uses simulated data instead of a real backend database.
+- Some workflow actions are visually completed but require permanent data storage.
+- Authentication and payment functions remain simulated.
+- Dashboard metrics depend on manually prepared prototype datasets.
+
+## Next Action Before Lab 12
+
+- Continue improving prototype functionality.
+- Review dashboard insights and connect metrics with final prototype decisions.
+- Improve data storage and workflow simulation.
+- Complete remaining documentation and final prototype preparation.
+
+
+
 
 
 
