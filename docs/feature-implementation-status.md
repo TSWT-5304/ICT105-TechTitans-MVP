@@ -102,3 +102,32 @@ The generic Lab 10 example has been adjusted to use PeerTutor's actual FR-01 to 
 - Whether basic keyword search is sufficient or every planned filter must be functional
 - Whether Privacy Notice and Terms of Use require separate pages during Sprint 1
 - Whether the current dashboard summaries satisfy the minimum analytics requirement
+
+---
+
+# Updated Feature Implementation Status for Lab 11
+
+> Every prototype feature must connect to `system-requirements.md`.
+
+| Req ID | Required Functionality | Screen/Module | Lab 10 Status | Lab 11 Status | Owner | Evidence Screenshot/Commit | Notes/Next Action |
+|---|---|---|---|---|---|---|---|
+| FR-01 | Clear problem-specific homepage or landing screen | index.html | Working Draft | Completed | Thin Thiri Naing | Homepage screenshot | Homepage clearly presents PeerTutor, target users, project purpose, and navigation. |
+| FR-02 | Primary user pathway | Student & Tutor Workflow | Working Draft | Completed | Thin Thiri Naing | Prototype pages, navigation flow | Student and Tutor workflows are connected through the prototype. Backend authentication and processing remain simulated for the MVP. |
+| FR-03 | User input or data submission feature | request-form.html, tutor-application.html | Working Draft | Completed | Thae Su Win Thu | Input Form screenshot | Required tutoring requests and tutor application forms are implemented with basic validation. |
+| FR-04 | Data storage or record management | script.js / Simulated Data | Needs Fix | Partially Completed | Thae Su Win Thu | script.js | Simulated data is used for prototype interactions. Persistent storage using localStorage or Google Sheets will be improved in future development. |
+| FR-05 | View records / information list | tutor-search.html, payment-history.html, dashboards | Working Draft | Completed | Shinn Thant Maung, Yan Naing Kyaw | Record List screenshot | Tutor listings, payment history, and dashboard records are displayed correctly using sample data. |
+| FR-06 | Search, filter, or category function | tutor-search.html | Needs Fix | Partially Completed | Shinn Thant Maung | Search page | Basic keyword search and filtering interface are implemented. Additional filtering logic and testing will continue in Sprint 2. |
+| FR-07 | Online payment | payment.html | Needs Fix | Partially Completed | Thae Su Win Thu | Payment screenshot | Simulated payment workflow is available. No real payment gateway or financial transaction is connected. |
+| FR-08 | Detail view for each record | tutor-profile.html | Needs Fix | Completed | Thae Su Win Thu | Detail View screenshot | Tutor profiles, tutoring request details, and payment details are displayed correctly. |
+| FR-09 | Payment history | payment-history.html | Needs Fix | Partially Completed | Yan Naing Kyaw | Payment History screenshot | Payment history is displayed using simulated records. Filtering and persistent record management can be improved in future iterations. |
+| FR-10 | Status or progress tracking | student-dashboard.html, tutor-dashboard.html | Needs Fix | Partially Completed | Thae Su Win Thu | Dashboard screenshot | Request, payment, and tutoring statuses are displayed through simulated data. Permanent status storage will be added later. |
+| FR-11 | Admin or manager function | admin-dashboard.html, tutor-approval.html | Working Draft | Completed | Thae Su Win Thu | Admin View screenshot | Admin functions support tutor approval, payment verification, user management, and platform administration through simulation. |
+| FR-12 | Payment management | payment-verification.html | Working Draft | Completed | Thae Su Win Thu | Payment Verification screenshot | Admin verifies student payments, records platform commission, transfers tutor earnings, and updates payment status through a simulated workflow. |
+| FR-13 | Basic validation and error prevention | Forms | Needs Fix | Partially Completed | Thae Su Win Thu | Validation messages | HTML and JavaScript validation are implemented. Additional validation and data integrity improvements are planned. |
+| FR-14 | Confirmation or feedback message | Request, Registration & Payment Flow | Working Draft | Completed | Thae Su Win Thu | Prototype interaction | Confirmation messages are displayed after request submission, tutor registration, payment, and verification actions. |
+| FR-15 | Dashboard, summary, or simple analytics view | Student, Tutor & Admin Dashboards | Working Draft | Completed | Thae Su Win Thu | Dashboard screenshot | Dashboards display summaries for each user role. Startup metrics will be expanded during Lab 11. |
+| FR-16 | Basic user interface consistency | All prototype pages | Working Draft | Completed | Thae Su Win Thu | style.css | Navigation, colours, typography, buttons, icons, and layouts remain consistent throughout the prototype. |
+| FR-17 | Mobile-friendly or responsive design consideration | All prototype pages | Working Draft | Partially Completed | Thae Su Win Thu | Responsive testing | Responsive layouts have been implemented and tested. Additional optimization for different screen sizes will continue. |
+| FR-18 | Basic privacy and responsible data handling | Forms & Data Collection | Needs Fix | Partially Completed | Thin Thiri Naing, Yan Naing Kyaw | Lab 09 documentation | Prototype follows data minimization and responsible data handling principles. Privacy Notice and Terms of Use will be further integrated into the prototype. |
+| FR-19 | Final prototype traceability | Documentation | Working Draft | Completed | Yan Naing Kyaw | README, Weekly Logbook, Feature Status | Prototype remains traceable to system requirements, user stories, MVP feature list, GitHub issues, and repository documentation. |
+
