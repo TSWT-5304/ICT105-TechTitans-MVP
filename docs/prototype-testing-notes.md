@@ -19,7 +19,20 @@
 | T-07 | Dashboard Metrics | Open the Power BI dashboard. | Dashboard displays accurate metrics including Total Requests, Pending Requests, Completion Rate, Total Activity Events, Total Revenue, and Average Processing Time. | Dashboard metrics matched the imported CSV datasets and displayed correctly. | Passed | Dashboard updates only when the dataset is refreshed manually. | Connect the dashboard to a live data source for automatic updates. |
 
 ## Summary of Issues
-List the main issues found during testing.
+The prototype successfully demonstrates the main PeerTutor workflow; however, several limitations remain due to the frontend-only implementation.
+
+- Data is currently simulated and is not permanently stored after refreshing the browser.
+- Search and filtering support only basic functionality and can be enhanced.
+- Administrative updates are simulated and are not connected to a backend database.
+- Authentication and authorization are not implemented; user roles are demonstrated through separate prototype pages.
+- The Power BI dashboard requires manual dataset refresh because it is connected to static CSV files.
 
 ## Improvements Completed During Lab 11
-List improvements completed and GitHub commit references.
+- Updated the **Feature Implementation Status** to reflect Sprint 2 progress and requirement traceability.
+- Created a **Power BI dashboard** to visualize startup and product metrics.
+- Prepared prototype datasets (`prototype-records.csv`, `activity-log.csv`, and `data-dictionary.csv`) for analytics.
+- Added startup metrics documentation (`startup-metrics.md`).
+- Improved project documentation, screenshots, and README for Sprint 2.
+- Verified that prototype features remain aligned with the approved `system-requirements.md` and MVP scope.
+
+> **GitHub Commit Reference:** Sprint 2 implementation commits (Lab 11).
