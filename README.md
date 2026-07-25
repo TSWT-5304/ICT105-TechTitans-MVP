@@ -520,3 +520,79 @@ Additional onboarding pages, including the Tutor Pre-Dashboard and Tutor Applica
 The complete front-end prototype has been consolidated into a single `prototype/PeerTutor.zip` package containing all HTML, CSS, JavaScript, and supporting assets for easier deployment and evaluation.
 
 Authentication, persistent database storage, payment verification, approval workflows, notifications, and other backend services remain simulated as part of the MVP and are planned for future implementation.
+
+---
+
+# Lab 11: MVP Implementation Sprint 2 and Startup Metrics
+
+## Prototype Progress
+
+During Lab 11, the PeerTutor prototype was improved from the first working MVP version created in Lab 10. 
+The team focused on improving data handling, adding startup/product metrics, creating a Power BI analytics dashboard, and improving requirement traceability.
+
+The prototype now includes simulated tutoring request records and user activity data to demonstrate how PeerTutor activities can be monitored and evaluated.
+
+## Implemented / Improved Features
+
+| Requirement ID | Feature | Status | Evidence |
+|---|---|---|---|
+| FR-03 | User input/submission for tutoring requests and tutor applications | Completed | Request form, tutor application pages, prototype screenshots |
+| FR-04 | Simulated data storage and record management | Completed | PrototypeRecords.csv and ActivityLog.csv in /data/ |
+| FR-05 | View tutoring records and information lists | Completed | Tutor list, request records, dashboard tables |
+| FR-06 | Search and filter tutor information | Completed | Search/filter interface and activity log evidence |
+| FR-08 | Request/payment/status tracking workflow | Completed | Student and tutor dashboard status display |
+| FR-11 | Confirmation and feedback messages | Completed | Prototype interaction flow |
+| FR-12 | Dashboard and analytics summary | Completed | Power BI dashboard screenshot |
+
+## Startup/Product Metrics
+
+The team added startup/product metrics to evaluate PeerTutor activity and prototype performance.
+
+Implemented metrics include:
+
+- Total tutoring requests
+- Pending requests
+- Completed requests
+- User activity events
+- Category distribution
+- Average processing time
+- Requirement activity coverage
+
+The metrics are generated from:
+
+- PrototypeRecords.csv
+- ActivityLog.csv
+
+and visualized using Power BI.
+
+## Prototype Screenshots
+
+Updated Lab 11 screenshots:
+
+- Updated homepage:
+- Updated input form:
+- Updated record list:
+- Updated detail view:
+- Updated dashboard:
+- Updated admin view:
+- Power BI dashboard:
+
+## Member Contributions
+
+| Member | Contribution |
+|---|---|
+| Thin Thiri Naing | Updated feature requirement tracking, prepared startup metrics, created prototype datasets, and analyzed product performance. |
+| Shinn Thant Maung | Prepared validation-related data, supported prototype testing, and reviewed user-flow improvements. |
+| Thae Su Win Thu | Improved prototype interface, frontend implementation, and technical features. |
+| Yan Naing Kyaw | Updated README, weekly logbook, documentation structure, and repository organization. |
+
+## Remaining Work
+
+Before the final prototype submission, the team will continue improving:
+
+- Backend/database integration
+- More realistic user authentication and authorization
+- More advanced search and filtering
+- More complete payment workflow
+- Final usability testing and documentation refinement
+
