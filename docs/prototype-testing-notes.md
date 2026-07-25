@@ -1,7 +1,7 @@
 # Prototype Testing Notes
 
 ## Test Environment
-- Prototype link or folder: `/prototype/`
+- Prototype link or folder: [`/prototype/`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/8d76b82857b505cdbca8b82584efe47d3f816b73/prototype)
 - Browser/device used: Google Chrome (Desktop), Microsoft Edge (Desktop)
 - Tester role: Student, Tutor, and Administrator
 - Test date: 25 July 2026
@@ -16,7 +16,7 @@
 | T-04 | Search and Filter Tutors | Enter keywords or select search/filter options. | Relevant tutors are displayed based on search criteria. | Basic search and filtering interface worked as expected. | Passed | Filtering logic can be improved for multiple criteria. | Enhance JavaScript filtering and add advanced search options. |
 | T-05 | View Tutor Profile | Select a tutor from the tutor list. | Detailed tutor profile is displayed, including subject, experience, availability, and pricing. | Tutor profile page displayed correctly. | Passed | None | No action required. |
 | T-06 | Admin Management | Open `admin-dashboard.html`, approve tutors, verify payments, and update request status. | Administrator can manage tutor approvals, payment verification, and request status through simulated actions. | Admin workflow functions correctly using simulated frontend interactions. | Passed | Changes are not permanently stored. | Integrate a backend database for persistent updates. |
-| T-07 | Dashboard Metrics | Open the Power BI dashboard. | Dashboard displays accurate metrics including Total Requests, Pending Requests, Completion Rate, Total Activity Events, Total Revenue, and Average Processing Time. | Dashboard metrics matched the imported CSV datasets and displayed correctly. | Passed | Dashboard updates only when the dataset is refreshed manually. | Connect the dashboard to a live data source for automatic updates. |
+| T-07 | Dashboard Metrics | Open Power BI dashboard | Dashboard displays accurate metrics including Total Requests, Pending Requests, Completion Rate, Total Activity Events, Total Revenue, and Average Processing Time. | Dashboard metrics matched the imported CSV datasets and displayed correctly. | Passed | Dashboard updates only when the dataset is refreshed manually. | Connect the dashboard to a live data source for automatic updates. |
 
 ## Summary of Issues
 The prototype successfully demonstrates the main PeerTutor workflow; however, several limitations remain due to the frontend-only implementation.
@@ -30,9 +30,9 @@ The prototype successfully demonstrates the main PeerTutor workflow; however, se
 ## Improvements Completed During Lab 11
 - Updated the **Feature Implementation Status** to reflect Sprint 2 progress and requirement traceability.
 - Created a **Power BI dashboard** to visualize startup and product metrics.
-- Prepared prototype datasets (`prototype-records.csv`, `activity-log.csv`, and `data-dictionary.csv`) for analytics.
-- Added startup metrics documentation (`startup-metrics.md`).
+- Prepared prototype datasets ([`prototype-records.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/8d76b82857b505cdbca8b82584efe47d3f816b73/data/lab11_prototype_records.csv), [`activity-log.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/8d76b82857b505cdbca8b82584efe47d3f816b73/data/lab11_activity_log.csv), and [`data-dictionary.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/8d76b82857b505cdbca8b82584efe47d3f816b73/data/lab11_data_dictionary.csv)) for analytics.
+- Added startup metrics documentation ([`startup-metrics.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/8d76b82857b505cdbca8b82584efe47d3f816b73/docs/startup-metrics.md)).
 - Improved project documentation, screenshots, and README for Sprint 2.
-- Verified that prototype features remain aligned with the approved `system-requirements.md` and MVP scope.
+- Verified that prototype features remain aligned with the approved [`system-requirements.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/8d76b82857b505cdbca8b82584efe47d3f816b73/docs/system-requirements.md) and MVP scope.
 
 > **GitHub Commit Reference:** Sprint 2 implementation commits (Lab 11).
