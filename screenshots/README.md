@@ -1,15 +1,15 @@
-# Figure-1: PeerTutor Homepage
-<img width="2328" height="5991" alt="homepage" src="https://github.com/user-attachments/assets/131568ab-b084-4cc2-bd51-d822cd7a4287" />
+## PeerTutor Prototype Screenshots
 
-# Figure-2: About Us Page
-<img width="2267" height="5581" alt="AboutUs" src="https://github.com/user-attachments/assets/36788159-1968-40e1-bdff-7dd1cea98c01" />
+The following figures provide visual evidence of the PeerTutor prototype and connect each implemented interface to its associated Functional Requirements. The complete screenshot collection also supports **FR-19 – Requirement Traceability**.
 
-# Figure-3: Contact Us Page
-
-
-# Figure-4: Role-Selection Page
-<img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/b811b9db-ffdf-44da-9144-54586e0bc156" />
-
-# Figure-5: Tutor-Profile Page
-<img width="1895" height="912" alt="image" src="https://github.com/user-attachments/assets/92ee1c8a-8344-46e3-940a-a849cc0d24f3" />
-
+| Figure Image | Description | Associated Functional Requirements |
+|---|---|---|
+| **Figure 1:**<br> [PeerTutor Homepage.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/7dfa21b63fd135fd17e438f64fc29eccdd3d0999/screenshots/PeerTutor%20Homepage.png) | Introduces the student-to-student tutoring marketplace and provides entry points to the main Student, Tutor, and Administrator pathways. <br><br> Its consistent and responsive interface supports homepage access, primary user navigation, and use on desktop and mobile devices. | FR-01, FR-02, FR-16, FR-17 |
+| **Figure 2:**<br> [Tutor Search and Filtering Page.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/ee316196c00822a7b8620c470485138dc7192b6d/screenshots/Tutor%20Search%20and%20Filtering%20Page.png) | Presents available tutor records and allows students to search and filter tutors using criteria such as subject, rating, hourly rate, and availability. <br><br> Each result provides summary information and access to the selected tutor's detailed profile. | FR-05, FR-06, FR-08, FR-17 |
+| **Figure 3:**<br> [Detailed Tutor Profile Page.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/8b8909865d9ada424012d58e33393665183b0c6c/screenshots/Detailed%20Tutor%20Profile%20Page.png) | Presents the tutor's academic background, teaching experience, specialties, availability, hourly rate, and student reviews. <br><br> It helps students evaluate a tutor before continuing to the session-booking process through a consistent and responsive interface. | FR-08, FR-16, FR-17 |
+| **Figure 4:**<br> [Tutoring Session Booking Form Page.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/8b8909865d9ada424012d58e33393665183b0c6c/screenshots/Tutoring%20Session%20Booking%20Form%20Page.png) | Collects the selected date and time, subject, session length, and learning focus. <br><br> The prototype validates the required input, simulates storing the submitted request, provides a review step, and displays a confirmation message after submission. | FR-03, FR-04, FR-13, FR-14 |
+| **Figure 5:**<br> [Student Dashboard Before Payment Page.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/5b48ad9f0ea10182238b0d25e538a902e7d4c609/screenshots/Student%20Dashboard%20Before%20Payment%20Page.png) | Displays the student's tutoring request as a record and shows its current booking and payment status. <br><br> It provides summary information and relevant actions, including payment and rescheduling, while communicating the next required step to the student. | FR-05, FR-10, FR-14, FR-15 |
+| **Figure 6:**<br> [Simulated Payment Process Page.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/076a30d3e6c023aa14b4f3b56314ffb7fb27f516/screenshots/Simulated%20Payment%20Process%20Page.png) | Demonstrates a simulated payment process in which the student selects a payment method, provides the required billing information, and reviews the session summary. <br><br> Input validation, responsible data handling, and a payment-success message are included for the MVP. | FR-07, FR-10, FR-13, FR-14, FR-18 |
+| **Figure 7:**<br> [Student Dashboard After Payment Page.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/076a30d3e6c023aa14b4f3b56314ffb7fb27f516/screenshots/Student%20Dashboard%20After%20Payment%20Page.png) | Shows the session after simulated payment has been completed. <br><br> It organizes information into upcoming sessions, past sessions, saved tutors, payment history, and status summaries so students can monitor their tutoring activity. | FR-07, FR-09, FR-10, FR-14, FR-15 |
+| **Figure 8:**<br> [Tutor Application Apply Form Page.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d32547fbc70651f26a561b13b08637af329e49f3/screenshots/Tutor%20Application%20Apply%20Form%20Page.png) | Supports the Tutor pathway by collecting personal information, academic background, teaching details, and supporting documents. <br><br> It validates required fields, simulates application storage, and provides a confirmation message after submission while applying responsible data-handling principles. | FR-02, FR-03, FR-04, FR-13, FR-14, FR-18 |
+| **Figure 9:**<br> [Tutor Dashboard Page.png](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/80895825df7fd094bbe5f37535c6841a18db7fd9/screenshots/Tutor%20Dashboard%20Page.png) | Presents session requests, upcoming sessions, session history, payment status, earnings, recent transactions, and student reviews. <br><br> It allows approved tutors to monitor requests and tutoring activity from one dashboard. | FR-05, FR-09, FR-10, FR-12, FR-15 |
