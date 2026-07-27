@@ -664,6 +664,26 @@ Five metrics across awareness, action, feedback, and conversion: landing page vi
 (M-04), and interest conversion = demo attempts ÷ landing page views 
 (M-05). Collected via the landing page's click tracking, a feedback Google Form, and a shared tracking spreadsheet (`data/acquisition-metrics-template.csv`).
 
+## Problems Encountered 
+The team initially experienced confusion about whether to upload only `index.html`, the complete ZIP file, or all supporting prototype files. Uploading only the HTML file would prevent the CSS, JavaScript, images, and connected pages from working correctly. 
+
+The problem was resolved by preserving and uploading the required `html`, `css`, `js`, and image or asset folders. The team also created separate GitHub Pages links for the complete Lab 10 MVP and the Lab 12 marketing landing page to maintain clear traceability between the two deliverables. 
+
+Another challenge was ensuring that the landing-page claims did not present simulated statistics or functions as verified operational results. These elements were documented as illustrative MVP content. 
+
+## Next Action Before Lab 13
+- Test the landing page on desktop and mobile devices. 
+- Confirm that all navigation and CTA links work. 
+- Verify that the GitHub Pages link is publicly accessible. 
+- Improve the QR poster → demo path (fewer steps, clearer next action) to lift the conversion metric.
+- Test the marketing QR code using a mobile phone. 
+- Collect initial landing-page views, CTA clicks, and feedback. 
+- Record acquisition results in the metrics template. 
+- Review the results and identify possible improvements. 
+- Confirm that all GitHub issues, commits, screenshots, and documentation are complete. 
+- Finalize screenshots and confirm all member commit links in the README.
+
+
 
 
 
