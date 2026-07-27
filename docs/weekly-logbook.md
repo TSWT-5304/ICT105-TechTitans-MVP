@@ -615,6 +615,37 @@ The following startup/product metrics were added:
 - Improve data storage and workflow simulation.
 - Complete remaining documentation and final prototype preparation.
 
+---
+
+# Weekly Logbook - Lab 12
+ 
+## Group Name
+TechTitans
+ 
+## Project Title
+PeerTutor – Student-to-Student Tutoring Marketplace
+ 
+## Lab Date
+27th July 2026
+ 
+## Work Completed Today
+ 
+| Member Name | Contribution | File/Commit Evidence |
+| --- | --- | --- |
+| Thae Su Win Thu | Built the landing page (`index.html`, `style.css`, `script.js`) matching the existing PeerTutor homepage design; wired CTA buttons and in-memory click tracking; wrote landing page content | Issues 92, 93, 94, 96, 101, 102 |
+| Yan Naing Kyaw | Wrote `landing-page-link.md`, this weekly logbook, and the README update | Issues 95, 103, 104 |
+| Thin Thiri Naing | Wrote the go-to-market plan, marketing messages, and captured the CTA screenshot | Issues 97, 98, 102 |
+| Shinn Thant Maung | Defined acquisition metrics (M-01–M-05), logged the pilot dataset, and captured the landing page screenshot | Issues 99, 100, 101|
+
+## Landing Page Progress 
+- The team prepared and published a marketing-focused PeerTutor landing page based on the existing MVP homepage. 
+- The page introduces PeerTutor’s main value proposition, explains how the platform works, presents example student tutors and available majors, and communicates the benefits of affordable rates, peer connections, flexible scheduling, and approved tutor profiles.
+- The landing page includes clear actions for students who want to find a tutor and students who want to become tutors. 
+- Supporting HTML, CSS, JavaScript, images, and linked pages were uploaded while preserving the original project folder structure. 
+
+The live landing page is available at: [Open the PeerTutor Landing Page](https://tswt-5304.github.io/ICT105-TechTitans-MVP/landing-page/html/index.html) 
+
+
 
 
 
