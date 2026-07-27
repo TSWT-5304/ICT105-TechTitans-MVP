@@ -645,6 +645,26 @@ PeerTutor – Student-to-Student Tutoring Marketplace
 
 The live landing page is available at: [Open the PeerTutor Landing Page](https://tswt-5304.github.io/ICT105-TechTitans-MVP/landing-page/html/index.html) 
 
+## Go-to-Market Progress 
+The initial target users are students at Rangsit International College who need academic support and high-performing students who are interested in becoming student tutors. 
+
+The team selected the following communication channels: 
+- University class chats - LINE groups 
+- Facebook student groups - Instagram and other social-media platforms 
+- Posters with QR codes 
+- Student clubs and word-of-mouth promotion 
+
+Channel-specific messages were created to communicate PeerTutor’s benefits clearly and direct users to the published landing page. The messages focus on finding suitable peer tutors, comparing tutor information, requesting tutoring sessions, and applying to become a student tutor. 
+
+## Metrics Plan
+Five metrics across awareness, action, feedback, and conversion: landing page views 
+(M-01), CTA clicks 
+(M-02), demo attempts 
+(M-03), feedback responses 
+(M-04), and interest conversion = demo attempts ÷ landing page views 
+(M-05). Collected via the landing page's click tracking, a feedback Google Form, and a shared tracking spreadsheet (`data/acquisition-metrics-template.csv`).
+
+
 
 
 
