@@ -597,3 +597,40 @@ Before the final prototype submission, the team will continue improving:
 - More complete payment workflow
 - Final usability testing and documentation refinement
 
+---
+
+## Lab 12 - Landing Page and Digital Go-to-Market
+
+### Landing Page 
+- **Landing page folder:** [`landing-page/`](landing-page/) 
+- **Published landing page:** [Open the PeerTutor Landing Page](https://tswt-5304.github.io/ICT105-TechTitans-MVP/landing-page/html/index.html) 
+- **Primary CTA:** Find a Tutor - **Secondary CTA:** Become a Student Tutor 
+- **Complete MVP demo:** [Open the PeerTutor MVP Prototype](https://tswt-5304.github.io/ICT105-TechTitans-MVP/prototype/PeerTutor/html/index.html) 
+
+The PeerTutor landing page introduces the platform’s main value proposition, explains how the tutoring process works, presents example tutor profiles and supported majors, and directs students to the appropriate prototype functions. 
+
+### Go-to-Market Plan
+- Target early users: Rangsit University International College (RIC) students needing tutoring support, plus a small group of pilot student tutors
+- Selected channels: Class/course chat groups, campus QR poster, Instagram/Facebook, RIC student club announcement
+- Main marketing message: PeerTutor helps RSU students find, evaluate, and book a peer tutor in one place — instead of searching scattered Facebook groups, LINE chats, and personal contacts.
+
+- [`docs/go-to-market-plan.md`](docs/go-to-market-plan.md) 
+- [`docs/marketing-message.md`](docs/marketing-message.md) 
+
+### Acquisition Metrics
+- Metric 1: Landing page views — 118 across 4 channels (target 40, exceeded)
+- Metric 2: CTA click-through rate — 29.7% (target 25%, met)
+- Metric 3: Demo attempts — 20 demo attempts (exceeding the target of **15**)
+- Metric 4: Feedback responses — 11 feedback responses (surpassing the target of **8**)
+- Metric 5: Interest conversion (demo attempts ÷ views) — 16.9% (target 20%, not yet met — priority for improvement)
+
+The acquisition measurement plan and tracking template are available in: 
+- [`docs/acquisition-metrics.md`](docs/acquisition-metrics.md) 
+- [`data/acquisition-metrics-template.csv`](data/acquisition-metrics-template.csv) 
+ 
+### Screenshots 
+
+- PeerTutor Landing Page ![PeerTutor Landing Page](screenshots/landing-page.png) 
+- Main Call-to-Action ![PeerTutor Call-to-Action](screenshots/call-to-action.png) 
+
+
