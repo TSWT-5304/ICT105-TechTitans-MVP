@@ -630,7 +630,34 @@ The acquisition measurement plan and tracking template are available in:
  
 ### Screenshots 
 
-- PeerTutor Landing Page ![PeerTutor Landing Page](screenshots/landing-page.png) 
-- Main Call-to-Action ![PeerTutor Call-to-Action](screenshots/call-to-action.png) 
+- [PeerTutor Landing Page ](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/f376980b1f5a1ea9a577d78b5b5e4dd8c18f69e5/screenshots/PeerTutor%20Homepage.png)
+- [Main Call-to-Action](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/f376980b1f5a1ea9a577d78b5b5e4dd8c18f69e5/screenshots/call-to-action.png)
+
+### Requirement Alignment 
+The landing page and its CTAs are aligned with the final functional requirements documented in [`system-requirements.md`](system-requirements.md). 
+- **FR-01 – Homepage:** The landing page clearly explains PeerTutor’s purpose, target users, value proposition, benefits, and available actions. 
+- **FR-02 – Platform Access:** Sign In, Sign Up, Get Started, and role-selection links provide access to the Student, Student Tutor, and Administrator user flows. 
+- **FR-05 and FR-06 – Tutor Search and Filtering:** The Find a Tutor CTA connects students to the Tutor Search and Filtering page. 
+- **FR-08 – Tutor Profile:** Tutor cards and View Profile actions allow students to review tutor subjects, ratings, reviews, qualifications, and prices. 
+- **FR-03, FR-13 and FR-14 – Tutoring Request:** The tutor-discovery flow guides students toward selecting a tutor and submitting a structured tutoring-session request. 
+- **FR-09 – Tutor Application:** The Become a Student Tutor and Earn Money Tutoring CTAs direct interested students to the tutor-application process. 
+
+The landing page maintains traceability between the identified user problem, final requirements, MVP prototype, validation activities, and go-to-market strategy. Authentication, payment verification, acquisition tracking, and selected platform interactions are identified as simulated MVP functions. 
+ 
+### Member Contributions
+| Member | Contribution | Commit/Issue Evidence |
+| --- | --- | --- |
+| Thae Su Win Thu | Landing page HTML/CSS/JS implementation, CTA wiring, and landing page content |  Issues 92, 93, 94, 96, 101, 102 |
+| Yan Naing Kyaw | `landing-page-link.md`, weekly logbook, and README update | Issues 95, 103, 104 |
+| Thin Thiri Naing | Go-to-market plan, marketing messages, and CTA screenshot | Issues 97, 98, 102 |
+| Shinn Thant Maung | Acquisition metrics definitions, pilot tracking data, and landing page screenshot |  Issues 99, 100, 101 |
+
+## Live Project Links
+
+| Lab | Deliverable | Live Link |
+| --- | --- | --- |
+| Lab 10 | Complete PeerTutor MVP Prototype | [Open MVP Prototype](https://tswt-5304.github.io/ICT105-TechTitans-MVP/prototype/PeerTutor/html/index.html) |
+| Lab 12 | PeerTutor Marketing Landing Page | [Open Landing Page](https://tswt-5304.github.io/ICT105-TechTitans-MVP/landing-page/html/index.html) |
+
 
 
