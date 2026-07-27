@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In – PeerTutor</title>
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <a class="logo" href="../html/index.html"
+        style="display: flex; justify-content: center; align-items: center; margin: 10px auto; width: max-content; text-decoration: none;">
+        <img src="../img/Logo.png" class="logo-icon">
+        <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+    </a>
+
+    <p class="signin-subtitle">Sign in as <span id="role-name">Student</span></p>
+
+    <div class="signin-card">
+
+        <div class="field">
+            <div class="field-header">
+                <label for="email">Email address</label>
+            </div>
+            <div class="input-wrap">
+                <input type="email" id="email" placeholder="you@university.edu" />
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="field-header">
+                <label for="password">Password</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="input-wrap">
+                <input type="password" id="password" value="••••••••" />
+                <button class="toggle-password" onclick="togglePassword()" aria-label="Toggle password visibility">
+                    <i class="ti ti-eye"></i>
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn-signin-submit" onclick="continueToDashboard()">Sign in</button>
+
+        <div class="divider"><span>OR</span></div>
+
+        <button class="btn-demo" onclick="fillDemo()">Fill demo credentials</button>
+
+        <p class="signin-footer">
+            Don't have an account? <a id="signup-link" href="signup.html?role=student">Sign up free</a>
+        </p>
+
+    </div>
+
+    <script>
+        const dashboardByRole = {
+            student: 'stu-dashboard.html',
+            tutor: 'tutor-pre-dashboard.html',
+            admin: 'admin-dashboard.html'
+        };
+
+        function getSelectedRole() {
+            const role = new URLSearchParams(window.location.search).get('role');
+            return dashboardByRole[role] ? role : 'student';
+        }
+
+        function continueToDashboard() {
+            window.location.href = dashboardByRole[getSelectedRole()];
+        }
+
+        function togglePassword() {
+            const input = document.getElementById('password');
+            const icon = document.querySelector('.toggle-password .ti');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.className = 'ti ti-eye-off';
+            } else {
+                input.type = 'password';
+                icon.className = 'ti ti-eye';
+            }
+        }
+
+        function fillDemo() {
+            document.getElementById('email').value = 'demo@university.edu';
+            document.getElementById('password').value = 'demo1234';
+        }
+
+        const selectedRole = getSelectedRole();
+        document.getElementById('role-name').textContent =
+            selectedRole.charAt(0).toUpperCase() + selectedRole.slice(1);
+        document.getElementById('signup-link').href =
+            'signup.html?role=' + encodeURIComponent(selectedRole);
+    </script>
+
+</body>
+
+</html>

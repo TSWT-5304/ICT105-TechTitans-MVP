@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>About Us</title>
+</head>
+
+<!-- PEERTUTOR LIVE CHAT -->
+<div class="live-chat" id="live-chat">
+
+    <!-- Open chat button -->
+    <button type="button" class="chat-launcher" id="chat-launcher" aria-label="Open live chat" aria-expanded="false">
+        <i class="ti ti-message-circle"></i>
+
+        <span class="chat-launcher-label">
+            Chat with us
+        </span>
+
+        <span class="chat-notification" id="chat-notification">
+            1
+        </span>
+    </button>
+
+    <!-- Chat window -->
+    <section class="chat-window" id="chat-window" aria-label="PeerTutor live chat" hidden>
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="chat-agent">
+
+                <div class="chat-agent-avatar">
+                    <i class="ti ti-headset"></i>
+
+                    <span class="chat-online-dot"></span>
+                </div>
+
+                <div>
+                    <h2>PeerTutor Support</h2>
+
+                    <p>
+                        <span class="chat-status-dot"></span>
+                        Online now
+                    </p>
+                </div>
+            </div>
+
+            <div class="chat-header-actions">
+                <button type="button" class="chat-header-button" id="chat-minimize" aria-label="Minimize chat">
+                    <i class="ti ti-minus"></i>
+                </button>
+
+                <button type="button" class="chat-header-button" id="chat-close" aria-label="Close chat">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="chat-messages" id="chat-messages" aria-live="polite">
+            <div class="chat-date">
+                Today
+            </div>
+
+            <div class="chat-message support-message">
+                <div class="message-avatar">
+                    <i class="ti ti-headset"></i>
+                </div>
+
+                <div>
+                    <div class="message-bubble">
+                        Hi! Welcome to PeerTutor. How can we help you today?
+                    </div>
+
+                    <span class="message-time">
+                        Just now
+                    </span>
+                </div>
+            </div>
+
+            <!-- Suggested questions -->
+            <div class="chat-suggestions" id="chat-suggestions">
+                <button type="button" class="chat-suggestion" data-message="How can I find a tutor?">
+                    Find a tutor
+                </button>
+
+                <button type="button" class="chat-suggestion" data-message="How can I become a tutor?">
+                    Become a tutor
+                </button>
+
+                <button type="button" class="chat-suggestion" data-message="I need help with payment.">
+                    Payment help
+                </button>
+            </div>
+        </div>
+
+        <!-- Typing indicator -->
+        <div class="chat-typing" id="chat-typing" hidden>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <p>Support is typing...</p>
+        </div>
+
+        <!-- Message input -->
+        <form class="chat-input-area" id="chat-form">
+            <input type="text" id="chat-input" maxlength="300" placeholder="Type your message..."
+                aria-label="Chat message" autocomplete="off">
+
+            <button type="submit" class="chat-send-button" id="chat-send" aria-label="Send message" disabled>
+                <i class="ti ti-send"></i>
+            </button>
+        </form>
+
+        <p class="chat-privacy-note">
+            Do not share passwords or payment information.
+        </p>
+    </section>
+</div>
+
+<body>
+    <div class="page">
+        <!-- Nav Bar -->
+        <nav class="dash-nav">
+            <a class="logo" href="../html/index.html">
+                <img src="../img/Logo.png" class="logo-icon">
+                <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+            </a>
+            <div class="dash-nav-links">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about-us.html" class="active">About Us</a>
+                <a href="../html/browse-tutors.html">Browse a Tutor</a>
+                <a href="../html/contact-us.html">Contact Us</a>
+            </div>
+            <div class="nav-actions">
+                <a href="../html/role-select.html" class="btn-signin">Sign in</a>
+                <a href="../html/role-select.html" class="btn-signup">Sign up</a>
+            </div>
+        </nav>
+
+        <!-- Our Story -->
+        <div class="section" style="background:#fff;">
+            <div class="section-inner">
+                <p class="section-label">Our Story</p>
+                <h2 class="section-title">From an Idea to a Student Learning Platform</h2>
+                <div class="story-grid">
+                    <div class="story-text">
+                        <p>PeerTutor was created by the TechTitans team as part of the ICT105 Fundamental Technology
+                            Entrepreneurship course at Rangsit University. During our customer research, we discovered
+                            that many students struggled to find reliable tutors because tutoring information was
+                            scattered across social media, messaging groups, and personal recommendations.
+                        </p>
+                        <p>At the same time, student tutors found it difficult to promote their services and connect
+                            with learners. To address these challenges, we developed PeerTutor—a student-to-student
+                            tutoring marketplace that brings tutor discovery, tutoring requests, and communication
+                            together on one platform.
+                        </p>
+                        <p>Our goal is to make academic support more accessible, affordable, and convenient for the
+                            Rangsit University community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="section" style="background:#f8faff;">
+            <div class="section-inner">
+                <p class="section-label">What Drives Us</p>
+                <h2 class="section-title">Our Mission & Vision</h2>
+                <p class="section-sub">We're not just building a tutoring platform. We're reimagining how students learn
+                    from each other.</p>
+                <div class="mv-grid">
+                    <div class="mv-card mission">
+                        <div class="mv-icon"><i class="ti ti-target"></i></div>
+                        <h3>Our Mission</h3>
+                        <p>To make high-quality, affordable academic support accessible to every university student — by
+                            connecting them with peers who have already succeeded in their exact courses. We believe the
+                            best tutors aren't always professors; they're the students sitting next to you who just aced
+                            the
+                            exam.</p>
+                    </div>
+                    <div class="mv-card vision">
+                        <div class="mv-icon"><i class="ti ti-eye"></i></div>
+                        <h3>Our Vision</h3>
+                        <p>A world where no student fails a class because they couldn't afford help or couldn't find the
+                            right support. We envision PeerTutor as the global standard for university peer learning — a
+                            platform where academic success is shared, not gatekept.</p>
+                    </div>
+                </div>
+
+                <!-- Values -->
+                <div style="margin-top:56px;">
+                    <p class="section-label">Our Values</p>
+                    <h2 class="section-title">What we stand for</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon" style="background:#dbeafe; color:#2563eb;"><i
+                                    class="ti ti-users"></i>
+                            </div>
+                            <h4>Peer-First Learning</h4>
+                            <p>We believe students learn best from students. Relatability and shared experience create
+                                better outcomes than traditional tutoring.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon" style="background:#dcfce7; color:#16a34a;"><i
+                                    class="ti ti-currency-dollar"></i></div>
+                            <h4>Affordability</h4>
+                            <p>Quality academic help shouldn't cost a fortune. Our platform keeps rates fair for
+                                students on
+                                both sides of the session.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon" style="background:#fef3c7; color:#d97706;"><i
+                                    class="ti ti-shield-check"></i></div>
+                            <h4>Trust & Safety</h4>
+                            <p>Every tutor is verified through their university, reviewed by students, and monitored for
+                                quality. You're always in safe hands.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon" style="background:#ede9fe; color:#7c3aed;"><i
+                                    class="ti ti-clock"></i>
+                            </div>
+                            <h4>Flexibility</h4>
+                            <p>Book sessions around your schedule. Last-minute session before an exam? No problem. We're
+                                built for real student life.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon" style="background:#fce7f3; color:#db2777;"><i
+                                    class="ti ti-heart"></i>
+                            </div>
+                            <h4>Community</h4>
+                            <p>PeerTutor is more than a marketplace. It's a community of students lifting each other up
+                                and
+                                paying it forward.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon" style="background:#e0f2fe; color:#0284c7;"><i
+                                    class="ti ti-chart-line"></i></div>
+                            <h4>Continuous Growth</h4>
+                            <p>We're constantly improving the platform based on student and tutor feedback. Your
+                                experience
+                                shapes what we build next.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Team -->
+        <div class="section" style="background:#fff;">
+            <div class="section-inner">
+                <p class="section-label">The Team</p>
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-sub">TechTitans is a student development team from the ICT105 course at Rangsit
+                    University.</p>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar" style="background:#2563eb;">TTRN</div>
+                        <h4>Thin Thiri Naing</h4>
+                        <p class="role">Product Lead</p>
+                        <p>Defines the project vision, identifies user needs, and guides overall product development.
+                        </p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar" style="background:#7c3aed;">STM</div>
+                        <h4>Shinn Thant Maung</h4>
+                        <p class="role">Validation Lead</p>
+                        <p>Conducts user research, gathers feedback, and validates ideas to ensure the platform solves
+                            real student problems.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar" style="background:#0ea5e9;">TSWT</div>
+                        <h4>Thae Su Win Thu</h4>
+                        <p class="role">UI/UX Lead & Technical Lead</p>
+                        <p>Designs user-friendly interfaces and leads the technical development of the PeerTutor
+                            platform.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar" style="background:#22c55e;">YNK</div>
+                        <h4>Yan Naing Kyaw</h4>
+                        <p class="role">Documentation Lead</p>
+                        <p>Prepares project documentation, maintains project records, and provides technical support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Subscribe -->
+        <div class="subscribe-section">
+            <h2>Stay in the Loop</h2>
+            <p>Get the latest updates on new tutors, features, and student success stories — straight to your inbox.</p>
+            <div class="subscribe-form">
+                <input class="subscribe-input" type="email" id="sub-email" placeholder="you@university.edu" />
+                <button class="btn-subscribe" onclick="handleSubscribe()">Subscribe</button>
+            </div>
+            <p class="subscribe-note">No spam. Unsubscribe anytime. We send 1–2 emails per month.</p>
+            <p id="sub-success" style="display:none; color:#fff; font-size:14px; margin-top:12px;">
+                <i class="ti ti-circle-check"></i> You're subscribed! Welcome to the PeerTutor community.
+            </p>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="section" style="background:#f8faff;">
+            <div class="section-inner">
+                <p class="section-label">Get in Touch</p>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-sub">Have a question, partnership idea, or just want to say hello? We'd love to hear
+                    from
+                    you.</p>
+
+                <div class="contact-grid">
+
+                    <!-- Contact info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background:#dbeafe; color:#2563eb;"><i
+                                    class="ti ti-mail"></i>
+                            </div>
+                            <div>
+                                <p class="contact-item-label">Email</p>
+                                <p class="contact-item-value">hello@peertutor.com</p>
+                                <p class="contact-item-sub">We reply within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background:#dcfce7; color:#16a34a;"><i
+                                    class="ti ti-phone"></i>
+                            </div>
+                            <div>
+                                <p class="contact-item-label">Phone</p>
+                                <p class="contact-item-value">+66 82 328 5847</p>
+                                <p class="contact-item-sub">Mon–Fri, 9 AM – 6 PM ICT</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background:#fef3c7; color:#d97706;"><i
+                                    class="ti ti-map-pin"></i></div>
+                            <div>
+                                <p class="contact-item-label">Campus</p>
+                                <p class="contact-item-value">Rangist University</p>
+                                <p class="contact-item-sub">Rangsit, Pathum Thani, 12130</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background:#ede9fe; color:#7c3aed;"><i
+                                    class="ti ti-brand-twitter"></i></div>
+                            <div>
+                                <p class="contact-item-label">Social</p>
+                                <p class="contact-item-value">@PeerTutor</p>
+                                <p class="contact-item-sub">Facebook · Twitter · Instagram</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background:#fce7f3; color:#db2777;"><i
+                                    class="ti ti-headset"></i></div>
+                            <div>
+                                <p class="contact-item-label">Support</p>
+                                <p class="contact-item-value">support@peertutor.com</p>
+                                <p class="contact-item-sub">For session issues & account help</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact form -->
+                    <!-- Contact form -->
+                    <div class="contact-form-card">
+                        <h3>Send us a message</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First name</label>
+                                <input class="form-input" type="text" placeholder="Alex" />
+                            </div>
+                            <div class="form-group">
+                                <label>Last name</label>
+                                <input class="form-input" type="text" placeholder="Thompson" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input class="form-input" type="email" placeholder="you@university.edu" />
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select class="form-input">
+                                <option value="" disabled selected>What is this about?</option>
+                                <option>General Inquiry</option>
+                                <option>Partnership / University</option>
+                                <option>Tutor Application</option>
+                                <option>Session Issue</option>
+                                <option>Press / Media</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-input" placeholder="Tell us how we can help..."></textarea>
+                        </div>
+                        <button class="btn-send" onclick="handleContact(this)">
+                            <i class="ti ti-send" style="margin-right:6px;"></i> Send Message
+                        </button>
+                        <div class="form-success" id="form-success">
+                            <i class="ti ti-circle-check"></i> Message sent! We'll get back to you within 24 hours.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a class="logo footer-logo" href="index.html">
+                        <img src="../img/Logo.png" class="logo-icon" alt="PeerTutor logo">
+                        <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+                    </a>
+                    <div class="footer-socials" aria-label="Social links">
+                        <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>CONTACT US</h4>
+                    <p>hello@peertutor.co</p>
+                    <p>Rangsit University, Pathum Thani<br>PeerTutor Learning Support</p>
+                    <p>+66 82 328 5847</p>
+                </div>
+
+                <div class="footer-subscribe">
+                    <h4>SUBSCRIBE</h4>
+                    <p>Enter your email to get notified about our new tutoring sessions.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Email" aria-label="Email">
+                        <button type="submit" aria-label="Subscribe"><i class="ti ti-mail"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 PeerTutor. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/base.js"></script>
+    <script src="../js/live-chat.js"></script>
+</body>
+
+</html>

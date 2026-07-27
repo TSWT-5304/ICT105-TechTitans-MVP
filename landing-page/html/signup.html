@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up – PeerTutor</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <a class="logo" href="../html/index.html"
+        style="display: flex; justify-content: center; align-items: center; margin: 10px auto; width: max-content; text-decoration: none;">
+        <img src="../img/Logo.png" class="logo-icon">
+        <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+    </a>
+
+    <p class="signup-subtitle">Create <span id="role-name">Student</span> account</p>
+
+    <div class="signup-card">
+
+        <div class="benefits">
+            <div class="benefit-item">
+                <i class="ti ti-circle-check"></i>
+                Find expert peer tutors instantly
+            </div>
+            <div class="benefit-item">
+                <i class="ti ti-circle-check"></i>
+                Book sessions in under 60 seconds
+            </div>
+            <div class="benefit-item">
+                <i class="ti ti-circle-check"></i>
+                Cancel anytime, no commitment
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="fullname">Full name</label>
+            <div class="input-wrap">
+                <input type="text" id="fullname" placeholder="Alex Thompson" />
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="email">University email</label>
+            <div class="input-wrap">
+                <input type="email" id="email" placeholder="you@university.edu" />
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+                <input type="password" id="password" placeholder="Min. 8 characters" />
+                <button class="toggle-password" onclick="togglePassword('password', this)" aria-label="Toggle password">
+                    <i class="ti ti-eye"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="confirm-password">Confirm password</label>
+            <div class="input-wrap">
+                <input type="password" id="confirm-password" placeholder="••••••••" />
+            </div>
+        </div>
+
+        <div class="checkbox-row">
+            <input type="checkbox" id="terms" required>
+
+            <label for="terms">
+                I agree to the
+                <a href="privacy-policy.html#terms" target="_blank">
+                    Terms of Use
+                </a>
+                and
+                <a href="privacy-policy.html#privacy-overview" target="_blank">
+                    Privacy Policy
+                </a>.
+            </label>
+        </div>
+
+        <button type="button" class="btn-create" onclick="continueToDashboard()">Create Free Account</button>
+
+        <p class="signup-footer">
+            Already have an account? <a id="signin-link" href="sign-in.html?role=student">Sign in</a>
+        </p>
+
+    </div>
+
+    <script>
+        const dashboardByRole = {
+            student: 'stu-dashboard.html',
+            tutor: 'tutor-pre-dashboard.html',
+            admin: 'admin-dashboard.html'
+        };
+
+        function getSelectedRole() {
+            const role = new URLSearchParams(window.location.search).get('role');
+            return dashboardByRole[role] ? role : 'student';
+        }
+
+        function continueToDashboard() {
+            window.location.href = dashboardByRole[getSelectedRole()];
+        }
+
+        function togglePassword(fieldId, btn) {
+            const input = document.getElementById(fieldId);
+            const icon = btn.querySelector('.ti');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.className = 'ti ti-eye-off';
+            } else {
+                input.type = 'password';
+                icon.className = 'ti ti-eye';
+            }
+        }
+
+        const selectedRole = getSelectedRole();
+        document.getElementById('role-name').textContent =
+            selectedRole.charAt(0).toUpperCase() + selectedRole.slice(1);
+        document.getElementById('signin-link').href =
+            'sign-in.html?role=' + encodeURIComponent(selectedRole);
+    </script>
+</body>
+
+</html>

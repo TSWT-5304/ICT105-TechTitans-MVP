@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stu-profile.css">
+    <link rel="stylesheet" href="../css/browse-tutors.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Browse Tutors</title>
+</head>
+
+<!-- PEERTUTOR LIVE CHAT -->
+<div class="live-chat" id="live-chat">
+
+    <!-- Open chat button -->
+    <button type="button" class="chat-launcher" id="chat-launcher" aria-label="Open live chat" aria-expanded="false">
+        <i class="ti ti-message-circle"></i>
+
+        <span class="chat-launcher-label">
+            Chat with us
+        </span>
+
+        <span class="chat-notification" id="chat-notification">
+            1
+        </span>
+    </button>
+
+    <!-- Chat window -->
+    <section class="chat-window" id="chat-window" aria-label="PeerTutor live chat" hidden>
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="chat-agent">
+
+                <div class="chat-agent-avatar">
+                    <i class="ti ti-headset"></i>
+
+                    <span class="chat-online-dot"></span>
+                </div>
+
+                <div>
+                    <h2>PeerTutor Support</h2>
+
+                    <p>
+                        <span class="chat-status-dot"></span>
+                        Online now
+                    </p>
+                </div>
+            </div>
+
+            <div class="chat-header-actions">
+                <button type="button" class="chat-header-button" id="chat-minimize" aria-label="Minimize chat">
+                    <i class="ti ti-minus"></i>
+                </button>
+
+                <button type="button" class="chat-header-button" id="chat-close" aria-label="Close chat">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="chat-messages" id="chat-messages" aria-live="polite">
+            <div class="chat-date">
+                Today
+            </div>
+
+            <div class="chat-message support-message">
+                <div class="message-avatar">
+                    <i class="ti ti-headset"></i>
+                </div>
+
+                <div>
+                    <div class="message-bubble">
+                        Hi! Welcome to PeerTutor. How can we help you today?
+                    </div>
+
+                    <span class="message-time">
+                        Just now
+                    </span>
+                </div>
+            </div>
+
+            <!-- Suggested questions -->
+            <div class="chat-suggestions" id="chat-suggestions">
+                <button type="button" class="chat-suggestion" data-message="How can I find a tutor?">
+                    Find a tutor
+                </button>
+
+                <button type="button" class="chat-suggestion" data-message="How can I become a tutor?">
+                    Become a tutor
+                </button>
+
+                <button type="button" class="chat-suggestion" data-message="I need help with payment.">
+                    Payment help
+                </button>
+            </div>
+        </div>
+
+        <!-- Typing indicator -->
+        <div class="chat-typing" id="chat-typing" hidden>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <p>Support is typing...</p>
+        </div>
+
+        <!-- Message input -->
+        <form class="chat-input-area" id="chat-form">
+            <input type="text" id="chat-input" maxlength="300" placeholder="Type your message..."
+                aria-label="Chat message" autocomplete="off">
+
+            <button type="submit" class="chat-send-button" id="chat-send" aria-label="Send message" disabled>
+                <i class="ti ti-send"></i>
+            </button>
+        </form>
+
+        <p class="chat-privacy-note">
+            Do not share passwords or payment information.
+        </p>
+    </section>
+</div>
+
+<body>
+    <div class="page">
+        <!--Nav Bar-->
+        <nav class="dash-nav">
+            <a class="logo" href="../html/index.html">
+                <img src="../img/Logo.png" class="logo-icon">
+                <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+            </a>
+            <div class="dash-nav-links">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about-us.html">About Us</a>
+                <a href="../html/browse-tutors.html" class="active">Browse a Tutor</a>
+                <a href="../html/contact-us.html">Contact Us</a>
+            </div>
+            <div class="nav-actions">
+                <a href="../html/role-select.html" class="btn-signin">Sign in</a>
+                <a href="../html/role-select.html" class="btn-signup">Sign up</a>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="browse-header">
+            <h1>Browse Tutors</h1>
+            <p>Find the perfect tutor for your needs</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters-bar">
+
+            <!-- Search -->
+            <div class="search-wrap">
+                <i class="ti ti-search"></i>
+
+                <input type="search" id="search-input" placeholder="Search by name or subject..."
+                    aria-label="Search tutors">
+            </div>
+
+            <!--MAJOR FILTER-->
+            <div class="custom-filter" id="major-filter">
+
+                <!-- Stores the selected major for JavaScript -->
+                <input type="hidden" id="subject-filter" value="">
+
+                <button type="button" class="custom-filter-toggle" aria-expanded="false">
+                    <span class="custom-filter-label">
+                        All Majors
+                    </span>
+
+                    <i class="ti ti-chevron-down"></i>
+                </button>
+
+                <div class="custom-filter-panel" hidden>
+
+                    <div class="custom-filter-heading">
+                        <span>MAJORS</span>
+
+                        <button type="button" class="custom-filter-close" aria-label="Close major filter">
+                            <i class="ti ti-chevron-up"></i>
+                        </button>
+                    </div>
+
+                    <div class="custom-filter-options">
+
+                        <button type="button" class="custom-filter-option active" data-value="" data-label="All Majors">
+                            All Majors
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="ict" data-label="ICT">
+                            ICT
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="cs"
+                            data-label="Computer Science">
+                            Computer Science
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="ib"
+                            data-label="International Business">
+                            International Business
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="ce"
+                            data-label="Civil Engineering">
+                            Civil Engineering
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="bms"
+                            data-label="Biomedical Science">
+                            Biomedical Science
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="design"
+                            data-label="Interior Design">
+                            Interior Design
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="be"
+                            data-label="Biomedical Engineering">
+                            Biomedical Engineering
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="com"
+                            data-label="Communication Art">
+                            Communication Art
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="dit"
+                            data-label="Digital Innovation Technology">
+                            Digital Innovation Technology
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="tourism"
+                            data-label="Tourism & Hospitality">
+                            Tourism & Hospitality
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="ir"
+                            data-label="International Relations">
+                            International Relations
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="pd" data-label="Product Design">
+                            Product Design
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--PERFORMANCE FILTER-->
+            <div class="custom-filter" id="performance-filter-wrap">
+
+                <!-- Stores the selected sorting value -->
+                <input type="hidden" id="performance-filter" value="rated">
+
+                <button type="button" class="custom-filter-toggle" aria-expanded="false">
+                    <span class="custom-filter-label">
+                        Highest Rated
+                    </span>
+
+                    <i class="ti ti-chevron-down"></i>
+                </button>
+
+                <div class="custom-filter-panel" hidden>
+
+                    <div class="custom-filter-heading">
+                        <span>SORT TUTORS</span>
+
+                        <button type="button" class="custom-filter-close" aria-label="Close sorting filter">
+                            <i class="ti ti-chevron-up"></i>
+                        </button>
+                    </div>
+
+                    <div class="custom-filter-options">
+
+                        <button type="button" class="custom-filter-option active" data-value="rated"
+                            data-label="Highest Rated">
+                            Highest Rated
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="sessions"
+                            data-label="Most Sessions">
+                            Most Sessions
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="reviews"
+                            data-label="Most Reviews">
+                            Most Reviews
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--PRICE RANGE FILTER-->
+            <div class="custom-filter" id="price-filter">
+
+                <button type="button" class="custom-filter-toggle" id="price-filter-toggle" aria-expanded="false">
+                    <span class="custom-filter-label" id="price-filter-label">
+                        Price Range
+                    </span>
+
+                    <i class="ti ti-chevron-down"></i>
+                </button>
+
+                <div class="custom-filter-panel" id="price-filter-panel" hidden>
+                    <div class="custom-filter-heading">
+                        <span>PRICE RANGE</span>
+
+                        <button type="button" class="custom-filter-close" id="price-panel-close"
+                            aria-label="Close price filter">
+                            <i class="ti ti-chevron-up"></i>
+                        </button < />
+                    </div>
+
+                    <div class="custom-filter-options">
+
+                        <button type="button" class="price-option" data-min-price="100" data-max-price="129">
+                            ฿100–129
+                        </button>
+
+                        <button type="button" class="price-option" data-min-price="130" data-max-price="159">
+                            ฿130–159
+                        </button>
+
+                        <button type="button" class="price-option" data-min-price="160" data-max-price="189">
+                            ฿160–189
+                        </button>
+
+                        <button type="button" class="price-option" data-min-price="190" data-max-price="219">
+                            ฿190–219
+                        </button>
+
+                        <button type="button" class="price-option" data-min-price="220" data-max-price="249">
+                            ฿220–249
+                        </button>
+
+                        <button type="button" class="price-option" data-min-price="250" data-max-price="279">
+                            ฿250–279
+                        </button>
+
+                    </div>
+
+                    <button type="button" class="clear-filter-button" id="clear-price-filter">
+                        Clear Price Filter
+                    </button>
+                </div>
+            </div>
+
+            <!--RESPONSE TIME FILTER-->
+            <div class="custom-filter" id="response-filter">
+
+                <input type="hidden" id="response-time-filter" value="">
+
+                <button type="button" class="custom-filter-toggle" aria-expanded="false">
+                    <span class="custom-filter-label">
+                        Response Time
+                    </span>
+
+                    <i class="ti ti-chevron-down"></i>
+                </button>
+
+                <div class="custom-filter-panel" hidden>
+
+                    <div class="custom-filter-heading">
+                        <span>RESPONSE TIME</span>
+
+                        <button type="button" class="custom-filter-close" aria-label="Close response-time filter">
+                            <i class="ti ti-chevron-up"></i>
+                        </button>
+                    </div>
+
+                    <div class="custom-filter-options">
+
+                        <button type="button" class="custom-filter-option active" data-value=""
+                            data-label="Response Time">
+                            All Response Times
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="15-30" data-label="15–30 min">
+                            15–30 min
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="30-45" data-label="30–45 min">
+                            30–45 min
+                        </button>
+
+                        <button type="button" class="custom-filter-option" data-value="45-60" data-label="45 min–1 hr">
+                            45 min–1 hr
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results count -->
+        <p class="results-count" aria-live="polite">Showing <strong id="count">6</strong> tutors</p>
+
+        <!-- Tutors grid -->
+        <div class="tutors-list" id="tutors-grid">
+
+            <!--Tutor-(1)-->
+            <div class="browse-card" data-major="ict" data-rating="4.9" data-price="150" data-sessions="76"
+                data-response-minutes="30">
+                <div class="browse-card-top">
+                    <img src="../img/T4.jpg" style="width: 80px; height: 80px; border-radius: 50%;">
+                    <div class="browse-card-name">
+                        <h3>John</h3>
+                        <p class="university">ICT</p>
+                        <p class="year">Senior</p>
+                        <div class="browse-rating"><span class="star">★</span> 4.9 (50 reviews)</div>
+                    </div>
+                </div>
+                <p class="browse-bio">Enjoys helping students build strong coding skills through practical examples
+                    and personalized guidance.</p>
+                <p class="browse-subjects-label">Subjects</p>
+                <div class="browse-tags">
+                    <span class="browse-tag">Programming Fundamentals</span>
+                    <span class="browse-tag">Web Development</span>
+                    <span class="browse-tag">DBMS</span>
+                </div>
+                <div class="browse-stats">
+                    <div class="browse-stat-item">
+                        <p>Sessions</p>
+                        <p>76</p>
+                    </div>
+                    <div class="browse-stat-item">
+                        <p>Response Time</p>
+                        <p>~30 min</p>
+                    </div>
+                </div>
+                <div class="browse-card-footer">
+                    <p class="price"><strong>฿150</strong><span>/hr</span></p>
+                    <button class="btn-view-profile"><a href="../html/tutor-intro-profile.html">View
+                            Profile</a></button>
+                </div>
+            </div>
+
+            <!--Tutor-(2)-->
+            <div class="browse-card" data-major="cs" data-rating="4.8" data-price="120" data-sessions="124"
+                data-response-minutes="60">
+                <div class="browse-card-top">
+                    <img src="../img/T2.jpg" style="width: 83px; height: 80px; border-radius: 50%;">
+                    <div class="browse-card-name">
+                        <h3>Hazel</h3>
+                        <p class="university">CS</p>
+                        <p class="year">Senior</p>
+                        <div class="browse-rating"><span class="star">★</span> 4.8 (54 reviews)</div>
+                    </div>
+                </div>
+                <p class="browse-bio">Specializes in computer science fundamentals and enjoys making complex
+                    programming concepts easier to understand for beginners.</p>
+                <p class="browse-subjects-label">Subjects</p>
+                <div class="browse-tags">
+                    <span class="browse-tag">Data Structures</span>
+                    <span class="browse-tag">Algorithms</span>
+                    <span class="browse-tag">OOP</span>
+                </div>
+                <div class="browse-stats">
+                    <div class="browse-stat-item">
+                        <p>Sessions</p>
+                        <p>124</p>
+                    </div>
+                    <div class="browse-stat-item">
+                        <p>Response Time</p>
+                        <p>~1 hour</p>
+                    </div>
+                </div>
+                <div class="browse-card-footer">
+                    <p class="price"><strong>฿120</strong><span>/hr</span></p>
+                    <button class="btn-view-profile"><a href="../html/tutor-intro-profile.html">View
+                            Profile</a></button>
+                </div>
+            </div>
+
+            <!--Tutor-(3)-->
+            <div class="browse-card" data-major="ib" data-rating="4.9" data-price="110" data-sessions="167"
+                data-response-minutes="60">
+                <div class="browse-card-top">
+                    <img src="../img/T3.jpg" style="width: 80px; height: 80px; border-radius: 50%;">
+                    <div class="browse-card-name">
+                        <h3>Michael</h3>
+                        <p class="university">IB</p>
+                        <p class="year">Senior</p>
+                        <div class="browse-rating"><span class="star">★</span> 4.9 (61 reviews)</div>
+                    </div>
+                </div>
+                <p class="browse-bio">Helps students understand international business concepts with real-world
+                    examples and practical learning strategies.</p>
+                <p class="browse-subjects-label">Subjects</p>
+                <div class="browse-tags">
+                    <span class="browse-tag">International Trade</span>
+                    <span class="browse-tag">Marketing</span>
+                    <span class="browse-tag">Business Management</span>
+                </div>
+                <div class="browse-stats">
+                    <div class="browse-stat-item">
+                        <p>Sessions</p>
+                        <p>167</p>
+                    </div>
+                    <div class="browse-stat-item">
+                        <p>Response Time</p>
+                        <p>~1 hour</p>
+                    </div>
+                </div>
+                <div class="browse-card-footer">
+                    <p class="price"><strong>฿110</strong><span>/hr</span></p>
+                    <button class="btn-view-profile"><a href="../html/tutor-intro-profile.html">View
+                            Profile</a></button>
+                </div>
+            </div>
+
+            <!--Tutor-(4)-->
+            <div class="browse-card" data-major="ce" data-rating="4.7" data-price="250" data-sessions="89"
+                data-response-minutes="45">
+                <div class="browse-card-top">
+                    <img src="../img/T1.jpg" style="width: 80px; height: 80px; border-radius: 50%;">
+                    <div class="browse-card-name">
+                        <h3>Sarah</h3>
+                        <p class="university">Civil</p>
+                        <p class="year">Senior</p>
+                        <div class="browse-rating"><span class="star">★</span> 4.7 (32 reviews)</div>
+                    </div>
+                </div>
+                <p class="browse-bio">Help engineering students master challenging concepts
+                    through clear explanations and problem-solving techniques.</p>
+                <p class="browse-subjects-label">Subjects</p>
+                <div class="browse-tags">
+                    <span class="browse-tag">Structural Analysis</span>
+                    <span class="browse-tag">Engineering Mathematics</span>
+                    <span class="browse-tag">Construction Materials</span>
+                </div>
+                <div class="browse-stats">
+                    <div class="browse-stat-item">
+                        <p>Sessions</p>
+                        <p>89</p>
+                    </div>
+                    <div class="browse-stat-item">
+                        <p>Response Time</p>
+                        <p>~45 min</p>
+                    </div>
+                </div>
+                <div class="browse-card-footer">
+                    <p class="price"><strong>฿250</strong><span>/hr</span></p>
+                    <button class="btn-view-profile"><a href="../html/tutor-intro-profile.html">View
+                            Profile</a></button>
+                </div>
+            </div>
+
+            <!--Tutor-(5)-->
+            <div class="browse-card" data-major="bms" data-rating="4.9" data-price="200" data-sessions="98"
+                data-response-minutes="15">
+                <div class="browse-card-top">
+                    <img src="../img/T5.jpg" style="width: 80px; height: 80px; border-radius: 50%;">
+                    <div class="browse-card-name">
+                        <h3>David</h3>
+                        <p class="university">BMS</p>
+                        <p class="year">Senior</p>
+                        <div class="browse-rating"><span class="star">★</span> 4.9 (87 reviews)</div>
+                    </div>
+                </div>
+                <p class="browse-bio">David enjoys supporting students in biological sciences by simplifying complex
+                    topics and encouraging confident learning.</p>
+                <p class="browse-subjects-label">Subjects</p>
+                <div class="browse-tags">
+                    <span class="browse-tag">Cell Biology</span>
+                    <span class="browse-tag">Human Anatomy</span>
+                    <span class="browse-tag">Genetics</span>
+                    <span class="browse-tag">Microbiology & Virology</span>
+                </div>
+                <div class="browse-stats">
+                    <div class="browse-stat-item">
+                        <p>Sessions</p>
+                        <p>98</p>
+                    </div>
+                    <div class="browse-stat-item">
+                        <p>Response Time</p>
+                        <p>~15 hours</p>
+                    </div>
+                </div>
+                <div class="browse-card-footer">
+                    <p class="price"><strong>฿200</strong><span>/hr</span></p>
+                    <button class="btn-view-profile"><a href="../html/tutor-intro-profile.html">View
+                            Profile</a></button>
+                </div>
+            </div>
+
+            <!--Tutor-(6)-->
+            <div class="browse-card" data-major="dit" data-rating="4.9" data-price="180" data-sessions="55"
+                data-response-minutes="60">
+                <div class="browse-card-top">
+                    <img src="../img/T6.jpg" style="width: 80px; height: 80px; border-radius: 50%;">
+                    <div class="browse-card-name">
+                        <h3>Nora</h3>
+                        <p class="university">DIT</p>
+                        <p class="year">Senior</p>
+                        <div class="browse-rating"><span class="star">★</span> 4.9 (58 reviews)</div>
+                    </div>
+                </div>
+                <p class="browse-bio">Nora is passionate about UI/UX and digital product design, helping students
+                    develop creative thinking and practical design skills.</p>
+                <p class="browse-subjects-label">Subjects</p>
+                <div class="browse-tags">
+                    <span class="browse-tag">UI/UX Design</span>
+                    <span class="browse-tag">Mobile App Design</span>
+                    <span class="browse-tag">Digital Product Development</span>
+                    <span class="browse-tag">Prototype</span>
+                </div>
+                <div class="browse-stats">
+                    <div class="browse-stat-item">
+                        <p>Sessions</p>
+                        <p>55</p>
+                    </div>
+                    <div class="browse-stat-item">
+                        <p>Response Time</p>
+                        <p>~1 hour</p>
+                    </div>
+                </div>
+                <div class="browse-card-footer">
+                    <p class="browse-price"><strong>฿180</strong><span>/hr</span></p>
+                    <button class="btn-view-profile"><a href="../html/tutor-intro-profile.html">View Profile</a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="no-results" id="no-results" hidden>
+            <i class="ti ti-user-search" aria-hidden="true"></i>
+            <h2>No tutors found</h2>
+            <p>Try another search term or choose a different major.</p>
+            <button type="button" id="clear-filters">Clear filters</button>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a class="logo footer-logo" href="index.html">
+                        <img src="../img/Logo.png" class="logo-icon" alt="PeerTutor logo">
+                        <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+                    </a>
+                    <div class="footer-socials" aria-label="Social links">
+                        <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>CONTACT US</h4>
+                    <p>hello@peertutor.co</p>
+                    <p>Rangsit University, Pathum Thani<br>PeerTutor Learning Support</p>
+                    <p>+66 82 328 5847</p>
+                </div>
+
+                <div class="footer-subscribe">
+                    <h4>SUBSCRIBE</h4>
+                    <p>Enter your email to get notified about our new tutoring sessions.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Email" aria-label="Email">
+                        <button type="submit" aria-label="Subscribe"><i class="ti ti-mail"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 PeerTutor. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/base.js"></script>
+    <script src="../js/browse-tutors.js"></script>
+    <script src="../js/live-chat.js"></script>
+</body>
+
+</html>

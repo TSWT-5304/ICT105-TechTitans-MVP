@@ -1,0 +1,611 @@
+@import url("base.css");
+
+/* =====================================
+   GENERAL PAGE
+===================================== */
+
+body {
+    font-family: var(--font);
+}
+
+.browse-header {
+    padding: 32px 48px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.browse-header h1 {
+    margin: 0 0 4px;
+    color: #111;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.browse-header p {
+    margin: 0 0 24px;
+    color: #2563eb;
+    font-size: 14px;
+}
+
+/* =====================================
+   FILTER BAR
+===================================== */
+
+.filters-bar {
+    position: relative;
+    display: grid;
+    grid-template-columns:
+        minmax(240px, 1fr)
+        minmax(145px, 180px)
+        minmax(145px, 180px)
+        minmax(145px, 180px)
+        minmax(155px, 190px);
+    align-items: start;
+    gap: 14px;
+    padding: 20px 48px;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* =====================================
+   SEARCH
+===================================== */
+
+.search-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.search-wrap .ti {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    z-index: 1;
+    color: #aaa;
+    font-size: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.search-wrap input {
+    width: 100%;
+    min-height: 45px;
+    padding: 11px 16px 11px 42px;
+    color: #111;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    transition:
+        background-color 0.2s,
+        border-color 0.2s;
+}
+
+.search-wrap input:focus {
+    background-color: #fff;
+    border-color: #2563eb;
+}
+
+.search-wrap input::placeholder {
+    color: #aaa;
+}
+
+/* Remove the default clear button from search inputs */
+
+.search-wrap input::-webkit-search-cancel-button {
+    cursor: pointer;
+}
+
+/* =====================================
+   CUSTOM FILTER
+===================================== */
+
+.custom-filter {
+    position: relative;
+    width: 100%;
+}
+
+/* Main filter button */
+
+.custom-filter-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-height: 45px;
+    padding: 11px 14px;
+    color: #111827;
+    font-family: inherit;
+    font-size: 14px;
+    text-align: left;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition:
+        color 0.2s,
+        background-color 0.2s,
+        border-color 0.2s;
+}
+
+.custom-filter-toggle:hover {
+    background-color: #fff;
+    border-color: #93c5fd;
+}
+
+.custom-filter-toggle:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.custom-filter-toggle.active {
+    color: #1d4ed8;
+    font-weight: 600;
+    background-color: #eff6ff;
+    border-color: #2563eb;
+}
+
+.custom-filter-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.custom-filter-toggle .ti {
+    flex-shrink: 0;
+    color: #6b7280;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.custom-filter-toggle[aria-expanded="true"] .ti {
+    transform: rotate(180deg);
+}
+
+/* =====================================
+   FILTER DROPDOWN PANEL
+===================================== */
+
+.custom-filter-panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 100;
+    width: 340px;
+    padding: 18px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 14px 35px rgb(15 23 42 / 15%);
+}
+
+.custom-filter-panel[hidden] {
+    display: none;
+}
+
+/* Wider panel for all majors */
+
+#major-filter .custom-filter-panel {
+    width: 520px;
+}
+
+#response-filter .custom-filter-panel {
+    width: 390px;
+}
+
+/* Filter panel heading */
+
+.custom-filter-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.custom-filter-heading span {
+    color: #374151;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.custom-filter-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    color: #374151;
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-filter-close:hover {
+    color: #2563eb;
+    background-color: #eff6ff;
+}
+
+/* =====================================
+   FILTER PILL BUTTONS
+===================================== */
+
+.custom-filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.custom-filter-option,
+.price-option {
+    padding: 9px 14px;
+    color: #374151;
+    font-family: inherit;
+    font-size: 13px;
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+    cursor: pointer;
+    transition:
+        color 0.2s,
+        background-color 0.2s,
+        border-color 0.2s,
+        transform 0.2s;
+}
+
+.custom-filter-option:hover,
+.price-option:hover {
+    color: #1d4ed8;
+    background-color: #eff6ff;
+    border-color: #93c5fd;
+    transform: translateY(-1px);
+}
+
+.custom-filter-option:focus-visible,
+.price-option:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.custom-filter-option.active,
+.price-option.active {
+    color: #fff;
+    font-weight: 700;
+    background-color: #03045e;
+    border-color: #03045e;
+}
+
+/* Clear price filter button */
+
+.clear-filter-button {
+    width: 100%;
+    padding: 13px 10px 0;
+    margin-top: 16px;
+    color: #2563eb;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    cursor: pointer;
+}
+
+.clear-filter-button:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   RESULTS COUNT
+===================================== */
+
+.results-count {
+    padding: 20px 48px 12px;
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.results-count strong {
+    color: #111;
+    font-weight: 700;
+}
+
+/* =====================================
+   TUTOR GRID
+===================================== */
+
+.tutors-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding: 8px 48px 48px;
+}
+
+/* =====================================
+   TUTOR CARD
+===================================== */
+
+.browse-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s,
+        transform 0.2s;
+}
+
+.browse-card:hover {
+    border-color: #bfdbfe;
+    box-shadow: 0 10px 25px rgb(15 23 42 / 8%);
+    transform: translateY(-2px);
+}
+
+.browse-card[hidden] {
+    display: none;
+}
+
+.browse-card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.browse-card-top img {
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.browse-card-name h3 {
+    margin: 0 0 1px;
+    color: #111;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.browse-card-name .university,
+.browse-card-name .year {
+    margin: 0;
+    color: #888;
+    font-size: 13px;
+}
+
+.browse-card-name .year {
+    margin-bottom: 3px;
+}
+
+.browse-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555;
+    font-size: 13px;
+}
+
+.browse-rating .star {
+    color: #f59e0b;
+}
+
+.browse-bio {
+    margin: 0 0 10px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.browse-subjects-label {
+    margin: 0 0 6px;
+    color: #aaa;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.browse-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.browse-tag {
+    padding: 4px 10px;
+    color: #2563eb;
+    font-size: 12px;
+    background-color: #eff6ff;
+    border-radius: 6px;
+}
+
+.browse-stats {
+    display: flex;
+    gap: 32px;
+    padding: 10px 0;
+    margin-top: auto;
+    margin-bottom: 10px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.browse-stat-item p {
+    margin: 0;
+}
+
+.browse-stat-item p:first-child {
+    margin-bottom: 2px;
+    color: #aaa;
+    font-size: 11px;
+}
+
+.browse-stat-item p:last-child {
+    color: #111;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* =====================================
+   CARD FOOTER
+===================================== */
+
+.browse-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.price,
+.browse-price {
+    margin: 0;
+}
+
+.price strong,
+.browse-price strong {
+    color: #111;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.price span,
+.browse-price span {
+    color: #888;
+    font-size: 13px;
+}
+
+.btn-view-profile {
+    padding: 10px 20px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #03045e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-view-profile a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-view-profile:hover {
+    background-color: #0077b6;
+}
+
+/* =====================================
+   NO RESULTS
+===================================== */
+
+.no-results {
+    margin: 20px 48px 48px;
+    padding: 48px 24px;
+    color: #6b7280;
+    text-align: center;
+    background-color: #f9fafb;
+    border: 1px dashed #d1d5db;
+    border-radius: 16px;
+}
+
+.no-results[hidden] {
+    display: none;
+}
+
+.no-results .ti {
+    display: block;
+    margin-bottom: 10px;
+    color: #2563eb;
+    font-size: 40px;
+}
+
+.no-results h2 {
+    margin: 0 0 6px;
+    color: #111827;
+    font-size: 20px;
+}
+
+.no-results p {
+    margin: 0 0 18px;
+}
+
+.no-results button {
+    padding: 10px 18px;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 700;
+    background-color: #03045e;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.no-results button:hover {
+    background-color: #0077b6;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+    .browse-header {
+        padding: 28px 20px 0;
+    }
+
+    .filters-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .search-wrap,
+    .custom-filter {
+        width: 100%;
+    }
+
+    .custom-filter-panel,
+    #major-filter .custom-filter-panel {
+        position: static;
+        width: 100%;
+        margin-top: 8px;
+        box-shadow: none;
+    }
+
+    .results-count {
+        padding: 20px 20px 12px;
+    }
+
+    .tutors-list {
+        display: block;
+        padding: 8px 20px 32px;
+    }
+
+    .browse-card {
+        margin-bottom: 24px;
+    }
+
+    .no-results {
+        margin: 12px 20px 32px;
+    }
+
+    #response-filter .custom-filter-panel {
+        position: static;
+        width: 100%;
+        margin-top: 8px;
+        box-shadow: none;
+    }
+}

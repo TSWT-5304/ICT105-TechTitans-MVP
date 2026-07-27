@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – PeerTutor</title>
+    <link rel="stylesheet" href="../css/contact-us.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- PEERTUTOR LIVE CHAT -->
+<div class="live-chat" id="live-chat">
+
+    <!-- Open chat button -->
+    <button type="button" class="chat-launcher" id="chat-launcher" aria-label="Open live chat" aria-expanded="false">
+        <i class="ti ti-message-circle"></i>
+
+        <span class="chat-launcher-label">
+            Chat with us
+        </span>
+
+        <span class="chat-notification" id="chat-notification">
+            1
+        </span>
+    </button>
+
+    <!-- Chat window -->
+    <section class="chat-window" id="chat-window" aria-label="PeerTutor live chat" hidden>
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="chat-agent">
+
+                <div class="chat-agent-avatar">
+                    <i class="ti ti-headset"></i>
+
+                    <span class="chat-online-dot"></span>
+                </div>
+
+                <div>
+                    <h2>PeerTutor Support</h2>
+
+                    <p>
+                        <span class="chat-status-dot"></span>
+                        Online now
+                    </p>
+                </div>
+            </div>
+
+            <div class="chat-header-actions">
+                <button type="button" class="chat-header-button" id="chat-minimize" aria-label="Minimize chat">
+                    <i class="ti ti-minus"></i>
+                </button>
+
+                <button type="button" class="chat-header-button" id="chat-close" aria-label="Close chat">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="chat-messages" id="chat-messages" aria-live="polite">
+            <div class="chat-date">
+                Today
+            </div>
+
+            <div class="chat-message support-message">
+                <div class="message-avatar">
+                    <i class="ti ti-headset"></i>
+                </div>
+
+                <div>
+                    <div class="message-bubble">
+                        Hi! Welcome to PeerTutor. How can we help you today?
+                    </div>
+
+                    <span class="message-time">
+                        Just now
+                    </span>
+                </div>
+            </div>
+
+            <!-- Suggested questions -->
+            <div class="chat-suggestions" id="chat-suggestions">
+                <button type="button" class="chat-suggestion" data-message="How can I find a tutor?">
+                    Find a tutor
+                </button>
+
+                <button type="button" class="chat-suggestion" data-message="How can I become a tutor?">
+                    Become a tutor
+                </button>
+
+                <button type="button" class="chat-suggestion" data-message="I need help with payment.">
+                    Payment help
+                </button>
+            </div>
+        </div>
+
+        <!-- Typing indicator -->
+        <div class="chat-typing" id="chat-typing" hidden>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <p>Support is typing...</p>
+        </div>
+
+        <!-- Message input -->
+        <form class="chat-input-area" id="chat-form">
+            <input type="text" id="chat-input" maxlength="300" placeholder="Type your message..."
+                aria-label="Chat message" autocomplete="off">
+
+            <button type="submit" class="chat-send-button" id="chat-send" aria-label="Send message" disabled>
+                <i class="ti ti-send"></i>
+            </button>
+        </form>
+
+        <p class="chat-privacy-note">
+            Do not share passwords or payment information.
+        </p>
+    </section>
+</div>
+
+<body>
+
+    <!--Nav Bar-->
+    <nav class="dash-nav">
+        <a class="logo" href="../html/index.html">
+            <img src="../img/Logo.png" class="logo-icon">
+            <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+        </a>
+        <div class="dash-nav-links">
+            <a href="../html/index.html">Home</a>
+            <a href="../html/about-us.html">About Us</a>
+            <a href="../html/browse-tutors.html">Browse a Tutor</a>
+            <a href="../html/contact-us.html" class="active">Contact Us</a>
+        </div>
+        <div class="nav-actions">
+            <a href="../html/role-select.html" class="btn-signin">Sign in</a>
+            <a href="../html/role-select.html" class="btn-signup">Sign up</a>
+        </div>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <div class="contact-hero">
+        <div class="contact-hero-inner">
+            <p class="hero-label">Get in Touch</p>
+            <h1>We'd love to hear<br>from you</h1>
+            <p class="hero-sub">Have a question, feedback, or need help? Our team typically responds within 24 hours.
+            </p>
+            <div class="hero-pills">
+                <div class="hero-pill"><i class="ti ti-clock"></i> Replies within 24 hrs</div>
+                <div class="hero-pill"><i class="ti ti-headset"></i> Friendly support team</div>
+                <div class="hero-pill"><i class="ti ti-shield-check"></i> Secure & confidential</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Quick contact cards ── -->
+    <div class="quick-cards-wrap">
+        <div class="quick-cards">
+
+            <div class="quick-card">
+                <div class="quick-icon" style="background:#dbeafe;color:#2563eb;">
+                    <i class="ti ti-mail"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>Drop us a message anytime and we'll get back to you.</p>
+                <a href="mailto:hello@peertutor.com" class="quick-link">
+                    hello@peertutor.com <i class="ti ti-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="quick-card">
+                <div class="quick-icon" style="background:#dcfce7;color:#16a34a;">
+                    <i class="ti ti-phone"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>Speak directly with our support team on weekdays.</p>
+                <a href="tel:+16175550192" class="quick-link">
+                    +66 82 328 5847 <i class="ti ti-arrow-right"></i>
+                </a>
+                <p class="quick-note">Mon–Fri, 9 AM – 6 PM ICT</p>
+            </div>
+
+            <div class="quick-card">
+                <div class="quick-icon" style="background:#fef3c7;color:#d97706;">
+                    <i class="ti ti-brand-twitter"></i>
+                </div>
+                <h3>Social Media</h3>
+                <p>Reach us on social — we monitor DMs daily.</p>
+                <a href="#" class="quick-link">@PeerTutorApp <i class="ti ti-arrow-right"></i></a>
+                <div class="social-row">
+                    <a href="#" class="social-btn"><i class="ti ti-brand-twitter"></i></a>
+                    <a href="#" class="social-btn"><i class="ti ti-brand-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="ti ti-brand-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="quick-card">
+                <div class="quick-icon" style="background:#ede9fe;color:#7c3aed;">
+                    <i class="ti ti-map-pin"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>Our campus is open for scheduled visits.</p>
+                <a href="#" class="quick-link">Get directions <i class="ti ti-arrow-right"></i></a>
+                <p class="quick-note">Rangsit University<br>Pathum Thani, 12130</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ── Main section: Form + Info ── -->
+    <div class="contact-main">
+
+        <!-- Contact form -->
+        <div class="contact-form-card">
+            <div class="form-card-header">
+                <h2>Send us a message</h2>
+                <p>Fill in the form below and we'll get back to you as soon as possible.</p>
+            </div>
+
+            <!-- Topic tabs -->
+            <div class="topic-tabs">
+                <button class="topic-tab active" onclick="setTopic(this)">General</button>
+                <button class="topic-tab" onclick="setTopic(this)">Support</button>
+                <button class="topic-tab" onclick="setTopic(this)">Partnership</button>
+                <button class="topic-tab" onclick="setTopic(this)">Press</button>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label class="form-label">First name <span class="req">*</span></label>
+                    <input class="form-input" type="text" placeholder="Alex" id="fname" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Last name <span class="req">*</span></label>
+                    <input class="form-input" type="text" placeholder="Thompson" id="lname" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Email address <span class="req">*</span></label>
+                <input class="form-input" type="email" placeholder="you@university.edu" id="email" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Phone number</label>
+                <input class="form-input" type="tel" placeholder="+66 82 328 5847" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Subject <span class="req">*</span></label>
+                <select class="form-input" id="subject">
+                    <option value="" disabled selected>What is this about?</option>
+                    <option>General Inquiry</option>
+                    <option>Session Issue</option>
+                    <option>Account & Billing</option>
+                    <option>Tutor Application</option>
+                    <option>Partnership / University</option>
+                    <option>Bug Report</option>
+                    <option>Press / Media</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Message <span class="req">*</span></label>
+                <textarea class="form-input form-textarea" id="message" maxlength="800" oninput="updateChar(this)"
+                    placeholder="Tell us how we can help you..."></textarea>
+                <div class="char-row">
+                    <span id="char-count">0</span> / 800
+                </div>
+            </div>
+
+            <!-- File attach -->
+            <div class="form-group">
+                <label class="form-label">Attachment <span class="form-optional">(optional)</span></label>
+                <div class="attach-area" id="attach-area">
+                    <input type="file" id="attach-input" accept=".pdf,.jpg,.png,.docx" onchange="handleAttach(this)" />
+                    <i class="ti ti-paperclip attach-icon"></i>
+                    <p class="attach-title">Click to attach a file</p>
+                    <p class="attach-sub">PDF, JPG, PNG, DOCX — max 10MB</p>
+                    <p class="attach-name" id="attach-name"></p>
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check">
+                <input type="checkbox" id="privacy" />
+                <label for="privacy">
+                    I agree to the <a href="#">Privacy Policy</a> and consent to being contacted by PeerTutor.
+                </label>
+            </div>
+
+            <button class="btn-send" id="btn-send" onclick="handleSend()">
+                <i class="ti ti-send"></i> Send Message
+            </button>
+
+            <!-- Success message -->
+            <div class="send-success" id="send-success">
+                <i class="ti ti-circle-check"></i>
+                <div>
+                    <p class="success-title">Message sent successfully!</p>
+                    <p class="success-sub">We'll reply to your email within 24 hours. Check your inbox for a
+                        confirmation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right info panel -->
+        <div class="contact-info-panel">
+
+            <!-- Office hours -->
+            <div class="info-card">
+                <div class="info-card-title">
+                    <i class="ti ti-clock" style="color:#2563eb;"></i> Office Hours
+                </div>
+                <div class="hours-list">
+                    <div class="hours-row">
+                        <span>Monday – Friday</span>
+                        <span class="hours-time">9:00 AM – 6:00 PM</span>
+                    </div>
+                    <div class="hours-row">
+                        <span>Saturday</span>
+                        <span class="hours-time">10:00 AM – 2:00 PM</span>
+                    </div>
+                    <div class="hours-row">
+                        <span>Sunday</span>
+                        <span class="hours-time closed">Closed</span>
+                    </div>
+                </div>
+                <p class="info-note">All times in Indochina Time Bangkok (ICT)</p>
+            </div>
+
+            <!-- Contact details -->
+            <div class="info-card">
+                <div class="info-card-title">
+                    <i class="ti ti-address-book" style="color:#7c3aed;"></i> Contact Details
+                </div>
+                <div class="detail-list">
+                    <div class="detail-item">
+                        <div class="detail-icon" style="background:#dbeafe;color:#2563eb;"><i class="ti ti-mail"></i>
+                        </div>
+                        <div>
+                            <p class="detail-label">General</p>
+                            <p class="detail-value">hello@peertutor.com</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon" style="background:#dcfce7;color:#16a34a;"><i class="ti ti-headset"></i>
+                        </div>
+                        <div>
+                            <p class="detail-label">Support</p>
+                            <p class="detail-value">support@peertutor.com</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon" style="background:#fef3c7;color:#d97706;"><i
+                                class="ti ti-briefcase"></i></div>
+                        <div>
+                            <p class="detail-label">Partnerships</p>
+                            <p class="detail-value">partners@peertutor.com</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon" style="background:#ede9fe;color:#7c3aed;"><i class="ti ti-news"></i>
+                        </div>
+                        <div>
+                            <p class="detail-label">Press</p>
+                            <p class="detail-value">press@peertutor.com</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon" style="background:#fce7f3;color:#db2777;"><i class="ti ti-phone"></i>
+                        </div>
+                        <div>
+                            <p class="detail-label">Phone</p>
+                            <p class="detail-value">+66 82 328 5847</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map placeholder -->
+            <div class="info-card map-card">
+                <div class="info-card-title">
+                    <i class="ti ti-map-pin" style="color:#ef4444;"></i> Our Location
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.8874206906758!2d100.58472227486007!3d13.965306086449218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2816f1377fc17%3A0x63d330b7f8af6e16!2sRangsit%20University!5e0!3m2!1sen!2sth!4v1783707686748!5m2!1sen!2sth"
+                    width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+        </div>
+
+        <!-- FAQ teaser -->
+        <div class="info-card faq-card">
+            <div class="info-card-title">
+                <i class="ti ti-help-circle" style="color:#f97316;"></i> Common Questions
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>How do I book a tutoring session?</summary>
+                    <p>Browse tutors, click "View Profile", then "Book a Session" and choose a date and time that
+                        works for you.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How long does tutor approval take?</summary>
+                    <p>Tutor applications are reviewed within 3–5 business days. You'll receive an email with the
+                        decision.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I cancel or reschedule a session?</summary>
+                    <p>Yes — up to 24 hours before the session. Go to My Dashboard and click Reschedule or Cancel.
+                    </p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is my payment information secure?</summary>
+                    <p>Absolutely. All payments are processed through Stripe with bank-level encryption.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a class="logo footer-logo" href="index.html">
+                    <img src="../img/Logo.png" class="logo-icon" alt="PeerTutor logo">
+                    <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+                </a>
+                <div class="footer-socials" aria-label="Social links">
+                    <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>CONTACT US</h4>
+                <p>hello@peertutor.com</p>
+                <p>Rangsit University, Pathum Thani<br>PeerTutor Learning Support</p>
+                <p>+66 82 328 5847</p>
+            </div>
+
+            <div class="footer-subscribe">
+                <h4>SUBSCRIBE</h4>
+                <p>Enter your email to get notified about our new tutoring sessions.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Email" aria-label="Email">
+                    <button type="submit" aria-label="Subscribe"><i class="ti ti-mail"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PeerTutor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/base.js"></script>
+    <script src="../js/live-chat.js"></script>
+</body>
+
+</html>
