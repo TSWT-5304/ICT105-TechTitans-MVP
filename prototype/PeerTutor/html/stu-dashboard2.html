@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stu-profile.css">
+    <link rel="stylesheet" href="../css/stu-dashboard.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Student Dashboard</title>
+</head>
+
+<body>
+    <div class="page">
+
+        <!--Nav Bar-->
+        <nav class="dash-nav">
+            <div class="dash-header">
+                <h1>My Dashboard</h1>
+                <p>Manage your tutoring sessions and progress</p>
+            </div>
+
+            <div class="dash-nav-right-fixed">
+                <div class="user-menu-wrap" id="user-menu-wrap">
+                    <button class="user-nav-btn" onclick="toggleUserMenu()" id="user-nav-btn">
+                        <div class="una-avatar" id="una-avatar">AL</div>
+                        <span class="una-name">Alex</span>
+                        <i class="ti ti-chevron-down una-chevron" id="una-chevron"></i>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div class="user-dropdown" id="user-dropdown">
+                        <div class="udrop-header">
+                            <div class="udrop-avatar">AL</div>
+                            <div>
+                                <p class="udrop-name">Alex Thompson</p>
+                                <p class="udrop-email">alex@university.edu</p>
+                                <span class="udrop-role">Student</span>
+                            </div>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <div class="udrop-menu">
+                            <a class="udrop-item" href="stu-profile.html">
+                                <i class="ti ti-user-circle"></i> My Profile
+                            </a>
+                            <a class="udrop-item active" href="stu-dashboard.html">
+                                <i class="ti ti-layout-dashboard"></i> Dashboard
+                            </a>
+                            <a class="udrop-item" href="stu-dashboard2.html">
+                                <i class="ti ti-calendar"></i> My Sessions
+                            </a>
+                            <a class="udrop-item" href="stu-profile.html">
+                                <i class="ti ti-bell"></i> Notifications
+                                <span class="udrop-badge">3</span>
+                            </a>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <div class="udrop-menu">
+                            <a class="udrop-item" href="stu-profile.html" onclick="switchSection('privacy')">
+                                <i class="ti ti-shield-lock"></i> Privacy Settings
+                            </a>
+                            <a class="udrop-item" href="stu-profile.html" onclick="switchSection('help')">
+                                <i class="ti ti-help-circle"></i> Help & Support
+                            </a>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <button class="udrop-logout" onclick="showModal('logout')">
+                            <i class="ti ti-logout"></i> Sign Out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Cards-->
+        <div class="stat-cards">
+            <div class="stat-card" style="background-color: #eff6ff;">
+                <div class="stat-card-top">
+                    <span>Total Sessions</span>
+                    <i class="ti ti-book"></i>
+                </div>
+                <div class="stat-card-value">15</div>
+                <div class="stat-card-sub">+ 3 this month</div>
+            </div>
+            <div class="stat-card" style="background-color: #f5f3ff;">
+                <div class="stat-card-top">
+                    <span>Upcoming</span>
+                    <i class="ti ti-calendar"></i>
+                </div>
+                <div class="stat-card-value">2</div>
+                <div class="stat-card-sub">Sessions scheduled</div>
+            </div>
+            <div class="stat-card" style="background-color: #ecfdf5;">
+                <div class="stat-card-top">
+                    <span>Hours Learned</span>
+                    <i class="ti ti-clock"></i>
+                </div>
+                <div class="stat-card-value">30.5</div>
+                <div class="stat-card-sub">+ 6.5 this month</div>
+            </div>
+            <div class="stat-card" style="background-color: #fef3c7;">
+                <div class="stat-card-top">
+                    <span>Total Spent</span>
+                    <i class="ti ti-currency-dollar"></i>
+                </div>
+                <div class="stat-card-value">฿2250</div>
+                <div class="stat-card-sub">Average ฿150/session</div>
+            </div>
+        </div>
+
+        <!--Tabs-->
+        <div class="dash-tabs">
+            <button type="button" class="tab-btn" onclick="switchTab('status', this)">Session Status</button>
+            <button type="button" class="tab-btn active" onclick="switchTab('upcoming', this)">Upcoming
+                Sessions</button>
+            <button type="button" class="tab-btn" onclick="switchTab('past', this)">Past Sessions</button>
+            <button type="button" class="tab-btn" onclick="switchTab('tutors', this)">My Tutors</button>
+            <button type="button" class="tab-btn" onclick="switchTab('payments', this)">Payment History</button>
+        </div>
+
+        <!--Session Lists-->
+        <div class="sessions-list">
+
+            <!--Session Status-->
+            <div class="tab-panel" id="tab-status">
+                <div class="session-row">
+                    <div class="session-left">
+                        <div class="session-avatar">
+                            <img src="../img/T2.jpg" alt="">
+                        </div>
+                        <div class="session-info">
+                            <div class="session-title-row">
+                                <h3>Calculus</h3>
+                                <span class="status-badge status-pending">
+                                    <i class="ti ti-clock"></i> Pending
+                                </span>
+                            </div>
+                            <p class="session-tutor">with Hazel</p>
+                            <div class="session-meta">
+                                <span><i class="ti ti-calendar"></i> Sunday, June 28, 2026</span>
+                                <span><i class="ti ti-clock"></i> 3:00 PM (60 min)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-actions">
+                        <button class="btn-join" disabled style="opacity:0.4;cursor:not-allowed;">
+                            Waiting for tutor's response
+                        </button>
+                        <button class="btn-cancel">Cancel</button>
+                    </div>
+                </div>
+
+                <div class="session-row session-row-rejected">
+                    <div class="session-left">
+                        <div class="session-avatar">
+                            <img src="../img/T7.jpg" alt="">
+                        </div>
+                        <div class="session-info">
+                            <div class="session-title-row">
+                                <h3>Statistics</h3>
+                                <span class="status-badge status-rejected">
+                                    <i class="ti ti-circle-x"></i> Rejected
+                                </span>
+                            </div>
+                            <p class="session-tutor">with Emily Zhang</p>
+                            <div class="session-meta">
+                                <span><i class="ti ti-calendar"></i> Wednesday, July 1, 2026</span>
+                                <span><i class="ti ti-clock"></i> 2:00 PM (60 min)</span>
+                            </div>
+                            <p class="session-reject-reason">
+                                <i class="ti ti-info-circle"></i>
+                                Tutor is unavailable at this time. Please choose a different slot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="session-actions">
+                        <button class="btn-rebook" onclick="window.location.href='book-session.html'">
+                            <i class="ti ti-calendar-plus"></i> Try others...
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Upcoming Sessions-->
+            <div class="tab-panel active" id="tab-upcoming">
+                <div class="session-row">
+                    <div class="session-left">
+                        <div class="session-avatar">
+                            <img src="../img/T2.jpg" alt="">
+                        </div>
+                        <div class="session-info">
+                            <div class="session-title-row">
+                                <h3>Calculus</h3>
+                                <span class="status-badge status-approved">
+                                    <i class="ti ti-clock"></i> Approved
+                                </span>
+                            </div>
+                            <p class="session-tutor">with Hazel</p>
+                            <div class="session-meta">
+                                <span><i class="ti ti-calendar"></i> Sunday, June 28, 2026</span>
+                                <span><i class="ti ti-clock"></i> 3:00 PM (60 min)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-actions">
+                        <button class="btn-join">
+                            <i class="ti ti-video"></i>Join Meeting
+                        </button>
+                        <button class="btn-message" onclick="window.location.href='messages.html'"
+                            style="cursor: pointer;">Message</button>
+                        <button class="btn-cancel">Cancel</button>
+                    </div>
+                </div>
+
+                <div class="session-row">
+                    <div class="session-left">
+                        <div class="session-avatar">
+                            <img src="../img/T4.jpg" alt="">
+                        </div>
+                        <div class="session-info">
+                            <div class="session-title-row">
+                                <h3>Web Development-Course(2)</h3>
+                                <span class="status-badge status-approved">
+                                    <i class="ti ti-circle-check"></i> Approved
+                                </span>
+                            </div>
+                            <p class="session-tutor">with John</p>
+                            <div class="session-meta">
+                                <span><i class="ti ti-calendar"></i> Tuesday, June 30, 2026</span>
+                                <span><i class="ti ti-clock"></i> 6:00 PM (60 min)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-actions">
+                        <button class="btn-join"><i class="ti ti-video"></i> Join Meeting</button>
+                        <button class="btn-message" onclick="window.location.href='messages.html'"
+                            style="cursor: pointer;">Message</button>
+                        <button class="btn-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Past Session-->
+            <div class="tab-panel" id="tab-past">
+                <div class="past-session-row">
+                    <div class="session-left">
+                        <div class="session-avatar">
+                            <img src="../img/T8.jpg" alt="">
+                        </div>
+                        <div class="session-info">
+                            <div class="session-title-row" style="display: flex; align-items: center; gap: 10px;">
+                                <h3>Python Programming</h3>
+                                <span class="past-badge"><i class="ti ti-circle-check"></i> Completed</span>
+                            </div>
+                            <p class="session-tutor">with Alex Johnson</p>
+                            <div class="session-meta">
+                                <span><i class="ti ti-calendar"></i> Friday, June 12, 2026</span>
+                                <span><i class="ti ti-clock"></i> 4:00 PM (60 min)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-actions">
+                        <button class="btn-review"><i class="ti ti-star"></i> Review Tutor</button>
+                        <button class="btn-reschedule" onclick="window.location.href='book-session.html'">Book
+                            Again</button>
+                    </div>
+                </div>
+
+                <div class="past-session-row">
+                    <div class="session-left">
+                        <div class="session-avatar">
+                            <img src="../img/T4.jpg" alt="">
+                        </div>
+                        <div class="session-info">
+                            <div class="session-title-row" style="display: flex; align-items: center; gap: 10px;">
+                                <h3>Web Development-Course(1)</h3>
+                                <span class="past-badge"><i class="ti ti-circle-check"></i> Completed</span>
+                            </div>
+                            <p class="session-tutor">with John</p>
+                            <div class="session-meta">
+                                <span><i class="ti ti-calendar"></i> Monday, June 08, 2026</span>
+                                <span><i class="ti ti-clock"></i> 3:00 PM (60 min)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-actions">
+                        <button class="btn-review"><i class="ti ti-star"></i> Review Tutor</button>
+                        <button class="btn-reschedule" onclick="window.location.href='book-session.html'">Book
+                            Again</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--My Tutors-->
+            <div class="tab-panel" id="tab-tutors">
+                <div class="my-tutors-grid">
+                    <div class="my-tutor-card">
+                        <div class="my-tutor-top">
+                            <div class="session-avatar">
+                                <img src="../img/T4.jpg" alt="">
+                            </div>
+                            <div>
+                                <h4 class="my-tutor-name">John</h4>
+                                <p class="my-tutor-sub">Web Development</p>
+                            </div>
+                        </div>
+                        <p style="font-size: 13px; color: var(--gray-600); margin-bottom: 16px; min-height: 38px;">
+                            ICT • 4 Sessions Completed • ⭐ 4.9 (50 reviews)
+                        </p>
+                        <button class="btn-book" onclick="window.location.href='book-session.html'">Book a
+                            Session</button>
+                    </div>
+
+                    <div class="my-tutor-card">
+                        <div class="my-tutor-top">
+                            <div class="session-avatar">
+                                <img src="../img/T8.jpg" alt="">
+                            </div>
+                            <div>
+                                <h4 class="my-tutor-name">Alex Johnson</h4>
+                                <p class="my-tutor-sub">Basic Python Programming</p>
+                            </div>
+                        </div>
+                        <p style="font-size: 13px; color: var(--gray-600); margin-bottom: 16px; min-height: 38px;">
+                            ICT • 1 Session Completed • ⭐ 5.0 (18 reviews)
+                        </p>
+                        <button class="btn-book" onclick="window.location.href='book-session.html'">Book a
+                            Session</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-payments">
+                <section class="payment-history-card" aria-labelledby="payment-history-title">
+                    <h2 id="payment-history-title">
+                        Payment History
+                    </h2>
+
+                    <div class="payment-table-wrap">
+                        <table class="payment-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Tutor</th>
+                                    <th>Subject</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>
+                                        <span class="sr-only">
+                                            Receipt
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Jun 29, 2026</td>
+                                    <td>Mark Collin</td>
+                                    <td>Basic Python Programming</td>
+
+                                    <td class="payment-amount">
+                                        ฿1310.75
+                                    </td>
+
+                                    <td>
+                                        <span class="payment-status status-paid">
+                                            Paid
+                                        </span>
+                                    </td>
+
+                                    <td class="payment-download-cell">
+                                        <button type="button" class="payment-download"
+                                            aria-label="Download payment receipt" onclick="downloadPaymentReceipt(
+                                    'Jun 29, 2026',
+                                    'Mark Collin',
+                                    'Basic Python Programming',
+                                    '฿1310.75',
+                                    'Paid'
+                                )">
+                                            <i class="ti ti-download"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Jun 20, 2026</td>
+                                    <td>John</td>
+                                    <td>Web Development</td>
+
+                                    <td class="payment-amount">
+                                        ฿1,225.00
+                                    </td>
+
+                                    <td>
+                                        <span class="payment-status status-paid">
+                                            Paid
+                                        </span>
+                                    </td>
+
+                                    <td class="payment-download-cell">
+                                        <button type="button" class="payment-download"
+                                            aria-label="Download payment receipt" onclick="downloadPaymentReceipt(
+                                    'Jun 20, 2026',
+                                    'John',
+                                    'Web Development',
+                                    '฿1,225.00',
+                                    'Paid'
+                                )">
+                                            <i class="ti ti-download"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Jun 10, 2026</td>
+                                    <td>Hazel</td>
+                                    <td>Calculus</td>
+
+                                    <td class="payment-amount">
+                                        ฿500.00
+                                    </td>
+
+                                    <td>
+                                        <span class="payment-status status-refunded">
+                                            Refunded
+                                        </span>
+                                    </td>
+
+                                    <td class="payment-download-cell">
+                                        <button type="button" class="payment-download"
+                                            aria-label="Download refund receipt" onclick="downloadPaymentReceipt(
+                                    'Jun 10, 2026',
+                                    'Hazel',
+                                    'Calculus',
+                                    '฿500.00',
+                                    'Refunded'
+                                )">
+                                            <i class="ti ti-download"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--Progress & Achievements-->
+        <div class="progress-achievements"
+            style="display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:0 48px 48px;">
+            <div class="dash-widget">
+                <div class="widget-title">
+                    <i class="ti ti-trending-up"></i>
+                    Learning Progress
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span>Calculus</span>
+                        <span class="progress-sessions">8 sessions</span>
+                    </div>
+                    <div class="progress-bar-track">
+                        <div class="progress-bar-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span>Python Programming</span>
+                        <span class="progress-sessions">6 sessions</span>
+                    </div>
+                    <div class="progress-bar-track">
+                        <div class="progress-bar-fill" style="width: 55%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span>Physics</span>
+                        <span class="progress-sessions">4 sessions</span>
+                    </div>
+                    <div class="progress-bar-track">
+                        <div class="progress-bar-fill" style="width: 35%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-widget">
+                <div class="widget-title">
+                    <i class="ti ti-award"></i>
+                    Achievements
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-card" style="background:#eff6ff;">
+                        <div class="achievement-emoji">🎯</div>
+                        <p class="achievement-name">Consistent Learner</p>
+                        <p class="achievement-sub" style="color:#2563eb;">10+ sessions</p>
+                    </div>
+                    <div class="achievement-card" style="background:#fdf4ff;">
+                        <div class="achievement-emoji">⭐</div>
+                        <p class="achievement-name">5-Star Student</p>
+                        <p class="achievement-sub" style="color:#9333ea;">Highly rated</p>
+                    </div>
+                    <div class="achievement-card" style="background:#f0fdf4;">
+                        <div class="achievement-emoji">📚</div>
+                        <p class="achievement-name">Multi-Subject</p>
+                        <p class="achievement-sub" style="color:#16a34a;">3+ subjects</p>
+                    </div>
+                    <div class="achievement-card" style="background:#fefce8;">
+                        <div class="achievement-emoji">🚀</div>
+                        <p class="achievement-name">Quick Starter</p>
+                        <p class="achievement-sub" style="color:#ca8a04;">First week active</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a class="logo footer-logo" href="index.html">
+                        <img src="../img/Logo.png" class="logo-icon" alt="PeerTutor logo">
+                        <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+                    </a>
+                    <div class="footer-socials" aria-label="Social links">
+                        <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>CONTACT US</h4>
+                    <p>hello@peertutor.co</p>
+                    <p>Rangsit University, Pathum Thani<br>PeerTutor Learning Support</p>
+                    <p>+66 82 328 5847</p>
+                </div>
+                <div class="footer-subscribe">
+                    <h4>SUBSCRIBE</h4>
+                    <p>Enter your email to get notified about our new tutoring sessions.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Email" aria-label="Email">
+                        <button type="submit" aria-label="Subscribe"><i class="ti ti-mail"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PeerTutor. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/base.js"></script>
+</body>
+
+</html>

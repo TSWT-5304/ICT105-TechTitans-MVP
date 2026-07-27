@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <!-- Admin nav -->
+    <nav class="admin-nav">
+        <div class="admin-nav-left">
+            <i class="ti ti-shield-check"></i>
+            <span class="admin-nav-title">Admin Console</span>
+            <span class="admin-nav-badge">PeerTutor</span>
+        </div>
+        <div class="admin-nav-right">
+            <div class="status-dot"></div>
+            All systems operational
+        </div>
+    </nav>
+
+    <div class="admin-body">
+
+        <!-- Header -->
+        <div class="admin-header">
+            <h1>Admin Dashboard</h1>
+            <p>Manage the PeerTutor platform — users, tutors, applications, and analytics.</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="admin-tabs">
+            <button class="admin-tab active" onclick="switchTab('overview', this)">
+                <i class="ti ti-chart-bar"></i> Overview
+            </button>
+            <button class="admin-tab" onclick="switchTab('applications', this)">
+                <i class="ti ti-clock"></i> Applications
+                <span class="tab-badge">3</span>
+            </button>
+            <button class="admin-tab" onclick="switchTab('users', this)">
+                <i class="ti ti-users"></i> Users
+            </button>
+            <button class="admin-tab" onclick="switchTab('tutors', this)">
+                <i class="ti ti-school"></i> Tutors
+            </button>
+            <button class="admin-tab" onclick="switchTab('payouts', this)">
+                <i class="ti ti-cash"></i> Payouts
+                <span class="tab-badge" id="payout-pending-badge" style="background:#7c3aed;">3</span>
+            </button>
+            <button class="admin-tab" onclick="switchTab('payments', this)">
+                <i class="ti ti-credit-card"></i> Student Payments
+                <span class="tab-badge" style="background:#e11d48;">5</span>
+            </button>
+        </div>
+
+        <!-- OVERVIEW TAB -->
+        <div class="tab-panel active" id="tab-overview">
+
+            <!-- Stat cards -->
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-card-info">
+                        <p>Total Users</p>
+                        <div class="stat-card-value">800</div>
+                        <div class="stat-card-trend"><i class="ti ti-trending-up"></i> +12% vs last month</div>
+                    </div>
+                    <div class="stat-icon" style="background:#2563eb;"><i class="ti ti-users"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-info">
+                        <p>Active Tutors</p>
+                        <div class="stat-card-value">54</div>
+                        <div class="stat-card-trend"><i class="ti ti-trending-up"></i> +7% vs last month</div>
+                    </div>
+                    <div class="stat-icon" style="background:#7c3aed;"><i class="ti ti-school"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-info">
+                        <p>Sessions This Month</p>
+                        <div class="stat-card-value">150</div>
+                        <div class="stat-card-trend"><i class="ti ti-trending-up"></i> +23% vs last month</div>
+                    </div>
+                    <div class="stat-icon" style="background:#0ea5e9;"><i class="ti ti-calendar"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-info">
+                        <p>Revenue (Jun)</p>
+                        <div class="stat-card-value">฿7,800</div>
+                        <div class="stat-card-trend"><i class="ti ti-trending-up"></i> +24% vs last month</div>
+                    </div>
+                    <div class="stat-icon" style="background:#22c55e;"><i class="ti ti-currency-dollar"></i></div>
+                </div>
+            </div>
+
+            <!-- Platform health -->
+            <div class="health-card">
+                <h3>Platform Health</h3>
+                <div class="health-grid">
+                    <div class="health-item">
+                        <span class="health-icon" style="color:#f59e0b;"><i class="ti ti-star"></i></span>
+                        <div>
+                            <p class="health-label">Avg. session rating</p>
+                            <p class="health-value">4.8 ★</p>
+                        </div>
+                    </div>
+                    <div class="health-item">
+                        <span class="health-icon" style="color:#2563eb;"><i class="ti ti-clock"></i></span>
+                        <div>
+                            <p class="health-label">Avg. response time</p>
+                            <p class="health-value">1.4 hrs</p>
+                        </div>
+                    </div>
+                    <div class="health-item">
+                        <span class="health-icon" style="color:#22c55e;"><i class="ti ti-activity"></i></span>
+                        <div>
+                            <p class="health-label">Session completion rate</p>
+                            <p class="health-value">94.2%</p>
+                        </div>
+                    </div>
+                    <div class="health-item">
+                        <span class="health-icon" style="color:#f97316;"><i class="ti ti-alert-circle"></i></span>
+                        <div>
+                            <p class="health-label">Pending applications</p>
+                            <p class="health-value">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- APPLICATIONS TAB -->
+        <div class="tab-panel" id="tab-applications">
+            <div class="app-list">
+
+                <div class="app-card">
+                    <div class="app-left">
+                        <div class="app-avatar">JK</div>
+                        <div>
+                            <p class="app-name">Jordan Kim</p>
+                            <p class="app-meta">RSU • ICT • Junior • Applied Jun 27, 2026</p>
+                            <div class="app-tags">
+                                <span class="app-tag">Python</span>
+                                <span class="app-tag">Machine Learning</span>
+                                <span class="app-tag">Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-actions">
+                        <button class="btn-approve" onclick="approveApp(this)"><i class="ti ti-check"></i>
+                            Approve</button>
+                        <button class="btn-reject" onclick="rejectApp(this)"><i class="ti ti-x"></i> Reject</button>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-left">
+                        <div class="app-avatar">LT</div>
+                        <div>
+                            <p class="app-name">Lena Torres</p>
+                            <p class="app-meta">RSU • Computer Science • Senior • Applied Jun 26, 2026</p>
+                            <div class="app-tags">
+                                <span class="app-tag">Calculus</span>
+                                <span class="app-tag">Linear Algebra</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-actions">
+                        <button class="btn-approve" onclick="approveApp(this)"><i class="ti ti-check"></i>
+                            Approve</button>
+                        <button class="btn-reject" onclick="rejectApp(this)"><i class="ti ti-x"></i> Reject</button>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-left">
+                        <div class="app-avatar">RN</div>
+                        <div>
+                            <p class="app-name">Ravi Nair</p>
+                            <p class="app-meta">RSU • Civil Engineering • Graduate Student • Applied Jun 25, 2026</p>
+                            <div class="app-tags">
+                                <span class="app-tag">Quantum Physics</span>
+                                <span class="app-tag">Thermodynamics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-actions">
+                        <button class="btn-approve" onclick="approveApp(this)"><i class="ti ti-check"></i>
+                            Approve</button>
+                        <button class="btn-reject" onclick="rejectApp(this)"><i class="ti ti-x"></i> Reject</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- USERS TAB -->
+        <div class="tab-panel" id="tab-users">
+            <div class="table-card">
+                <div class="table-header">
+                    <h3>All Users</h3>
+                    <div class="table-search">
+                        <i class="ti ti-search" style="color:#aaa;font-size:14px;"></i>
+                        <input type="text" placeholder="Search users..." oninput="filterTable(this,'users-table')" />
+                    </div>
+                </div>
+                <table id="users-table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Joined</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">SC</div> Sarah Chen
+                                </div>
+                            </td>
+                            <td>sarah@mit.edu</td>
+                            <td><span class="badge badge-tutor">Tutor</span></td>
+                            <td>Jan 12, 2026</td>
+                            <td><span class="badge badge-active">Active</span></td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Suspend</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">MJ</div> Marcus Johnson
+                                </div>
+                            </td>
+                            <td>marcus@stanford.edu</td>
+                            <td><span class="badge badge-tutor">Tutor</span></td>
+                            <td>Feb 3, 2026</td>
+                            <td><span class="badge badge-active">Active</span></td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Suspend</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">AW</div> Amara Williams
+                                </div>
+                            </td>
+                            <td>amara@harvard.edu</td>
+                            <td><span class="badge badge-tutor">Tutor</span></td>
+                            <td>Mar 15, 2026</td>
+                            <td><span class="badge badge-active">Active</span></td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Suspend</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">AL</div> Alex Lee
+                                </div>
+                            </td>
+                            <td>alex@university.edu</td>
+                            <td><span class="badge badge-student">Student</span></td>
+                            <td>Apr 20, 2026</td>
+                            <td><span class="badge badge-active">Active</span></td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Suspend</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">PP</div> Priya Patel
+                                </div>
+                            </td>
+                            <td>priya@berkeley.edu</td>
+                            <td><span class="badge badge-tutor">Tutor</span></td>
+                            <td>May 1, 2026</td>
+                            <td><span class="badge badge-active">Active</span></td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Suspend</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">EZ</div> Emily Zhang
+                                </div>
+                            </td>
+                            <td>emily@yale.edu</td>
+                            <td><span class="badge badge-tutor">Tutor</span></td>
+                            <td>May 14, 2026</td>
+                            <td><span class="badge badge-inactive">Inactive</span></td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Suspend</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">JL</div> James Liu
+                                </div>
+                            </td>
+                            <td>james@university.edu</td>
+                            <td><span class="badge badge-student">Student</span></td>
+                            <td>Jun 2, 2026</td>
+                            <td><span class="badge badge-active">Active</span></td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Suspend</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- TUTORS TAB -->
+        <div class="tab-panel" id="tab-tutors">
+            <div class="table-card">
+                <div class="table-header">
+                    <h3>Active Tutors</h3>
+                    <div class="table-search">
+                        <i class="ti ti-search" style="color:#aaa;font-size:14px;"></i>
+                        <input type="text" placeholder="Search tutors..." oninput="filterTable(this,'tutors-table')" />
+                    </div>
+                </div>
+                <table id="tutors-table">
+                    <thead>
+                        <tr>
+                            <th>Tutor</th>
+                            <th>University</th>
+                            <th>Subjects</th>
+                            <th>Sessions</th>
+                            <th>Rating</th>
+                            <th>Rate</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">SC</div> Sarah Chen
+                                </div>
+                            </td>
+                            <td>MIT</td>
+                            <td>Calculus, Statistics</td>
+                            <td>124</td>
+                            <td>⭐ 4.9</td>
+                            <td>$35/hr</td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">MJ</div> Marcus Johnson
+                                </div>
+                            </td>
+                            <td>Stanford</td>
+                            <td>Python, Algorithms</td>
+                            <td>98</td>
+                            <td>⭐ 4.8</td>
+                            <td>$40/hr</td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">AW</div> Amara Williams
+                                </div>
+                            </td>
+                            <td>Harvard</td>
+                            <td>Cell Biology, Genetics</td>
+                            <td>76</td>
+                            <td>⭐ 5.0</td>
+                            <td>$38/hr</td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">DM</div> Diego Martinez
+                                </div>
+                            </td>
+                            <td>Caltech</td>
+                            <td>Physics, Quantum</td>
+                            <td>167</td>
+                            <td>⭐ 4.9</td>
+                            <td>$45/hr</td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">PP</div> Priya Patel
+                                </div>
+                            </td>
+                            <td>UC Berkeley</td>
+                            <td>Python, ML</td>
+                            <td>89</td>
+                            <td>⭐ 4.8</td>
+                            <td>$40/hr</td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-sm">EZ</div> Emily Zhang
+                                </div>
+                            </td>
+                            <td>Yale</td>
+                            <td>Economics, Statistics</td>
+                            <td>55</td>
+                            <td>⭐ 4.7</td>
+                            <td>$36/hr</td>
+                            <td><button class="btn-action">View</button><button class="btn-action-red">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PAYOUTS TAB -->
+        <div class="tab-panel" id="tab-payouts">
+
+            <!-- Payout table card -->
+            <div class="payout-card">
+                <div class="payout-card-header">
+                    <h3>Payouts (Transfers to Tutor)</h3>
+                    <p class="payout-card-description">Review tutor earnings, initiate a transfer, and track it until
+                        completion.</p>
+                </div>
+
+                <div class="payout-process" aria-label="Payout process">
+                    <div class="payout-process-step active"><span>1</span>
+                        <div><strong>Confirm transfer</strong><small>Admin reviews and submits payout</small></div>
+                    </div>
+                    <i class="ti ti-chevron-right"></i>
+                    <div class="payout-process-step"><span>2</span>
+                        <div><strong>Processing</strong><small>Transfer is recorded and tutor is notified</small></div>
+                    </div>
+                    <i class="ti ti-chevron-right"></i>
+                    <div class="payout-process-step"><span>3</span>
+                        <div><strong>Completed</strong><small>Payment reference remains in history</small></div>
+                    </div>
+                </div>
+
+                <!-- Sub-tabs -->
+                <div class="payout-subtabs">
+                    <button class="payout-subtab active" onclick="switchPayoutTab('pending', this)">Pending
+                        Payouts</button>
+                    <button class="payout-subtab" onclick="switchPayoutTab('processing', this)">Processing</button>
+                    <button class="payout-subtab" onclick="switchPayoutTab('completed', this)">Completed</button>
+                    <button class="payout-subtab" onclick="switchPayoutTab('all', this)">All Payouts</button>
+                </div>
+
+                <!-- ── Pending Payouts ── -->
+                <div class="payout-subpanel active" id="subpanel-pending">
+                    <div class="payout-table-wrap">
+                        <table class="payout-table">
+                            <thead>
+                                <tr>
+                                    <th>Tutor</th>
+                                    <th>Total Earnings</th>
+                                    <th>Commission (10%)</th>
+                                    <th>Payout Amount</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pending-tbody">
+                                <tr id="prow-sarah">
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#ede9fe;color:#7c3aed;">SL</div>
+                                        Sarah Lee
+                                    </td>
+                                    <td>฿3,200</td>
+                                    <td>฿320</td>
+                                    <td class="pt-amount">฿2,880</td>
+                                    <td>
+                                        <button class="btn-transfer"
+                                            onclick="openPayoutForm('Sarah Lee','3200','320','2880','sarah')">
+                                            Transfer
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr id="prow-kevin">
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#dbeafe;color:#2563eb;">KO</div>
+                                        Kevin Ong
+                                    </td>
+                                    <td>฿2,750</td>
+                                    <td>฿275</td>
+                                    <td class="pt-amount">฿2,475</td>
+                                    <td>
+                                        <button class="btn-transfer"
+                                            onclick="openPayoutForm('Kevin Ong','2750','275','2475','kevin')">
+                                            Transfer
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr id="prow-jessica">
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#dcfce7;color:#16a34a;">JW</div>
+                                        Jessica Wong
+                                    </td>
+                                    <td>฿1,950</td>
+                                    <td>฿195</td>
+                                    <td class="pt-amount">฿1,755</td>
+                                    <td>
+                                        <button class="btn-transfer"
+                                            onclick="openPayoutForm('Jessica Wong','1950','195','1755','jessica')">
+                                            Transfer
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="pt-total-row">
+                                    <td><strong>Total</strong></td>
+                                    <td><strong id="pending-total-earnings">฿7,900</strong></td>
+                                    <td><strong id="pending-total-commission">฿790</strong></td>
+                                    <td><strong id="pending-total-payout">฿7,110</strong></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <!-- ── Initiate Payout Form (INSIDE pending tab only) ── -->
+                    <div class="initiate-payout-card" id="initiate-payout-card" style="display:none;">
+                        <div class="ip-card-header">
+                            <h3><i class="ti ti-send" style="color:#7c3aed;"></i> Initiate Payout (Transfer to Tutor)
+                            </h3>
+                            <button type="button" class="btn-ip-close" onclick="closePayoutForm()"
+                                title="Close payout form" aria-label="Close payout form">
+                                <i class="ti ti-x"></i>
+                            </button>
+                        </div>
+
+                        <div class="ip-form-grid">
+                            <div class="ip-field">
+                                <label class="ip-label">Tutor</label>
+                                <select class="ip-select" id="ip-tutor" onchange="updatePayoutForm()">
+                                    <option value="sarah" data-earnings="3200" data-commission="320" data-payout="2880">
+                                        Sarah Lee</option>
+                                    <option value="kevin" data-earnings="2750" data-commission="275" data-payout="2475">
+                                        Kevin Ong</option>
+                                    <option value="jessica" data-earnings="1950" data-commission="195"
+                                        data-payout="1755">Jessica Wong</option>
+                                </select>
+                            </div>
+                            <div class="ip-field">
+                                <label class="ip-label">Total Earnings</label>
+                                <div class="ip-input-wrap">
+                                    <span class="ip-currency">฿</span>
+                                    <input class="ip-input" type="text" id="ip-earnings" value="3,200" readonly />
+                                </div>
+                            </div>
+                            <div class="ip-field">
+                                <label class="ip-label">Platform Commission (10%)</label>
+                                <div class="ip-input-wrap">
+                                    <span class="ip-currency">฿</span>
+                                    <input class="ip-input" type="text" id="ip-commission" value="320" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ip-field ip-payout-field">
+                            <label class="ip-label">Payout Amount</label>
+                            <div class="ip-payout-amount">
+                                <span class="ip-currency-green">฿</span>
+                                <input class="ip-input-green" type="text" id="ip-payout" value="2,880" readonly />
+                            </div>
+                        </div>
+
+                        <div class="ip-form-grid" style="margin-top:16px;">
+                            <div class="ip-field">
+                                <label class="ip-label">Payout Method</label>
+                                <select class="ip-select" id="ip-method" onchange="updateMethodFields()">
+                                    <option>PromptPay</option>
+                                    <option>Bank Transfer</option>
+                                    <option>TrueMoney</option>
+                                </select>
+                            </div>
+                            <div class="ip-field">
+                                <label class="ip-label" id="ip-method-label">PromptPay ID / Phone</label>
+                                <input class="ip-input ip-input-standalone" type="text" id="ip-method-value"
+                                    placeholder="081-234-5678" value="081-234-5678" />
+                            </div>
+                        </div>
+
+                        <div class="ip-field" style="margin-top:16px;">
+                            <label class="ip-label">Note (Optional)</label>
+                            <input class="ip-input ip-input-standalone" type="text" id="ip-note"
+                                value="Transfer for tutoring earnings (1 – 12 Jul 2026)" />
+                        </div>
+
+                        <div class="ip-actions">
+                            <button class="btn-ip-cancel" onclick="closePayoutForm()">Cancel</button>
+                            <button class="btn-ip-confirm" onclick="confirmPayout()">
+                                <i class="ti ti-send"></i> Confirm Transfer
+                            </button>
+                        </div>
+                    </div>
+
+                </div><!-- end subpanel-pending -->
+
+                <!-- ── Processing ── -->
+                <div class="payout-subpanel" id="subpanel-processing">
+                    <div class="payout-table-wrap">
+                        <table class="payout-table">
+                            <thead>
+                                <tr>
+                                    <th>Tutor</th>
+                                    <th>Amount</th>
+                                    <th>Method</th>
+                                    <th>Initiated</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="processing-tbody">
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#fef3c7;color:#d97706;">SC</div>Sarah
+                                        Chen
+                                    </td>
+                                    <td class="pt-amount">฿3,150</td>
+                                    <td>PromptPay</td>
+                                    <td>Jul 10, 2026</td>
+                                    <td><span class="pt-status processing">Processing</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#fce7f3;color:#db2777;">AM</div>Amara
+                                        Martinez
+                                    </td>
+                                    <td class="pt-amount">฿2,205</td>
+                                    <td>Bank Transfer</td>
+                                    <td>Jul 9, 2026</td>
+                                    <td><span class="pt-status processing">Processing</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ── Completed ── -->
+                <div class="payout-subpanel" id="subpanel-completed">
+                    <div class="payout-table-wrap">
+                        <table class="payout-table">
+                            <thead>
+                                <tr>
+                                    <th>Tutor</th>
+                                    <th>Amount</th>
+                                    <th>Method</th>
+                                    <th>Completed</th>
+                                    <th>Ref</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#dbeafe;color:#2563eb;">MJ</div>Marcus
+                                        Johnson
+                                    </td>
+                                    <td class="pt-amount">฿4,050</td>
+                                    <td>PromptPay</td>
+                                    <td>Jul 5, 2026</td>
+                                    <td class="pt-ref">PT-PAY-0041</td>
+                                    <td><span class="pt-status completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#dcfce7;color:#16a34a;">PP</div>Priya
+                                        Patel
+                                    </td>
+                                    <td class="pt-amount">฿3,600</td>
+                                    <td>Bank Transfer</td>
+                                    <td>Jul 3, 2026</td>
+                                    <td class="pt-ref">PT-PAY-0040</td>
+                                    <td><span class="pt-status completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#ede9fe;color:#7c3aed;">DM</div>Diego
+                                        Martinez
+                                    </td>
+                                    <td class="pt-amount">฿6,075</td>
+                                    <td>PromptPay</td>
+                                    <td>Jun 30, 2026</td>
+                                    <td class="pt-ref">PT-PAY-0039</td>
+                                    <td><span class="pt-status completed">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ── All Payouts ── -->
+                <div class="payout-subpanel" id="subpanel-all">
+                    <div class="payout-table-wrap">
+                        <table class="payout-table">
+                            <thead>
+                                <tr>
+                                    <th>Tutor</th>
+                                    <th>Amount</th>
+                                    <th>Method</th>
+                                    <th>Date</th>
+                                    <th>Ref</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#ede9fe;color:#7c3aed;">SL</div>Sarah
+                                        Lee
+                                    </td>
+                                    <td class="pt-amount">฿2,880</td>
+                                    <td>PromptPay</td>
+                                    <td>Pending</td>
+                                    <td class="pt-ref">—</td>
+                                    <td><span class="pt-status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#dbeafe;color:#2563eb;">KO</div>Kevin
+                                        Ong
+                                    </td>
+                                    <td class="pt-amount">฿2,475</td>
+                                    <td>PromptPay</td>
+                                    <td>Pending</td>
+                                    <td class="pt-ref">—</td>
+                                    <td><span class="pt-status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#fef3c7;color:#d97706;">SC</div>Sarah
+                                        Chen
+                                    </td>
+                                    <td class="pt-amount">฿3,150</td>
+                                    <td>PromptPay</td>
+                                    <td>Jul 10, 2026</td>
+                                    <td class="pt-ref">—</td>
+                                    <td><span class="pt-status processing">Processing</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#dbeafe;color:#2563eb;">MJ</div>Marcus
+                                        Johnson
+                                    </td>
+                                    <td class="pt-amount">฿4,050</td>
+                                    <td>PromptPay</td>
+                                    <td>Jul 5, 2026</td>
+                                    <td class="pt-ref">PT-PAY-0041</td>
+                                    <td><span class="pt-status completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#dcfce7;color:#16a34a;">PP</div>Priya
+                                        Patel
+                                    </td>
+                                    <td class="pt-amount">฿3,600</td>
+                                    <td>Bank Transfer</td>
+                                    <td>Jul 3, 2026</td>
+                                    <td class="pt-ref">PT-PAY-0040</td>
+                                    <td><span class="pt-status completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-tutor-cell">
+                                        <div class="pt-avatar" style="background:#ede9fe;color:#7c3aed;">DM</div>Diego
+                                        Martinez
+                                    </td>
+                                    <td class="pt-amount">฿6,075</td>
+                                    <td>PromptPay</td>
+                                    <td>Jun 30, 2026</td>
+                                    <td class="pt-ref">PT-PAY-0039</td>
+                                    <td><span class="pt-status completed">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div><!-- end payout-card -->
+
+        </div>
+
+        <!-- Payout result modal -->
+        <div class="payout-modal-overlay" id="payout-modal-overlay" role="dialog" aria-modal="true"
+            aria-labelledby="pm-title">
+            <div class="payout-modal">
+                <i class="ti ti-circle-check pm-icon"></i>
+                <h3 id="pm-title">Transfer Initiated</h3>
+                <p id="pm-message">The payout has been added to Processing.</p>
+                <div class="payout-next-steps">
+                    <p><i class="ti ti-list-check"></i> Status changed to <strong>Processing</strong></p>
+                    <p><i class="ti ti-bell"></i> Tutor notification prepared</p>
+                    <p><i class="ti ti-receipt"></i> Reference: <strong id="pm-ref">—</strong></p>
+                </div>
+                <div class="pm-actions">
+                    <button class="btn-pm-secondary" onclick="closePayoutModal()">Stay Here</button>
+                    <button class="btn-pm-close" onclick="viewProcessingPayouts()">View Processing</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- STUDENT PAYMENTS TAB -->
+        <div class="tab-panel" id="tab-payments">
+
+            <!-- Summary stat cards -->
+            <div class="sp-stat-grid">
+                <div class="sp-stat-card">
+                    <div class="sp-stat-icon" style="background:#fef3c7;color:#d97706;"><i class="ti ti-clock"></i>
+                    </div>
+                    <div>
+                        <p class="sp-stat-label">Pending Verification</p>
+                        <p class="sp-stat-value">5</p>
+                        <p class="sp-stat-sub">Awaiting admin review</p>
+                    </div>
+                </div>
+                <div class="sp-stat-card">
+                    <div class="sp-stat-icon" style="background:#dbeafe;color:#2563eb;"><i class="ti ti-loader"></i>
+                    </div>
+                    <div>
+                        <p class="sp-stat-label">Processing</p>
+                        <p class="sp-stat-value">3</p>
+                        <p class="sp-stat-sub">Payment in progress</p>
+                    </div>
+                </div>
+                <div class="sp-stat-card">
+                    <div class="sp-stat-icon" style="background:#dcfce7;color:#16a34a;"><i
+                            class="ti ti-circle-check"></i></div>
+                    <div>
+                        <p class="sp-stat-label">Confirmed This Month</p>
+                        <p class="sp-stat-value">47</p>
+                        <p class="sp-stat-sub">Sessions unlocked</p>
+                    </div>
+                </div>
+                <div class="sp-stat-card">
+                    <div class="sp-stat-icon" style="background:#fef2f2;color:#ef4444;"><i class="ti ti-circle-x"></i>
+                    </div>
+                    <div>
+                        <p class="sp-stat-label">Failed / Rejected</p>
+                        <p class="sp-stat-value">2</p>
+                        <p class="sp-stat-sub">Needs follow-up</p>
+                    </div>
+                </div>
+                <div class="sp-stat-card">
+                    <div class="sp-stat-icon" style="background:#f3e8ff;color:#7c3aed;"><i
+                            class="ti ti-currency-baht"></i></div>
+                    <div>
+                        <p class="sp-stat-label">Total Collected (Jul)</p>
+                        <p class="sp-stat-value">฿58,420</p>
+                        <p class="sp-stat-sub">+18% vs Jun</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter + Search bar -->
+            <div class="sp-filter-bar">
+                <div class="sp-filter-left">
+                    <div class="sp-filter-tabs">
+                        <button class="sp-filter-tab active" onclick="filterPayments('all',this)">
+                            All <span class="sp-ftab-count">57</span>
+                        </button>
+                        <button class="sp-filter-tab" onclick="filterPayments('pending',this)">
+                            Pending <span class="sp-ftab-count pending-count">5</span>
+                        </button>
+                        <button class="sp-filter-tab" onclick="filterPayments('processing',this)">
+                            Processing <span class="sp-ftab-count">3</span>
+                        </button>
+                        <button class="sp-filter-tab" onclick="filterPayments('confirmed',this)">
+                            Confirmed <span class="sp-ftab-count">47</span>
+                        </button>
+                        <button class="sp-filter-tab" onclick="filterPayments('failed',this)">
+                            Failed <span class="sp-ftab-count">2</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="sp-filter-right">
+                    <div class="sp-search-wrap">
+                        <i class="ti ti-search"></i>
+                        <input type="text" placeholder="Search student, tutor, ref..." id="sp-search"
+                            oninput="searchPayments(this.value)" />
+                    </div>
+                    <select class="sp-filter-select" onchange="filterByMethod(this.value)">
+                        <option value="">All Methods</option>
+                        <option>PromptPay</option>
+                        <option>Bank Transfer</option>
+                        <option>Credit Card</option>
+                        <option>TrueMoney</option>
+                    </select>
+                    <button class="btn-sp-export">
+                        <i class="ti ti-download"></i> Export
+                    </button>
+                </div>
+            </div>
+
+            <!-- Payments table -->
+            <div class="sp-table-card">
+                <table class="sp-table" id="sp-table">
+                    <thead>
+                        <tr>
+                            <th>Ref No.</th>
+                            <th>Student</th>
+                            <th>Tutor</th>
+                            <th>Subject</th>
+                            <th>Session Date</th>
+                            <th>Amount</th>
+                            <th>Method</th>
+                            <th>Slip</th>
+                            <th>Submitted</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sp-tbody">
+
+                        <!-- PENDING rows -->
+                        <tr class="sp-row" data-status="pending" data-method="Bank Transfer" id="sprow-001">
+                            <td class="sp-ref">PT-STU-001</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#dbeafe;color:#2563eb;">AL</div>
+                                <div>
+                                    <p class="sp-uname">Alex Lee</p>
+                                    <p class="sp-uemail">alex@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#0077B6,#03045E);color:#fff;">SC</div>
+                                <p class="sp-uname">Sarah Chen</p>
+                            </td>
+                            <td>Calculus</td>
+                            <td><span class="sp-date">Jun 29, 2026</span><br><span class="sp-time">3:00 PM</span></td>
+                            <td class="sp-amount">฿1,310.75</td>
+                            <td><span class="sp-method-tag bank">Bank Transfer</span></td>
+                            <td>
+                                <button class="btn-view-slip"
+                                    onclick="viewSlip('001','Alex Lee','฿1,310.75','Bank Transfer')">
+                                    <i class="ti ti-file-search"></i> View Slip
+                                </button>
+                            </td>
+                            <td class="sp-submitted">Jul 12, 2026 09:14</td>
+                            <td><span class="sp-status-badge pending">Pending</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('001','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Confirm
+                                </button>
+                                <button class="btn-sp-reject" onclick="updatePaymentStatus('001','failed')">
+                                    <i class="ti ti-circle-x"></i> Reject
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="sp-row" data-status="pending" data-method="PromptPay" id="sprow-002">
+                            <td class="sp-ref">PT-STU-002</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#dcfce7;color:#16a34a;">MP</div>
+                                <div>
+                                    <p class="sp-uname">Maya Patel</p>
+                                    <p class="sp-uemail">maya@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#7c3aed,#4c1d95);color:#fff;">DM</div>
+                                <p class="sp-uname">Diego Martinez</p>
+                            </td>
+                            <td>Physics</td>
+                            <td><span class="sp-date">Jun 30, 2026</span><br><span class="sp-time">6:00 PM</span></td>
+                            <td class="sp-amount">฿1,225.00</td>
+                            <td><span class="sp-method-tag promptpay">PromptPay</span></td>
+                            <td>
+                                <button class="btn-view-slip"
+                                    onclick="viewSlip('002','Maya Patel','฿1,225.00','PromptPay')">
+                                    <i class="ti ti-file-search"></i> View Slip
+                                </button>
+                            </td>
+                            <td class="sp-submitted">Jul 12, 2026 10:32</td>
+                            <td><span class="sp-status-badge pending">Pending</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('002','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Confirm
+                                </button>
+                                <button class="btn-sp-reject" onclick="updatePaymentStatus('002','failed')">
+                                    <i class="ti ti-circle-x"></i> Reject
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="sp-row" data-status="pending" data-method="Credit Card" id="sprow-003">
+                            <td class="sp-ref">PT-STU-003</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#fef3c7;color:#d97706;">JK</div>
+                                <div>
+                                    <p class="sp-uname">James Kim</p>
+                                    <p class="sp-uemail">james@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#16a34a,#14532d);color:#fff;">AW</div>
+                                <p class="sp-uname">Amara Williams</p>
+                            </td>
+                            <td>Statistics</td>
+                            <td><span class="sp-date">Jul 1, 2026</span><br><span class="sp-time">4:00 PM</span></td>
+                            <td class="sp-amount">฿875.00</td>
+                            <td><span class="sp-method-tag card">Credit Card</span></td>
+                            <td><span class="sp-auto-tag"><i class="ti ti-bolt"></i> Auto</span></td>
+                            <td class="sp-submitted">Jul 12, 2026 11:05</td>
+                            <td><span class="sp-status-badge pending">Pending</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('003','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Confirm
+                                </button>
+                                <button class="btn-sp-reject" onclick="updatePaymentStatus('003','failed')">
+                                    <i class="ti ti-circle-x"></i> Reject
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="sp-row" data-status="pending" data-method="TrueMoney" id="sprow-004">
+                            <td class="sp-ref">PT-STU-004</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#ede9fe;color:#7c3aed;">RN</div>
+                                <div>
+                                    <p class="sp-uname">Raj Nair</p>
+                                    <p class="sp-uemail">raj@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#d97706,#92400e);color:#fff;">MJ</div>
+                                <p class="sp-uname">Marcus Johnson</p>
+                            </td>
+                            <td>Python</td>
+                            <td><span class="sp-date">Jul 3, 2026</span><br><span class="sp-time">2:00 PM</span></td>
+                            <td class="sp-amount">฿1,050.00</td>
+                            <td><span class="sp-method-tag truemoney">TrueMoney</span></td>
+                            <td>
+                                <button class="btn-view-slip"
+                                    onclick="viewSlip('004','Raj Nair','฿1,050.00','TrueMoney')">
+                                    <i class="ti ti-file-search"></i> View Slip
+                                </button>
+                            </td>
+                            <td class="sp-submitted">Jul 12, 2026 13:20</td>
+                            <td><span class="sp-status-badge pending">Pending</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('004','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Confirm
+                                </button>
+                                <button class="btn-sp-reject" onclick="updatePaymentStatus('004','failed')">
+                                    <i class="ti ti-circle-x"></i> Reject
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="sp-row" data-status="pending" data-method="Bank Transfer" id="sprow-005">
+                            <td class="sp-ref">PT-STU-005</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#fce7f3;color:#db2777;">LT</div>
+                                <div>
+                                    <p class="sp-uname">Lena Torres</p>
+                                    <p class="sp-uemail">lena@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#db2777,#9d174d);color:#fff;">PP</div>
+                                <p class="sp-uname">Priya Patel</p>
+                            </td>
+                            <td>Machine Learning</td>
+                            <td><span class="sp-date">Jul 5, 2026</span><br><span class="sp-time">10:00 AM</span></td>
+                            <td class="sp-amount">฿1,485.00</td>
+                            <td><span class="sp-method-tag bank">Bank Transfer</span></td>
+                            <td>
+                                <button class="btn-view-slip"
+                                    onclick="viewSlip('005','Lena Torres','฿1,485.00','Bank Transfer')">
+                                    <i class="ti ti-file-search"></i> View Slip
+                                </button>
+                            </td>
+                            <td class="sp-submitted">Jul 12, 2026 14:48</td>
+                            <td><span class="sp-status-badge pending">Pending</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('005','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Confirm
+                                </button>
+                                <button class="btn-sp-reject" onclick="updatePaymentStatus('005','failed')">
+                                    <i class="ti ti-circle-x"></i> Reject
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- PROCESSING rows -->
+                        <tr class="sp-row" data-status="processing" data-method="PromptPay" id="sprow-006">
+                            <td class="sp-ref">PT-STU-006</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#dbeafe;color:#2563eb;">KW</div>
+                                <div>
+                                    <p class="sp-uname">Kevin Wu</p>
+                                    <p class="sp-uemail">kevin@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#0077B6,#03045E);color:#fff;">SC</div>
+                                <p class="sp-uname">Sarah Chen</p>
+                            </td>
+                            <td>Linear Algebra</td>
+                            <td><span class="sp-date">Jul 8, 2026</span><br><span class="sp-time">11:00 AM</span></td>
+                            <td class="sp-amount">฿1,225.00</td>
+                            <td><span class="sp-method-tag promptpay">PromptPay</span></td>
+                            <td><span class="sp-auto-tag"><i class="ti ti-bolt"></i> Auto</span></td>
+                            <td class="sp-submitted">Jul 11, 2026 08:00</td>
+                            <td><span class="sp-status-badge processing">Processing</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('006','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Confirm
+                                </button>
+                                <button class="btn-sp-reject" onclick="updatePaymentStatus('006','failed')">
+                                    <i class="ti ti-circle-x"></i> Reject
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="sp-row" data-status="processing" data-method="Bank Transfer" id="sprow-007">
+                            <td class="sp-ref">PT-STU-007</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#f3e8ff;color:#7c3aed;">SP</div>
+                                <div>
+                                    <p class="sp-uname">Sam Park</p>
+                                    <p class="sp-uemail">sam@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#d97706,#92400e);color:#fff;">MJ</div>
+                                <p class="sp-uname">Marcus Johnson</p>
+                            </td>
+                            <td>Data Structures</td>
+                            <td><span class="sp-date">Jul 9, 2026</span><br><span class="sp-time">3:00 PM</span></td>
+                            <td class="sp-amount">฿1,310.75</td>
+                            <td><span class="sp-method-tag bank">Bank Transfer</span></td>
+                            <td>
+                                <button class="btn-view-slip"
+                                    onclick="viewSlip('007','Sam Park','฿1,310.75','Bank Transfer')">
+                                    <i class="ti ti-file-search"></i> View Slip
+                                </button>
+                            </td>
+                            <td class="sp-submitted">Jul 10, 2026 16:22</td>
+                            <td><span class="sp-status-badge processing">Processing</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('007','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Confirm
+                                </button>
+                                <button class="btn-sp-reject" onclick="updatePaymentStatus('007','failed')">
+                                    <i class="ti ti-circle-x"></i> Reject
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="sp-row" data-status="processing" data-method="Credit Card" id="sprow-008">
+                            <td class="sp-ref">PT-STU-008</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#fce7f3;color:#db2777;">NP</div>
+                                <div>
+                                    <p class="sp-uname">Nina Perez</p>
+                                    <p class="sp-uemail">nina@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#16a34a,#14532d);color:#fff;">AW</div>
+                                <p class="sp-uname">Amara Williams</p>
+                            </td>
+                            <td>Cell Biology</td>
+                            <td><span class="sp-date">Jul 10, 2026</span><br><span class="sp-time">2:00 PM</span></td>
+                            <td class="sp-amount">฿1,050.00</td>
+                            <td><span class="sp-method-tag card">Credit Card</span></td>
+                            <td><span class="sp-auto-tag"><i class="ti ti-bolt"></i> Auto</span></td>
+                            <td class="sp-submitted">Jul 10, 2026 09:50</td>
+                            <td><span class="sp-status-badge processing">Processing</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('008','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Confirm
+                                </button>
+                                <button class="btn-sp-reject" onclick="updatePaymentStatus('008','failed')">
+                                    <i class="ti ti-circle-x"></i> Reject
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- CONFIRMED rows -->
+                        <tr class="sp-row" data-status="confirmed" data-method="PromptPay" id="sprow-009">
+                            <td class="sp-ref">PT-STU-009</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#dbeafe;color:#2563eb;">AL</div>
+                                <div>
+                                    <p class="sp-uname">Alex Lee</p>
+                                    <p class="sp-uemail">alex@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#0077B6,#03045E);color:#fff;">SC</div>
+                                <p class="sp-uname">Sarah Chen</p>
+                            </td>
+                            <td>Calculus</td>
+                            <td><span class="sp-date">Jun 23, 2026</span><br><span class="sp-time">2:00 PM</span></td>
+                            <td class="sp-amount">฿1,310.75</td>
+                            <td><span class="sp-method-tag promptpay">PromptPay</span></td>
+                            <td><span class="sp-auto-tag"><i class="ti ti-bolt"></i> Auto</span></td>
+                            <td class="sp-submitted">Jun 22, 2026 18:00</td>
+                            <td><span class="sp-status-badge confirmed">Confirmed</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-revert" onclick="updatePaymentStatus('009','pending')">
+                                    <i class="ti ti-refresh"></i> Revert
+                                </button>
+                                <button class="btn-sp-receipt" onclick="downloadReceipt('009')">
+                                    <i class="ti ti-receipt"></i> Receipt
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="sp-row" data-status="confirmed" data-method="Bank Transfer" id="sprow-010">
+                            <td class="sp-ref">PT-STU-010</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#dcfce7;color:#16a34a;">MP</div>
+                                <div>
+                                    <p class="sp-uname">Maya Patel</p>
+                                    <p class="sp-uemail">maya@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#7c3aed,#4c1d95);color:#fff;">DM</div>
+                                <p class="sp-uname">Diego Martinez</p>
+                            </td>
+                            <td>Physics</td>
+                            <td><span class="sp-date">Jun 20, 2026</span><br><span class="sp-time">6:00 PM</span></td>
+                            <td class="sp-amount">฿1,225.00</td>
+                            <td><span class="sp-method-tag bank">Bank Transfer</span></td>
+                            <td><span class="sp-verified-tag"><i class="ti ti-circle-check"></i> Verified</span></td>
+                            <td class="sp-submitted">Jun 19, 2026 14:30</td>
+                            <td><span class="sp-status-badge confirmed">Confirmed</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-revert" onclick="updatePaymentStatus('010','pending')">
+                                    <i class="ti ti-refresh"></i> Revert
+                                </button>
+                                <button class="btn-sp-receipt" onclick="downloadReceipt('010')">
+                                    <i class="ti ti-receipt"></i> Receipt
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- FAILED rows -->
+                        <tr class="sp-row" data-status="failed" data-method="Bank Transfer" id="sprow-011">
+                            <td class="sp-ref">PT-STU-011</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#fef3c7;color:#d97706;">JL</div>
+                                <div>
+                                    <p class="sp-uname">Jack Liu</p>
+                                    <p class="sp-uemail">jack@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#0077B6,#03045E);color:#fff;">SC</div>
+                                <p class="sp-uname">Sarah Chen</p>
+                            </td>
+                            <td>Statistics</td>
+                            <td><span class="sp-date">Jul 2, 2026</span><br><span class="sp-time">1:00 PM</span></td>
+                            <td class="sp-amount">฿875.00</td>
+                            <td><span class="sp-method-tag bank">Bank Transfer</span></td>
+                            <td>
+                                <button class="btn-view-slip"
+                                    onclick="viewSlip('011','Jack Liu','฿875.00','Bank Transfer')">
+                                    <i class="ti ti-file-search"></i> View Slip
+                                </button>
+                            </td>
+                            <td class="sp-submitted">Jul 8, 2026 11:00</td>
+                            <td><span class="sp-status-badge failed">Failed</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('011','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Re-verify
+                                </button>
+                                <button class="btn-sp-notify" onclick="notifyStudent('011','Jack Liu')">
+                                    <i class="ti ti-send"></i> Notify
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="sp-row" data-status="failed" data-method="TrueMoney" id="sprow-012">
+                            <td class="sp-ref">PT-STU-012</td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar" style="background:#f3e8ff;color:#7c3aed;">EZ</div>
+                                <div>
+                                    <p class="sp-uname">Emma Zhang</p>
+                                    <p class="sp-uemail">emma@uni.edu</p>
+                                </div>
+                            </td>
+                            <td class="sp-user-cell">
+                                <div class="sp-avatar"
+                                    style="background:linear-gradient(135deg,#16a34a,#14532d);color:#fff;">AW</div>
+                                <p class="sp-uname">Amara Williams</p>
+                            </td>
+                            <td>Genetics</td>
+                            <td><span class="sp-date">Jul 4, 2026</span><br><span class="sp-time">9:00 AM</span></td>
+                            <td class="sp-amount">฿1,050.00</td>
+                            <td><span class="sp-method-tag truemoney">TrueMoney</span></td>
+                            <td>
+                                <button class="btn-view-slip"
+                                    onclick="viewSlip('012','Emma Zhang','฿1,050.00','TrueMoney')">
+                                    <i class="ti ti-file-search"></i> View Slip
+                                </button>
+                            </td>
+                            <td class="sp-submitted">Jul 9, 2026 07:45</td>
+                            <td><span class="sp-status-badge failed">Failed</span></td>
+                            <td class="sp-action-cell">
+                                <button class="btn-sp-confirm" onclick="updatePaymentStatus('012','confirmed')">
+                                    <i class="ti ti-circle-check"></i> Re-verify
+                                </button>
+                                <button class="btn-sp-notify" onclick="notifyStudent('012','Emma Zhang')">
+                                    <i class="ti ti-send"></i> Notify
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div><!-- end tab-payments -->
+
+        <!-- ── Slip Viewer Modal ── -->
+        <div class="slip-modal-overlay" id="slip-modal-overlay" onclick="closeSlipModal()"></div>
+        <div class="slip-modal" id="slip-modal">
+            <div class="sm-header">
+                <h3><i class="ti ti-file-search"></i> Payment Slip Verification</h3>
+                <button class="btn-sm-x" onclick="closeSlipModal()"><i class="ti ti-x"></i></button>
+            </div>
+            <div class="sm-body">
+                <!-- Left: slip preview -->
+                <div class="sm-slip-preview">
+                    <div class="slip-placeholder">
+                        <i class="ti ti-receipt"></i>
+                        <p>Payment Slip</p>
+                        <p class="slip-ph-sub" id="slip-ph-name">—</p>
+                    </div>
+                    <div class="slip-preview-actions">
+                        <button class="btn-slip-zoom"><i class="ti ti-zoom-in"></i> Zoom In</button>
+                        <button class="btn-slip-download"><i class="ti ti-download"></i> Download</button>
+                    </div>
+                </div>
+                <!-- Right: payment details -->
+                <div class="sm-details">
+                    <h4>Payment Details</h4>
+                    <div class="sm-detail-list">
+                        <div class="sm-detail-row"><span>Reference</span><strong id="sm-ref">—</strong></div>
+                        <div class="sm-detail-row"><span>Student</span><strong id="sm-student">—</strong></div>
+                        <div class="sm-detail-row"><span>Amount</span><strong id="sm-amount"
+                                class="sp-amount">—</strong></div>
+                        <div class="sm-detail-row"><span>Method</span><strong id="sm-method">—</strong></div>
+                        <div class="sm-detail-row"><span>Submitted</span><strong id="sm-submitted">—</strong></div>
+                        <div class="sm-detail-row"><span>Current Status</span><strong id="sm-status">—</strong></div>
+                    </div>
+
+                    <div class="sm-note-field">
+                        <label>Admin Note (Optional)</label>
+                        <textarea id="sm-note"
+                            placeholder="e.g. Amount matches, slip verified, QR code confirmed..."></textarea>
+                    </div>
+
+                    <div class="sm-verify-actions">
+                        <button class="btn-sm-confirm" id="btn-sm-confirm">
+                            <i class="ti ti-circle-check"></i> Confirm Payment
+                        </button>
+                        <button class="btn-sm-reject" id="btn-sm-reject">
+                            <i class="ti ti-circle-x"></i> Reject Payment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Status update toast ── -->
+        <div class="sp-toast" id="sp-toast">
+            <i class="ti ti-circle-check"></i>
+            <span id="sp-toast-msg">Payment status updated.</span>
+        </div>
+
+        <script src="../js/admin-dashboard.js"></script>
+
+</body>
+
+</html>

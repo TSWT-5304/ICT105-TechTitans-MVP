@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stu-profile.css">
+    <link rel="stylesheet" href="../css/book-session.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Book Session</title>
+    <style>
+        /* Full-screen booking success popup */
+        .confirmed-wrap {
+            display: none;
+        }
+
+        body.booking-success {
+            overflow: hidden;
+        }
+
+        body.booking-success .confirmed-wrap {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: #f1f3f8;
+            overflow-y: auto;
+        }
+
+        body.booking-success .confirmed-card {
+            box-sizing: border-box;
+            width: min(100%, 600px);
+            padding: 36px 42px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #dde1e8;
+            border-radius: 20px;
+            box-shadow: 0 18px 55px rgba(32, 46, 76, 0.12);
+            animation: bookingSuccessIn 0.28s ease-out;
+        }
+
+        body.booking-success .check-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 22px;
+            color: #22c66b;
+            background: #d9f9e6;
+            border-radius: 50%;
+        }
+
+        body.booking-success .check-circle i {
+            font-size: 38px;
+        }
+
+        body.booking-success .confirmed-card h1 {
+            margin: 0 0 14px;
+            color: #080808;
+            font-size: 28px;
+            line-height: 1.2;
+        }
+
+        body.booking-success .confirmed-subtitle {
+            max-width: 500px;
+            margin: 0 auto 26px;
+            color: #444;
+            font-size: 16px;
+            line-height: 1.55;
+        }
+
+        body.booking-success .confirmed-subtitle strong {
+            color: #050505;
+        }
+
+        body.booking-success .details-box {
+            margin-bottom: 24px;
+            overflow: hidden;
+            text-align: left;
+            border: 1px solid #dfe3e9;
+            border-radius: 15px;
+        }
+
+        body.booking-success .detail-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            min-height: 54px;
+            padding: 0 22px;
+            border-bottom: 1px solid #eceef2;
+        }
+
+        body.booking-success .detail-row:last-child {
+            border-bottom: 0;
+        }
+
+        body.booking-success .detail-label {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            color: #7c828c;
+            font-size: 15px;
+        }
+
+        body.booking-success .detail-value {
+            color: #050505;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        body.booking-success .email-note {
+            max-width: 500px;
+            margin: 0 auto 24px;
+            color: #a0a5ad;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        body.booking-success .confirmed-actions {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        body.booking-success .btn-back-profile,
+        body.booking-success .btn-view-dashboard {
+            min-width: 165px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        body.booking-success .btn-back-profile {
+            color: #111;
+            background: #fff;
+            border: 1px solid #cfd3da;
+        }
+
+        body.booking-success .btn-view-dashboard {
+            color: #fff;
+            background: #101010;
+            border: 1px solid #101010;
+        }
+
+        body.booking-success .btn-back-profile:hover {
+            background: #f7f7f8;
+        }
+
+        body.booking-success .btn-view-dashboard:hover {
+            background: #292929;
+        }
+
+        @keyframes bookingSuccessIn {
+            from {
+                opacity: 0;
+                transform: translateY(14px) scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body.booking-success .confirmed-wrap {
+                padding: 18px 12px;
+            }
+
+            body.booking-success .confirmed-card {
+                padding: 38px 22px;
+                border-radius: 18px;
+            }
+
+            body.booking-success .check-circle {
+                width: 82px;
+                height: 82px;
+                margin-bottom: 24px;
+            }
+
+            body.booking-success .confirmed-card h1 {
+                font-size: 27px;
+            }
+
+            body.booking-success .confirmed-subtitle {
+                font-size: 16px;
+            }
+
+            body.booking-success .confirmed-actions {
+                flex-direction: column;
+            }
+
+            body.booking-success .btn-back-profile,
+            body.booking-success .btn-view-dashboard {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<!-- PEERTUTOR LIVE CHAT -->
+<div class="live-chat" id="live-chat">
+
+    <!-- Open chat button -->
+    <button type="button" class="chat-launcher" id="chat-launcher" aria-label="Open live chat" aria-expanded="false">
+        <i class="ti ti-message-circle"></i>
+
+        <span class="chat-launcher-label">
+            Chat with us
+        </span>
+
+        <span class="chat-notification" id="chat-notification">
+            1
+        </span>
+    </button>
+
+    <!-- Chat window -->
+    <section class="chat-window" id="chat-window" aria-label="PeerTutor live chat" hidden>
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="chat-agent">
+
+                <div class="chat-agent-avatar">
+                    <i class="ti ti-headset"></i>
+
+                    <span class="chat-online-dot"></span>
+                </div>
+
+                <div>
+                    <h2>PeerTutor Support</h2>
+
+                    <p>
+                        <span class="chat-status-dot"></span>
+                        Online now
+                    </p>
+                </div>
+            </div>
+
+            <div class="chat-header-actions">
+                <button type="button" class="chat-header-button" id="chat-minimize" aria-label="Minimize chat">
+                    <i class="ti ti-minus"></i>
+                </button>
+
+                <button type="button" class="chat-header-button" id="chat-close" aria-label="Close chat">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="chat-messages" id="chat-messages" aria-live="polite">
+            <div class="chat-date">
+                Today
+            </div>
+
+            <div class="chat-message support-message">
+                <div class="message-avatar">
+                    <i class="ti ti-headset"></i>
+                </div>
+
+                <div>
+                    <div class="message-bubble">
+                        Hi! Welcome to PeerTutor. How can we help you today?
+                    </div>
+
+                    <span class="message-time">
+                        Just now
+                    </span>
+                </div>
+            </div>
+
+            <!-- Suggested questions -->
+            <div class="chat-suggestions" id="chat-suggestions">
+                <button type="button" class="chat-suggestion" data-message="How can I find a tutor?">
+                    Find a tutor
+                </button>
+
+                <button type="button" class="chat-suggestion" data-message="How can I become a tutor?">
+                    Become a tutor
+                </button>
+
+                <button type="button" class="chat-suggestion" data-message="I need help with payment.">
+                    Payment help
+                </button>
+            </div>
+        </div>
+
+        <!-- Typing indicator -->
+        <div class="chat-typing" id="chat-typing" hidden>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <p>Support is typing...</p>
+        </div>
+
+        <!-- Message input -->
+        <form class="chat-input-area" id="chat-form">
+            <input type="text" id="chat-input" maxlength="300" placeholder="Type your message..."
+                aria-label="Chat message" autocomplete="off">
+
+            <button type="submit" class="chat-send-button" id="chat-send" aria-label="Send message" disabled>
+                <i class="ti ti-send"></i>
+            </button>
+        </form>
+
+        <p class="chat-privacy-note">
+            Do not share passwords or payment information.
+        </p>
+    </section>
+</div>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="dash-nav">
+        <a class="logo" href="../html/index.html">
+            <img src="../img/Logo.png" class="logo-icon">
+            <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+        </a>
+
+        <div class="dash-nav-links">
+            <a href="../html/stu-dashboard.html">My Dashboard</a>
+            <a href="../html/about-us.html">About Us</a>
+            <a href="../html/browse-tutors.html" class="active">Browse a Tutor</a>
+            <a href="../html/contact-us.html">Contact Us</a>
+        </div>
+
+        <div class="dash-nav-right-fixed">
+            <div class="user-menu-wrap" id="user-menu-wrap">
+                <button class="user-nav-btn" onclick="toggleUserMenu()" id="user-nav-btn">
+                    <div class="una-avatar" id="una-avatar">AL</div>
+                    <span class="una-name">Alex</span>
+                    <i class="ti ti-chevron-down una-chevron" id="una-chevron"></i>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div class="user-dropdown" id="user-dropdown">
+                    <div class="udrop-header">
+                        <div class="udrop-avatar">AL</div>
+                        <div>
+                            <p class="udrop-name">Alex Thompson</p>
+                            <p class="udrop-email">alex@university.edu</p>
+                            <span class="udrop-role">Student</span>
+                        </div>
+                    </div>
+
+                    <div class="udrop-divider"></div>
+
+                    <div class="udrop-menu">
+                        <a class="udrop-item" href="stu-profile.html">
+                            <i class="ti ti-user-circle"></i> My Profile
+                        </a>
+                        <a class="udrop-item" href="stu-dashboard2.html">
+                            <i class="ti ti-layout-dashboard"></i> My Dashboard
+                        </a>
+                        <a class="udrop-item" href="stu-dashboard.html">
+                            <i class="ti ti-calendar"></i> My Sessions
+                        </a>
+                        <a class="udrop-item" href="messages.html">
+                            <i class="ti ti-messages"></i> My Messages
+                        </a>
+                        <a class="udrop-item" href="stu-profile.html">
+                            <i class="ti ti-bell"></i> Notifications
+                            <span class="udrop-badge">3</span>
+                        </a>
+                    </div>
+
+                    <div class="udrop-divider"></div>
+
+                    <div class="udrop-menu">
+                        <a class="udrop-item" href="stu-profile.html" onclick="switchSection('privacy')">
+                            <i class="ti ti-shield-lock"></i> Privacy Settings
+                        </a>
+                        <a class="udrop-item" href="stu-profile.html" onclick="switchSection('help')">
+                            <i class="ti ti-help-circle"></i> Help & Support
+                        </a>
+                    </div>
+
+                    <div class="udrop-divider"></div>
+
+                    <button class="udrop-logout" onclick="showModal('logout')">
+                        <i class="ti ti-logout"></i> Sign Out
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back bar -->
+    <div class="back-bar" id="back-bar">
+        <a class="back-link" href="tutor-intro-profile.html">
+            <i class="ti ti-chevron-left"></i> Back to John's profile
+        </a>
+    </div>
+
+    <!-- Stepper -->
+    <div class="stepper" id="stepper">
+        <div class="step active" id="s1">
+            <div class="step-circle" id="sc1">1</div> Schedule
+        </div>
+        <div class="step-line" id="sl1"></div>
+        <div class="step" id="s2">
+            <div class="step-circle" id="sc2">2</div> Details
+        </div>
+        <div class="step-line" id="sl2"></div>
+        <div class="step" id="s3">
+            <div class="step-circle" id="sc3">3</div> Confirm
+        </div>
+    </div>
+
+    <!-- STEP 1: Schedule -->
+    <div class="book-body" id="step1">
+        <div class="book-card">
+            <h2>Choose a date &amp; time</h2>
+            <p class="book-section-label">Select a date</p>
+            <div class="date-grid" id="date-grid"></div>
+            <div id="time-section" style="display:none;">
+                <p class="book-section-label">Select a time</p>
+                <div class="time-slots">
+                    <button class="time-btn" onclick="selectTime(this,'9:00 AM')">9:00 AM</button>
+                    <button class="time-btn" onclick="selectTime(this,'10:00 AM')">10:00 AM</button>
+                    <button class="time-btn unavailable">11:00 AM</button>
+                    <button class="time-btn" onclick="selectTime(this,'1:00 PM')">1:00 PM</button>
+                    <button class="time-btn" onclick="selectTime(this,'2:00 PM')">2:00 PM</button>
+                    <button class="time-btn unavailable">3:00 PM</button>
+                    <button class="time-btn" onclick="selectTime(this,'4:00 PM')">4:00 PM</button>
+                    <button class="time-btn" onclick="selectTime(this,'5:00 PM')">5:00 PM</button>
+                    <button class="time-btn" onclick="selectTime(this,'6:00 PM')">6:00 PM</button>
+                </div>
+            </div>
+            <div class="selection-summary" id="summary-bar">
+                <i class="ti ti-circle-check"></i> <span id="summary-text"></span>
+            </div>
+            <button class="btn-continue" id="btn1" onclick="goStep(2)">Continue</button>
+        </div>
+        <div class="tutor-summary-card">
+            <div class="ts-top">
+                <div class="ts-avatar">
+                    <img src="../img/T4.jpg">
+                </div>
+                <div>
+                    <p class="ts-name">John</p>
+                    <p class="ts-uni">RSU | ICT</p>
+                    <p class="ts-rating"><span class="star">★</span> 4.9 (50)</p>
+                </div>
+            </div>
+            <p class="ts-subjects-label">Subjects</p>
+            <div class="ts-tags">
+                <span class="ts-tag">Programming Fundamentals</span>
+                <span class="ts-tag">Web Development</span>
+                <span class="ts-tag">DBMS</span>
+            </div>
+            <div class="ts-price-box">
+                <p class="ts-price">฿150</p>
+                <p class="ts-price-label">per hour</p>
+            </div>
+            <p class="ts-response"><i class="ti ti-clock"></i> Responds ~30 min</p>
+        </div>
+    </div>
+
+    <!-- STEP 2: Details -->
+    <div class="book-body" id="step2" style="display:none;">
+        <div class="book-card">
+            <h2>Session details</h2>
+            <p class="field-label">Subject <span class="field-required">*</span></p>
+            <select class="book-select" id="subject-select" onchange="checkStep2()">
+                <option value="" disabled selected>What do you need help with?</option>
+                <option>Programming Fundamentals</option>
+                <option>Web Development</option>
+                <option>DBMS</option>
+                <option>Presentation Prep</option>
+            </select>
+            <p class="field-label">Session length <span class="field-required">*</span></p>
+            <select class="book-select" id="length-select" onchange="checkStep2()">
+                <option value="1|150.00">1 hour — ฿150</option>
+                <option value="1.5|210.00">1.5 hours — ฿210</option>
+                <option value="2|260.00">2 hours — ฿260</option>
+            </select>
+            <p class="field-label">What would you like to focus on?</p>
+            <textarea class="book-textarea" id="focus-text"
+                placeholder="e.g. I'm struggling with cell division and need help working through practice problems before my exam on Friday..."></textarea>
+            <p class="textarea-hint">This helps John prepare for your session.</p>
+            <div class="step-actions">
+                <button class="btn-back" onclick="goStep(1)">Back</button>
+                <button class="btn-review-booking" id="btn2" onclick="goStep(3)">Review booking</button>
+            </div>
+        </div>
+        <div class="tutor-summary-card">
+            <div class="ts-top">
+                <div class="ts-avatar">
+                    <img src="../img/T4.jpg">
+                </div>
+                <div>
+                    <p class="ts-name">John</p>
+                    <p class="ts-uni">RSU</p>
+                    <p class="ts-rating"><span class="star">★</span> 5 (45)</p>
+                </div>
+            </div>
+            <p class="ts-subjects-label">Subjects</p>
+            <div class="ts-tags">
+                <span class="ts-tag">Programming Fundamentals</span>
+                <span class="ts-tag">Web Development</span>
+                <span class="ts-tag">DBMS</span>
+            </div>
+            <div class="ts-price-box">
+                <p class="ts-price">฿150</p>
+                <p class="ts-price-label">per hour</p>
+            </div>
+            <p class="ts-response"><i class="ti ti-clock"></i> Responds ~30 min</p>
+        </div>
+    </div>
+
+    <!-- STEP 3: Confirm -->
+    <div class="book-body" id="step3" style="display:none;">
+        <div class="book-card">
+            <h2>Review &amp; confirm</h2>
+            <div class="review-grid">
+                <div class="review-box">
+                    <p class="review-box-label">Date</p>
+                    <p class="review-box-value" id="r-date">—</p>
+                </div>
+                <div class="review-box">
+                    <p class="review-box-label">Time</p>
+                    <p class="review-box-value" id="r-time">—</p>
+                </div>
+                <div class="review-box">
+                    <p class="review-box-label">Subject</p>
+                    <p class="review-box-value" id="r-subject">—</p>
+                </div>
+                <div class="review-box">
+                    <p class="review-box-label">Duration</p>
+                    <p class="review-box-value" id="r-duration">—</p>
+                </div>
+            </div>
+            <div class="price-breakdown">
+                <div class="price-row"><span id="r-session-label">Session (1 hour)</span><span
+                        id="r-session-price">฿150.00</span></div>
+                <div class="price-row"><span>Platform fee</span><span>฿0.00</span></div>
+                <div class="price-total"><span>Total</span><span id="r-total">฿150</span></div>
+            </div>
+            <div class="step-actions">
+                <button class="btn-back" onclick="goStep(2)">Back</button>
+                <button class="btn-confirm" onclick="goStep(4)">Confirm booking</button>
+            </div>
+        </div>
+        <div class="tutor-summary-card">
+            <div class="ts-top">
+                <div class="ts-avatar">
+                    <img src="../img/T4.jpg">
+                </div>
+                <div>
+                    <p class="ts-name">John</p>
+                    <p class="ts-uni">ICT</p>
+                    <p class="ts-rating"><span class="star">★</span> 4.9 (50)</p>
+                </div>
+            </div>
+            <p class="ts-subjects-label">Subjects</p>
+            <div class="ts-tags">
+                <span class="ts-tag">Programming Fundamentals</span>
+                <span class="ts-tag">Web Development</span>
+                <span class="ts-tag">DBMS</span>
+            </div>
+            <div class="ts-price-box">
+                <p class="ts-price">฿150</p>
+                <p class="ts-price-label">per hour</p>
+            </div>
+            <p class="ts-response"><i class="ti ti-clock"></i> Responds ~30 min</p>
+        </div>
+    </div>
+
+    <!-- STEP 4: Confirmed -->
+    <div class="confirmed-wrap" id="step4">
+        <div class="confirmed-card">
+            <div class="check-circle">
+                <i class="ti ti-circle-check"></i>
+            </div>
+            <h1>Session booked!</h1>
+            <p class="confirmed-subtitle">
+                Your session with <strong>John</strong> is confirmed for
+                <strong id="c-date">—</strong> at <strong id="c-time">—</strong>.
+            </p>
+            <div class="details-box">
+                <div class="detail-row">
+                    <span class="detail-label"><i class="ti ti-book"></i> Subject</span>
+                    <span class="detail-value" id="c-subject">—</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label"><i class="ti ti-clock"></i> Duration</span>
+                    <span class="detail-value" id="c-duration">—</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label"><i class="ti ti-credit-card"></i> Total</span>
+                    <span class="detail-value" id="c-total">—</span>
+                </div>
+            </div>
+            <p class="email-note">
+                A confirmation and meeting link have been sent to your email. You can
+                manage this session from your dashboard.
+            </p>
+            <div class="confirmed-actions">
+                <button class="btn-back-profile" onclick="window.location.href='tutor-intro-profile.html'">Back to
+                    profile</button>
+                <button class="btn-view-dashboard" onclick="window.location.href='stu-dashboard.html'">View
+                    dashboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/base.js"></script>
+    <script src="../js/live-chat.js"></script>
+    <script>
+        (function () {
+            // Booking-page state
+            let bookingSelectedDate = "";
+            let bookingSelectedTime = "";
+
+            function buildDateButtons() {
+                const dateGrid = document.getElementById("date-grid");
+                dateGrid.innerHTML = "";
+
+                // Match the reference design: show the next 14 days.
+                for (let index = 0; index < 14; index += 1) {
+                    const date = new Date();
+                    date.setHours(12, 0, 0, 0);
+                    date.setDate(date.getDate() + index);
+
+                    const dayName = date.toLocaleDateString("en-US", { weekday: "short" });
+                    const monthAndDay = date.toLocaleDateString("en-US", {
+                        month: "short",
+                        day: "numeric"
+                    });
+
+                    const button = document.createElement("button");
+                    button.type = "button";
+                    button.className = "date-btn";
+                    button.dataset.fullDate = dayName + ", " + monthAndDay;
+                    button.innerHTML =
+                        "<span class=\"day-name\">" +
+                        dayName +
+                        "</span><span class=\"day-date\">" +
+                        monthAndDay +
+                        "</span>";
+
+                    button.addEventListener("click", function () {
+                        selectDate(button);
+                    });
+
+                    dateGrid.appendChild(button);
+                }
+            }
+
+            function selectDate(button) {
+                document.querySelectorAll(".date-btn").forEach(function (dateButton) {
+                    dateButton.classList.remove("selected");
+                    dateButton.setAttribute("aria-pressed", "false");
+                });
+
+                button.classList.add("selected");
+                button.setAttribute("aria-pressed", "true");
+                bookingSelectedDate = button.dataset.fullDate;
+
+                // A new date requires the user to choose a time again.
+                bookingSelectedTime = "";
+                document.querySelectorAll(".time-btn").forEach(function (timeButton) {
+                    timeButton.classList.remove("selected");
+                });
+
+                document.getElementById("time-section").style.display = "block";
+                updateScheduleState();
+            }
+
+            function selectTime(button, time) {
+                if (button.classList.contains("unavailable")) {
+                    return;
+                }
+
+                document.querySelectorAll(".time-btn").forEach(function (timeButton) {
+                    timeButton.classList.remove("selected");
+                    timeButton.setAttribute("aria-pressed", "false");
+                });
+
+                button.classList.add("selected");
+                button.setAttribute("aria-pressed", "true");
+                bookingSelectedTime = time;
+                updateScheduleState();
+            }
+
+            function updateScheduleState() {
+                const isComplete = Boolean(bookingSelectedDate && bookingSelectedTime);
+                const continueButton = document.getElementById("btn1");
+                const summaryBar = document.getElementById("summary-bar");
+
+                if (isComplete) {
+                    document.getElementById("summary-text").textContent =
+                        bookingSelectedDate + " at " + bookingSelectedTime + " (60 min)";
+                    summaryBar.classList.add("visible");
+                    continueButton.classList.add("ready");
+                } else {
+                    summaryBar.classList.remove("visible");
+                    continueButton.classList.remove("ready");
+                }
+            }
+
+            function checkStep2() {
+                const subject = document.getElementById("subject-select").value;
+                document.getElementById("btn2").classList.toggle("ready", Boolean(subject));
+            }
+
+            function updateReview() {
+                const subject = document.getElementById("subject-select").value;
+                const lengthSelect = document.getElementById("length-select");
+                const values = lengthSelect.value.split("|");
+                const duration = values[0];
+                const price = Number(values[1]);
+                const durationLabel = duration === "1" ? "1 hour" : duration + " hours";
+
+                document.getElementById("r-date").textContent = bookingSelectedDate;
+                document.getElementById("r-time").textContent = bookingSelectedTime;
+                document.getElementById("r-subject").textContent = subject;
+                document.getElementById("r-duration").textContent = durationLabel;
+                document.getElementById("r-session-label").textContent =
+                    "Session (" + durationLabel + ")";
+                document.getElementById("r-session-price").textContent = "฿" + price.toFixed(2);
+                document.getElementById("r-total").textContent = "฿" + price.toFixed(2);
+
+                document.getElementById("c-date").textContent = bookingSelectedDate;
+                document.getElementById("c-time").textContent = bookingSelectedTime;
+                document.getElementById("c-subject").textContent = subject;
+                document.getElementById("c-duration").textContent = durationLabel;
+                document.getElementById("c-total").textContent = "฿" + price.toFixed(2);
+            }
+
+            function goStep(stepNumber) {
+                if (stepNumber === 2 && (!bookingSelectedDate || !bookingSelectedTime)) {
+                    return;
+                }
+
+                if (stepNumber === 3 && !document.getElementById("subject-select").value) {
+                    return;
+                }
+
+                if (stepNumber >= 3) {
+                    updateReview();
+                }
+
+                document.body.classList.toggle("booking-success", stepNumber === 4);
+
+                for (let step = 1; step <= 4; step += 1) {
+                    const section = document.getElementById("step" + step);
+                    if (section) {
+                        section.style.display = step === stepNumber ? "" : "none";
+                    }
+                }
+
+                document.getElementById("stepper").style.display =
+                    stepNumber === 4 ? "none" : "";
+                document.getElementById("back-bar").style.display =
+                    stepNumber === 4 ? "none" : "";
+
+                for (let step = 1; step <= 3; step += 1) {
+                    const stepIndicator = document.getElementById("s" + step);
+                    stepIndicator.classList.toggle("active", step === stepNumber);
+                    stepIndicator.classList.toggle("done", step < stepNumber);
+
+                    const stepCircle = document.getElementById("sc" + step);
+                    stepCircle.innerHTML = step < stepNumber
+                        ? '<i class="ti ti-check" style="font-size:14px;"></i>'
+                        : String(step);
+
+                    const stepLine = document.getElementById("sl" + step);
+                    if (stepLine) {
+                        stepLine.classList.toggle("done", step < stepNumber);
+                    }
+                }
+
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+
+            // Keep the existing inline button handlers working.
+            window.selectTime = selectTime;
+            window.checkStep2 = checkStep2;
+            window.goStep = goStep;
+
+            document.addEventListener("DOMContentLoaded", function () {
+                buildDateButtons();
+
+                document.querySelectorAll(".time-btn.unavailable").forEach(function (button) {
+                    button.type = "button";
+                    button.disabled = true;
+                    button.setAttribute("aria-label", button.textContent.trim() + " unavailable");
+                });
+
+                document.querySelectorAll(".time-btn:not(.unavailable)").forEach(function (button) {
+                    button.type = "button";
+                });
+
+                checkStep2();
+                goStep(1);
+            });
+        }());
+    </script>
+</body>
+
+</html>

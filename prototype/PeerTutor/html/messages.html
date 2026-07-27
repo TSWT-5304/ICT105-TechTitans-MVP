@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages – PeerTutor</title>
+    <link rel="stylesheet" href="../css/stu-profile.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/messages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="msg-page">
+
+        <!--Nav Bar-->
+        <nav class="dash-nav">
+            <a class="logo" href="../html/index.html">
+                <img src="../img/Logo.png" class="logo-icon">
+                <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+            </a>
+
+            <div class="dash-nav-right-fixed">
+                <div class="user-menu-wrap" id="user-menu-wrap">
+                    <button class="user-nav-btn" onclick="toggleUserMenu()" id="user-nav-btn">
+                        <div class="una-avatar" id="una-avatar">AL</div>
+                        <span class="una-name">Alex</span>
+                        <i class="ti ti-chevron-down una-chevron" id="una-chevron"></i>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div class="user-dropdown" id="user-dropdown">
+                        <div class="udrop-header">
+                            <div class="udrop-avatar">AL</div>
+                            <div>
+                                <p class="udrop-name">Alex Thompson</p>
+                                <p class="udrop-email">alex@university.edu</p>
+                                <span class="udrop-role">Student</span>
+                            </div>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <div class="udrop-menu">
+                            <a class="udrop-item" href="stu-profile.html">
+                                <i class="ti ti-user-circle"></i> My Profile
+                            </a>
+                            <a class="udrop-item" href="stu-dashboard2.html">
+                                <i class="ti ti-layout-dashboard"></i> Back to Dashboard
+                            </a>
+                            <a class="udrop-item" href="stu-dashboard.html">
+                                <i class="ti ti-calendar"></i> My Sessions
+                            </a>
+                            <a class="udrop-item active" href="messages.html">
+                                <i class="ti ti-messages"></i> My Messages
+                            </a>
+                            <a class="udrop-item" href="stu-profile.html">
+                                <i class="ti ti-bell"></i> Notifications
+                                <span class="udrop-badge">3</span>
+                            </a>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <div class="udrop-menu">
+                            <a class="udrop-item" href="stu-profile.html" onclick="switchSection('privacy')">
+                                <i class="ti ti-shield-lock"></i> Privacy Settings
+                            </a>
+                            <a class="udrop-item" href="stu-profile.html" onclick="switchSection('help')">
+                                <i class="ti ti-help-circle"></i> Help & Support
+                            </a>
+                        </div>
+
+                        <div class="udrop-divider"></div>
+
+                        <button class="udrop-logout" onclick="showModal('logout')">
+                            <i class="ti ti-logout"></i> Sign Out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ── Messages Layout ── -->
+        <div class="msg-layout">
+
+            <!-- ════ LEFT: Conversation List ════ -->
+            <div class="msg-sidebar" id="msg-sidebar">
+
+                <!-- Sidebar header -->
+                <div class="msg-sidebar-header">
+                    <h2>Messages</h2>
+                    <button class="btn-new-chat" onclick="showNewChat()" title="New Message">
+                        <i class="ti ti-edit"></i>
+                    </button>
+                </div>
+
+                <!-- Search -->
+                <div class="msg-search-wrap">
+                    <i class="ti ti-search msg-search-icon"></i>
+                    <input class="msg-search-input" type="text" id="conv-search" placeholder="Search conversations..."
+                        oninput="filterConversations(this.value)" />
+                </div>
+
+                <!-- Filter tabs -->
+                <div class="msg-filter-tabs">
+                    <button class="msg-filter-tab active" onclick="filterTab('all',this)">All</button>
+                    <button class="msg-filter-tab" onclick="filterTab('unread',this)">Unread <span
+                            class="mft-count">2</span></button>
+                    <button class="msg-filter-tab" onclick="filterTab('tutors',this)">Tutors</button>
+                    <button class="msg-filter-tab" onclick="filterTab('students',this)">Students</button>
+                </div>
+
+                <!-- Conversation list -->
+                <div class="conv-list" id="conv-list">
+
+                    <div class="conv-item active" data-conv="sarah" data-type="tutor"
+                        onclick="openConversation('sarah')">
+                        <div class="conv-avatar-wrap">
+                            <div class="conv-avatar"><img src="../img/T4.jpg" alt="John"></div>
+                            <div class="conv-online-dot"></div>
+                        </div>
+                        <div class="conv-info">
+                            <div class="conv-top-row">
+                                <p class="conv-name">John</p>
+                                <span class="conv-time">2m ago</span>
+                            </div>
+                            <p class="conv-preview">Sure! I can help you with integration by parts 😊</p>
+                            <div class="conv-meta-row">
+                                <span class="conv-role tutor-role">Tutor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conv-item unread" data-conv="diego" data-type="tutor"
+                        onclick="openConversation('diego')">
+                        <div class="conv-avatar-wrap">
+                            <div class="conv-avatar"><img src="../img/T3.jpg" alt="Diego Martinez"></div>
+                        </div>
+                        <div class="conv-info">
+                            <div class="conv-top-row">
+                                <p class="conv-name">Michael</p>
+                                <span class="conv-time">1h ago</span>
+                            </div>
+                            <p class="conv-preview">Your session is confirmed for Tuesday at 6 PM!</p>
+                            <div class="conv-meta-row">
+                                <span class="conv-role tutor-role">Tutor</span>
+                                <span class="conv-unread-badge">1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conv-item unread" data-conv="amara" data-type="tutor"
+                        onclick="openConversation('amara')">
+                        <div class="conv-avatar-wrap">
+                            <div class="conv-avatar"><img src="../img/T6.jpg" alt="Amara Williams"></div>
+                        </div>
+                        <div class="conv-info">
+                            <div class="conv-top-row">
+                                <p class="conv-name">Nora</p>
+                                <span class="conv-time">3h ago</span>
+                            </div>
+                            <p class="conv-preview">Can you send me the topics you want to cover?</p>
+                            <div class="conv-meta-row">
+                                <span class="conv-role tutor-role">Tutor</span>
+                                <span class="conv-unread-badge">2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conv-item" data-conv="marcus" data-type="tutor" onclick="openConversation('marcus')">
+                        <div class="conv-avatar-wrap">
+                            <div class="conv-avatar"><img src="../img/T5.jpg" alt="Marcus Johnson"></div>
+                        </div>
+                        <div class="conv-info">
+                            <div class="conv-top-row">
+                                <p class="conv-name">David</p>
+                                <span class="conv-time">Yesterday</span>
+                            </div>
+                            <p class="conv-preview">Great session today! Keep practicing 💪</p>
+                            <div class="conv-meta-row">
+                                <span class="conv-role tutor-role">Tutor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conv-item" data-conv="priya" data-type="tutor" onclick="openConversation('priya')">
+                        <div class="conv-avatar-wrap">
+                            <div class="conv-avatar"><img src="../img/T2.jpg" alt="Priya Patel"></div>
+                        </div>
+                        <div class="conv-info">
+                            <div class="conv-top-row">
+                                <p class="conv-name">Hazel</p>
+                                <span class="conv-time">2 days ago</span>
+                            </div>
+                            <p class="conv-preview">I've attached the Calculus exercises for you</p>
+                            <div class="conv-meta-row">
+                                <span class="conv-role tutor-role">Tutor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ════ RIGHT: Chat Window ════ -->
+            <div class="msg-chat" id="msg-chat">
+
+                <!-- ── CHAT: John ── -->
+                <div class="chat-window active" id="chat-sarah">
+
+                    <!-- Chat header -->
+                    <div class="chat-header">
+                        <button class="btn-back-conv" type="button" onclick="backToList()"
+                            aria-label="Back to conversations">
+                            <i class="ti ti-arrow-left"></i><span>Chats</span>
+                        </button>
+                        <div class="chat-header-avatar-wrap">
+                            <div class="chat-header-avatar"><img src="../img/T4.jpg" alt="John"></div>
+                            <div class="chat-online-indicator"></div>
+                        </div>
+                        <div class="chat-header-info">
+                            <p class="chat-header-name">John</p>
+                            <p class="chat-header-status"><span class="online-dot"></span> Online now · RSU · Web
+                                Development
+                                Tutor</p>
+                        </div>
+                        <div class="chat-header-actions">
+                            <button class="chat-action-btn" onclick="startVideoCall()" title="Video Call">
+                                <i class="ti ti-video"></i>
+                            </button>
+                            <button class="chat-action-btn" onclick="viewProfile()" title="View Profile">
+                                <i class="ti ti-user-circle"></i>
+                            </button>
+                            <button class="chat-action-btn" onclick="bookSession()" title="Book Session">
+                                <i class="ti ti-calendar-plus"></i>
+                            </button>
+                            <div class="chat-more-wrap">
+                                <button class="chat-action-btn" onclick="toggleChatMenu('sarah')" title="More">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <div class="chat-more-menu" id="chat-more-sarah">
+                                    <button onclick="viewProfile()"><i class="ti ti-user-circle"></i> View
+                                        Profile</button>
+                                    <button onclick="bookSession()"><i class="ti ti-calendar"></i> Book Session</button>
+                                    <button onclick="clearChat()"><i class="ti ti-trash"></i> Clear Chat</button>
+                                    <button class="danger-item" onclick="blockUser()"><i class="ti ti-ban"></i>
+                                        Block</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Session info bar -->
+                    <div class="session-info-bar">
+                        <i class="ti ti-calendar-check" style="color:#0077B6;"></i>
+                        <span>Next session: <strong>Sun, Jun 29 · 3:00 PM</strong> · Web Development</span>
+                        <a href="../html/book-session.html" class="sib-link">View Details</a>
+                    </div>
+
+                    <!-- Messages -->
+                    <div class="chat-messages" id="messages-sarah">
+
+                        <!-- Date divider -->
+                        <div class="date-divider"><span>Today</span></div>
+
+                        <!-- Tutor message -->
+                        <div class="msg-bubble-wrap received">
+                            <div class="bubble-avatar"><img src="../img/T4.jpg" alt="John"></div>
+                            <div class="bubble-content">
+                                <div class="bubble received">
+                                    Hi Alex! 👋 I saw your booking request for Web Development. What specific topics are
+                                    you
+                                    struggling with?
+                                </div>
+                                <span class="bubble-time">2:15 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Student message -->
+                        <div class="msg-bubble-wrap sent">
+                            <div class="bubble-content">
+                                <div class="bubble sent">
+                                    Hey John! I'm having trouble making my page responsive, especially the navigation
+                                    and card layout on smaller screens. 😅
+                                </div>
+                                <span class="bubble-time">2:18 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Tutor message -->
+                        <div class="msg-bubble-wrap received">
+                            <div class="bubble-avatar" style="background:linear-gradient(135deg,#0077B6,#03045E);">SC
+                            </div>
+                            <div class="bubble-content">
+                                <div class="bubble received">
+                                    No worries! Those are super common pain points. I have a great method for
+                                    remembering when to use IBP — we can work through it step by step 😊
+                                </div>
+                                <span class="bubble-time">2:20 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- File attachment -->
+                        <div class="msg-bubble-wrap received">
+                            <div class="bubble-avatar" style="background:linear-gradient(135deg,#0077B6,#03045E);">SC
+                            </div>
+                            <div class="bubble-content">
+                                <div class="bubble received bubble-file">
+                                    <div class="file-attachment">
+                                        <div class="file-icon"><i class="ti ti-file-type-pdf"></i></div>
+                                        <div class="file-info">
+                                            <p class="file-name">IBP_Practice_Problems.pdf</p>
+                                            <p class="file-size">245 KB · PDF</p>
+                                        </div>
+                                        <button class="btn-download-file"><i class="ti ti-download"></i></button>
+                                    </div>
+                                    <p style="margin-top:8px;font-size:13px;">Here are some practice problems to review
+                                        before our session!</p>
+                                </div>
+                                <span class="bubble-time">2:22 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Student message -->
+                        <div class="msg-bubble-wrap sent">
+                            <div class="bubble-content">
+                                <div class="bubble sent">
+                                    Thank you so much! I'll go through these tonight 📚
+                                </div>
+                                <span class="bubble-time">2:35 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Booking card -->
+                        <div class="msg-bubble-wrap received">
+                            <div class="bubble-avatar" style="background:linear-gradient(135deg,#0077B6,#03045E);">SC
+                            </div>
+                            <div class="bubble-content">
+                                <div class="bubble received" style="padding:0;overflow:hidden;">
+                                    <div class="booking-bubble-card">
+                                        <div class="bbc-header">
+                                            <i class="ti ti-calendar-check"></i> Session Confirmed
+                                        </div>
+                                        <div class="bbc-body">
+                                            <div class="bbc-row"><i class="ti ti-book-2"></i> Web Development</div>
+                                            <div class="bbc-row"><i class="ti ti-calendar"></i> Sun, Jun 29, 2026</div>
+                                            <div class="bbc-row"><i class="ti ti-clock"></i> 3:00 PM · 60 min</div>
+                                            <div class="bbc-row"><i class="ti ti-video"></i> Online (Zoom)</div>
+                                        </div>
+                                        <a href="../html/book-session.html" class="bbc-btn">View Session Details</a>
+                                    </div>
+                                </div>
+                                <span class="bubble-time">2:40 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Tutor message -->
+                        <div class="msg-bubble-wrap received">
+                            <div class="bubble-avatar" style="background:linear-gradient(135deg,#0077B6,#03045E);">SC
+                            </div>
+                            <div class="bubble-content">
+                                <div class="bubble received">
+                                    Sure! I can help you with integration by parts 😊 See you Sunday!
+                                </div>
+                                <span class="bubble-time">2:58 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Typing indicator placeholder -->
+                        <div class="typing-indicator" id="typing-sarah" style="display:none;">
+                            <div class="bubble-avatar"
+                                style="background:linear-gradient(135deg,#0077B6,#03045E);width:28px;height:28px;font-size:11px;">
+                                SC</div>
+                            <div class="typing-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+
+                    </div><!-- end chat-messages -->
+
+                    <!-- Input area -->
+                    <div class="chat-input-area">
+                        <!-- Attachment preview -->
+                        <div class="attach-preview-bar" id="attach-preview-sarah" style="display:none;">
+                            <div class="attach-preview-item">
+                                <i class="ti ti-file" style="color:#0077B6;"></i>
+                                <span id="attach-preview-name-sarah">file.pdf</span>
+                                <button onclick="removeAttachment('sarah')"><i class="ti ti-x"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="chat-input-row">
+                            <!-- Toolbar -->
+                            <div class="chat-toolbar">
+                                <label class="toolbar-btn" title="Attach File">
+                                    <input type="file" style="display:none;" onchange="attachFile(this,'sarah')" />
+                                    <i class="ti ti-paperclip"></i>
+                                </label>
+                                <button class="toolbar-btn" onclick="toggleEmojiPicker('sarah')" title="Emoji">
+                                    <i class="ti ti-mood-smile"></i>
+                                </button>
+                                <button class="toolbar-btn" onclick="sendSessionCard('sarah')" title="Share Session">
+                                    <i class="ti ti-calendar"></i>
+                                </button>
+                                <button class="toolbar-btn" onclick="sendImage('sarah')" title="Image">
+                                    <i class="ti ti-photo"></i>
+                                </button>
+                            </div>
+
+                            <!-- Text input -->
+                            <div class="chat-input-wrap">
+                                <textarea class="chat-textarea" id="input-sarah" rows="1"
+                                    placeholder="Type a message..."
+                                    oninput="autoResizeTextarea(this); checkSendBtn('sarah')"
+                                    onkeydown="handleKeyDown(event,'sarah')"></textarea>
+                            </div>
+
+                            <!-- Send button -->
+                            <button class="btn-send-msg" id="send-sarah" onclick="sendMessage('sarah')" disabled>
+                                <i class="ti ti-send"></i>
+                            </button>
+                        </div>
+
+                        <!-- Emoji picker -->
+                        <div class="emoji-picker" id="emoji-sarah" style="display:none;">
+                            <div class="emoji-grid">
+                                <span onclick="insertEmoji('sarah','😊')">😊</span>
+                                <span onclick="insertEmoji('sarah','👍')">👍</span>
+                                <span onclick="insertEmoji('sarah','🙏')">🙏</span>
+                                <span onclick="insertEmoji('sarah','📚')">📚</span>
+                                <span onclick="insertEmoji('sarah','✅')">✅</span>
+                                <span onclick="insertEmoji('sarah','❓')">❓</span>
+                                <span onclick="insertEmoji('sarah','💡')">💡</span>
+                                <span onclick="insertEmoji('sarah','🎯')">🎯</span>
+                                <span onclick="insertEmoji('sarah','⭐')">⭐</span>
+                                <span onclick="insertEmoji('sarah','😅')">😅</span>
+                                <span onclick="insertEmoji('sarah','🔥')">🔥</span>
+                                <span onclick="insertEmoji('sarah','💪')">💪</span>
+                                <span onclick="insertEmoji('sarah','🤔')">🤔</span>
+                                <span onclick="insertEmoji('sarah','👋')">👋</span>
+                                <span onclick="insertEmoji('sarah','😭')">😭</span>
+                                <span onclick="insertEmoji('sarah','🥳')">🥳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── CHAT: Diego Martinez ── -->
+                <div class="chat-window" id="chat-diego">
+                    <div class="chat-header">
+                        <button class="btn-back-conv" type="button" onclick="backToList()"
+                            aria-label="Back to conversations"><i
+                                class="ti ti-arrow-left"></i><span>Chats</span></button>
+                        <div class="chat-header-avatar-wrap">
+                            <div class="chat-header-avatar"><img src="../img/T3.jpg" alt="Diego Martinez"></div>
+                        </div>
+                        <div class="chat-header-info">
+                            <p class="chat-header-name">Michael</p>
+                            <p class="chat-header-status" style="color:#aaa;">Last seen 45 min ago · RSU · IB Tutor</p>
+                        </div>
+                        <div class="chat-header-actions">
+                            <button class="chat-action-btn" title="Video Call"><i class="ti ti-video"></i></button>
+                            <button class="chat-action-btn" title="View Profile"><i
+                                    class="ti ti-user-circle"></i></button>
+                            <button class="chat-action-btn" title="Book Session"><i
+                                    class="ti ti-calendar-plus"></i></button>
+                            <button class="chat-action-btn" onclick="toggleChatMenu('diego')" title="More"><i
+                                    class="ti ti-dots-vertical"></i></button>
+                            <div class="chat-more-menu" id="chat-more-diego">
+                                <button><i class="ti ti-user-circle"></i> View Profile</button>
+                                <button><i class="ti ti-calendar"></i> Book Session</button>
+                                <button><i class="ti ti-trash"></i> Clear Chat</button>
+                                <button class="danger-item"><i class="ti ti-ban"></i> Block</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-info-bar" style="background:#f5f3ff;border-color:#ddd6fe;">
+                        <i class="ti ti-calendar-check" style="color:#7c3aed;"></i>
+                        <span>Next session: <strong>Tue, Jun 30 · 6:00 PM</strong> · Physics</span>
+                        <a href="../html/book-session.html" class="sib-link" style="color:#7c3aed;">View Details</a>
+                    </div>
+
+                    <div class="chat-messages" id="messages-diego">
+                        <div class="date-divider"><span>Today</span></div>
+
+                        <div class="msg-bubble-wrap sent">
+                            <div class="bubble-content">
+                                <div class="bubble sent">Hi Diego, just confirming our Marketing session for Tuesday!
+                                </div>
+                                <span class="bubble-time">10:00 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-bubble-wrap received">
+                            <div class="bubble-avatar"><img src="../img/T3.jpg" alt="Diego Martinez"></div>
+                            <div class="bubble-content">
+                                <div class="bubble received">Your session is confirmed for Tuesday at 6 PM! We'll cover
+                                    marketing and international trade. See you then! 🔬</div>
+                                <span class="bubble-time">10:15 AM</span>
+                                <div class="read-receipt"><i class="ti ti-checks" style="color:#0077B6;"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="msg-bubble-wrap received unread-msg">
+                            <div class="bubble-avatar" style="background:linear-gradient(135deg,#7c3aed,#4c1d95);">DM
+                            </div>
+                            <div class="bubble-content">
+                                <div class="bubble received">Also, here's a pre-reading I'd recommend before our session
+                                    📖</div>
+                                <span class="bubble-time">10:17 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <div class="chat-input-row">
+                            <div class="chat-toolbar">
+                                <label class="toolbar-btn" title="Attach"><input type="file" style="display:none;"
+                                        onchange="attachFile(this,'diego')" /><i class="ti ti-paperclip"></i></label>
+                                <button class="toolbar-btn" onclick="toggleEmojiPicker('diego')"><i
+                                        class="ti ti-mood-smile"></i></button>
+                                <button class="toolbar-btn"><i class="ti ti-calendar"></i></button>
+                                <button class="toolbar-btn"><i class="ti ti-photo"></i></button>
+                            </div>
+                            <div class="chat-input-wrap">
+                                <textarea class="chat-textarea" id="input-diego" rows="1"
+                                    placeholder="Type a message..."
+                                    oninput="autoResizeTextarea(this); checkSendBtn('diego')"
+                                    onkeydown="handleKeyDown(event,'diego')"></textarea>
+                            </div>
+                            <button class="btn-send-msg" id="send-diego" onclick="sendMessage('diego')" disabled>
+                                <i class="ti ti-send"></i>
+                            </button>
+                        </div>
+                        <div class="emoji-picker" id="emoji-diego" style="display:none;">
+                            <div class="emoji-grid">
+                                <span onclick="insertEmoji('diego','😊')">😊</span><span
+                                    onclick="insertEmoji('diego','👍')">👍</span>
+                                <span onclick="insertEmoji('diego','🙏')">🙏</span><span
+                                    onclick="insertEmoji('diego','📚')">📚</span>
+                                <span onclick="insertEmoji('diego','✅')">✅</span><span
+                                    onclick="insertEmoji('diego','❓')">❓</span>
+                                <span onclick="insertEmoji('diego','💡')">💡</span><span
+                                    onclick="insertEmoji('diego','🎯')">🎯</span>
+                                <span onclick="insertEmoji('diego','⭐')">⭐</span><span
+                                    onclick="insertEmoji('diego','😅')">😅</span>
+                                <span onclick="insertEmoji('diego','🔥')">🔥</span><span
+                                    onclick="insertEmoji('diego','💪')">💪</span>
+                                <span onclick="insertEmoji('diego','🤔')">🤔</span><span
+                                    onclick="insertEmoji('diego','👋')">👋</span>
+                                <span onclick="insertEmoji('diego','🔬')">🔬</span><span
+                                    onclick="insertEmoji('diego','⚛️')">⚛️</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── CHAT: Amara Williams ── -->
+                <div class="chat-window" id="chat-amara">
+                    <div class="chat-header">
+                        <button class="btn-back-conv" type="button" onclick="backToList()"
+                            aria-label="Back to conversations"><i
+                                class="ti ti-arrow-left"></i><span>Chats</span></button>
+                        <div class="chat-header-avatar-wrap">
+                            <div class="chat-header-avatar"><img src="../img/T6.jpg" alt="Amara Williams"></div>
+                        </div>
+                        <div class="chat-header-info">
+                            <p class="chat-header-name">Nora</p>
+                            <p class="chat-header-status"><span class="online-dot" style="background:#22c55e;"></span>
+                                Online · RSU · DIT Tutor</p>
+                        </div>
+                        <div class="chat-header-actions">
+                            <button class="chat-action-btn"><i class="ti ti-video"></i></button>
+                            <button class="chat-action-btn"><i class="ti ti-user-circle"></i></button>
+                            <button class="chat-action-btn"><i class="ti ti-calendar-plus"></i></button>
+                            <button class="chat-action-btn" onclick="toggleChatMenu('amara')"><i
+                                    class="ti ti-dots-vertical"></i></button>
+                            <div class="chat-more-menu" id="chat-more-amara">
+                                <button><i class="ti ti-user-circle"></i> View Profile</button>
+                                <button><i class="ti ti-calendar"></i> Book Session</button>
+                                <button><i class="ti ti-trash"></i> Clear Chat</button>
+                                <button class="danger-item"><i class="ti ti-ban"></i> Block</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="messages-amara">
+                        <div class="date-divider"><span>Today</span></div>
+
+                        <div class="msg-bubble-wrap sent">
+                            <div class="bubble-content">
+                                <div class="bubble sent">Hi Amara! I'd like to book a session for Basic UI Design. When
+                                    are
+                                    you available?</div>
+                                <span class="bubble-time">9:00 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-bubble-wrap received unread-msg">
+                            <div class="bubble-avatar"><img src="../img/T6.jpg" alt="Amara Williams"></div>
+                            <div class="bubble-content">
+                                <div class="bubble received">Can you send me the topics you want to cover? That way I
+                                    can prepare the right materials 🌿</div>
+                                <span class="bubble-time">9:30 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-bubble-wrap received unread-msg">
+                            <div class="bubble-avatar" style="background:linear-gradient(135deg,#16a34a,#14532d);">AW
+                            </div>
+                            <div class="bubble-content">
+                                <div class="bubble received">I'm free Wednesday afternoon and Saturday morning!</div>
+                                <span class="bubble-time">9:31 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <div class="chat-input-row">
+                            <div class="chat-toolbar">
+                                <label class="toolbar-btn"><input type="file" style="display:none;"
+                                        onchange="attachFile(this,'amara')" /><i class="ti ti-paperclip"></i></label>
+                                <button class="toolbar-btn" onclick="toggleEmojiPicker('amara')"><i
+                                        class="ti ti-mood-smile"></i></button>
+                                <button class="toolbar-btn"><i class="ti ti-calendar"></i></button>
+                                <button class="toolbar-btn"><i class="ti ti-photo"></i></button>
+                            </div>
+                            <div class="chat-input-wrap">
+                                <textarea class="chat-textarea" id="input-amara" rows="1"
+                                    placeholder="Type a message..."
+                                    oninput="autoResizeTextarea(this); checkSendBtn('amara')"
+                                    onkeydown="handleKeyDown(event,'amara')"></textarea>
+                            </div>
+                            <button class="btn-send-msg" id="send-amara" onclick="sendMessage('amara')" disabled>
+                                <i class="ti ti-send"></i>
+                            </button>
+                        </div>
+                        <div class="emoji-picker" id="emoji-amara" style="display:none;">
+                            <div class="emoji-grid">
+                                <span onclick="insertEmoji('amara','😊')">😊</span><span
+                                    onclick="insertEmoji('amara','👍')">👍</span>
+                                <span onclick="insertEmoji('amara','🙏')">🙏</span><span
+                                    onclick="insertEmoji('amara','📚')">📚</span>
+                                <span onclick="insertEmoji('amara','✅')">✅</span><span
+                                    onclick="insertEmoji('amara','❓')">❓</span>
+                                <span onclick="insertEmoji('amara','💡')">💡</span><span
+                                    onclick="insertEmoji('amara','🌿')">🌿</span>
+                                <span onclick="insertEmoji('amara','🧬')">🧬</span><span
+                                    onclick="insertEmoji('amara','😅')">😅</span>
+                                <span onclick="insertEmoji('amara','🔬')">🔬</span><span
+                                    onclick="insertEmoji('amara','💪')">💪</span>
+                                <span onclick="insertEmoji('amara','🤔')">🤔</span><span
+                                    onclick="insertEmoji('amara','👋')">👋</span>
+                                <span onclick="insertEmoji('amara','⭐')">⭐</span><span
+                                    onclick="insertEmoji('amara','🎯')">🎯</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── CHAT: Marcus Johnson ── -->
+                <div class="chat-window" id="chat-marcus">
+                    <div class="chat-header">
+                        <button class="btn-back-conv" type="button" onclick="backToList()"
+                            aria-label="Back to conversations"><i
+                                class="ti ti-arrow-left"></i><span>Chats</span></button>
+                        <div class="chat-header-avatar-wrap">
+                            <div class="chat-header-avatar"><img src="../img/T5.jpg" alt="Marcus Johnson"></div>
+                        </div>
+                        <div class="chat-header-info">
+                            <p class="chat-header-name">David</p>
+                            <p class="chat-header-status" style="color:#aaa;">Last seen yesterday · RSU · Biomedical
+                                Science Tutor
+                            </p>
+                        </div>
+                        <div class="chat-header-actions">
+                            <button class="chat-action-btn"><i class="ti ti-video"></i></button>
+                            <button class="chat-action-btn"><i class="ti ti-user-circle"></i></button>
+                            <button class="chat-action-btn"><i class="ti ti-calendar-plus"></i></button>
+                            <button class="chat-action-btn" onclick="toggleChatMenu('marcus')"><i
+                                    class="ti ti-dots-vertical"></i></button>
+                            <div class="chat-more-menu" id="chat-more-marcus">
+                                <button><i class="ti ti-user-circle"></i> View Profile</button>
+                                <button><i class="ti ti-calendar"></i> Book Session</button>
+                                <button><i class="ti ti-trash"></i> Clear Chat</button>
+                                <button class="danger-item"><i class="ti ti-ban"></i> Block</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="messages-marcus">
+                        <div class="date-divider"><span>Yesterday</span></div>
+                        <div class="msg-bubble-wrap received">
+                            <div class="bubble-avatar"><img src="../img/T5.jpg" alt="Marcus Johnson"></div>
+                            <div class="bubble-content">
+                                <div class="bubble received">Great session today! You did really well with the cell
+                                    biology. Keep practicing! 💪</div>
+                                <span class="bubble-time">5:30 PM</span>
+                            </div>
+                        </div>
+                        <div class="msg-bubble-wrap sent">
+                            <div class="bubble-content">
+                                <div class="bubble sent">Thank you Marcus! The way you explained definition of cell
+                                    biology finally
+                                    clicked for me 🙏</div>
+                                <span class="bubble-time">5:45 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <div class="chat-input-row">
+                            <div class="chat-toolbar">
+                                <label class="toolbar-btn"><input type="file" style="display:none;"
+                                        onchange="attachFile(this,'marcus')" /><i class="ti ti-paperclip"></i></label>
+                                <button class="toolbar-btn" onclick="toggleEmojiPicker('marcus')"><i
+                                        class="ti ti-mood-smile"></i></button>
+                                <button class="toolbar-btn"><i class="ti ti-calendar"></i></button>
+                                <button class="toolbar-btn"><i class="ti ti-photo"></i></button>
+                            </div>
+                            <div class="chat-input-wrap">
+                                <textarea class="chat-textarea" id="input-marcus" rows="1"
+                                    placeholder="Type a message..."
+                                    oninput="autoResizeTextarea(this); checkSendBtn('marcus')"
+                                    onkeydown="handleKeyDown(event,'marcus')"></textarea>
+                            </div>
+                            <button class="btn-send-msg" id="send-marcus" onclick="sendMessage('marcus')" disabled>
+                                <i class="ti ti-send"></i>
+                            </button>
+                        </div>
+                        <div class="emoji-picker" id="emoji-marcus" style="display:none;">
+                            <div class="emoji-grid">
+                                <span onclick="insertEmoji('marcus','😊')">😊</span><span
+                                    onclick="insertEmoji('marcus','👍')">👍</span>
+                                <span onclick="insertEmoji('marcus','🙏')">🙏</span><span
+                                    onclick="insertEmoji('marcus','📚')">📚</span>
+                                <span onclick="insertEmoji('marcus','✅')">✅</span><span
+                                    onclick="insertEmoji('marcus','💻')">💻</span>
+                                <span onclick="insertEmoji('marcus','💡')">💡</span><span
+                                    onclick="insertEmoji('marcus','🎯')">🎯</span>
+                                <span onclick="insertEmoji('marcus','⭐')">⭐</span><span
+                                    onclick="insertEmoji('marcus','😅')">😅</span>
+                                <span onclick="insertEmoji('marcus','🔥')">🔥</span><span
+                                    onclick="insertEmoji('marcus','💪')">💪</span>
+                                <span onclick="insertEmoji('marcus','🤔')">🤔</span><span
+                                    onclick="insertEmoji('marcus','👋')">👋</span>
+                                <span onclick="insertEmoji('marcus','😭')">😭</span><span
+                                    onclick="insertEmoji('marcus','🥳')">🥳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── CHAT: Priya Patel ── -->
+                <div class="chat-window" id="chat-priya">
+                    <div class="chat-header">
+                        <button class="btn-back-conv" type="button" onclick="backToList()"
+                            aria-label="Back to conversations"><i
+                                class="ti ti-arrow-left"></i><span>Chats</span></button>
+                        <div class="chat-header-avatar-wrap">
+                            <div class="chat-header-avatar"><img src="../img/T2.jpg" alt="Priya Patel"></div>
+                        </div>
+                        <div class="chat-header-info">
+                            <p class="chat-header-name">Hazel</p>
+                            <p class="chat-header-status" style="color:#aaa;">Last seen 2 days ago · RSU ·
+                                Calculus Tutor</p>
+                        </div>
+                        <div class="chat-header-actions">
+                            <button class="chat-action-btn"><i class="ti ti-video"></i></button>
+                            <button class="chat-action-btn"><i class="ti ti-user-circle"></i></button>
+                            <button class="chat-action-btn"><i class="ti ti-calendar-plus"></i></button>
+                            <button class="chat-action-btn" onclick="toggleChatMenu('priya')"><i
+                                    class="ti ti-dots-vertical"></i></button>
+                            <div class="chat-more-menu" id="chat-more-priya">
+                                <button><i class="ti ti-user-circle"></i> View Profile</button>
+                                <button><i class="ti ti-calendar"></i> Book Session</button>
+                                <button><i class="ti ti-trash"></i> Clear Chat</button>
+                                <button class="danger-item"><i class="ti ti-ban"></i> Block</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="messages-priya">
+                        <div class="date-divider"><span>2 days ago</span></div>
+                        <div class="msg-bubble-wrap received">
+                            <div class="bubble-avatar"><img src="../img/T2.jpg" alt="Priya Patel"></div>
+                            <div class="bubble-content">
+                                <div class="bubble received bubble-file">
+                                    <div class="file-attachment">
+                                        <div class="file-icon" style="color:#db2777;"><i class="ti ti-file-type-py"></i>
+                                        </div>
+                                        <div class="file-info">
+                                            <p class="file-name">Calculus_Exercises_Week3.py</p>
+                                            <p class="file-size">12 KB · Calculus</p>
+                                        </div>
+                                        <button class="btn-download-file"><i class="ti ti-download"></i></button>
+                                    </div>
+                                    <p style="margin-top:8px;font-size:13px;">I've attached the calculus exercises for
+                                        you. Try to complete them before our next session!</p>
+                                </div>
+                                <span class="bubble-time">3:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="msg-bubble-wrap sent">
+                            <div class="bubble-content">
+                                <div class="bubble sent">Got it! I'll work on these. The calculus section looks
+                                    challenging
+                                    😅</div>
+                                <span class="bubble-time">4:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <div class="chat-input-row">
+                            <div class="chat-toolbar">
+                                <label class="toolbar-btn"><input type="file" style="display:none;"
+                                        onchange="attachFile(this,'priya')" /><i class="ti ti-paperclip"></i></label>
+                                <button class="toolbar-btn" onclick="toggleEmojiPicker('priya')"><i
+                                        class="ti ti-mood-smile"></i></button>
+                                <button class="toolbar-btn"><i class="ti ti-calendar"></i></button>
+                                <button class="toolbar-btn"><i class="ti ti-photo"></i></button>
+                            </div>
+                            <div class="chat-input-wrap">
+                                <textarea class="chat-textarea" id="input-priya" rows="1"
+                                    placeholder="Type a message..."
+                                    oninput="autoResizeTextarea(this); checkSendBtn('priya')"
+                                    onkeydown="handleKeyDown(event,'priya')"></textarea>
+                            </div>
+                            <button class="btn-send-msg" id="send-priya" onclick="sendMessage('priya')" disabled>
+                                <i class="ti ti-send"></i>
+                            </button>
+                        </div>
+                        <div class="emoji-picker" id="emoji-priya" style="display:none;">
+                            <div class="emoji-grid">
+                                <span onclick="insertEmoji('priya','😊')">😊</span><span
+                                    onclick="insertEmoji('priya','👍')">👍</span>
+                                <span onclick="insertEmoji('priya','🙏')">🙏</span><span
+                                    onclick="insertEmoji('priya','📚')">📚</span>
+                                <span onclick="insertEmoji('priya','✅')">✅</span><span
+                                    onclick="insertEmoji('priya','💻')">💻</span>
+                                <span onclick="insertEmoji('priya','💡')">💡</span><span
+                                    onclick="insertEmoji('priya','🎯')">🎯</span>
+                                <span onclick="insertEmoji('priya','🐍')">🐍</span><span
+                                    onclick="insertEmoji('priya','😅')">😅</span>
+                                <span onclick="insertEmoji('priya','🔥')">🔥</span><span
+                                    onclick="insertEmoji('priya','💪')">💪</span>
+                                <span onclick="insertEmoji('priya','🤔')">🤔</span><span
+                                    onclick="insertEmoji('priya','👋')">👋</span>
+                                <span onclick="insertEmoji('priya','😭')">😭</span><span
+                                    onclick="insertEmoji('priya','🥳')">🥳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Empty state (no chat selected on mobile) ── -->
+                <div class="chat-empty-state" id="chat-empty">
+                    <div class="ces-icon"><i class="ti ti-messages"></i></div>
+                    <h3>Your Messages</h3>
+                    <p>Select a conversation to start chatting with your tutors.</p>
+                    <button class="btn-ces-new" onclick="showNewChat()">
+                        <i class="ti ti-edit"></i> Start New Conversation
+                    </button>
+                </div>
+
+            </div><!-- end msg-chat -->
+        </div><!-- end msg-layout -->
+
+        <!-- ── New Chat Modal ── -->
+        <div class="new-chat-overlay" id="new-chat-overlay" onclick="closeNewChat()"></div>
+        <div class="new-chat-modal" id="new-chat-modal">
+            <div class="ncm-header">
+                <h3>New Message</h3>
+                <button class="btn-ncm-close" onclick="closeNewChat()"><i class="ti ti-x"></i></button>
+            </div>
+            <div class="ncm-search-wrap">
+                <i class="ti ti-search"></i>
+                <input type="text" placeholder="Search tutors..." id="ncm-search" oninput="filterNewChat(this.value)" />
+            </div>
+            <p class="ncm-section-label">Your Tutors</p>
+            <div class="ncm-list">
+                <div class="ncm-item" onclick="startNewChat('sarah')">
+                    <div class="ncm-avatar"><img src="../img/T4.jpg" alt="John"></div>
+                    <div>
+                        <p class="ncm-name">John</p>
+                        <p class="ncm-sub">RSU · Web Development</p>
+                    </div>
+                    <div class="ncm-online"></div>
+                </div>
+                <div class="ncm-item" onclick="startNewChat('diego')">
+                    <div class="ncm-avatar"><img src="../img/T3.jpg" alt="Diego Martinez"></div>
+                    <div>
+                        <p class="ncm-name">Michael</p>
+                        <p class="ncm-sub">RSU · Marketing</p>
+                    </div>
+                </div>
+                <div class="ncm-item" onclick="startNewChat('amara')">
+                    <div class="ncm-avatar"><img src="../img/T6.jpg" alt="Amara Williams"></div>
+                    <div>
+                        <p class="ncm-name">Nora</p>
+                        <p class="ncm-sub">RSU · DIT, UI/UX Design</p>
+                    </div>
+                    <div class="ncm-online"></div>
+                </div>
+                <div class="ncm-item" onclick="startNewChat('marcus')">
+                    <div class="ncm-avatar"><img src="../img/T5.jpg" alt="Marcus Johnson"></div>
+                    <div>
+                        <p class="ncm-name">David</p>
+                        <p class="ncm-sub">RSU · BMS, Cell Biology</p>
+                    </div>
+                </div>
+                <div class="ncm-item" onclick="startNewChat('priya')">
+                    <div class="ncm-avatar"><img src="../img/T2.jpg" alt="Priya Patel"></div>
+                    <div>
+                        <p class="ncm-name">Hazel</p>
+                        <p class="ncm-sub">RSU · CS, Calculus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end msg-page -->
+
+    <script>
+        let activeConv = 'sarah';
+        let isMobile = window.innerWidth < 768;
+
+        /* ── Open conversation ── */
+        function openConversation(id) {
+            activeConv = id;
+            document.querySelectorAll('.conv-item').forEach(i => i.classList.remove('active'));
+            document.querySelector(`[data-conv="${id}"]`).classList.add('active');
+            document.querySelectorAll('.chat-window').forEach(w => w.classList.remove('active'));
+            document.getElementById('chat-empty').style.display = 'none';
+            document.getElementById('chat-' + id).classList.add('active');
+
+            // Remove unread badge
+            const item = document.querySelector(`[data-conv="${id}"]`);
+            item.classList.remove('unread');
+            const badge = item.querySelector('.conv-unread-badge');
+            if (badge) badge.remove();
+
+            // On mobile: hide sidebar, show chat
+            if (window.innerWidth < 768) {
+                document.getElementById('msg-sidebar').classList.add('hidden');
+                document.getElementById('msg-chat').classList.add('visible');
+            }
+
+            // Scroll to bottom
+            setTimeout(() => scrollToBottom(id), 50);
+
+            // Close all dropdowns
+            document.querySelectorAll('.chat-more-menu').forEach(m => m.classList.remove('open'));
+            document.querySelectorAll('.emoji-picker').forEach(e => e.style.display = 'none');
+        }
+
+        /* ── Back to list (mobile) ── */
+        function backToList() {
+            document.getElementById('msg-sidebar').classList.remove('hidden');
+            document.getElementById('msg-chat').classList.remove('visible');
+        }
+
+        /* ── Scroll to bottom ── */
+        function scrollToBottom(id) {
+            const el = document.getElementById('messages-' + id);
+            if (el) el.scrollTop = el.scrollHeight;
+        }
+
+        /* ── Send message ── */
+        function sendMessage(id) {
+            const textarea = document.getElementById('input-' + id);
+            const text = textarea.value.trim();
+            if (!text) return;
+
+            const container = document.getElementById('messages-' + id);
+
+            // Create bubble
+            const wrap = document.createElement('div');
+            wrap.className = 'msg-bubble-wrap sent';
+            wrap.innerHTML = `
+      <div class="bubble-content">
+        <div class="bubble sent">${escapeHtml(text)}</div>
+        <span class="bubble-time">${getTime()}</span>
+        <div class="read-receipt"><i class="ti ti-check" style="color:#aaa;"></i></div>
+      </div>`;
+            container.appendChild(wrap);
+
+            // Clear input
+            textarea.value = '';
+            textarea.style.height = 'auto';
+            document.getElementById('send-' + id).disabled = true;
+
+            // Update conversation preview
+            updateConvPreview(id, text);
+
+            scrollToBottom(id);
+
+            // Simulate typing + reply
+            setTimeout(() => showTyping(id), 1000);
+            setTimeout(() => {
+                hideTyping(id);
+                sendAutoReply(id, container);
+            }, 3000);
+        }
+
+        /* ── Auto-reply simulation ── */
+        const replies = {
+            sarah: ["Got it! I'll prepare some examples for that 😊", "That's a great question! We'll cover it in our session.", "See you Sunday! 👋", "Feel free to send any questions before the session 📚"],
+            diego: ["Sounds good! See you Tuesday 🔬", "Great! I'll prepare the marketing notes.", "Don't worry, we'll go through everything step by step.", "Perfect! See you at 6 PM ⚛️"],
+            amara: ["Of course! I'll send you the topic list 🌿", "Wednesday afternoon works great for me!", "Let's cover basic principle of user interface design", "See you then! Come prepared 💪"],
+            marcus: ["Keep it up! 💻 Consistent practice is key.", "Mitosis and cell division 🧬 will come naturally soon!", "Let me know if you have any questions on the exercises.", "Great progress today! 🔥"],
+            priya: ["Take your time with calculus, it's tricky at first 🐍", "Try the exercises and let me know where you get stuck!", "I'll send more practice problems soon 💡", "Calculus gets easier with practice, I promise! 😊"]
+        };
+        let replyIdx = {};
+
+        function sendAutoReply(id, container) {
+            if (!replyIdx[id]) replyIdx[id] = 0;
+            const list = replies[id] || ["Thanks for your message!"];
+            const reply = list[replyIdx[id] % list.length];
+            replyIdx[id]++;
+
+            const avatarMap = {
+                sarah: '../img/T4.jpg',
+                diego: '../img/T3.jpg',
+                amara: '../img/T6.jpg',
+                marcus: '../img/T5.jpg',
+                priya: '../img/T2.jpg'
+            };
+
+            const wrap = document.createElement('div');
+            wrap.className = 'msg-bubble-wrap received';
+            wrap.innerHTML = `
+      <div class="bubble-avatar"><img src="${avatarMap[id]}" alt="Tutor"></div>
+      <div class="bubble-content">
+        <div class="bubble received">${reply}</div>
+        <span class="bubble-time">${getTime()}</span>
+      </div>`;
+            container.appendChild(wrap);
+
+            // Update conv preview
+            updateConvPreview(id, reply);
+            scrollToBottom(id);
+
+            // Update sent receipt
+            const sentReceipts = container.querySelectorAll('.read-receipt .ti-check');
+            sentReceipts.forEach(r => {r.className = 'ti ti-checks'; r.style.color = '#0077B6';});
+        }
+
+        /* ── Typing indicator ── */
+        function showTyping(id) {
+            const el = document.getElementById('typing-' + id);
+            if (el) {el.style.display = 'flex'; scrollToBottom(id);}
+        }
+        function hideTyping(id) {
+            const el = document.getElementById('typing-' + id);
+            if (el) el.style.display = 'none';
+        }
+
+        /* ── Update conversation list preview ── */
+        function updateConvPreview(id, text) {
+            const item = document.querySelector(`[data-conv="${id}"]`);
+            const preview = item.querySelector('.conv-preview');
+            const time = item.querySelector('.conv-time');
+            if (preview) preview.textContent = text.length > 40 ? text.substring(0, 40) + '...' : text;
+            if (time) time.textContent = 'Just now';
+        }
+
+        /* ── Key handler ── */
+        function handleKeyDown(e, id) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage(id);
+            }
+        }
+
+        /* ── Check send button ── */
+        function checkSendBtn(id) {
+            const val = document.getElementById('input-' + id).value.trim();
+            document.getElementById('send-' + id).disabled = !val;
+        }
+
+        /* ── Auto-resize textarea ── */
+        function autoResizeTextarea(el) {
+            el.style.height = 'auto';
+            el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+        }
+
+        /* ── Emoji picker ── */
+        function toggleEmojiPicker(id) {
+            const picker = document.getElementById('emoji-' + id);
+            const isOpen = picker.style.display === 'grid';
+            document.querySelectorAll('.emoji-picker').forEach(e => e.style.display = 'none');
+            picker.style.display = isOpen ? 'none' : 'grid';
+        }
+
+        function insertEmoji(id, emoji) {
+            const textarea = document.getElementById('input-' + id);
+            const pos = textarea.selectionStart;
+            const val = textarea.value;
+            textarea.value = val.slice(0, pos) + emoji + val.slice(pos);
+            textarea.selectionStart = textarea.selectionEnd = pos + emoji.length;
+            textarea.focus();
+            checkSendBtn(id);
+            document.getElementById('emoji-' + id).style.display = 'none';
+        }
+
+        /* ── File attachment ── */
+        function attachFile(input, id) {
+            if (!input.files.length) return;
+            const file = input.files[0];
+            const preview = document.getElementById('attach-preview-' + id);
+            const name = document.getElementById('attach-preview-name-' + id);
+            if (preview && name) {
+                name.textContent = file.name;
+                preview.style.display = 'flex';
+            }
+        }
+
+        function removeAttachment(id) {
+            const preview = document.getElementById('attach-preview-' + id);
+            if (preview) preview.style.display = 'none';
+        }
+
+        /* ── Chat more menu ── */
+        function toggleChatMenu(id) {
+            const menu = document.getElementById('chat-more-' + id);
+            const isOpen = menu.classList.contains('open');
+            document.querySelectorAll('.chat-more-menu').forEach(m => m.classList.remove('open'));
+            if (!isOpen) menu.classList.add('open');
+        }
+
+        /* ── Action stubs ── */
+        function startVideoCall() {alert('Starting video call... (Zoom/Meet integration)');}
+        function viewProfile() {window.location.href = 'tutor-profile.html';}
+        function bookSession() {window.location.href = 'book-session.html';}
+        function clearChat() {document.querySelectorAll('.chat-more-menu').forEach(m => m.classList.remove('open'));}
+        function blockUser() {if (confirm('Block this user?')) document.querySelectorAll('.chat-more-menu').forEach(m => m.classList.remove('open'));}
+        function sendSessionCard(id) {
+            const container = document.getElementById('messages-' + id);
+            const subjects = {
+                sarah: 'Web Development',
+                diego: 'Physics',
+                amara: 'Biology',
+                marcus: 'Computer Science',
+                priya: 'Python'
+            };
+            const wrap = document.createElement('div');
+            wrap.className = 'msg-bubble-wrap sent';
+            wrap.innerHTML = `
+      <div class="bubble-content">
+        <div class="bubble sent" style="padding:0;overflow:hidden;">
+          <div class="booking-bubble-card booking-bubble-sent">
+            <div class="bbc-header" style="background:#0077B6;">
+              <i class="ti ti-calendar-check"></i> Session Request
+            </div>
+            <div class="bbc-body">
+              <div class="bbc-row"><i class="ti ti-book-2"></i> ${subjects[id] || 'Tutoring Session'}</div>
+              <div class="bbc-row"><i class="ti ti-calendar"></i> Sun, Jun 29, 2026</div>
+              <div class="bbc-row"><i class="ti ti-clock"></i> 3:00 PM · 60 min</div>
+            </div>
+          </div>
+        </div>
+        <span class="bubble-time">${getTime()}</span>
+      </div>`;
+            container.appendChild(wrap);
+            scrollToBottom(id);
+            updateConvPreview(id, '📅 Session card shared');
+        }
+        function sendImage(id) {alert('Image sharing — coming soon!');}
+
+        /* ── Filter conversations ── */
+        function filterConversations(query) {
+            const q = query.toLowerCase();
+            document.querySelectorAll('.conv-item').forEach(item => {
+                const name = item.querySelector('.conv-name').textContent.toLowerCase();
+                item.style.display = name.includes(q) ? '' : 'none';
+            });
+        }
+
+        function filterTab(type, btn) {
+            document.querySelectorAll('.msg-filter-tab').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.conv-item').forEach(item => {
+                if (type === 'all') {item.style.display = '';}
+                else if (type === 'unread') {item.style.display = item.classList.contains('unread') ? '' : 'none';}
+                else if (type === 'tutors') {item.style.display = item.dataset.type === 'tutor' ? '' : 'none';}
+                else if (type === 'students') {item.style.display = item.dataset.type === 'student' ? '' : 'none';}
+            });
+        }
+
+        /* ── New chat modal ── */
+        function showNewChat() {
+            document.getElementById('new-chat-overlay').style.display = 'block';
+            document.getElementById('new-chat-modal').classList.add('open');
+        }
+        function closeNewChat() {
+            document.getElementById('new-chat-overlay').style.display = 'none';
+            document.getElementById('new-chat-modal').classList.remove('open');
+        }
+        function startNewChat(id) {
+            closeNewChat();
+            openConversation(id);
+        }
+        function filterNewChat(q) {
+            document.querySelectorAll('.ncm-item').forEach(item => {
+                const name = item.querySelector('.ncm-name').textContent.toLowerCase();
+                item.style.display = name.includes(q.toLowerCase()) ? '' : 'none';
+            });
+        }
+
+        /* ── Helpers ── */
+        function getTime() {
+            const now = new Date();
+            return now.toLocaleTimeString('en-US', {hour: 'numeric', minute: '2-digit', hour12: true});
+        }
+        function escapeHtml(str) {
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        /* ── Mobile nav ── */
+        function toggleMobileNav() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        }
+
+        /* ── Close menus on outside click ── */
+        document.addEventListener('click', e => {
+            if (!e.target.closest('.chat-more-wrap')) {
+                document.querySelectorAll('.chat-more-menu').forEach(m => m.classList.remove('open'));
+            }
+            if (!e.target.closest('.chat-toolbar')) {
+                document.querySelectorAll('.emoji-picker').forEach(p => p.style.display = 'none');
+            }
+        });
+
+        /* ── Init ── */
+        scrollToBottom('sarah');
+    </script>
+
+    <script src="../js/base.js"></script>
+</body>
+
+</html>

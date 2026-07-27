@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutor Dashboard | PeerTutor</title>
+
+    <link rel="stylesheet" href="../css/tutor-pre-dashboard.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/tutor-profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="dash-nav">
+        <a class="logo" href="../html/index.html">
+            <img src="../img/Logo.png" class="logo-icon">
+            <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+        </a>
+        <div class="dash-nav-links">
+            <a href="../html/index.html" class="active">Home</a>
+            <a href="../html/about-us.html">About Us</a>
+            <a href="../html/browse-tutors.html">Browse a Tutor</a>
+            <a href="../html/contact-us.html">Contact Us</a>
+        </div>
+        <div class="profile-summary">
+            <div class="profile-avatar">JT</div>
+
+            <div class="profile-text">
+                <strong>John</strong>
+                <span>Tutor applicant</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pre-dashboard-main">
+        <section class="page-heading">
+            <div>
+                <span class="page-label">Tutor Onboarding</span>
+                <h1>Tutor Dashboard</h1>
+                <p>
+                    Complete your tutor application before accessing tutor tools, session requests, earnings, and
+                    reviews.
+                </p>
+            </div>
+
+            <div class="account-status">
+                <span class="status-dot"></span>
+                Application not started
+            </div>
+        </section>
+
+        <section class="empty-dashboard-card" aria-labelledby="empty-title">
+            <div class="empty-icon">
+                <i class="ti ti-school"></i>
+            </div>
+
+            <h2 id="empty-title">YOUR DASHBOARD IS EMPTY!</h2>
+
+            <p class="empty-message">
+                You’re not registered as a tutor yet. Fill in the tutor request form to get started.
+            </p>
+
+            <a href="tutor-apply.html" class="primary-application-button">
+                <i class="ti ti-file-description"></i>
+                Fill Tutor Request Form
+            </a>
+        </section>
+
+        <section class="onboarding-grid">
+            <!-- Progress -->
+            <article class="info-card progress-card">
+                <div class="card-heading">
+                    <div class="card-icon">
+                        <i class="ti ti-route"></i>
+                    </div>
+
+                    <div>
+                        <h2>Your tutor journey</h2>
+                        <p>Follow these steps to start tutoring.</p>
+                    </div>
+                </div>
+
+                <div class="progress-list">
+                    <div class="progress-item completed">
+                        <div class="progress-marker">
+                            <i class="ti ti-check"></i>
+                        </div>
+
+                        <div>
+                            <span class="step-label">Step 1</span>
+                            <h3>Create your account</h3>
+                            <p>Your PeerTutor account has been created.</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-item current">
+                        <div class="progress-marker">2</div>
+
+                        <div>
+                            <span class="step-label">Current step</span>
+                            <h3>Submit tutor application</h3>
+                            <p>
+                                Add your academic details, subjects, availability,
+                                and teaching information.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-marker">3</div>
+
+                        <div>
+                            <span class="step-label">Step 3</span>
+                            <h3>Wait for admin review</h3>
+                            <p>
+                                An administrator will review your application.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-marker">4</div>
+
+                        <div>
+                            <span class="step-label">Step 4</span>
+                            <h3>Access Tutor Dashboard</h3>
+                            <p>
+                                Once approved, you can manage requests and sessions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Requirements -->
+            <article class="info-card requirements-card">
+                <div class="card-heading">
+                    <div class="card-icon">
+                        <i class="ti ti-clipboard-check"></i>
+                    </div>
+
+                    <div>
+                        <h2>Prepare before applying</h2>
+                        <p>Having these details ready will make the form faster.</p>
+                    </div>
+                </div>
+
+                <ul class="requirements-list">
+                    <li>
+                        <i class="ti ti-id"></i>
+                        <span>
+                            <strong>Student information</strong>
+                            Student ID and university details
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="ti ti-books"></i>
+                        <span>
+                            <strong>Subjects</strong>
+                            Subjects or courses you can teach
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="ti ti-certificate"></i>
+                        <span>
+                            <strong>Qualifications</strong>
+                            Academic background and relevant experience
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="ti ti-calendar-time"></i>
+                        <span>
+                            <strong>Availability</strong>
+                            Preferred tutoring days and times
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="ti ti-currency-dollar"></i>
+                        <span>
+                            <strong>Hourly rate</strong>
+                            Your proposed tutoring fee
+                        </span>
+                    </li>
+                </ul>
+
+                <a href="tutor-apply.html" class="secondary-application-button">
+                    Start Application
+                    <i class="ti ti-arrow-right"></i>
+                </a>
+            </article>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="section-heading">
+                <span class="page-label">Frequently Asked Questions</span>
+                <h2>Before you apply</h2>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>
+                        How long does tutor approval take?
+                        <i class="ti ti-chevron-down"></i>
+                    </summary>
+
+                    <p>
+                        For this MVP, the administrator reviews tutor applications
+                        manually. The expected review time is approximately one to
+                        two business days.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        Can I edit my application after submitting it?
+                        <i class="ti ti-chevron-down"></i>
+                    </summary>
+
+                    <p>
+                        You can update the information before final submission.
+                        Changes after submission may require contacting the
+                        administrator.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        Can I teach more than one subject?
+                        <i class="ti ti-chevron-down"></i>
+                    </summary>
+
+                    <p>
+                        Yes. You can select multiple subjects or courses that match
+                        your knowledge and academic experience.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Help -->
+        <section class="help-card">
+            <div class="help-icon">
+                <i class="ti ti-headset"></i>
+            </div>
+
+            <div class="help-content">
+                <h2>Need help with your application?</h2>
+                <p>
+                    Contact the PeerTutor administrator if you have questions
+                    about tutor eligibility, documents, or approval.
+                </p>
+            </div>
+
+            <a href="contact-us.html" class="help-button">
+                Contact Administrator
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a class="logo footer-logo" href="index.html">
+                    <img src="../img/Logo.png" class="logo-icon" alt="PeerTutor logo">
+                    <p><b style="color: #03045E;">Peer</b><b style="color: #0077B6;">Tutor</b></p>
+                </a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>CONTACT US</h4>
+                <p>hello@peertutor.co</p>
+                <p>Rangsit University, Pathum Thani<br>PeerTutor Learning Support</p>
+                <p>+66 82 328 5847</p>
+            </div>
+
+            <div class="footer-subscribe">
+                <h4>SUBSCRIBE</h4>
+                <p>Enter your email to get notified about our new tutoring sessions.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Email" aria-label="Email">
+                    <button type="submit" aria-label="Subscribe"><i class="ti ti-mail"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PeerTutor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="../js/base.js"></script>
+</body>
+
+</html>
