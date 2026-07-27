@@ -9,10 +9,10 @@ PeerTutor helps RSU students find, evaluate, and book a peer tutor in one place 
 
 | Channel | Message | CTA | Link/QR Placeholder |
 | --- | --- | --- | --- |
-| Class/course chat group | Tired of asking around every semester for a good tutor? Try the PeerTutor demo — search, compare, and request a tutor in one place. | Try Demo | [Insert link] |
-| Campus QR poster | Need a tutor before your next exam? Scan to search RSU peer tutors by subject and rating. | Scan QR | [Insert QR/link] |
-| Instagram/Facebook post | One platform to find a peer tutor — or to start tutoring yourself. Built by RSU students, for RSU students. | Try It Now | [Insert link] |
-| RIC student club / class announcement | We're piloting PeerTutor, a tutoring marketplace for RIC students. Try the demo and tell us what you think. | Give Feedback | [Insert link] |
+| Class/course chat group | Tired of asking around every semester for a good tutor? Try the PeerTutor demo — search, compare, and request a tutor in one place. | Try Demo | <img width="500" height="500" alt="PeerTutor_Website" src="https://github.com/user-attachments/assets/726246a5-0295-4f59-b9f6-03e074b72b94" />|
+| Campus QR poster | Need a tutor before your next exam? Scan to search RSU peer tutors by subject and rating. | Scan QR | <img width="500" height="500" alt="PeerTutor_Website" src="https://github.com/user-attachments/assets/2b487d97-de8e-4ba3-8de6-d6c1e570819a" />|
+| Instagram/Facebook post | One platform to find a peer tutor — or to start tutoring yourself. Built by RSU students, for RSU students. | Try It Now | <img width="500" height="500" alt="PeerTutor_Website" src="https://github.com/user-attachments/assets/3e21e1ba-9fd6-4c03-b0fc-e42e5da504ea" /> |
+| RIC student club / class announcement | We're piloting PeerTutor, a tutoring marketplace for RIC students. Try the demo and tell us what you think. | Give Feedback | [`Feedback Form`](https://docs.google.com/forms/d/e/1FAIpQLSeicPKfMzkl5SfP481nvWeMJM0PWMwp49QYJ7vSVbl3NK45gw/viewform?usp=publish-editor) |
 
 ## Message Quality Check
 - Is the message clear within 5 seconds? Yes — leads with the problem (scattered tutor search) and the fix.
