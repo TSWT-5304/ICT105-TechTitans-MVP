@@ -148,5 +148,5 @@ The prototype does not require a major redesign. Minor revisions should be compl
 ## 8. Supporting Evidence
 
 - [`data/user-testing-results.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/919a5f02de6ec760a5c9b3b406556ee7847f8542/data/user-testing-results.csv)
-- `screenshots/user-testing-evidence.png`
+- [`screenshots/User Testing Evidence.png`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/57dcde3cc0ecae263df3b981702aee5d01febdf1/screenshots/User%20Testing%20Evidence.png)
 - [`docs/final-improvement-list.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/ead8ef374cd1dd12752e2e3a6f5e50bb804b38a2/docs/final-improvement-list.md)
