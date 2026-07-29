@@ -115,3 +115,68 @@ PeerTutor will be considered ready for final improvement when:
 - Validation and confirmation messages work correctly.
 - Key screens work on laptop and mobile-sized screens.
 - Recurring Lab 08 problems are documented and prioritized.
+
+## 5. Testing Procedure
+
+1. Explain the purpose, voluntary participation, and anonymous data collection.
+2. Assign an anonymous tester ID and user role.
+3. Give the tester all Core tasks for that role and selected Additional tasks.
+4. Ask the tester to think aloud.
+5. Do not guide unless the tester becomes completely stuck.
+6. Record assigned tasks as Yes, Partial, or No; record unassigned tasks as N/A.
+7. Record completion time, help, confusion, and observations.
+8. Ask the tester to complete the quantitative Google Form immediately afterward.
+9. Export responses to Google Sheets or CSV.
+10. Compare results with Lab 08 and prepare the final improvement list.
+
+## 6. Observation Points
+
+Record:
+
+- Tester ID and user role
+- Assigned task
+- Core or Additional classification
+- Completion result
+- Completion time
+- Help required
+- Confusion or hesitation
+- Incorrect clicks
+- Unclear labels
+- Validation problems
+- Status misunderstandings
+- Responsive-layout problems
+- Ratings and comments
+- Suggested improvements
+- Related requirement
+- Issue severity
+
+## 7. Result Scale
+
+| Result | Meaning |
+| --- | --- |
+| Yes | Completed without major assistance. |
+| Partial | Partly completed or required significant help. |
+| No | Could not complete the assigned task. |
+| N/A | Not assigned or not applicable to the tester’s role. |
+
+## 8. Evidence to Collect
+
+- Task-observation records
+- Google Form responses
+- Completion times and help-needed records
+- Quantitative ratings
+- Anonymous comments
+- Testing spreadsheet
+- `screenshots/user-testing-evidence.png`
+- Lab 08 comparison
+- Final prioritized improvement list
+
+## 9. Ethical Reminder
+
+- Do not collect unnecessary personal information.
+- Use anonymous tester IDs.
+- Do not collect passwords or real payment information.
+- Use sample or masked data.
+- Do not expose personal data in screenshots.
+- Participation is voluntary.
+- Record results honestly and do not invent unassigned results.
