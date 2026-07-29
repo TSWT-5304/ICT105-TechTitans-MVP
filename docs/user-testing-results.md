@@ -147,7 +147,6 @@ Most Student, Student Tutor, and Administrator workflows were completed successf
 The prototype does not require a major redesign. Minor revisions should be completed before Lab 14, particularly for the payment workflow, tutor-profile controls, supporting-file instructions, and administrator payment management.
 ## 8. Supporting Evidence
 
-- `data/user-testing-results-sample.csv`
-- `data/user-testing-results-sample.xlsx`
+- [`data/user-testing-results.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/919a5f02de6ec760a5c9b3b406556ee7847f8542/data/user-testing-results.csv)
 - `screenshots/user-testing-evidence.png`
-- `docs/final-improvement-list.md`
+- [`docs/final-improvement-list.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/ead8ef374cd1dd12752e2e3a6f5e50bb804b38a2/docs/final-improvement-list.md)
