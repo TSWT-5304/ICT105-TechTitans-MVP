@@ -1,0 +1,126 @@
+Tester_ID,Tester_Type,Task_ID,Task_Description,Completed,Completion_Time_Min,Confusion_Point,Feedback_Score_1_5,Comment,Related_Requirement
+TU-01,Student,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,0.9,None,5,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-01,Student,T02,Find and use the main navigation menu.,Yes,1.18,None,4,The navigation menu was consistent and easy to use.,FR-16
+TU-01,Student,T03,Use the prototype on laptop and mobile-sized screens.,Yes,1.47,None,5,The main pages remained usable on both screen sizes.,FR-17
+TU-01,Student,T04,Select Find a Tutor and open the tutor-listing page.,Yes,0.58,None,5,The Find a Tutor action was easy to locate.,FR-01; FR-02; FR-05
+TU-01,Student,T05,Search for a tutor by name or subject.,Yes,0.87,None,4,Tutor search returned relevant results quickly.,FR-06
+TU-01,Student,T06,"Filter tutors by major, price, or rating.",Yes,1.15,None,5,The filters made tutor comparison more convenient.,FR-06
+TU-01,Student,T07,Open and review a tutor profile.,Yes,1.43,None,5,The tutor profile contained useful comparison information.,FR-08
+TU-01,Student,T08,"Submit a tutoring request with subject, preferred date/time, and note.",Yes,0.55,None,4,The tutoring-request form was straightforward.,FR-02; FR-03; FR-04
+TU-01,Student,T09,Attempt to submit an incomplete or invalid request.,Yes,0.83,None,5,The validation message clearly explained the missing information.,FR-13
+TU-01,Student,T10,Confirm that the tutoring request was submitted.,Yes,1.12,None,5,The request confirmation was visible and understandable.,FR-14
+TU-01,Student,T11,View the request and check its status.,Yes,1.4,None,4,The request status and next step were easy to identify.,FR-05; FR-08; FR-10
+TU-01,Student,T12,Make a simulated payment after tutor approval.,Yes,0.52,None,5,The simulated payment instructions were easy to follow.,FR-02; FR-07
+TU-01,Student,T13,"Check payment confirmation, status, and history.",Yes,0.8,None,5,Payment confirmation and history were understandable.,FR-09; FR-10; FR-14
+TU-01,Student,T14,Review the Student Dashboard.,Yes,1.08,None,4,The Student Dashboard information was useful.,FR-15
+TU-01,Student,T15,Leave a review and rating after a completed session.,Yes,1.37,None,5,The review and rating controls were easy to use.,FR-02; FR-03; FR-14
+TU-02,Student,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,1.12,None,4,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-02,Student,T02,Find and use the main navigation menu.,Yes,1.4,None,5,The navigation menu was consistent and easy to use.,FR-16
+TU-02,Student,T03,Use the prototype on laptop and mobile-sized screens.,Yes,0.52,None,5,The main pages remained usable on both screen sizes.,FR-17
+TU-02,Student,T04,Select Find a Tutor and open the tutor-listing page.,Yes,0.8,None,4,The Find a Tutor action was easy to locate.,FR-01; FR-02; FR-05
+TU-02,Student,T05,Search for a tutor by name or subject.,Yes,1.08,None,5,Tutor search returned relevant results quickly.,FR-06
+TU-02,Student,T06,"Filter tutors by major, price, or rating.",Partial,1.95,Price-range labels were not immediately clear.,3,Add clearer minimum and maximum price labels.,FR-06
+TU-02,Student,T07,Open and review a tutor profile.,Yes,0.48,None,4,The tutor profile contained useful comparison information.,FR-08
+TU-02,Student,T08,"Submit a tutoring request with subject, preferred date/time, and note.",Yes,0.77,None,5,The tutoring-request form was straightforward.,FR-02; FR-03; FR-04
+TU-02,Student,T09,Attempt to submit an incomplete or invalid request.,Yes,1.05,None,5,The validation message clearly explained the missing information.,FR-13
+TU-02,Student,T10,Confirm that the tutoring request was submitted.,Yes,1.33,None,4,The request confirmation was visible and understandable.,FR-14
+TU-02,Student,T11,View the request and check its status.,Yes,0.45,None,5,The request status and next step were easy to identify.,FR-05; FR-08; FR-10
+TU-02,Student,T12,Make a simulated payment after tutor approval.,Yes,0.73,None,5,The simulated payment instructions were easy to follow.,FR-02; FR-07
+TU-02,Student,T13,"Check payment confirmation, status, and history.",Yes,1.02,None,4,Payment confirmation and history were understandable.,FR-09; FR-10; FR-14
+TU-02,Student,T14,Review the Student Dashboard.,Yes,1.3,None,5,The Student Dashboard information was useful.,FR-15
+TU-02,Student,T15,Leave a review and rating after a completed session.,Yes,0.42,None,5,The review and rating controls were easy to use.,FR-02; FR-03; FR-14
+TU-03,Student,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,1.33,None,5,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-03,Student,T02,Find and use the main navigation menu.,Yes,0.45,None,5,The navigation menu was consistent and easy to use.,FR-16
+TU-03,Student,T03,Use the prototype on laptop and mobile-sized screens.,Partial,1.32,Some dashboard text was small on a mobile-sized screen.,3,Increase small-screen text size and spacing.,FR-17
+TU-03,Student,T04,Select Find a Tutor and open the tutor-listing page.,Yes,1.02,None,5,The Find a Tutor action was easy to locate.,FR-01; FR-02; FR-05
+TU-03,Student,T05,Search for a tutor by name or subject.,Yes,1.3,None,5,Tutor search returned relevant results quickly.,FR-06
+TU-03,Student,T06,"Filter tutors by major, price, or rating.",Yes,0.42,None,4,The filters made tutor comparison more convenient.,FR-06
+TU-03,Student,T07,Open and review a tutor profile.,Yes,0.7,None,5,The tutor profile contained useful comparison information.,FR-08
+TU-03,Student,T08,"Submit a tutoring request with subject, preferred date/time, and note.",Yes,0.98,None,5,The tutoring-request form was straightforward.,FR-02; FR-03; FR-04
+TU-03,Student,T09,Attempt to submit an incomplete or invalid request.,Yes,1.27,None,4,The validation message clearly explained the missing information.,FR-13
+TU-03,Student,T10,Confirm that the tutoring request was submitted.,Yes,1.55,None,5,The request confirmation was visible and understandable.,FR-14
+TU-03,Student,T11,View the request and check its status.,Yes,0.67,None,5,The request status and next step were easy to identify.,FR-05; FR-08; FR-10
+TU-03,Student,T12,Make a simulated payment after tutor approval.,Yes,0.95,None,4,The simulated payment instructions were easy to follow.,FR-02; FR-07
+TU-03,Student,T13,"Check payment confirmation, status, and history.",Yes,1.23,None,5,Payment confirmation and history were understandable.,FR-09; FR-10; FR-14
+TU-03,Student,T14,Review the Student Dashboard.,Yes,1.52,None,5,The Student Dashboard information was useful.,FR-15
+TU-03,Student,T15,Leave a review and rating after a completed session.,Yes,0.63,None,4,The review and rating controls were easy to use.,FR-02; FR-03; FR-14
+TU-04,Student,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,1.55,None,5,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-04,Student,T02,Find and use the main navigation menu.,Yes,0.67,None,4,The navigation menu was consistent and easy to use.,FR-16
+TU-04,Student,T03,Use the prototype on laptop and mobile-sized screens.,Yes,0.95,None,5,The main pages remained usable on both screen sizes.,FR-17
+TU-04,Student,T04,Select Find a Tutor and open the tutor-listing page.,Yes,1.23,None,5,The Find a Tutor action was easy to locate.,FR-01; FR-02; FR-05
+TU-04,Student,T05,Search for a tutor by name or subject.,Yes,1.52,None,4,Tutor search returned relevant results quickly.,FR-06
+TU-04,Student,T06,"Filter tutors by major, price, or rating.",Yes,0.63,None,5,The filters made tutor comparison more convenient.,FR-06
+TU-04,Student,T07,Open and review a tutor profile.,Yes,0.92,None,5,The tutor profile contained useful comparison information.,FR-08
+TU-04,Student,T08,"Submit a tutoring request with subject, preferred date/time, and note.",Yes,1.2,None,4,The tutoring-request form was straightforward.,FR-02; FR-03; FR-04
+TU-04,Student,T09,Attempt to submit an incomplete or invalid request.,Yes,1.48,None,5,The validation message clearly explained the missing information.,FR-13
+TU-04,Student,T10,Confirm that the tutoring request was submitted.,Yes,0.6,None,5,The request confirmation was visible and understandable.,FR-14
+TU-04,Student,T11,View the request and check its status.,Yes,0.88,None,4,The request status and next step were easy to identify.,FR-05; FR-08; FR-10
+TU-04,Student,T12,Make a simulated payment after tutor approval.,No,2.33,The Confirm Payment button was difficult to find.,2,Make the payment button larger and add a progress indicator.,FR-02; FR-07
+TU-04,Student,T13,"Check payment confirmation, status, and history.",Yes,1.45,None,5,Payment confirmation and history were understandable.,FR-09; FR-10; FR-14
+TU-04,Student,T14,Review the Student Dashboard.,Yes,0.57,None,4,The Student Dashboard information was useful.,FR-15
+TU-04,Student,T15,Leave a review and rating after a completed session.,Yes,0.85,None,5,The review and rating controls were easy to use.,FR-02; FR-03; FR-14
+TU-05,Student,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,0.6,None,4,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-05,Student,T02,Find and use the main navigation menu.,Yes,0.88,None,5,The navigation menu was consistent and easy to use.,FR-16
+TU-05,Student,T03,Use the prototype on laptop and mobile-sized screens.,Yes,1.17,None,5,The main pages remained usable on both screen sizes.,FR-17
+TU-05,Student,T04,Select Find a Tutor and open the tutor-listing page.,Yes,1.45,None,4,The Find a Tutor action was easy to locate.,FR-01; FR-02; FR-05
+TU-05,Student,T05,Search for a tutor by name or subject.,Yes,0.57,None,5,Tutor search returned relevant results quickly.,FR-06
+TU-05,Student,T06,"Filter tutors by major, price, or rating.",Yes,0.85,None,5,The filters made tutor comparison more convenient.,FR-06
+TU-05,Student,T07,Open and review a tutor profile.,Yes,1.13,None,4,The tutor profile contained useful comparison information.,FR-08
+TU-05,Student,T08,"Submit a tutoring request with subject, preferred date/time, and note.",Yes,1.42,None,5,The tutoring-request form was straightforward.,FR-02; FR-03; FR-04
+TU-05,Student,T09,Attempt to submit an incomplete or invalid request.,Yes,0.53,None,5,The validation message clearly explained the missing information.,FR-13
+TU-05,Student,T10,Confirm that the tutoring request was submitted.,Yes,0.82,None,4,The request confirmation was visible and understandable.,FR-14
+TU-05,Student,T11,View the request and check its status.,Yes,1.1,None,5,The request status and next step were easy to identify.,FR-05; FR-08; FR-10
+TU-05,Student,T12,Make a simulated payment after tutor approval.,Yes,1.38,None,5,The simulated payment instructions were easy to follow.,FR-02; FR-07
+TU-05,Student,T13,"Check payment confirmation, status, and history.",Yes,0.5,None,4,Payment confirmation and history were understandable.,FR-09; FR-10; FR-14
+TU-05,Student,T14,Review the Student Dashboard.,Yes,0.78,None,5,The Student Dashboard information was useful.,FR-15
+TU-05,Student,T15,Leave a review and rating after a completed session.,Yes,1.07,None,5,The review and rating controls were easy to use.,FR-02; FR-03; FR-14
+TU-06,Student Tutor,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,0.82,None,5,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-06,Student Tutor,T02,Find and use the main navigation menu.,Yes,1.1,None,5,The navigation menu was consistent and easy to use.,FR-16
+TU-06,Student Tutor,T03,Use the prototype on laptop and mobile-sized screens.,Yes,1.38,None,4,The main pages remained usable on both screen sizes.,FR-17
+TU-06,Student Tutor,T16,Register as a Student Tutor and complete the application.,Yes,0.4,None,5,The tutor application collected appropriate information.,FR-02; FR-03; FR-04
+TU-06,Student Tutor,T17,Attempt an incomplete or duplicate tutor application.,Yes,0.68,None,5,The duplicate and incomplete-application warnings were clear.,FR-13
+TU-06,Student Tutor,T18,Confirm that the tutor application was submitted.,Yes,0.97,None,4,The application confirmation message was noticeable.,FR-14
+TU-06,Student Tutor,T19,Create or review a tutor profile after approval.,Yes,1.25,None,5,Tutor profile information was easy to create and review.,FR-02; FR-05; FR-08
+TU-06,Student Tutor,T20,View an incoming tutoring request and its details.,Yes,1.53,None,5,Incoming tutoring-request details were complete.,FR-05; FR-08
+TU-06,Student Tutor,T21,Approve or reject a tutoring request.,Yes,0.65,None,4,The approve and reject actions were clear.,FR-02; FR-10; FR-14
+TU-06,Student Tutor,T22,"Review schedules, reviews, earnings, history, and payment statuses.",Yes,0.93,None,5,The Tutor Dashboard provided useful earnings and review information.,FR-05; FR-09; FR-10; FR-12; FR-15
+TU-07,Student Tutor,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,1.03,None,5,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-07,Student Tutor,T02,Find and use the main navigation menu.,Yes,1.32,None,4,The navigation menu was consistent and easy to use.,FR-16
+TU-07,Student Tutor,T03,Use the prototype on laptop and mobile-sized screens.,Yes,0.43,None,5,The main pages remained usable on both screen sizes.,FR-17
+TU-07,Student Tutor,T16,Register as a Student Tutor and complete the application.,Yes,0.62,None,5,The tutor application collected appropriate information.,FR-02; FR-03; FR-04
+TU-07,Student Tutor,T17,Attempt an incomplete or duplicate tutor application.,Yes,0.9,None,4,The duplicate and incomplete-application warnings were clear.,FR-13
+TU-07,Student Tutor,T18,Confirm that the tutor application was submitted.,Yes,1.18,None,5,The application confirmation message was noticeable.,FR-14
+TU-07,Student Tutor,T19,Create or review a tutor profile after approval.,Partial,2.05,The difference between Save and Publish was unclear.,3,Use distinct buttons and add a profile preview.,FR-02; FR-05; FR-08
+TU-07,Student Tutor,T20,View an incoming tutoring request and its details.,Yes,0.58,None,4,Incoming tutoring-request details were complete.,FR-05; FR-08
+TU-07,Student Tutor,T21,Approve or reject a tutoring request.,Yes,0.87,None,5,The approve and reject actions were clear.,FR-02; FR-10; FR-14
+TU-07,Student Tutor,T22,"Review schedules, reviews, earnings, history, and payment statuses.",Yes,1.15,None,5,The Tutor Dashboard provided useful earnings and review information.,FR-05; FR-09; FR-10; FR-12; FR-15
+TU-08,Student Tutor,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,1.25,None,4,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-08,Student Tutor,T02,Find and use the main navigation menu.,Yes,1.53,None,5,The navigation menu was consistent and easy to use.,FR-16
+TU-08,Student Tutor,T03,Use the prototype on laptop and mobile-sized screens.,Yes,0.65,None,5,The main pages remained usable on both screen sizes.,FR-17
+TU-08,Student Tutor,T16,Register as a Student Tutor and complete the application.,Partial,1.42,Accepted supporting-document file types were unclear.,3,Show accepted file types and maximum upload size.,FR-02; FR-03; FR-04
+TU-08,Student Tutor,T17,Attempt an incomplete or duplicate tutor application.,Yes,1.12,None,5,The duplicate and incomplete-application warnings were clear.,FR-13
+TU-08,Student Tutor,T18,Confirm that the tutor application was submitted.,Yes,1.4,None,5,The application confirmation message was noticeable.,FR-14
+TU-08,Student Tutor,T19,Create or review a tutor profile after approval.,Yes,0.52,None,4,Tutor profile information was easy to create and review.,FR-02; FR-05; FR-08
+TU-08,Student Tutor,T20,View an incoming tutoring request and its details.,Yes,0.8,None,5,Incoming tutoring-request details were complete.,FR-05; FR-08
+TU-08,Student Tutor,T21,Approve or reject a tutoring request.,Yes,1.08,None,5,The approve and reject actions were clear.,FR-02; FR-10; FR-14
+TU-08,Student Tutor,T22,"Review schedules, reviews, earnings, history, and payment statuses.",Yes,1.37,None,4,The Tutor Dashboard provided useful earnings and review information.,FR-05; FR-09; FR-10; FR-12; FR-15
+TU-09,Administrator,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,1.47,None,5,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-09,Administrator,T02,Find and use the main navigation menu.,Yes,0.58,None,5,The navigation menu was consistent and easy to use.,FR-16
+TU-09,Administrator,T03,Use the prototype on laptop and mobile-sized screens.,Yes,0.87,None,4,The main pages remained usable on both screen sizes.,FR-17
+TU-09,Administrator,T23,Open a tutor application and review its details.,Yes,0.7,None,5,Tutor application details were organized clearly.,FR-05; FR-08; FR-11
+TU-09,Administrator,T24,Approve or reject a tutor application.,Yes,0.98,None,4,The approval workflow was easy to complete.,FR-11; FR-14
+TU-09,Administrator,T25,View and manage user accounts and platform records.,Yes,1.27,None,5,User accounts and platform records were easy to manage.,FR-04; FR-05; FR-08; FR-11
+TU-09,Administrator,T26,Verify a simulated student payment.,Yes,1.55,None,5,Payment verification was clear and successful.,FR-10; FR-11; FR-12; FR-14
+TU-09,Administrator,T27,Record commission and transfer tutor earnings.,Yes,0.67,None,4,Commission and tutor earnings were calculated correctly.,FR-11; FR-12
+TU-09,Administrator,T28,Review the Admin Dashboard and explain its information.,Yes,0.95,None,5,The Admin Dashboard summaries and charts were understandable.,FR-15
+TU-09,Administrator,T29,Delete an invalid submission using a confirmation prompt.,Yes,1.23,None,5,The confirmation prompt prevented accidental deletion.,FR-11; FR-13
+TU-10,Administrator,T01,Open the homepage and explain PeerTutor’s purpose.,Yes,0.52,None,5,The homepage clearly explains PeerTutor and its purpose.,FR-01
+TU-10,Administrator,T02,Find and use the main navigation menu.,Yes,0.8,None,4,The navigation menu was consistent and easy to use.,FR-16
+TU-10,Administrator,T03,Use the prototype on laptop and mobile-sized screens.,Yes,1.08,None,5,The main pages remained usable on both screen sizes.,FR-17
+TU-10,Administrator,T23,Open a tutor application and review its details.,Yes,0.92,None,4,Tutor application details were organized clearly.,FR-05; FR-08; FR-11
+TU-10,Administrator,T24,Approve or reject a tutor application.,Yes,1.2,None,5,The approval workflow was easy to complete.,FR-11; FR-14
+TU-10,Administrator,T25,View and manage user accounts and platform records.,Yes,1.48,None,5,User accounts and platform records were easy to manage.,FR-04; FR-05; FR-08; FR-11
+TU-10,Administrator,T26,Verify a simulated student payment.,Yes,0.6,None,4,Payment verification was clear and successful.,FR-10; FR-11; FR-12; FR-14
+TU-10,Administrator,T27,Record commission and transfer tutor earnings.,Partial,1.47,Commission and tutor payout appeared in the same section.,3,"Separate payment verification, commission, and tutor payout.",FR-11; FR-12
+TU-10,Administrator,T28,Review the Admin Dashboard and explain its information.,Yes,1.17,None,5,The Admin Dashboard summaries and charts were understandable.,FR-15
+TU-10,Administrator,T29,Delete an invalid submission using a confirmation prompt.,Yes,1.45,None,4,The confirmation prompt prevented accidental deletion.,FR-11; FR-13
