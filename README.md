@@ -53,6 +53,7 @@ Possible technologies:
 | Lab 10 | MVP Implementation Sprint 1 | Began developing the first working PeerTutor prototype by implementing core HTML prototype screens, shared CSS and JavaScript, basic navigation, user interactions, simulated data handling, feature implementation status, implementation plan, prototype link, screenshots, updated README, and weekly progress log | Completed | 
 | Lab 11 | MVP Implementation Sprint 2 and Startup Metrics | Improved the PeerTutor MVP prototype by reviewing Sprint 1 progress, updating feature implementation status, improving simulated data handling, creating startup/product metrics, developing a Power BI analytics dashboard, preparing prototype testing notes, updating README and weekly logbook, and adding updated screenshots and datasets for final prototype evidence and traceability | Completed |
 | Lab 12 | Landing Page and Digital Go-to-Market | Developed and published the PeerTutor landing page using HTML, CSS, and JavaScript; prepared landing-page content, go-to-market plan, and channel-specific marketing messages; defined acquisition metrics and created the tracking template; documented the live landing-page link; captured landing-page and CTA screenshots; updated README and weekly logbook | Completed |
+| Lab 13 | Sales Scenario, Final Demo, and User Testing | Prepared the realistic PeerTutor sales scenario, screen-by-screen demo script, updated prototype user-testing plan, synthetic sample testing dataset and results, user-testing evidence dashboard, final demo-flow image, prioritized improvement list before Lab 14, final pitch demo outline, verified prototype and landing-page links, updated README, and weekly logbook; mapped the major demonstration steps and testing evidence to FR-01–FR-19 | Completed |
 
 ## Current Status
 1. Reviewed the three project ideas from Lab 1 and discussed their strengths and weaknesses.
@@ -659,6 +660,102 @@ The landing page maintains traceability between the identified user problem, fin
 | --- | --- | --- |
 | Lab 10 | Complete PeerTutor MVP Prototype | [Open MVP Prototype](https://tswt-5304.github.io/ICT105-TechTitans-MVP/prototype/PeerTutor/html/index.html) |
 | Lab 12 | PeerTutor Marketing Landing Page | [Open Landing Page](https://tswt-5304.github.io/ICT105-TechTitans-MVP/landing-page/html/index.html) |
+
+---
+
+## Lab 13: Sales Scenario, Demo Script, and User Testing
+
+### Lab 13 Objective
+
+For Lab 13, the TechTitans team prepared the final sales scenario, demonstration script, updated prototype user-testing plan, synthetic sample testing results, testing evidence, and prioritized improvement list before Lab 14.
+
+The team also connected the major PeerTutor demonstration steps and testing evidence to the functional requirements documented in `system-requirements.md`.
+
+### Files Completed
+
+- [x] [`/docs/sales-scenario.md`](docs/sales-scenario.md)
+- [x] [`/docs/demo-script.md`](docs/demo-script.md)
+- [x] [`/docs/user-testing-plan.md`](docs/user-testing-plan.md)
+- [x] [`/docs/user-testing-results.md`](docs/user-testing-results.md)
+- [x] [`/docs/final-improvement-list.md`](docs/final-improvement-list.md)
+- [x] [`/docs/weekly-logbook.md`](docs/weekly-logbook.md)
+- [x] [`/screenshots/demo-flow.png`](screenshots/demo-flow.png)
+- [x] [`/screenshots/user-testing-evidence.png`](screenshots/user-testing-evidence.png)
+- [x] [`/pitch/demo-outline.md`](pitch/demo-outline.md)
+- [x] [`/data/user-testing-results.csv`](data/user-testing-results.csv)
+- [x] [`/prototype/final-demo-link.md`](prototype/final-demo-link.md)
+
+### Prototype / Demo Links
+
+- **PeerTutor Prototype:**  
+  [Open the PeerTutor Prototype](https://tswt-5304.github.io/ICT105-TechTitans-MVP/prototype/PeerTutor/html/index.html)
+
+- **PeerTutor Landing Page:**  
+  [Open the PeerTutor Landing Page](https://tswt-5304.github.io/ICT105-TechTitans-MVP/landing-page/html/index.html)
+
+- **GitHub Repository:**  
+  [Open the TechTitans GitHub Repository](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/)
+
+### User Testing Summary
+
+The Lab 13 testing dataset contains **synthetic sample data prepared for coursework demonstration**. It must not be presented as actual participant research.
+
+| Metric | Sample Result |
+| --- | ---: |
+| Total sample testers | 10 |
+| Students | 5 |
+| Student Tutors | 3 |
+| Administrators | 2 |
+| Total task records | 125 |
+| Fully completed tasks | 119 |
+| Partially completed tasks | 5 |
+| Not completed tasks | 1 |
+| Full task-completion rate | 95.2% |
+| Average feedback score | 4.58 / 5 |
+
+The sample results indicate that the strongest prototype areas were:
+
+- Homepage and platform-purpose clarity
+- Role-selection pathways
+- Tutor search and filtering
+- Tutor-profile information
+- Tutoring-request submission
+- Role-based dashboards
+
+### Main Improvements Required
+
+The testing evidence identified the following improvements before Lab 14:
+1. Increase the size and visibility of the Confirm Payment button.
+2. Add a clearer payment-progress indicator and payment summary.
+3. Improve mobile text size, button size, forms, and responsive layouts.
+4. Clarify tutor price labels and identify optional form fields.
+5. Group the preferred date and time fields together.
+6. Add accepted file-type instructions to the tutor application.
+7. Make Save, Preview, and Publish actions visually distinct.
+8. Separate payment verification, platform commission, and tutor payout.
+9. Improve request and payment status labels using consistent colors.
+10. Retest the complete Student, Student Tutor, and Administrator workflows.
+
+### Final Preparation Status
+
+**Current status: Ready for final improvement before Lab 14.**
+
+The PeerTutor prototype demonstrates the main Student, Student Tutor, and Administrator workflows and is suitable for the Lab 13 demonstration. The core tutor-discovery, request, status, payment, administration, dashboard, and review pathways are represented in the prototype.
+
+However, the prototype still requires several final usability improvements. The visibility of the Confirm Payment button is classified as a **Critical** issue because it can prevent users from completing the payment workflow. Mobile readability, form labels, upload instructions, Save/Publish actions, status indicators, and payment-management stages are classified as **Important** improvements.
+
+After completing these improvements, the team should:
+- Retest all three role-based workflows.
+- Verify the prototype and landing-page links.
+- Update the final screenshots.
+- Confirm requirement traceability from FR-01 to FR-19.
+- Practice the final demonstration and presenter transitions.
+- Ensure that only sample or masked data is shown during the presentation.
+
+### Responsible Data Notice
+
+All tutor profiles, user accounts, tutoring requests, reviews, testing records, and payment information used in the demonstration are sample or masked data. Payment processing, authentication, notifications, and external service integrations may be simulated. No real passwords, sensitive personal information, or financial transactions are used.
+
 
 
 
