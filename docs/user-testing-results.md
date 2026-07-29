@@ -77,15 +77,77 @@
 ## 4. Common Usability Issues
 | Issue ID | Issue Description | Severity | Related Requirement | Proposed Fix |
 | --- | --- | --- | --- | --- |
-| UI-01 | | Critical/Important/Useful/Future | | |
+| UI-01 | Confirm Payment button was difficult to locate. | Important | FR-07, FR-14, FR-16 | Increase the button size and contrast and add a payment-progress indicator. |
+| UI-02 | Some text was too small on a mobile-sized screen. | Useful | FR-17 | Increase mobile font size, spacing, and button dimensions. |
+| UI-03 | Price-range labels in the tutor filter were unclear. | Useful | FR-06 | Add clear minimum and maximum labels and show the selected price range. |
+| UI-04 | Supporting-document upload instructions were incomplete. | Important | FR-03, FR-13, FR-18 | Display accepted file types, maximum size, and a responsible-data reminder. |
+| UI-05 | Save and Publish actions on the tutor profile were unclear. | Important | FR-08, FR-13, FR-14, FR-16 | Use visually distinct buttons, add profile preview, and display confirmation messages. |
+| UI-06 | Payment verification, commission, and tutor payout were not sufficiently separated. | Important | FR-11, FR-12, FR-15 | Divide payment management into separate sections with clear statuses and explanations. |
 
-## 4. User Feedback Summary
-Summarize what users liked, disliked, misunderstood, or suggested.
+## 5. User Feedback Summary
 
-## 5. Evidence-Based Decision
-Choose one:
-- Ready for final improvement
-- Needs minor revision
-- Needs major revision before Lab 14
+### What Users Liked
 
-Explain your decision.
+Users responded positively to the following features:
+
+- The homepage clearly communicated PeerTutor’s purpose.
+- Navigation was consistent and generally easy to understand.
+- Tutor search and filtering helped students find suitable tutors.
+- Tutor profiles contained useful qualifications, prices, availability, ratings, and reviews.
+- The tutoring-request form was straightforward.
+- Validation and confirmation messages were generally clear.
+- Request and payment statuses were understandable.
+- Student, Tutor, and Administrator Dashboards displayed useful information.
+- Administrator approval and payment-verification workflows were easy to follow.
+
+### What Users Disliked or Misunderstood
+
+The main difficulties involved:
+
+- Finding the Confirm Payment button
+- Understanding price-range filter labels
+- Reading some text on smaller screens
+- Understanding supporting-document upload requirements
+- Distinguishing Save from Publish
+- Separating payment verification, platform commission, and tutor payout
+
+### User Suggestions
+
+Users suggested:
+- Making the payment button larger and more noticeable
+- Adding a payment-progress indicator
+- Improving mobile text size and spacing
+- Adding clearer price-filter labels
+- Showing accepted supporting-document file types
+- Adding tutor-profile preview
+- Using different styles for Save and Publish
+- Separating verification, commission, and tutor-payout sections
+
+## 6. Comparison with Lab 08 Baseline
+
+| Measurement | Lab 08 Baseline | Lab 13 Synthetic Sample |
+| --- | ---: | ---: |
+| Number of testers | 10 | 10 |
+| Task attempts | 67 | 125 |
+| Successfully completed tasks | 63 | 119 |
+| Task-success rate | 94.0% | 95.2% |
+| Average feedback score | 4.5/5 | 4.58/5 |
+| Major improvement areas | 4 | 6 usability issues |
+
+The sample results suggest a small improvement in task completion and average feedback. However, payment visibility, tutor-profile controls, and payment-management organization remain important improvement areas.
+
+## 7. Evidence-Based Decision
+
+**Selected decision: Needs minor revision**
+
+The updated PeerTutor prototype achieved a sample task-success rate of **95.2%**, exceeding the 90% success criterion. The average feedback score was **4.58 out of 5**, exceeding the target of 4 out of 5.
+
+Most Student, Student Tutor, and Administrator workflows were completed successfully. However, one Student could not complete the simulated payment because the Confirm Payment button was difficult to locate. Five other tasks were completed partially because of mobile text size, price-filter labels, upload instructions, profile-publishing controls, and payment-stage organization.
+
+The prototype does not require a major redesign. Minor revisions should be completed before Lab 14, particularly for the payment workflow, tutor-profile controls, supporting-file instructions, and administrator payment management.
+## 8. Supporting Evidence
+
+- `data/user-testing-results-sample.csv`
+- `data/user-testing-results-sample.xlsx`
+- `screenshots/user-testing-evidence.png`
+- `docs/final-improvement-list.md`
