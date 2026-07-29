@@ -683,6 +683,116 @@ Another challenge was ensuring that the landing-page claims did not present simu
 - Confirm that all GitHub issues, commits, screenshots, and documentation are complete. 
 - Finalize screenshots and confirm all member commit links in the README.
 
+---
+# Weekly Logbook - Lab 13
+
+## Group Name
+
+TechTitans
+
+## Project Title
+
+PeerTutor – Student-to-Student Tutoring Marketplace
+
+## Date
+
+29 July 2026
+
+## Members and Contributions
+
+| Member | Contribution This Lab | GitHub Evidence |
+| --- | --- | --- |
+| Thin Thiri Naing | Prepared the realistic sales scenario, prioritized the final prototype improvements, and developed the final pitch demo outline. | Issue #1: `docs/sales-scenario.md`<br>Issue #5: `docs/final-improvement-list.md`<br>Issue #10: `pitch/demo-outline.md` |
+| Shinn Thant Maung | Prepared the updated prototype user-testing plan, summarized the sample testing results, and organized the synthetic user-testing dataset. | Issue #3: `docs/user-testing-plan.md`<br>Issue #4: `docs/user-testing-results.md`<br>Issue #11: `data/user-testing-results.csv` or `.xlsx` |
+| Thae Su Win Thu | Prepared the screen-by-screen demonstration script and created the demonstration-flow and user-testing-evidence images. | Issue #2: `docs/demo-script.md`<br>Issue #7: `screenshots/demo-flow.png`<br>Issue #8: `screenshots/user-testing-evidence.png` |
+| Yan Naing Kyaw | Updated the weekly logbook and README and documented the final prototype and landing-page links with testing instructions. | Issue #6: `docs/weekly-logbook.md`<br>Issue #9: `README.md`<br>Issue #12: `prototype/final-demo-link.md` |
+
+## Work Completed
+
+- **Sales scenario:** Completed a realistic scenario explaining how Rangsit University students experience scattered tutor discovery and how PeerTutor addresses the problem.
+- **Demo script:** Completed the screen-by-screen demonstration script covering Student, Student Tutor, and Administrator workflows.
+- **User testing plan:** Prepared a detailed testing plan for the updated prototype, including common tasks and role-specific tasks with success criteria and observation points.
+- **User testing results:** Summarized the synthetic sample results, including tester distribution, task completion, usability ratings, issues, and an evidence-based decision.
+- **Final improvement list:** Prioritized the improvements required before Lab 14 according to their severity and impact on the final demonstration.
+- **Screenshots:** Created the final PeerTutor demonstration-flow image and user-testing-evidence dashboard.
+- **Demo outline:** Completed the final pitch outline, including the problem, target users, product solution, demonstration flow, evidence, metrics, and closing value message.
+- **Testing dataset:** Organized an anonymous synthetic sample dataset covering Student, Student Tutor, and Administrator tasks.
+- **Final links:** Documented the prototype link, landing-page link, recommended testing environment, demo instructions, sample-data notes, and prototype limitations.
+- **README:** Updated the project overview, Lab 13 progress, final demonstration links, testing evidence, and preparation status.
+
+## Key Decisions
+
+1. The team decided to test the **updated Lab 13 prototype** instead of relying only on the earlier Lab 08 testing activities.
+2. The user-testing plan was expanded to cover the full workflows of Students, Student Tutors, and Administrators.
+3. The team decided to use mainly quantitative evidence, including task completion, completion time, feedback scores, and role coverage.
+4. The testing dataset was identified as **synthetic sample data prepared for coursework demonstration**. It must not be presented as real participant research.
+5. The final demo was organized as one connected journey: problem introduction, homepage, tutor discovery, tutor profile, tutoring request, tutor decision, payment, administrator verification, dashboards, review, testing evidence, and improvement planning.
+6. Every major demonstration step was mapped to the appropriate functional requirements in `system-requirements.md`.
+7. The team selected **Ready for final improvement** as the current evidence-based decision because the prototype workflow is generally understandable, but several usability issues should be corrected before Lab 14.
+8. The Confirm Payment button visibility was classified as a **Critical** issue because it directly affects completion of the Student payment workflow.
+9. Mobile readability, field labels, upload instructions, Save/Publish actions, and payment-management stages were classified as **Important** improvements.
+10. All demo accounts, tutor records, payment information, and testing records must use sample or masked data to support responsible data handling.
+
+## Problems Encountered
+
+- The team was initially unsure whether Lab 13 required new testing or whether the Lab 08 testing results could be reused.
+- The updated prototype contains more features and role-based pathways, making the testing plan longer than the original template.
+- Some Student testers could have difficulty noticing the Confirm Payment button during the simulated payment process.
+- Mobile-sized screens may make some text and controls difficult to read.
+- Some form fields, including optional notes, preferred date/time, and supporting-information uploads, may require clearer instructions.
+- The difference between Save and Publish actions may not be immediately clear to Student Tutors.
+- Payment verification, platform commission, and tutor payout may appear as one process instead of clearly separated stages.
+- Some prototype functions use local storage, JSON, static sample data, or simulated interactions rather than a complete backend.
+- Authentication, notifications, file uploads, and payment processing are simulated and do not use real external services.
+- The team needed to make sure that synthetic sample results were clearly distinguished from real user-testing evidence.
+
+## Next Actions Before Lab 14
+
+1. Increase the size and visibility of the Confirm Payment button.
+2. Add a clearer payment-progress indicator and payment-summary section.
+3. Improve mobile text size, button size, form layout, and responsive behavior.
+4. Clarify price labels and clearly identify optional form fields.
+5. Group the preferred date and time fields together in the tutoring-request form.
+6. Add accepted file-type instructions to the tutor-application upload section.
+7. Make Save, Preview, and Publish actions visually distinct.
+8. Separate payment verification, platform commission, and tutor payout into clear stages.
+9. Improve request and payment status labels using consistent colors and explanations.
+10. Verify that confirmation messages appear after important actions.
+11. Test the complete Student, Student Tutor, and Administrator workflows again.
+12. Check the prototype and landing-page links using laptop and mobile-sized screens.
+13. Confirm that all major screens are mapped to user stories, MVP features, and functional requirements.
+14. Update the final screenshots after completing the important interface improvements.
+15. Prepare presenter roles and practice the final demonstration before Lab 14.
+16. Replace any synthetic or sample metrics with actual collected evidence if real testing or acquisition data becomes available.
+
+## Requirement Traceability Notes
+
+The following requirements require final checking before Lab 14:
+
+| Requirement | Final Check Needed | Current Concern |
+| --- | --- | --- |
+| FR-01 | Confirm that the homepage clearly shows PeerTutor, its target users, the problem, and the two main actions. | Homepage content must remain clear on laptop and mobile screens. |
+| FR-02 | Test the complete Student and Student Tutor workflows from beginning to end. | All workflow transitions and role pathways must connect correctly. |
+| FR-03 | Test the tutoring-request and tutor-registration forms. | All required fields must be included and clearly labelled. |
+| FR-04 | Confirm that applications, requests, and payment records can be stored and retrieved. | Some storage functions may use local or simulated data. |
+| FR-05 | Verify all Student, Tutor, and Administrator record lists. | Lists must display the correct role-specific records. |
+| FR-06 | Retest tutor search and filters by name, subject, major, price, and rating. | Price labels and filter-reset behavior may require improvement. |
+| FR-07 | Retest the complete simulated Student payment workflow. | Confirm Payment button visibility is a critical concern. |
+| FR-08 | Check tutor profiles, request details, payment details, applications, and user records. | Detail information must be complete and understandable. |
+| FR-09 | Check Student and Tutor payment-history pages. | Transaction details and payment statuses must be clear. |
+| FR-10 | Verify request and payment status tracking. | Status labels, colors, progress indicators, and next actions require checking. |
+| FR-11 | Test tutor approval, user management, payment verification, invalid-record deletion, and confirmation prompts. | Administrator actions must be clear and protected against mistakes. |
+| FR-12 | Test payment verification, commission recording, tutor payout, and earnings status. | The payment-management stages should be visually separated. |
+| FR-13 | Retest required fields, invalid inputs, duplicate registration, and confirmation prompts. | Optional fields, scheduling fields, and upload instructions need clearer labels. |
+| FR-14 | Confirm that success messages appear after requests, applications, payments, and verification actions. | Confirmation messages must be visible and understandable. |
+| FR-15 | Review all role-based dashboards, summaries, statistics, and charts. | Dashboard organization, labels, and usefulness require final checking. |
+| FR-16 | Check navigation, colors, typography, icons, buttons, and dashboard consistency. | Save/Publish actions and status colors must use consistent styling. |
+| FR-17 | Retest the prototype using laptop and mobile-sized screens. | Mobile text, buttons, forms, and horizontal scrolling require attention. |
+| FR-18 | Confirm that only necessary sample or masked data is displayed. | No real passwords, sensitive personal data, or financial details should be used. |
+| FR-19 | Verify that every major screen and feature is traceable to requirements, user stories, and the MVP feature list. | All final evidence and GitHub files must use consistent requirement IDs. |
+
+
+
 
 
 
