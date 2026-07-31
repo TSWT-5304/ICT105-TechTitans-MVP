@@ -878,51 +878,41 @@ PeerTutor addresses this problem by providing one organized and traceable platfo
 
 ### Final Demonstration Evidence
 
-- [Demo Flow](/screenshots/demo-flow.png)
+- [Demo Flow](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Demo%20Flow%20PeerTutor.png)
 - [User Testing Evidence](/screenshots/user-testing-evidence.png)
 
 ### Homepage and Navigation
 
-- [Homepage](/screenshots/homepage.png)
-- [Landing Page](/screenshots/landing-page.png)
-- [Call to Action](/screenshots/call-to-action.png)
-- [Role Selection](/screenshots/role-select.png)
-- [Login](/screenshots/login.png)
-- [Signup](/screenshots/signup.png)
+- [Homepage](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_PeerTutor%20Homepage.png)
+- [Landing Page](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/landing-page.png)
+- [Role Selection](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_User%20Role%20Selection%20Page.png)
+- [Login](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_User%20Sign-In%20Page.png)
+- [Signup](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_User%20Registration%20Page.png)
 
 ### Student Screens
 
-- [Tutor Search and Listing](/screenshots/tutor-search.png)
-- [Tutor Profile](/screenshots/tutor-profile.png)
-- [Tutoring Request Form](/screenshots/request-form.png)
-- [Student Dashboard](/screenshots/student-dashboard.png)
-- [Student Payment](/screenshots/student-payment.png)
-- [Payment Confirmation](/screenshots/payment-confirmation.png)
-- [Payment History](/screenshots/payment-history.png)
-- [Student Review Page](/screenshots/student-review.png)
+- [Tutor Search and Listing](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Tutor%20Search%20and%20Filtering%20Page.png)
+- [Tutor Profile](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Detailed%20Tutor%20Profile%20Page.png)
+- [Tutoring Request Form](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Tutoring%20Session%20Booking%20Form%20Page.png)
+- [Student Dashboard](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Student%20Dashboard%20Before%20Payment%20Page.png)
+- [Student Payment](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Simulated%20Payment%20Process%20Page.png)
+
 
 ### Student Tutor Screens
 
-- [Tutor Registration](/screenshots/tutor-registration.png)
-- [Tutor Profile Management](/screenshots/tutor-profile-management.png)
-- [Tutor Dashboard](/screenshots/tutor-dashboard.png)
-- [Tutor Payment and Earnings](/screenshots/tutor-payment.png)
+- [Tutor Registration](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Tutor%20Application%20Apply%20Form%20Page.png)
+- [Tutor Profile Management](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Tutor%20Profile%20Management%20Page.png)
+- [Tutor Dashboard](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Tutor%20Dashboard%20Page.png)
+
 
 ### Administrator Screens
 
-- [Admin Dashboard](/screenshots/admin-dashboard.png)
-- [Tutor Application Approval](/screenshots/admin-approval.png)
-- [Admin User Management](/screenshots/admin-user-management.png)
-- [Admin Payment Management](/screenshots/admin-payment.png)
-- [Admin Analytics](/screenshots/admin-analytics.png)
+- [Admin Dashboard](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Administrator%20Dashboard%20and%20Product%20Metrics%20Page.png)
+-[Admin Payment Management](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Student%20Payment%20Verification.png)
+
 
 ### Additional Evidence
-
-- [Record List](/screenshots/record-list.png)
-- [Record Detail View](/screenshots/detail-view.png)
-- [Input Form](/screenshots/input-form.png)
-- [Administrator View](/screenshots/admin-view.png)
-- [Responsive Mobile View](/screenshots/responsive-mobile.png)
+- [Responsive Mobile View](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/d6b7b7690b95b869b6552c27fc80de43e29e1871/screenshots/Final_Responsive%20Mobile%20View%20Page.png)
 
 ## Pitch
 - Final pitch slides or outline: [`/pitch/`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/06c981844432f9ad93735b8a7d982747daae2355/pitch)
