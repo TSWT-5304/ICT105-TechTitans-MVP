@@ -131,3 +131,82 @@ The generic Lab 10 example has been adjusted to use PeerTutor's actual FR-01 to 
 | FR-18 | Basic privacy and responsible data handling | Forms & Data Collection | Needs Fix | Partially Completed | Thin Thiri Naing, Yan Naing Kyaw | Lab 09 documentation | Prototype follows data minimization and responsible data handling principles. Privacy Notice and Terms of Use will be further integrated into the prototype. |
 | FR-19 | Final prototype traceability | Documentation | Working Draft | Completed | Yan Naing Kyaw | README, Weekly Logbook, Feature Status | Prototype remains traceable to system requirements, user stories, MVP feature list, GitHub issues, and repository documentation. |
 
+---
+
+# Updated Feature Implementation Status for Lab 14
+
+## Status Definition
+
+- **Completed:** The required feature or workflow can be demonstrated.
+- **Partial:** The feature is available, but an important part is limited.
+- **Pending:** The feature has not been implemented.
+- **Changed:** The original implementation was modified based on testing or project decisions.
+
+## Feature Implementation Status
+
+| Requirement ID | Requirement Summary | Prototype Screen/Module | Status | Evidence/Screenshot | Notes |
+| --- | --- | --- | --- | --- | --- |
+| FR-01 | Clear problem-specific homepage or landing screen | Homepage and Landing Page | Completed | `screenshots/homepage.png`<br>`screenshots/landing-page.png` | The homepage displays the PeerTutor name, identifies Rangsit University students as the target users, explains the scattered tutor-discovery problem, and includes **Find a Tutor** and **Get Started Now** actions. |
+| FR-02 | Primary user pathway | Student Workflow, Tutor Workflow, and Role Selection | Completed | `screenshots/demo-flow.png`<br>`screenshots/role-select.png` | The prototype demonstrates the main Student and Student Tutor pathways, including tutor discovery, requests, approval, payment, sessions, reviews, tutor registration, profile creation, request management, and earnings. |
+| FR-03 | User input or data submission feature | Tutoring Request Form, Tutor Registration Form, and Review Form | Completed | `screenshots/input-form.png`<br>`screenshots/request-form.png` | Students can submit a tutoring request containing a subject, preferred date/time, and note. Student Tutors can submit educational background, experience, skills, and supporting information. |
+| FR-04 | Data storage or record management | Local Storage, JavaScript Data, JSON, and Sample Records | Completed | `prototype/PeerTutor/`<br>`data/user-testing-results.csv` | Tutor applications, tutoring requests, payment records, reviews, and platform records use local storage, JSON, or simulated sample data. No production database is connected. |
+| FR-05 | View records or information list | Tutor Listing, Student Dashboard, Tutor Dashboard, and Admin Dashboard | Completed | `screenshots/record-list.png`<br>`screenshots/tutor-search.png` | Students can view approved tutors, requests, and payment history. Tutors can view incoming requests, reviews, ratings, and earnings. Administrators can view applications, users, transactions, and platform records. |
+| FR-06 | Search, filter, or category function | Tutor Search and Filtering Module | Completed | `screenshots/tutor-search.png` | Students can search tutors by name or subject and apply filters such as major, hourly rate, and rating. |
+| FR-07 | Online payment | Simulated Payment Page and Payment Confirmation | Completed | `screenshots/payment.png`<br>`screenshots/payment-confirmation.png` | Students can review tutoring-session details, payment amount, and payment method after tutor approval. Payment is simulated, and no real financial transaction is processed. |
+| FR-08 | Detail view for each record | Tutor Profile, Request Detail, Payment Detail, Application Detail, and User Detail | Completed | `screenshots/detail-view.png`<br>`screenshots/tutor-profile.png` | Students, tutors, and administrators can open relevant records and review detailed information. Personal and transaction information uses sample or masked data. |
+| FR-09 | Payment history | Student Payment History and Tutor Payment History | Completed | `screenshots/payment-history.png`<br>`screenshots/student-dashboard.png` | Students and Student Tutors can view simulated payment records, transaction details, amounts, and payment statuses through their dashboards. |
+| FR-10 | Status or progress tracking | Student Dashboard, Tutor Dashboard, Request Status, and Payment Status | Completed | `screenshots/student-dashboard.png`<br>`screenshots/tutor-dashboard.png` | Request statuses include Pending, Approved, Rejected, Completed, and Cancelled. Payment statuses include Pending, Paid, Verified, and Transferred. |
+| FR-11 | Admin or manager function | Admin Dashboard, Tutor Approval, User Management, Payment Verification, and Record Management | Completed | `screenshots/admin-dashboard.png`<br>`screenshots/admin-view.png` | Administrators can approve or reject tutor applications, manage user accounts, verify payments, record commission, update tutor payouts, delete invalid submissions, and oversee platform records. |
+| FR-12 | Payment management | Admin Payment Management and Tutor Earnings | Completed | `screenshots/admin-dashboard.png`<br>`screenshots/tutor-dashboard.png` | Administrators can verify simulated student payments, record platform commission, transfer simulated tutor earnings, and update payment statuses. Tutors can view earnings and payment status. |
+| FR-13 | Basic validation and error prevention | Form Validation, Error Messages, Duplicate Warning, and Confirmation Prompts | Completed | `screenshots/input-form.png`<br>`screenshots/request-form.png` | The prototype checks required fields, email format, password requirements, and mandatory tutor-application information. Invalid or incomplete submissions display feedback. |
+| FR-14 | Confirmation or feedback message | Request, Application, Payment, and Admin Confirmation Messages | Completed | `screenshots/payment-confirmation.png`<br>`screenshots/input-form.png` | Users receive messages after important actions, including request submission, tutor-application submission, payment completion, and payment verification. |
+| FR-15 | Dashboard, summary, or simple analytics view | Student Dashboard, Tutor Dashboard, Admin Dashboard, and Power BI Dashboard | Completed | `screenshots/student-dashboard.png`<br>`screenshots/tutor-dashboard.png`<br>`screenshots/admin-dashboard.png` | Each user role has a dashboard containing relevant requests, schedules, sessions, reviews, earnings, transactions, payouts, statistics, or charts. Some values use sample data. |
+| FR-16 | Basic user-interface consistency | Shared Navigation, Layout, Typography, Buttons, Forms, and Dashboards | Completed | `screenshots/demo-flow.png`<br>`screenshots/homepage.png` | Pages use a consistent color scheme, navigation structure, typography, icons, buttons, cards, forms, and dashboard design. |
+| FR-17 | Mobile-friendly or responsive design | Responsive Homepage, Forms, Listings, and Dashboards | Completed | `screenshots/responsive-mobile.png` | The prototype can be used on laptop and mobile-sized screens. Key request and registration forms are designed for phone-sized viewports. |
+| FR-18 | Basic privacy and responsible data handling | Privacy Notice, Sample Data, Masked Records, and Role-Based Information | Completed | `docs/privacy-and-data-protection-policy.md`<br>`screenshots/user-testing-evidence.png` | Only necessary sample or masked data is displayed. No real passwords, sensitive personal data, or financial information is used in the demonstration. |
+| FR-19 | Final prototype traceability | Requirements, User Stories, MVP Features, Demo Script, Testing Evidence, and GitHub Files | Completed | `docs/feature-implementation-status.md`<br>`docs/demo-script.md`<br>`screenshots/demo-flow.png` | Major screens and features are traceable to functional requirements, user stories, MVP features, implementation evidence, and final testing documentation. |
+
+## Implementation Summary
+
+| Status | Number of Requirements |
+| --- | ---: |
+| Completed | 19 |
+| Partial | 0 |
+| Pending | 0 |
+| Changed | 0 |
+| **Total** | **19** |
+
+## Final Prototype Limitations
+
+- PeerTutor is an academic web prototype rather than a production platform.
+- Tutor profiles, tutoring requests, reviews, user accounts, and payment records use sample or masked data.
+- Local storage, JavaScript objects, JSON, or other simulated storage may be used instead of a production database.
+- Authentication and role-based access may be simulated.
+- Payment processing, payment verification, platform commission, and tutor payouts are simulated.
+- No real financial transactions are processed.
+- Email notifications and supporting-information uploads may use prototype confirmation messages instead of external services.
+- Refreshing the page or clearing browser data may reset locally stored records.
+- The Lab 13 user-testing dataset and evidence image contain synthetic coursework sample data and must not be described as actual participant research.
+
+## Final Readiness Decision
+
+**Final status: Ready for the Lab 14 final demonstration.**
+
+The PeerTutor final prototype demonstrates all nineteen project requirements. It covers the main Student, Student Tutor, and Administrator workflows, including tutor discovery, request submission, request management, payment, payment verification, dashboards, reviews, validation, privacy, responsive design, and final traceability.
+
+Some backend, authentication, notification, file-upload, and financial operations are simulated because the project is an academic prototype. These limitations do not prevent the team from demonstrating the intended user workflows and product value.
+
+## Final Verification Before Presentation
+
+Before the Lab 14 presentation, the team should verify:
+
+1. The prototype and landing-page links are working.
+2. The Student workflow can be demonstrated from beginning to end.
+3. The Student Tutor workflow can be demonstrated from registration to payment status.
+4. Administrator approval and payment-management actions work correctly.
+5. Required-field validation and confirmation messages appear.
+6. Request and payment statuses update correctly.
+7. The prototype works on laptop and mobile-sized screens.
+8. Only sample or masked data is displayed.
+9. Every screenshot path matches the actual GitHub filename.
+10. Every major screen remains traceable to FR-01–FR-19.
