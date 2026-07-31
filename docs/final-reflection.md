@@ -200,10 +200,11 @@ The final testing evidence identified additional improvements requiring final ch
 
 | Member | Contribution | Evidence Link/Commit/Issue |
 |---|---|---|
-| Thin Thiri Naing | Led product planning and venture direction; prepared the sales scenario, value proposition, business perspective, final improvement priorities, and pitch outline. | `docs/sales-scenario.md`<br>`docs/final-improvement-list.md`<br>`pitch/demo-outline.md`<br> Lab 13 Issues #1, #5, and #10 |
-| Shinn Thant Maung | Led validation activities; prepared the user-testing plan, testing structure, synthetic sample dataset, results analysis, usability findings, and evidence-based decision. | `docs/user-testing-plan.md`<br>`docs/user-testing-results.md`<br>`data/user-testing-results.csv`<br> Lab 13 Issues #3, #4, and #11 |
-| Thae Su Win Thu | Led UX/UI and technical implementation; designed and developed prototype screens, navigation, responsive layouts, interactions, demo flow, and user-testing evidence image. | `prototype/PeerTutor/`<br>`docs/demo-script.md`<br>`screenshots/demo-flow.png`<br>`screenshots/user-testing-evidence.png`<br> Lab 13 Issues #2, #7, and #8 |
-| Yan Naing Kyaw | Led documentation and technical support; maintained the README, weekly logbooks, final prototype links, implementation status, requirement traceability, and final project documentation. | `README.md`<br>`docs/weekly-logbook.md`<br>`prototype/final-demo-link.md`<br>`docs/feature-implementation-status.md`<br>`docs/requirement-traceability-matrix.md`<br> Lab 13 Issues #6, #9, and #12 |
+| Thin Thiri Naing | Led product planning and venture direction; prepared the sales scenario, value proposition, business perspective, final improvement priorities, and pitch outline. | `docs/sales-scenario.md`<br>`docs/demo-script.md`<br>`docs/final-improvement-list.md`<br>`pitch/demo-outline.md`<br>`docs/requirement-traceability-matrix.md`|
+| Shinn Thant Maung | Led validation activities; prepared the user-testing plan, testing structure, synthetic sample dataset, results analysis, usability findings, and evidence-based decision. | `docs/user-testing-plan.md`<br>`docs/user-testing-results.md`<br>`docs/feature-implementation-status.md`<br>`data/user-testing-results.csv` |
+| Thae Su Win Thu | Led UX/UI and technical implementation; designed and developed prototype screens, navigation, responsive layouts, interactions, demo flow, and user-testing evidence image. | `prototype/PeerTutor/`<br>`prototype/final-demo-link.md`<br>`screenshots/demo-flow.png`<br>`screenshots/user-testing-evidence.png` |
+| Yan Naing Kyaw | Led documentation and technical support; maintained the README, weekly logbooks, final prototype links, implementation status, requirement traceability, and final project documentation. | `README.md`<br>`docs/weekly-logbook.md`<br>`docs/final-prototype-report.md` |
+
 
 ## Final Team Reflection
 
