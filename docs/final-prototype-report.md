@@ -424,4 +424,73 @@ The initial target market is Rangsit International College. After validating the
 3. Additional university campuses.
 4. Other higher-education institutions.
 
+## 12. Limitations and Future Improvements
+
+### Current Limitations
+
+- Authentication and role-based access may be simulated.
+- Some records use local storage, JSON, or static JavaScript data.
+- No production backend or cloud database is connected.
+- Payment, verification, commission, and payout functions are simulated.
+- No real financial transactions are processed.
+- Email and in-app notifications may use prototype confirmation messages.
+- Supporting-information uploads may not connect to external file storage.
+- Clearing local browser data may reset demonstration records.
+- Some dashboard metrics use sample data.
+- The Lab 13 updated-prototype results are synthetic coursework data.
+- The prototype has not been prepared for production-level security or large-scale deployment.
+
+### Final Interface Improvements
+
+The following improvements should be completed or checked before the final demonstration:
+
+1. Increase the size and visibility of the Confirm Payment button.
+2. Add a payment-progress indicator.
+3. Improve mobile text and control sizes.
+4. Clarify tutor price labels.
+5. Clearly label optional form fields.
+6. Group preferred date and time fields together.
+7. Explain accepted tutor-application file types.
+8. Separate Save, Preview, and Publish actions.
+9. Separate payment verification, commission, and tutor payout stages.
+10. Improve request and payment-status colors and explanations.
+
+### Future User Stories
+
+| Story ID | Future Feature | Reason for Postponing |
+|---|---|---|
+| US-17 | Real-time in-app chat | Requires backend services, real-time messaging, and notification management. |
+| US-18 | Tutor video introductions | Requires media storage, video processing, streaming, and additional server resources. |
+| US-19 | AI tutor with personalized study plans | Requires AI models, recommendation algorithms, sufficient learning data, and additional development time. |
+| US-20 | Video tutoring sessions | Requires video-conferencing infrastructure and stable real-time communication. |
+
+### Long-Term Technical Improvements
+
+A future production version should include:
+
+- Secure user authentication.
+- Role-based access control.
+- A production database.
+- Secure password storage.
+- Real payment-gateway integration.
+- Automated payment verification.
+- Secure tutor-document uploads.
+- Email and in-app notifications.
+- Audit logs for administrator actions.
+- Improved privacy controls.
+- Automated testing and security assessment.
+- Scalable hosting and monitoring.
+
+## Final Conclusion
+
+PeerTutor demonstrates how a centralized student-to-student tutoring marketplace can address scattered tutor discovery at Rangsit University.
+
+The final prototype connects Students, Student Tutors, and Administrators through tutor search, detailed profiles, structured tutoring requests, request tracking, simulated payment management, reviews, role-based dashboards, and administrative controls.
+
+The prototype implements the 19 approved functional requirements and represents all 16 approved MVP user stories. The four postponed stories remain documented as future development opportunities.
+
+Although some technical functions are simulated, the final prototype is sufficiently complete to demonstrate the problem, proposed solution, user value, business direction, and evidence-based development process during Lab 14.
+
+
+
 
