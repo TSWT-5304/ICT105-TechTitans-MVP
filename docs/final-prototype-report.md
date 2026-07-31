@@ -168,24 +168,24 @@ The Administrator pathway demonstrates:
 
 | Requirement ID | Implemented Feature/Screen | User Story ID | Evidence Source | Status |
 |---|---|---|---|---|
-| FR-01 | Problem-specific Homepage and Landing Page | US-01 | `screenshots/homepage.png`<br>`screenshots/landing-page.png` | Completed |
+| FR-01 | Problem-specific Homepage and Landing Page | US-01 | `screenshots/Final_PeerTutor Homepage.png` | Completed |
 | FR-02 | Student and Student Tutor end-to-end pathways | US-02, US-04–US-15 | `screenshots/demo-flow.png` | Completed |
-| FR-03 | Tutoring Request Form, Tutor Application, and Review Form | US-04, US-08, US-09 | `screenshots/request-form.png`<br>`screenshots/tutor-registration.png` | Completed |
+| FR-03 | Tutoring Request Form, Tutor Application, and Review Form | US-04, US-08, US-09 | `screenshots/Final_Tutor Application Apply Form Page.png` | Completed |
 | FR-04 | Local storage, JSON, JavaScript data, and simulated records | US-09, US-10 | `prototype/PeerTutor/` | Completed — Simulated |
-| FR-05 | Tutor Listing, request lists, user lists, and role dashboards | US-10, US-11, US-13 | `screenshots/record-list.png` | Completed |
-| FR-06 | Tutor search and filtering by subject, name, major, rating, and price | US-02 | `screenshots/tutor-search.png` | Completed |
-| FR-07 | Simulated online payment and payment confirmation | US-06 | `screenshots/student-payment.png` | Completed — Simulated |
-| FR-08 | Tutor Profile, request details, reviews, applications, and payment details | US-03, US-08, US-10 | `screenshots/tutor-profile.png`<br>`screenshots/detail-view.png` | Completed |
-| FR-09 | Student and Tutor Payment History | US-07, US-12 | `screenshots/payment-history.png` | Completed |
-| FR-10 | Request and payment status tracking | US-05, US-11 | `screenshots/student-dashboard.png`<br>`screenshots/tutor-dashboard.png` | Completed |
-| FR-11 | Tutor approval, user management, payment verification, and administration | US-13, US-14, US-15 | `screenshots/admin-dashboard.png`<br>`screenshots/admin-view.png` | Completed |
-| FR-12 | Payment verification, commission, tutor earnings, and payouts | US-12, US-15 | `screenshots/admin-payment.png`<br>`screenshots/tutor-payment.png` | Completed — Simulated |
-| FR-13 | Form validation, error prevention, and duplicate warnings | US-04, US-09 | `screenshots/input-form.png` | Completed |
-| FR-14 | Request, application, payment, and verification confirmations | US-04, US-06, US-09, US-11, US-14, US-15 | `screenshots/payment-confirmation.png` | Completed |
-| FR-15 | Student, Tutor, and Admin dashboards with summaries and analytics | US-05, US-12, US-16 | `screenshots/student-dashboard.png`<br>`screenshots/tutor-dashboard.png`<br>`screenshots/admin-dashboard.png` | Completed |
-| FR-16 | Consistent navigation, layout, typography, colors, buttons, and forms | US-01–US-16 | `screenshots/homepage.png`<br>`screenshots/demo-flow.png` | Completed |
-| FR-17 | Responsive laptop and mobile-sized layouts | US-01, US-02, US-04, US-09 | `screenshots/responsive-mobile.png` | Completed |
-| FR-18 | Privacy notice, masked data, data minimization, and responsible handling | US-01–US-16 | `docs/privacy-and-data-protection-policy.md`<br>`screenshots/user-testing-evidence.png` | Completed |
+| FR-05 | Tutor Listing, request lists, user lists, and role dashboards | US-10, US-11, US-13 | `screenshots/Final_Tutor Dashboard Page.png` | Completed |
+| FR-06 | Tutor search and filtering by subject, name, major, rating, and price | US-02 | `screenshots/Final_Tutor Search and Filtering Page.png` | Completed |
+| FR-07 | Simulated online payment and payment confirmation | US-06 | `screenshots/Final_Simulated Payment Process Page.png` | Completed — Simulated |
+| FR-08 | Tutor Profile, request details, reviews, applications, and payment details | US-03, US-08, US-10 | `screenshots/Final_Detailed Tutor Profile Page.png` | Completed |
+| FR-09 | Student and Tutor Payment History | US-07, US-12 | `screenshots/Final_Student Payment Verification.png` | Completed |
+| FR-10 | Request and payment status tracking | US-05, US-11 | `screenshots/Final_Tutor Dashboard Page.png`<br>`screenshots/Final_Student Dashboard Page.png` | Completed |
+| FR-11 | Tutor approval, user management, payment verification, and administration | US-13, US-14, US-15 | `screenshots/Final_Administrator Dashboard and Product Metrics Page.png`<br>`screenshots/Final_Tutor Application Review.png` | Completed |
+| FR-12 | Payment verification, commission, tutor earnings, and payouts | US-12, US-15 | `screenshots/Final-tutor-earnings.png` | Completed — Simulated |
+| FR-13 | Form validation, error prevention, and duplicate warnings | US-04, US-09 | `screenshots/Final_User Sign-In Page.png` <br> `Final_User Sign-In Page.png` | Completed |
+| FR-14 | Request, application, payment, and verification confirmations | US-04, US-06, US-09, US-11, US-14, US-15 | `screenshots/Final-payment-confirmation.png` | Completed |
+| FR-15 | Student, Tutor, and Admin dashboards with summaries and analytics | US-05, US-12, US-16 | `screenshots/Final_Student Dashboard.png`<br>`screenshots/Final_Tutor Dashboard.png`<br>`screenshots/Final_Administrator Dashboard and Product Metrics Page.png` | Completed |
+| FR-16 | Consistent navigation, layout, typography, colors, buttons, and forms | US-01–US-16 | `screenshots/homepage.png`<br>`screenshots/Final_Responsive Mobile View Page.png` | Completed |
+| FR-17 | Responsive laptop and mobile-sized layouts | US-01, US-02, US-04, US-09 | `screenshots/Final_Responsive Mobile View Page.png` | Completed |
+| FR-18 | Privacy notice, masked data, data minimization, and responsible handling | US-01–US-16 | `docs/Final_Privacy Policy and Terms of Use Page.png`<br>`screenshots/User Testing Evidence.png` | Completed |
 | FR-19 | Traceability among requirements, stories, features, screens, and evidence | US-01–US-16 | `docs/requirement-traceability-matrix.md`<br>`screenshots/demo-flow.png` | Completed |
 
 ### Traceability Result
@@ -490,7 +490,3 @@ The final prototype connects Students, Student Tutors, and Administrators throug
 The prototype implements the 19 approved functional requirements and represents all 16 approved MVP user stories. The four postponed stories remain documented as future development opportunities.
 
 Although some technical functions are simulated, the final prototype is sufficiently complete to demonstrate the problem, proposed solution, user value, business direction, and evidence-based development process during Lab 14.
-
-
-
-
