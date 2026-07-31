@@ -874,6 +874,101 @@ PeerTutor addresses this problem by providing one organized and traceable platfo
 - Final demo script: `/docs/final-demo-script.md`
 - Final reflection: `/docs/final-reflection.md`
 
+## Screenshots
+
+### Final Demonstration Evidence
+
+- [Demo Flow](/screenshots/demo-flow.png)
+- [User Testing Evidence](/screenshots/user-testing-evidence.png)
+
+### Homepage and Navigation
+
+- [Homepage](/screenshots/homepage.png)
+- [Landing Page](/screenshots/landing-page.png)
+- [Call to Action](/screenshots/call-to-action.png)
+- [Role Selection](/screenshots/role-select.png)
+- [Login](/screenshots/login.png)
+- [Signup](/screenshots/signup.png)
+
+### Student Screens
+
+- [Tutor Search and Listing](/screenshots/tutor-search.png)
+- [Tutor Profile](/screenshots/tutor-profile.png)
+- [Tutoring Request Form](/screenshots/request-form.png)
+- [Student Dashboard](/screenshots/student-dashboard.png)
+- [Student Payment](/screenshots/student-payment.png)
+- [Payment Confirmation](/screenshots/payment-confirmation.png)
+- [Payment History](/screenshots/payment-history.png)
+- [Student Review Page](/screenshots/student-review.png)
+
+### Student Tutor Screens
+
+- [Tutor Registration](/screenshots/tutor-registration.png)
+- [Tutor Profile Management](/screenshots/tutor-profile-management.png)
+- [Tutor Dashboard](/screenshots/tutor-dashboard.png)
+- [Tutor Payment and Earnings](/screenshots/tutor-payment.png)
+
+### Administrator Screens
+
+- [Admin Dashboard](/screenshots/admin-dashboard.png)
+- [Tutor Application Approval](/screenshots/admin-approval.png)
+- [Admin User Management](/screenshots/admin-user-management.png)
+- [Admin Payment Management](/screenshots/admin-payment.png)
+- [Admin Analytics](/screenshots/admin-analytics.png)
+
+### Additional Evidence
+
+- [Record List](/screenshots/record-list.png)
+- [Record Detail View](/screenshots/detail-view.png)
+- [Input Form](/screenshots/input-form.png)
+- [Administrator View](/screenshots/admin-view.png)
+- [Responsive Mobile View](/screenshots/responsive-mobile.png)
+
+## Pitch
+- Final pitch slides or outline: `/pitch/`
+
+## Data and Diagrams
+- Final sample data: `/data/`
+- Final diagrams: `/diagrams/`
+
+## Final Submission Notes
+
+**Final status: Ready for the Lab 14 final presentation after the final repository and link verification.**
+
+Before submitting and presenting, the team must:
+
+- [x] Confirm that the GitHub repository is publicly accessible.
+- [x] Confirm that the live prototype link is working.
+- [x] Confirm that the landing-page link is working.
+- [x] Check every README and documentation link.
+- [x] Confirm that every listed screenshot exists.
+- [x] Remove or rename links to files that do not exist.
+- [x] Test the Student workflow from beginning to end.
+- [x] Test the Student Tutor workflow from beginning to end.
+- [x] Test the Administrator workflow from beginning to end.
+- [x] Test form validation and confirmation messages.
+- [x] Test request and payment-status updates.
+- [x] Test the prototype on laptop and mobile-sized screens.
+- [x] Confirm that only sample or masked data is displayed.
+- [x] Confirm that payment functions are identified as simulations.
+- [x] Confirm that synthetic testing data is clearly labelled.
+- [x] Prepare sample accounts and records for the demonstration.
+- [x] Prepare backup screenshots.
+- [x] Practice the complete final demo.
+- [x] Keep the final presentation within 5–7 minutes.
+- [x] Complete one final GitHub commit and deployment check.
+
+## Final Conclusion
+
+PeerTutor demonstrates a complete student-to-student tutoring marketplace for Rangsit University.
+
+The final prototype connects Students, Student Tutors, and Administrators through tutor discovery, detailed profiles, structured tutoring requests, status tracking, simulated payment management, reviews, dashboards, and administrative controls.
+
+All 19 functional requirements and all 16 approved MVP user stories are represented in the final prototype and supporting evidence. US-17–US-20 remain documented as future features.
+
+Although some backend and financial functions are simulated, the final prototype successfully communicates the PeerTutor problem, proposed solution, user value, business direction, and evidence-based development process.
+
+
 
 
 
