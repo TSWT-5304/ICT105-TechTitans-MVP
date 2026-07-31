@@ -866,13 +866,13 @@ PeerTutor addresses this problem by providing one organized and traceable platfo
 
 ## Final Documentation
 
-- System requirements: `/docs/system-requirements.md`
-- User stories: `/docs/user-stories.md`
-- MVP feature list: `/docs/mvp-feature-list.md`
-- Feature implementation status: `/docs/feature-implementation-status.md`
-- Final prototype report: `/docs/final-prototype-report.md`
-- Final demo script: `/docs/final-demo-script.md`
-- Final reflection: `/docs/final-reflection.md`
+- System requirements: [`/docs/system-requirements.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/06c981844432f9ad93735b8a7d982747daae2355/docs/system-requirements.md)
+- User stories: [`/docs/user-stories.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/06c981844432f9ad93735b8a7d982747daae2355/docs/user-stories.md)
+- MVP feature list: [`/docs/mvp-feature-list.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/06c981844432f9ad93735b8a7d982747daae2355/docs/mvp-feature-list.md)
+- Feature implementation status: [`/docs/feature-implementation-status.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/06c981844432f9ad93735b8a7d982747daae2355/docs/feature-implementation-status.md)
+- Final prototype report: [`/docs/final-prototype-report.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/06c981844432f9ad93735b8a7d982747daae2355/docs/final-prototype-report.md)
+- Final demo script: [`/docs/final-demo-script.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/06c981844432f9ad93735b8a7d982747daae2355/docs/final-demo-script.md)
+- Final reflection: [`/docs/final-reflection.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/06c981844432f9ad93735b8a7d982747daae2355/docs/final-reflection.md)
 
 ## Screenshots
 
@@ -925,11 +925,11 @@ PeerTutor addresses this problem by providing one organized and traceable platfo
 - [Responsive Mobile View](/screenshots/responsive-mobile.png)
 
 ## Pitch
-- Final pitch slides or outline: `/pitch/`
+- Final pitch slides or outline: [`/pitch/`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/06c981844432f9ad93735b8a7d982747daae2355/pitch)
 
 ## Data and Diagrams
-- Final sample data: `/data/`
-- Final diagrams: `/diagrams/`
+- Final sample data: [`/data/`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/06c981844432f9ad93735b8a7d982747daae2355/data)
+- Final diagrams: [`/diagrams/`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/06c981844432f9ad93735b8a7d982747daae2355/diagrams)
 
 ## Final Submission Notes
 
