@@ -196,6 +196,94 @@ The final testing evidence identified additional improvements requiring final ch
 - Distinguish Save, Preview, and Publish actions.
 - Separate payment verification, commission, and payout stages.
 
+## 5. What Was Difficult Technically
+
+One of the main technical challenges was creating three connected role-based workflows without a production backend.
+
+The prototype needed to demonstrate changes across the Student, Student Tutor, and Administrator roles. For example:
+
+1. A Student submits a tutoring request.
+2. A Student Tutor approves the request.
+3. The Student completes a simulated payment.
+4. An Administrator verifies the payment.
+5. The payment and session statuses are updated.
+6. The Tutor receives simulated earnings.
+7. The Student leaves a review.
+
+Implementing this complete journey using only frontend technologies and simulated storage required careful control of sample records, navigation, and statuses.
+
+Other technical difficulties included:
+
+- Maintaining consistent navigation across many HTML pages.
+- Preventing broken links caused by different folder paths.
+- Sharing CSS and JavaScript behavior across role-based screens.
+- Creating realistic sample data for requests, users, payments, and reviews.
+- Simulating authentication and role-based access.
+- Updating request and payment statuses without a backend.
+- Preserving locally stored records after navigation.
+- Creating responsive forms, tables, and dashboards.
+- Preventing tables from overflowing on mobile screens.
+- Making buttons and form controls readable on smaller devices.
+- Simulating payment verification and tutor payouts responsibly.
+- Maintaining consistent requirement IDs across documents.
+- Connecting screenshots and GitHub evidence to the correct requirements.
+
+We also needed to communicate clearly that certain functions were simulations. A visual payment interface should not suggest that real money is being processed when no payment gateway is connected.
+
+## 6. What We Would Improve Next
+
+### Short-Term Improvements
+
+Before or immediately after the final presentation, we would:
+
+1. Complete another end-to-end check of all three role pathways.
+2. Improve the Confirm Payment button and payment-progress indicator.
+3. Retest all key forms on mobile-sized screens.
+4. Improve optional-field and price labels.
+5. Add clearer upload instructions.
+6. Separate Save, Preview, and Publish actions.
+7. Separate payment verification, commission, and tutor payout.
+8. Improve status colors, explanations, and next-action guidance.
+9. Check every prototype and documentation link.
+10. Confirm that every screenshot filename matches the repository.
+
+### Production-Level Improvements
+
+A production version would require:
+
+- Secure user authentication.
+- Role-based access control.
+- A production database.
+- Encrypted password storage.
+- Real payment-gateway integration.
+- Automated payment verification.
+- Secure supporting-document storage.
+- Email and in-app notifications.
+- Administrator audit logs.
+- Improved privacy settings.
+- Automated testing.
+- Security testing and vulnerability assessment.
+- Scalable deployment and monitoring.
+
+### Future Features
+
+| Story ID | Future Feature | Improvement Direction |
+|---|---|---|
+| US-17 | Real-time in-app chat | Add secure Student-to-Tutor messaging after validating the core request workflow. |
+| US-18 | Tutor video introductions | Add controlled video uploads after implementing secure media storage. |
+| US-19 | AI tutor and personalized study plans | Develop after collecting sufficient learning data and validating demand. |
+| US-20 | Video tutoring sessions | Integrate video-conferencing services after the marketplace has been successfully adopted. |
+
+### Venture Expansion
+
+The initial prototype focuses on Rangsit International College. A future version could expand to:
+
+1. Other Rangsit University programs.
+2. Thai-language students and tutors.
+3. Additional university campuses.
+4. Other higher-education institutions.
+
+
 ## 7. Individual Contributions
 
 | Member | Contribution | Evidence Link/Commit/Issue |
