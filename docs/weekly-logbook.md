@@ -791,6 +791,127 @@ The following requirements require final checking before Lab 14:
 | FR-18 | Confirm that only necessary sample or masked data is displayed. | No real passwords, sensitive personal data, or financial details should be used. |
 | FR-19 | Verify that every major screen and feature is traceable to requirements, user stories, and the MVP feature list. | All final evidence and GitHub files must use consistent requirement IDs. |
 
+-----
+
+# Weekly Logbook - Lab 14
+
+## Group Name
+
+TechTitans
+
+## Project Title
+
+PeerTutor – Student-to-Student Tutoring Marketplace
+
+## Date
+
+31 July 2026
+
+## Members Present
+
+- Thin Thiri Naing – Product Lead
+- Shinn Thant Maung – Validation Lead
+- Thae Su Win Thu – UX/UI Lead and Technical Lead
+- Yan Naing Kyaw – Documentation Lead and Technical Support
+
+## What We Completed Today
+
+During Lab 14, the TechTitans team completed the final preparation of the PeerTutor prototype and supporting documentation.
+
+The work completed included:
+
+- Reviewed the final Student, Student Tutor, and Administrator workflows.
+- Confirmed the implementation status of FR-01–FR-19.
+- Connected requirements to approved user stories, MVP features, prototype screens, and evidence.
+- Prepared the final Requirement Traceability Matrix.
+- Completed the Final Prototype Report.
+- Prepared the final 5–7-minute demonstration script.
+- Completed the final team reflection.
+- Updated the final prototype and landing-page links.
+- Reviewed final screenshots and testing evidence.
+- Checked the project README and weekly progress log.
+- Documented prototype limitations and future improvements.
+- Confirmed that US-17–US-20 remain future stories outside the current MVP.
+- Prepared backup screenshots in case the live prototype cannot be accessed during the presentation.
+
+## Final Prototype Updates
+
+The team reviewed and finalized the following prototype areas:
+
+### Homepage and Navigation
+
+- Confirmed that the homepage explains the PeerTutor problem and target users.
+- Checked the **Find a Tutor** and **Get Started Now** actions.
+- Reviewed role selection for Students, Student Tutors, and Administrators.
+- Checked navigation among the homepage, tutor search, profiles, forms, and dashboards.
+- Confirmed consistent colors, typography, buttons, forms, and layouts.
+
+### Student Workflow
+
+- Checked tutor search by name and subject.
+- Checked filtering by major, price, and rating.
+- Verified tutor-profile information.
+- Reviewed the tutoring-request form.
+- Checked required-field validation and confirmation messages.
+- Verified request-status presentation.
+- Reviewed the simulated payment workflow.
+- Checked payment history and transaction details.
+- Verified the review and rating workflow.
+
+### Student Tutor Workflow
+
+- Reviewed Tutor Registration and Tutor Application forms.
+- Checked the application-submission confirmation.
+- Verified tutor-profile creation after approval.
+- Reviewed incoming tutoring requests.
+- Checked Approve and Reject actions.
+- Verified Tutor Dashboard information.
+- Reviewed payment history, earnings, reviews, and payment statuses.
+
+### Administrator Workflow
+
+- Reviewed tutor-application details.
+- Checked tutor approval and rejection actions.
+- Verified user-account management.
+- Reviewed simulated payment verification.
+- Checked platform-commission recording.
+- Reviewed simulated tutor-payout updates.
+- Checked dashboard summaries, statistics, and charts.
+
+### Responsive and Responsible Design
+
+- Reviewed the prototype on laptop and mobile-sized screens.
+- Checked form and button visibility.
+- Confirmed that only sample or masked data is displayed.
+- Confirmed that no real financial transactions are processed.
+- Verified that simulated functions are explained in the documentation.
+
+## Final Documentation Updates
+
+The following final documentation was completed or updated:
+
+- `docs/feature-implementation-status.md`
+- `docs/requirement-traceability-matrix.md`
+- `docs/final-prototype-report.md`
+- `docs/final-demo-script.md`
+- `docs/final-reflection.md`
+- `docs/weekly-logbook.md`
+- `prototype/final-demo-link.md`
+- `README.md`
+- `screenshots/demo-flow.png`
+- `screenshots/user-testing-evidence.png`
+
+The final documentation confirms that:
+
+- All 19 functional requirements are represented.
+- All 16 approved user stories are included in the MVP.
+- US-17–US-20 are documented as future stories.
+- Major prototype screens are connected to requirements and evidence.
+- Simulated features and prototype limitations are clearly explained.
+- The Lab 13 updated-prototype dataset is clearly labelled as synthetic sample data.
+
+
+
 
 
 
