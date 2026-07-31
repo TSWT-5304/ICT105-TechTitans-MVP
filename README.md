@@ -393,7 +393,7 @@ To reduce these risks, the team adopted privacy-by-design principles, data minim
 ## Files Added
 [`docs/legal-ethical-checklist.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/fe97c742e5acc46464dc177a039830a71dd9b1f8/docs/legal-ethical-checklist.md)
 
-`docs/privacy-and-data-protection.md`
+[`docs/privacy-and-data-protection.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/c2317b0b3b71614b90bb2e0dc69b163a5a5471ca/docs/privacy-and-data-protection.md)
 
 [`docs/ip-and-third-party-assets.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/410bb337dac3e38f8a674e4f5423772341f56df7/docs/ip-and-third-party-assets.md)
 
@@ -403,13 +403,13 @@ To reduce these risks, the team adopted privacy-by-design principles, data minim
 
 [`docs/updated-requirements-note.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/b1dbbb84a62faf1c2d06a1d17b64f75eebb88e8d/docs/updated-requirements-note.md)
 
-`docs/data-handling-policy.md`
+[`docs/data-handling-policy.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/c2317b0b3b71614b90bb2e0dc69b163a5a5471ca/docs/data-handling-policy.md)
 
 [`docs/user-consent-statement.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/b1dbbb84a62faf1c2d06a1d17b64f75eebb88e8d/docs/user-consent-statement.md)
 
 [`docs/weekly-logbook.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/b1dbbb84a62faf1c2d06a1d17b64f75eebb88e8d/docs/weekly-logbook.md)
 
-[`data /data_inventory.csv`]
+[`data /data_inventory.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/c2317b0b3b71614b90bb2e0dc69b163a5a5471ca/data/data-inventory.csv)
 
 [`data /third_party_assests_register.csv`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/7b853e72866586f24b4d95afcdb16369e4dd8b12/data/third-party-assets-register.csv)
 
@@ -455,7 +455,7 @@ Sprint 1 focuses on implementing the core prototype screens, basic navigation, u
 - **Platform/Tools:** HTML5, CSS3, JavaScript, Visual Studio Code, GitHub
 - **Backend Status:** Simulated backend
 - **Data Storage/Simulation:** Sample data using JavaScript arrays (Google Sheets planned for future implementation)
-- **Prototype Folder:** `/prototype/`
+- **Prototype Folder:** [`/prototype/`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/tree/c2317b0b3b71614b90bb2e0dc69b163a5a5471ca/prototype)
 - **Repository:** https://github.com/TSWT-5304/ICT105-TechTitans-MVP
 
 ---
@@ -520,7 +520,7 @@ Sprint 1 successfully established the core PeerTutor MVP by implementing the mai
 
 Additional onboarding pages, including the Tutor Pre-Dashboard and Tutor Application workflow, were introduced to improve the registration process and better reflect the real tutor approval lifecycle.
 
-The complete front-end prototype has been consolidated into a single `prototype/PeerTutor.zip` package containing all HTML, CSS, JavaScript, and supporting assets for easier deployment and evaluation.
+The complete front-end prototype has been consolidated into a single [`prototype/PeerTutor.zip`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/c2317b0b3b71614b90bb2e0dc69b163a5a5471ca/prototype/PeerTutor.zip) package containing all HTML, CSS, JavaScript, and supporting assets for easier deployment and evaluation.
 
 Authentication, persistent database storage, payment verification, approval workflows, notifications, and other backend services remain simulated as part of the MVP and are planned for future implementation.
 
@@ -669,7 +669,7 @@ The landing page maintains traceability between the identified user problem, fin
 
 For Lab 13, the TechTitans team prepared the final sales scenario, demonstration script, updated prototype user-testing plan, synthetic sample testing results, testing evidence, and prioritized improvement list before Lab 14.
 
-The team also connected the major PeerTutor demonstration steps and testing evidence to the functional requirements documented in `system-requirements.md`.
+The team also connected the major PeerTutor demonstration steps and testing evidence to the functional requirements documented in [`system-requirements.md`](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/blob/c2317b0b3b71614b90bb2e0dc69b163a5a5471ca/docs/system-requirements.md).
 
 ### Files Completed
 
