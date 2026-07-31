@@ -202,3 +202,226 @@ The Administrator pathway demonstrates:
 
 PeerTutor collects and displays only the information required to demonstrate the tutoring marketplace workflows.
 
+### User Information
+
+The prototype may contain:
+
+- User ID
+- Name
+- Email address
+- User role
+- Account status
+
+### Tutor Application Information
+
+The tutor-application process may contain:
+
+- Educational background
+- Teaching experience
+- Subjects and skills
+- Supporting information
+- Application status
+- Administrator decision
+
+### Tutor Profile Information
+
+Tutor profiles may display:
+
+- Tutor name
+- Subjects
+- Major
+- Qualifications
+- Teaching experience
+- Availability
+- Hourly rate
+- Rating
+- Student reviews
+
+### Tutoring Request Information
+
+Tutoring requests may contain:
+
+- Student and tutor identifiers
+- Subject
+- Preferred date and time
+- Optional note
+- Request status
+- Session information
+
+### Payment Information
+
+Simulated payment records may contain:
+
+- Transaction ID
+- Tutoring-session details
+- Payment amount
+- Payment method
+- Payment date
+- Payment status
+- Platform commission
+- Tutor earnings
+
+### Data Operations
+
+The prototype demonstrates the following operations:
+
+- Creating tutor applications and tutoring requests.
+- Storing records using local storage, JavaScript objects, JSON, or simulated data.
+- Displaying tutor, request, user, payment, and review records.
+- Searching tutors by name or subject.
+- Filtering tutors by major, price, and rating.
+- Updating application, request, and payment statuses.
+- Deleting or restricting invalid records through administrator actions.
+- Displaying role-specific dashboard summaries.
+
+### Responsible Data Handling
+
+- Only necessary sample or masked information is used.
+- No real passwords or sensitive financial information is displayed.
+- Payment functions do not process real transactions.
+- Personal information is displayed only where appropriate for the selected role.
+- Synthetic testing records are clearly identified as coursework sample data.
+- Clearing browser data may remove locally stored demonstration records.
+
+## 9. Validation and User Testing Results
+
+The user-testing activities covered the three main user roles.
+
+### Student Testing
+
+Student tasks included:
+
+- Understanding the homepage.
+- Selecting a role and entering the platform.
+- Searching and filtering tutors.
+- Viewing tutor profiles.
+- Submitting tutoring requests.
+- Viewing request statuses.
+- Completing the simulated payment process.
+- Viewing payment history.
+- Leaving reviews and ratings.
+
+### Student Tutor Testing
+
+Student Tutor tasks included:
+
+- Registering as a tutor.
+- Submitting a tutor application.
+- Creating and updating a tutor profile.
+- Viewing incoming tutoring requests.
+- Approving or rejecting requests.
+- Viewing schedules, reviews, earnings, and payment statuses.
+
+### Administrator Testing
+
+Administrator tasks included:
+
+- Reviewing tutor applications.
+- Approving or rejecting applicants.
+- Managing user accounts.
+- Verifying simulated payments.
+- Recording platform commission.
+- Updating tutor payouts.
+- Reviewing dashboard analytics.
+
+### Main Lessons
+
+The documented evidence indicated that:
+
+- The PeerTutor purpose and main role pathways were generally understandable.
+- Tutor search, filters, and tutor profiles supported tutor comparison.
+- Structured tutoring requests improved the organization of the Student workflow.
+- Role-specific dashboards helped users understand requests, payments, and activities.
+- Payment actions required stronger visual guidance.
+- Mobile readability required final checking.
+- Optional fields and price labels needed clearer wording.
+- Upload instructions needed to identify accepted file types.
+- Save, Preview, and Publish actions needed clearer separation.
+- Payment verification, platform commission, and tutor payout should appear as separate stages.
+
+### Evidence-Based Decision
+
+**Decision: Ready for final improvement and Lab 14 demonstration.**
+
+The main workflows can be demonstrated successfully. The identified usability improvements affect clarity and presentation quality but do not prevent the team from demonstrating the PeerTutor concept and intended value.
+
+## 10. Startup/Product Metrics
+
+The team used prototype and validation metrics to evaluate whether the product concept and workflows were understandable.
+
+| Metric | Purpose | Documented Result |
+|---|---|---:|
+| Test-user profiles | Measure role coverage | 10 |
+| Student coverage | Validate the primary user workflow | 5 |
+| Student Tutor coverage | Validate tutor registration and request management | 3 |
+| Administrator coverage | Validate approval and payment management | 2 |
+| Lab 08 task-success rate | Evaluate earlier MVP usability | 94.0% |
+| Lab 08 average feedback score | Measure overall usability | 4.5 / 5 |
+| Lab 08 average interest level | Measure potential willingness to use PeerTutor | 4.7 / 5 |
+| Lab 13 synthetic full-completion rate | Demonstrate updated-prototype analysis | 95.2% |
+| Lab 13 synthetic average rating | Demonstrate quantitative feedback analysis | 4.58 / 5 |
+| Requirement coverage | Measure implementation traceability | 19 of 19 |
+| Approved user-story coverage | Measure user-story implementation | 16 of 16 |
+
+Acquisition metrics can also include:
+
+- Landing-page visits
+- **Find a Tutor** clicks
+- **Get Started Now** clicks
+- Tutor-registration interest
+- Feedback-form submissions
+- Conversion rate
+- Returning visitors
+
+Only actual collected values should be reported as real acquisition results. Synthetic figures must not replace actual market or visitor evidence.
+
+## 11. Business Value and Venture Direction
+
+### Value Creation
+
+PeerTutor creates value by:
+
+- Centralizing tutor discovery.
+- Making tutor information easier to compare.
+- Improving trust through tutor-application approval.
+- Providing structured tutoring requests.
+- Supporting transparent requests and payment statuses.
+- Allowing students to view reviews and ratings.
+- Helping tutors organize requests, schedules, and earnings.
+- Giving administrators oversight of platform activity.
+
+### Value Delivery
+
+PeerTutor delivers value through:
+
+- A responsive website.
+- Searchable tutor listings.
+- Detailed tutor profiles.
+- Student and Tutor dashboards.
+- Structured request and payment workflows.
+- Administrator approval and management tools.
+- A landing page and digital promotion channels.
+- Campus QR codes, class announcements, student clubs, and social media.
+
+### Value Capture
+
+A future production version could capture value through:
+
+- A small commission from completed tutoring sessions.
+- Featured tutor profiles.
+- Optional premium tutor tools.
+- University or faculty partnerships.
+- Sponsored academic-support campaigns.
+
+The current prototype does not process real payments or generate real revenue. The commission and tutor-payout functions are simulations designed to demonstrate the proposed business model.
+
+### Venture Direction
+
+The initial target market is Rangsit International College. After validating the platform and improving the technical infrastructure, PeerTutor could expand to:
+
+1. Other Rangsit University programs.
+2. Thai-language students and tutors.
+3. Additional university campuses.
+4. Other higher-education institutions.
+
+
