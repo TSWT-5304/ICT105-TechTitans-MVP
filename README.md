@@ -756,6 +756,125 @@ After completing these improvements, the team should:
 
 All tutor profiles, user accounts, tutoring requests, reviews, testing records, and payment information used in the demonstration are sample or masked data. Payment processing, authentication, notifications, and external service integrations may be simulated. No real passwords, sensitive personal information, or financial transactions are used.
 
+-----
+
+# PeerTutor – Student-to-Student Tutoring Marketplace
+
+## Project Title
+
+**PeerTutor – Student-to-Student Tutoring Marketplace**
+
+**Group Name:** TechTitans  
+**Course:** ICT105 Fundamental Technology Entrepreneurship  
+**Target Institution:** Rangsit University  
+**Initial MVP Scope:** Rangsit International College  
+**Platform:** Responsive web-based prototype  
+**Final Stage:** Lab 14 Final Submission
+
+## Group Members
+
+| Name | Role | Main Contribution |
+|---|---|---|
+| Thin Thiri Naing | Product Lead | Led product planning, value proposition, sales scenario, business direction, final improvement priorities, and pitch preparation. |
+| Shinn Thant Maung | Validation Lead | Led user-testing planning, data organization, testing-result analysis, validation evidence, and product-metric evaluation. |
+| Thae Su Win Thu | UX/UI Lead and Technical Lead | Designed and developed the PeerTutor interface, role-based workflows, responsive layouts, interactions, demonstration flow, and visual evidence. |
+| Yan Naing Kyaw | Documentation Lead and Technical Support | Maintained the README, weekly logbooks, final links, implementation status, requirement traceability, final report, demo script, and project documentation. |
+
+## Project Overview
+
+PeerTutor is a responsive student-to-student tutoring marketplace designed to help Rangsit University students find and manage suitable Student Tutors.
+
+The platform brings tutor discovery, tutor comparison, tutoring requests, status tracking, simulated payment management, reviews, and role-based administration into one organized system.
+
+PeerTutor contains three main user pathways:
+
+### Student
+
+Students can:
+
+- Search and filter approved tutors.
+- View detailed tutor profiles.
+- Compare subjects, experience, availability, ratings, reviews, and prices.
+- Submit tutoring requests.
+- Track request and payment statuses.
+- Complete simulated payments after tutor approval.
+- View payment history and transaction details.
+- Leave reviews and ratings after completed tutoring sessions.
+
+### Student Tutor
+
+Student Tutors can:
+
+- Register and submit tutor applications.
+- Create public tutor profiles after Administrator approval.
+- Manage subjects, experience, availability, and hourly rates.
+- Review incoming tutoring requests.
+- Approve or reject requests.
+- Monitor tutoring schedules.
+- View reviews, earnings, payment history, and payment statuses.
+
+### Administrator
+
+Administrators can:
+
+- Review tutor applications.
+- Approve or reject tutor applicants.
+- Manage user accounts.
+- View platform records.
+- Verify simulated student payments.
+- Record platform commission.
+- Transfer simulated tutor earnings.
+- Update payment statuses.
+- Monitor dashboard summaries, charts, and platform activity.
+
+## Target Users
+
+| Target User | Need |
+|---|---|
+| Rangsit University Students | Need an organized way to find, compare, request, and manage suitable tutors. |
+| Student Tutors | Need a platform to promote tutoring services, manage requests, and monitor earnings and reviews. |
+| Administrators | Need tools to approve tutors, manage users, verify payments, and oversee platform records. |
+
+## Problem Solved
+
+Rangsit University students often search for tutors through scattered channels such as Facebook groups, LINE chats, friends, classmates, and seniors.
+
+This creates several difficulties:
+
+- Tutor information is incomplete or inconsistent.
+- Students cannot easily compare qualifications, subjects, availability, ratings, or prices.
+- Tutor reliability may be difficult to confirm.
+- Tutoring requests are managed through disconnected conversations.
+- Students may not understand the current request or payment status.
+- Tutors must manage requests and schedules manually.
+- No centralized Administrator is available to approve tutors or oversee transactions.
+
+PeerTutor addresses this problem by providing one organized and traceable platform connecting Students, Student Tutors, and Administrators.
+
+## Value Proposition
+
+> For Rangsit University students who experience scattered and unreliable tutor discovery, PeerTutor helps them find and manage suitable Student Tutors through searchable profiles, structured tutoring requests, status tracking, payment management, and role-based dashboards.
+
+## Final Prototype
+
+- **Prototype source folder:** [`/prototype/PeerTutor/`](prototype/PeerTutor/)
+- **Live PeerTutor prototype:** [Open the PeerTutor Prototype](https://tswt-5304.github.io/ICT105-TechTitans-MVP/prototype/PeerTutor/html/index.html)
+- **Landing-page source folder:** [`/landing-page/`](landing-page/)
+- **Live landing page:** [Open the PeerTutor Landing Page](https://tswt-5304.github.io/ICT105-TechTitans-MVP/landing-page/html/index.html)
+- **Final demo link and instructions:** [`/prototype/final-demo-link.md`](prototype/final-demo-link.md)
+- **GitHub repository:** [ICT105-TechTitans-MVP](https://github.com/TSWT-5304/ICT105-TechTitans-MVP/)
+
+## Final Documentation
+
+- System requirements: `/docs/system-requirements.md`
+- User stories: `/docs/user-stories.md`
+- MVP feature list: `/docs/mvp-feature-list.md`
+- Feature implementation status: `/docs/feature-implementation-status.md`
+- Final prototype report: `/docs/final-prototype-report.md`
+- Final demo script: `/docs/final-demo-script.md`
+- Final reflection: `/docs/final-reflection.md`
+
+
 
 
 
