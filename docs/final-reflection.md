@@ -92,14 +92,118 @@ We therefore learned that usability depends not only on whether a feature exists
 
 The Lab 13 updated-prototype dataset is **synthetic sample data prepared for coursework demonstration**. It helped us demonstrate quantitative analysis, but it must not be described as real participant research.
 
+## 3. What We Learned About Requirements
+
+At the beginning of the project, requirements mainly appeared to be a checklist of screens and functions. During implementation, we learned that requirements must remain connected to:
+
+1. The original user problem.
+2. A target user or stakeholder.
+3. A user story.
+4. Acceptance criteria.
+5. An MVP feature.
+6. A prototype screen or module.
+7. Testing evidence.
+8. Final implementation evidence.
+
+We also learned that requirement numbering and meanings must remain consistent across all files. Using the wrong requirement meaning in the demo script, testing plan, feature status, or traceability matrix can create confusion even when the prototype itself is correct.
+
+The Requirement Traceability Matrix helped us verify the relationship among:
+
+- 19 functional requirements
+- 16 approved user stories
+- 19 MVP features
+- Prototype screens and modules
+- Final screenshots and documentation
+
+We also identified that some requirements are cross-cutting rather than connected to only one user story. These include:
+
+- FR-13: Validation and error prevention
+- FR-14: Confirmation and feedback
+- FR-16: User-interface consistency
+- FR-17: Responsive design
+- FR-18: Privacy and responsible data handling
+- FR-19: Final prototype traceability
+
+These requirements affect several screens and workflows and therefore require evidence from multiple parts of the prototype.
+
+The project also taught us the importance of controlling the MVP scope. US-17–US-20 were postponed because real-time chat, tutor video introductions, AI study planning, and video tutoring require additional technologies beyond the available time and resources.
+
+## 4. What We Improved After Testing
+
+Testing and prototype review resulted in several interface and workflow improvements.
+
+### Homepage and Navigation
+
+We improved:
+
+- The explanation of the PeerTutor problem and value.
+- The visibility of the main actions.
+- Role-selection clarity.
+- Navigation consistency across pages.
+- Links among the homepage, role selection, dashboards, and supporting pages.
+
+### Tutor Discovery
+
+We improved:
+
+- Tutor search by name or subject.
+- Filtering by major, rating, and hourly rate.
+- Tutor-profile information.
+- Availability and price presentation.
+- Rating and review visibility.
+
+### Forms and Validation
+
+We improved:
+
+- Required-field indicators.
+- Error messages for incomplete submissions.
+- Email and password validation.
+- Tutoring-request field labels.
+- Tutor-application information.
+- Submission confirmation messages.
+
+### Status and Payment
+
+We improved:
+
+- Tutoring-request status labels.
+- Payment-status labels.
+- Confirmation messages after payment actions.
+- Payment-history visibility.
+- Administrator payment verification.
+- Tutor-earnings presentation.
+
+### Dashboards
+
+We improved:
+
+- Student request and session summaries.
+- Tutor request, schedule, review, and earnings information.
+- Administrator application, account, transaction, and analytics information.
+- Dashboard organization and consistent styling.
+
+### Final Testing Improvements
+
+The final testing evidence identified additional improvements requiring final checking:
+
+- Increase the visibility of the Confirm Payment button.
+- Add a clearer payment-progress indicator.
+- Improve mobile text and control sizes.
+- Clarify price labels and optional fields.
+- Group preferred date and time fields together.
+- Add accepted file-type instructions.
+- Distinguish Save, Preview, and Publish actions.
+- Separate payment verification, commission, and payout stages.
+
 ## 7. Individual Contributions
 
 | Member | Contribution | Evidence Link/Commit/Issue |
 |---|---|---|
-| Thin Thiri Naing | Led product planning and venture direction; prepared the sales scenario, value proposition, business perspective, final improvement priorities, and pitch outline. | `docs/sales-scenario.md`<br>`docs/final-improvement-list.md`<br>`pitch/demo-outline.md`<br>Lab 13 Issues #1, #5, and #10 |
-| Shinn Thant Maung | Led validation activities; prepared the user-testing plan, testing structure, synthetic sample dataset, results analysis, usability findings, and evidence-based decision. | `docs/user-testing-plan.md`<br>`docs/user-testing-results.md`<br>`data/user-testing-results.csv`<br>Lab 13 Issues #3, #4, and #11 |
-| Thae Su Win Thu | Led UX/UI and technical implementation; designed and developed prototype screens, navigation, responsive layouts, interactions, demo flow, and user-testing evidence image. | `prototype/PeerTutor/`<br>`docs/demo-script.md`<br>`screenshots/demo-flow.png`<br>`screenshots/user-testing-evidence.png`<br>Lab 13 Issues #2, #7, and #8 |
-| Yan Naing Kyaw | Led documentation and technical support; maintained the README, weekly logbooks, final prototype links, implementation status, requirement traceability, and final project documentation. | `README.md`<br>`docs/weekly-logbook.md`<br>`prototype/final-demo-link.md`<br>`docs/feature-implementation-status.md`<br>`docs/requirement-traceability-matrix.md`<br>Lab 13 Issues #6, #9, and #12 |
+| Thin Thiri Naing | Led product planning and venture direction; prepared the sales scenario, value proposition, business perspective, final improvement priorities, and pitch outline. | `docs/sales-scenario.md`<br>`docs/final-improvement-list.md`<br>`pitch/demo-outline.md`<br> Lab 13 Issues #1, #5, and #10 |
+| Shinn Thant Maung | Led validation activities; prepared the user-testing plan, testing structure, synthetic sample dataset, results analysis, usability findings, and evidence-based decision. | `docs/user-testing-plan.md`<br>`docs/user-testing-results.md`<br>`data/user-testing-results.csv`<br> Lab 13 Issues #3, #4, and #11 |
+| Thae Su Win Thu | Led UX/UI and technical implementation; designed and developed prototype screens, navigation, responsive layouts, interactions, demo flow, and user-testing evidence image. | `prototype/PeerTutor/`<br>`docs/demo-script.md`<br>`screenshots/demo-flow.png`<br>`screenshots/user-testing-evidence.png`<br> Lab 13 Issues #2, #7, and #8 |
+| Yan Naing Kyaw | Led documentation and technical support; maintained the README, weekly logbooks, final prototype links, implementation status, requirement traceability, and final project documentation. | `README.md`<br>`docs/weekly-logbook.md`<br>`prototype/final-demo-link.md`<br>`docs/feature-implementation-status.md`<br>`docs/requirement-traceability-matrix.md`<br> Lab 13 Issues #6, #9, and #12 |
 
 ## Final Team Reflection
 
