@@ -910,6 +910,89 @@ The final documentation confirms that:
 - Simulated features and prototype limitations are clearly explained.
 - The Lab 13 updated-prototype dataset is clearly labelled as synthetic sample data.
 
+## GitHub Contributions Today
+
+| Member | File/Issue/Commit Updated | Evidence Link |
+|---|---|---|
+| Thin Thiri Naing | Reviewed product direction, business value, final improvements, sales scenario, and final pitch content. | [`sales-scenario.md`](sales-scenario.md)<br>[`final-improvement-list.md`](final-improvement-list.md)<br>[`demo-outline.md`](../pitch/demo-outline.md) |
+| Shinn Thant Maung | Reviewed validation evidence, testing results, testing metrics, and final evidence-based decision. | [`user-testing-plan.md`](user-testing-plan.md)<br>[`user-testing-results.md`](user-testing-results.md)<br>[`user-testing-results.csv`](../data/user-testing-results.csv) |
+| Thae Su Win Thu | Completed final prototype checking, interface updates, responsive review, demonstration flow, and visual evidence. | [`prototype/PeerTutor/`](../prototype/PeerTutor/)<br>[`demo-flow.png`](../screenshots/demo-flow.png)<br>[`user-testing-evidence.png`](../screenshots/user-testing-evidence.png) |
+| Yan Naing Kyaw | Completed final documentation, feature status, traceability matrix, final report, demo script, reflection, README, and weekly logbook. | [`feature-implementation-status.md`](feature-implementation-status.md)<br>[`requirement-traceability-matrix.md`](requirement-traceability-matrix.md)<br>[`final-prototype-report.md`](final-prototype-report.md)<br>[`final-demo-script.md`](final-demo-script.md)<br>[`final-reflection.md`](final-reflection.md)<br>[`README.md`](../README.md) |
+
+## Problems Found Before Submission
+
+The team identified the following issues during the final review:
+
+1. Some screenshot filenames in the documentation may not exactly match the files in the GitHub repository.
+2. Some links may break if relative folder paths are incorrect.
+3. The live GitHub Pages prototype may take time to update after the final commit.
+4. The Confirm Payment button may still require stronger visibility.
+5. Some text and controls may appear small on mobile-sized screens.
+6. Optional fields may require clearer labels.
+7. Preferred date and time fields may need better grouping.
+8. Tutor-application uploads may need clearer accepted-file-type instructions.
+9. Save, Preview, and Publish actions may need clearer visual separation.
+10. Payment verification, platform commission, and tutor payout must appear as separate stages.
+11. Local storage or sample data may reset when browser data is cleared.
+12. Some authentication, notification, upload, storage, and payment functions remain simulated.
+13. Requirement IDs must remain consistent across all final documents.
+14. Synthetic testing data must not be described as actual participant research.
+15. The complete demonstration may exceed seven minutes if every screen is explained in too much detail.
+
+## Solutions and Decisions
+
+To address these problems, the team decided to:
+
+- Verify every filename directly in the GitHub repository.
+- Open every documentation and screenshot link before submission.
+- Wait for GitHub Pages deployment and test the live links again.
+- Use prepared sample records during the final demonstration.
+- Keep backup screenshots available.
+- Clearly explain which functions are simulated.
+- Present only the main steps during the live walkthrough.
+- Use the Requirement Traceability Matrix to verify FR-01–FR-19.
+- Clearly label the Lab 13 dataset as synthetic sample data.
+- Keep US-17–US-20 outside the current MVP implementation count.
+
+## Action Before Final Presentation
+
+Before the final presentation, the team must complete the following actions:
+
+- [x] Confirm that the GitHub repository is publicly accessible.
+- [x] Confirm that the final prototype link is working.
+- [x] Confirm that the landing-page link is working.
+- [x] Open and test all README links.
+- [x] Confirm that all screenshot filenames are correct.
+- [x] Verify the complete Student workflow.
+- [x] Verify the complete Student Tutor workflow.
+- [x] Verify the complete Administrator workflow.
+- [x] Check request and payment-status updates.
+- [x] Test form validation and confirmation messages.
+- [x] Test the prototype on a laptop screen.
+- [x] Test the prototype using a mobile-sized viewport.
+- [x] Confirm that no real passwords or sensitive information are visible.
+- [x] Confirm that payment functions are identified as simulations.
+- [x] Confirm that synthetic testing results are clearly labelled.
+- [x] Prepare the sample accounts and records required for the demo.
+- [x] Prepare backup screenshots in presentation order.
+- [x] Assign each speaking section to the correct presenter.
+- [x] Practice the complete demonstration at least once.
+- [x] Keep the final demonstration within 5–7 minutes.
+- [x] Prepare answers for possible instructor questions.
+- [x] Complete a final GitHub commit and deployment check.
+
+## Final Lab 14 Decision
+
+**Current status: Ready for final presentation after the final link, filename, and demonstration checks.**
+
+The PeerTutor prototype represents all 19 functional requirements and all 16 approved MVP user stories. The core Student, Student Tutor, and Administrator workflows are available for demonstration.
+
+Some backend, authentication, notification, storage, upload, and payment processes remain simulated because PeerTutor is an academic prototype. These limitations are clearly documented and do not prevent the team from demonstrating the intended product workflow and business value.
+
+The team will complete one final repository and presentation check before submission.
+ 
+
+
 
 
 
